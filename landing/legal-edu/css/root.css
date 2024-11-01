@@ -1,0 +1,47 @@
+@charset "utf-8";
+/*********************************************************
+	root.css - &.202406
+**********************************************************/
+
+/*ROOT*/
+:root {
+	/*vh동적설정*/
+	--vh: 100%;
+  /*color set*/
+  --color-white:#FFFFFF;
+	--color-black: #262626;
+	--color-txtblk: #323842;
+  --color-darkgray: #565E6C;
+  --color-lightgray: #BCC1CA;
+  --color-linegray: #DEE1E6;
+  --color-linelightgray: #EAECEF;
+  --color-bggray:#FAFAFB;
+  --color-ylw:#F7B616;
+  --color-lightylw:#FFD972;
+  --color-bgylw:#FFF9EB;
+  --color-brw:#545046;
+  --color-blue:#486BD4;
+	--color-shadow:rgba(0,0,0,0.15);
+  /*font weight*/
+  --txt-thin: 100;
+  --txt-light: 300;
+  --txt-regular: 400;
+  --txt-medium: 500;
+  --txt-semibold: 600;
+  --txt-bold: 700;
+  --txt-extrabold: 800;
+	/*seperate size(padding,margin,gap)*/
+	--sep-min:1rem;
+	--sep-half:2.5rem;
+	--sep-comm:5rem;
+	--sep-double:9rem;
+	--sep-max:12rem;
+	@media screen and (max-width:768px) {
+	--sep-half:2rem;
+		--sep-comm:3.5rem;
+		--sep-double:6rem;
+		--sep-max:9rem;
+	}
+	/*radius*/
+	--radius-comm: .5rem;
+}

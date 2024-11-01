@@ -1,0 +1,55 @@
+@charset "utf-8";
+/*********************************************************
+	scroll-out.css - &.202406
+**********************************************************/
+
+
+[data-scroll] {
+  opacity: 0;
+  transition: all 0.5s, opacity 1s, transform 1s;
+}
+[data-scroll="in"] {
+  opacity: 1;
+}
+[data-scroll="out"] {
+  opacity: 0;
+}
+[data-scroll][data-left] {
+	transform:translateX(-5rem);
+}
+[data-scroll="in"][data-left] {
+	transform:translateX(0);
+}
+[data-scroll][data-right] {
+	transform:translateX(5rem);
+}
+[data-scroll="in"][data-right] {
+	transform:translateX(0);
+}
+[data-scroll][data-toUp] {
+	transform:translateY(5rem);	
+}
+[data-scroll="in"][data-toUp] {
+	transform:translateY(0);	
+}
+[data-scroll][data-toDown] {
+	transform:translateY(-5rem);	
+}
+[data-scroll="in"][data-toDown] {
+	transform:translateY(0);	
+}
+[data-scroll][data-scroll-order="1"] {
+    transition-delay: 0s, 0s, 0s;
+}
+[data-scroll][data-scroll-order="2"] {
+    transition-delay: 0s, 0.2s, 0.2s;
+}
+[data-scroll][data-scroll-order="3"] {
+    transition-delay: 0s, 0.4s, 0.4s;
+}
+[data-scroll][data-scroll-order="4"] {
+    transition-delay: 0s, 0.6s, 0.6s;
+}
+[data-scroll][data-scroll-order="5"] {
+    transition-delay: 0s, 0.8s, 0.8s;
+}

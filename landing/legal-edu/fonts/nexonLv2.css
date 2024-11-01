@@ -1,0 +1,6 @@
+@font-face {
+    font-family: NexonLv2Gothic;
+    font-weight: 500;
+    font-style: normal;
+    src: local("NexonLv2Gothic"),url("./nexonLv2/NEXON Lv2 Gothic OTF Medium.otf") format("opentype")
+}
