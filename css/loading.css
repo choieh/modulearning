@@ -1,0 +1,43 @@
+.loadingcss {
+    position: relative;
+    width: 96px;
+    height: 96px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.barcss div {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 10px;
+    height: 40px;
+    margin: auto;
+    background-color: #fff;
+    animation: bar 1s infinite linear;
+}
+
+.bar div:nth-child(1) {
+    left: -30px;
+    animation-delay: -0.15s;
+}8
+
+.bar div:nth-child(2) {
+    animation-delay: 0s;
+}
+
+.bar div:nth-child(3) {
+    right: -30px;
+    animation-delay: 0.15s;
+}
+
+@keyframes bar {
+    0%, 50% {
+        transform: scaleY(1);
+    }
+    25% {
+        transform: scaleY(1.5);
+    }
+}

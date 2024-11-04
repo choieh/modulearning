@@ -1,0 +1,209 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>교육수료증</title>
+<?= $subDomain = $_SERVER['HTTP_HOST'];
+	$subDomain = explode(".",$subDomain); ?>
+<script type="text/javascript" src="../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript">
+	var seq = "<?=$_GET['seq'] ?>";  //seq
+	var progressChk = "<?=$_GET['progressChk'] ?>";  //seq
+	var subDomain = "";
+	var companyNameTxt = "";
+	var contentsName = "";
+    var eduTime = "";
+    var print = "<?=$_GET['print']?>";
+	  if(subDomain == "<?=$subDomain[0] ?>" ){
+		var useApi = '/api/apiStudyHistoryKSA.php';
+	  } else {
+		var useApi = '/api/apiStudyHistory.php';
+	  }
+
+  var printAjax = $.get(useApi,{'seq':seq,'print': print,'progressChk':progressChk},function(data){
+	  var printInfo = '';
+      console.log(data);
+	  if(data.study[0].serviceType == 1){
+		  printInfo += '<li><h1>소속회사&nbsp;&nbsp;</h1>'+data.study[0].companyName+'</li>';
+	  }
+		printInfo += '<li><h1>성&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;명&nbsp;&nbsp;</h1>'+data.study[0].userName+'</li>';
+
+		var birth01 = data.study[0].birth.substr(0,2);
+		var birth02 = data.study[0].birth.substr(2,2);
+		var birth03 = data.study[0].birth.substr(4,2);
+
+
+		if( Number(birth01) > Number(10)){
+			birth01 = '19'+birth01;
+		}else{
+			birth01 = '20'+birth01;
+		}
+
+	  printInfo += '<li><h1>생년월일&nbsp;&nbsp;</h1>'+birth01+'년 '+birth02+'월 '+birth03+'일</li>';
+	  if (data.study[0].companyName) {
+		  companyNameTxt = data.study[0].companyName;
+	  } else {
+		  companyNameTxt = "-";
+	  }
+	  if(data.study[0].contentsCode == 'PIM9YM' || data.study[0].contentsCode == 'CTF1N4'){
+		  contentsName = "채용 시의 교육 및 작업내용 변경 시의 교육";
+		  eduTime = "(8시간)";
+	  }else{
+		  contentsName = data.study[0].contentsName;
+	  }
+	  printInfo += '<li><h1>훈련과정&nbsp;&nbsp;</h1>'+contentsName+'</li>';
+	  printInfo += '</li>';
+	  printInfo += '<li><h1>훈련기간&nbsp;&nbsp;</h1>';
+	  printInfo += data.study[0].lectureStart.substr(0,4)+'. ';
+	  printInfo += data.study[0].lectureStart.substr(5,2)+'. ';
+	  printInfo += data.study[0].lectureStart.substr(8,2)+'&nbsp;~&nbsp;';
+	  printInfo += data.study[0].lectureEnd.substr(0,4)+'. ';
+	  printInfo += data.study[0].lectureEnd.substr(5,2)+'. ';
+	  printInfo += data.study[0].lectureEnd.substr(8,2);
+	  printInfo += eduTime+'</li>';
+	  printInfo += '<li><h1>훈련시간&nbsp;&nbsp;</h1>'+data.study[0].contentsTime+'시간</li>';
+
+	  //차시 내용 추가 20200402 이화랑
+	  /*var contentsCode=data.study[0].contentsCode;
+	  if(contentsCode == 'DM5PRA' || contentsCode == 'R0WFMT'){
+          printInfo += '<li id="chapter"><h1>훈련내용&nbsp;&nbsp;</h1></li>';
+		  var chapterApi = '/api/apiChapter.php';
+
+		  $.get(chapterApi,{'contentsCode':contentsCode},function(data){
+			var chapterInfo = '';
+			for(var i=0; i<data.chapter.length; i++){
+				chapterInfo += '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size:12px;">'+data.chapter[i].chapter+'. ';
+				chapterInfo += data.chapter[i].chapterName + '</span><br />';
+			}
+			$('#chapter').after(chapterInfo);
+		  })
+	  }*/
+	  $('div.infoArea > ul').html(printInfo)
+
+	  var today = new Date();
+	  var dd = today.getDate();
+	  var mm = today.getMonth()+1; //January is 0!
+	  var yy = today.getFullYear();
+	  var eduInfo = '';
+	  var companyNameTxt2 = '';
+	  eduInfo += '<div id="printArea">';
+	  eduInfo += '<h1>수&nbsp;&nbsp;&nbsp;&nbsp;료&nbsp;&nbsp;&nbsp;&nbsp;증</h1>';
+	  eduInfo += '<ul>'
+
+		if (data.study[0].companyName) {
+			companyNameTxt2 = data.study[0].companyName;
+		} else {
+			companyNameTxt2 = '-';
+		}
+		var birth01 = data.study[0].birth.substr(0,2);
+		var birth02 = data.study[0].birth.substr(2,2);
+		var birth03 = data.study[0].birth.substr(4,2);
+
+
+		if( Number(birth01) > Number(10)){
+			birth01 = '19'+birth01;
+		}else{
+			birth01 = '20'+birth01;
+		}
+
+		eduInfo += '<li><h1>소&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;속&nbsp;&nbsp;</h1>'+companyNameTxt2+'</li>';
+		eduInfo += '<li><h1>성&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;명&nbsp;&nbsp;</h1>'+data.study[0].userName+'</li>';
+		eduInfo += '<li><h1>생년월일&nbsp;&nbsp;</h1>'+birth01+'년 '+birth02+'월 '+birth03+'일</li>';
+		//eduInfo += '<li><h1>생년월일&nbsp;&nbsp;</h1>'+data.study[0].birth+'</li>';
+
+		if(data.study[0].contentsName == '바쁜 직장인을 위해 쉽고 빠르게 배우는 필수 법정교육') {
+		  eduInfo += '<li><h1>훈련과정&nbsp;&nbsp;</h1>바쁜 직장인을 위해 쉽고 빠르게 배우는 필수 법정교육</li>';
+		  eduInfo += '<li><h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>(성희롱예방, 개인정보보호, 산업안전보건 포함)</li>';
+		} else {
+		  eduInfo += '<li><h1>훈련과정&nbsp;&nbsp;</h1>'+contentsName+'</li>';
+		}
+
+	  eduInfo += '</li>';
+	  eduInfo += '<li><h1>훈련기간&nbsp;&nbsp;</h1>';
+	  eduInfo += data.study[0].lectureStart.substr(0,4)+'. ';
+	  eduInfo += data.study[0].lectureStart.substr(5,2)+'. ';
+	  eduInfo += data.study[0].lectureStart.substr(8,2)+'. '+'&nbsp;~&nbsp;';
+	  eduInfo += data.study[0].lectureEnd.substr(0,4)+'. ';
+	  eduInfo += data.study[0].lectureEnd.substr(5,2)+'. ';
+	  eduInfo += data.study[0].lectureEnd.substr(8,2)+'.';
+	  eduInfo += eduTime+'</li>';
+		eduInfo += '<li><h1>훈련시간&nbsp;&nbsp;</h1>'+data.study[0].contentsTime+'시간</li>';
+	  eduInfo += '</ul>'
+	  //eduInfo += '<p>위 사람은 근로자직업훈련촉진법 제 14조의<br />규정에 의하여 위의 직업능력개발훈련과정을<br />수료하였으므로 이 증서를 수여합니다.</p>';
+	  eduInfo += '<p>위 사람은 상기 과정을 수료하였기에<br />이 증서를 수여합니다.</p>';
+	 // eduInfo += '<h2>'+yy+'&nbsp;년&nbsp;&nbsp; '+mm+'월&nbsp;&nbsp; '+dd+'일</h2>'
+	 if((data.study[0].serviceType == 3 && data.study[0].companyID == 'seegene') || data.study[0].serviceType == 3 ||  data.study[0].serviceType == 5 || data.study[0].serviceType == 8){	//2017-07-17 이응민 수정
+		eduInfo += '<h2>'+yy+'년&nbsp;&nbsp; '+mm+'월&nbsp;&nbsp; '+dd+'일</h2>'
+	 }else{
+		 //임시 주석
+		eduInfo += '<h2>'+data.study[0].company[0].inputDateS.substr(0,4)+'년&nbsp;&nbsp; '+data.study[0].company[0].inputDateS.substr(5,2)+'월&nbsp;&nbsp; '+data.study[0].company[0].inputDateS.substr(8,2)+'일</h2>'
+	 }
+		if(data.study[0].certificate == 'Y'){
+		  eduInfo += '<h3><img src="../attach/print/print_'+data.study[0].companyID+'.png" alt="모두의러닝" /></h3>';
+		}else {
+		  //eduInfo += '<h3><img src="../attach/print/print_img02.png" alt="키라에듀" /></h3>';
+			eduInfo += '<h3 class="logo_wrap"><span class="logo_text">모두의러닝</span>';
+			eduInfo += '<span style="margin-left:-20px" class="logo"><img src="../attach/print/print_img03.png" alt=""/></span></h3>';
+		}
+	  eduInfo += '<div><img src="../images/study/print_img01.jpg" alt="" /></div>';
+	  eduInfo += '</div>'
+	  $('body').append(eduInfo);
+  })
+
+  function printAction(){
+	  $('.infoArea').remove();
+	  alert('CTRL + P를 눌러 인쇄 해주세요.');
+	  window.print();
+  }
+
+
+
+
+</script>
+<style type="text/css">
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+/* font-family: 'Nanum Myeongjo', serif; */
+body { overflow:hidden; }
+
+div#printArea {padding:0cm; font-family:'Nanum Myeongjo', serif; }
+div#printArea > h1, div#printArea > h2, div#printArea > p, div#printArea > ul, div#printArea > h3 { position:relative; z-index:900; }
+div#printArea > h1, div#printArea > h2, div#printArea > p { text-align:center; }
+div#printArea > h1 {  margin:0; padding-top:3.2cm; font-size:30pt; }
+div#printArea > ul, div#printArea > ul li { margin:0; padding:0; font-size:14pt; list-style:none; }
+div#printArea > ul { overflow:hidden; height:7cm; margin-top:2.7cm; margin-left:2.5cm; margin-right:2.5cm; }
+div#printArea > ul li h1 { margin-top:0.05cm; padding-right:5pt; display:inline-block; font-size:14pt; }
+div#printArea > ul li h1:after { content:':' }
+div#printArea > p { margin:1.9cm 0 0; font-size:18pt; line-height:22pt; font-weight:bold; text-align:center; }
+div#printArea > h2 { margin:2.7cm 0 0; padding:0 2.7cm;  }
+div#printArea > h3 img { width:3cm; }
+div#printArea > div { position:absolute; top:0; left:0; z-index:1; width:19cm; height:27.7cm;  }
+div#printArea > div img { width:19cm; height:27.7cm; }
+div#printArea h3 { position:relative;  top:3cm; text-align:center; margin:0; font-size:20pt; }
+div#printArea h3 .logo_text { position:relative; z-index:2; }
+div#printArea .logo { position:absolute; top:-25px; left:66%; z-index:1; }
+div#printArea .logo img { width:2cm; }
+
+div.infoArea { position:fixed; top:0; left:0; width:100%; height:100%; background:#f7f7f7; z-index:999; }
+div.infoArea > h1 { margin:0; padding:0; border-bottom:1px dashed #ccc; background:#fff; text-align:center; line-height:60px; font-size:20px; color:#0780c2; }
+div.infoArea > p { padding:0 40px; font-size:12px; line-height:18px; }
+div.infoArea > h2 { padding:0; margin:20px 0 0; text-align:center; line-height:45px; font-size:15px; }
+div.infoArea > ul { overflow:hidden;  margin:0; padding:0 40px; }
+div.infoArea > ul li { overflow:hidden; list-style:none; font-size:12px; line-height:22px; }
+div.infoArea > ul li h1 { display:inline-block; width:80px; font-size:12px; }
+div.infoArea > button { display:block; width:85%; height:45px; margin:40px auto; border:1px solid #454545; background:#666; font-size:15px; color:#fff; font-weight:bold; }
+</style>
+</head>
+
+<body>
+<div class="infoArea">
+  <h1>수료증 출력확인</h1>
+  <p>테두리선(상장 모양)의 출력을 원하시면 출력 옵션에서<br />배경 그래픽 출력을 선택해주세요</p>
+  <h2>정보확인</h2>
+  <ul>
+
+  </ul>
+  <p>다음의 사항을 확인하고 수료증을 출력합니다.</p>
+  <button id="print" type="button" onclick="printAction()">수료증 출력하기</button>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+<? include '../lib/header.php'; ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<?
+//장애인인식교육 수료증 2018-09-18 진영하
+		$seq = $_GET['seq'];
+		$serviceType = $_GET['serviceType'];
+		$companyCode = $_GET['companyCode'];
+		$lectureStart = $_GET['lectureStart'];
+		$lectureEnd = $_GET['lectureEnd'];
+		$allPass = $_GET['allPass'];
+		$userID = $_SESSION['loginUserID'];
+		$sort02 = $_GET['sort02'];
+		$contentsName = $_GET['contentsName'];
+		$serviceTypeB = $_GET['serviceTypeB'];
+		$type = $_GET['type'];
+
+		if(!$userID) { // 세션이 없으면 접근 거부
+			exit;
+		}
+
+		if($_SESSION['loginUserLevel'] == 9) {
+			$studentQ = "AND A.userID='".$userID."'";
+		}
+
+		$queryC = "select companyName from nynCompany where companyCode='".$companyCode."'";
+		$resultC = mysql_query($queryC);
+		$companyName2 = mysql_result($resultC,0,'companyName');
+?>
+<title><?=$companyName2?>_<?=$lectureStart?>_<?=$title?></title>
+<script type="text/javascript" src="../js/jquery-1.11.2.min.js"></script>
+<style type="text/css">
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+body { margin:0 0 0 0.2cm; padding:0; }
+.printArea { height:100%; padding:0cm; font-family:'Nanum Myeongjo', serif; page-break-before:always; }
+.printArea > h1, .printArea > h2, .printArea > p, .printArea > ul, .printArea > h3 { position:relative; }
+.printArea > h1, .printArea > h2, .printArea > p { text-align:center; }
+.printArea > h1 { margin:0; padding-top:4cm; font-size:30pt; text-align:center; }
+.printArea > ul, div#printArea > ul li { margin:0; padding:0; font-size:14pt; list-style:none; }
+.printArea > ul { overflow:hidden; height:8cm; margin-top:2.5cm; margin-left:2.5cm; }
+.printArea > ul li h1 { margin-top:0.05cm; padding-right:5pt; display:inline-block; font-size:14pt; }
+.printArea > ul li h1:after { content:':' }
+.printArea > p { margin-top:1cm; font-size:18pt; line-height:30pt; font-weight:bold; text-align:center; }
+.printArea > h2 { margin-top:1.8cm; padding:0 2.7cm; text-align:right; font-size:9pt; color:#ccc; z-index:999; }
+.printArea > h3 { margin-top:1cm; text-align:center; }
+.printArea > h3 img { width:8cm; }
+.printArea > img { position:absolute; width:19cm; margin-left:-0.2cm; }
+</style>
+</head>
+
+<body>
+
+<?
+
+			$query = "SELECT A.seq, A.lectureStart, A.lectureEnd, B.birth, F.companyName, F.marketerID, B.department,
+							IF(ISNULL(B.userName),'입력오류',B.userName) AS userName, 
+							IF(ISNULL(E.contentsName),'입력오류',E.contentsName) AS contentsName,E.contentsCode, E.contentsTime, 
+							F.companyID, C.certificate, E.chapter
+							FROM nynStudy AS A
+							LEFT OUTER
+							JOIN nynMember AS B ON A.userID=B.userID
+							LEFT OUTER
+							JOIN nynContents AS E ON A.contentsCode=E.contentsCode 
+							LEFT OUTER
+							JOIN nynCompany AS F ON A.companyCode=F.companyCode 
+							LEFT OUTER
+							JOIN nynStudyCenter AS C ON F.companyID=C.companyID
+							WHERE A.contentsCode='TPW1H0' AND A.seq='".$seq."' AND A.userID='".$userID."' ORDER BY B.userName"; 
+			$result = mysql_query($query);
+			$count = mysql_num_rows($result);
+
+			if($count == 0){
+			?>
+				<script>
+					alert('잘못된 접근 혹은 오류가 발생하였습니다.');
+				</script>
+			<?
+			} else {
+
+			}
+			while($rs = mysql_fetch_array($result)) {
+			$lectureStart = $rs['lectureStart'];
+			$lectureEnd = $rs['lectureEnd'];
+
+
+			$start01 = substr($lectureStart,0,4);
+			$start02 = substr($lectureStart,5,2);
+			$start03 = substr($lectureStart,8,2);
+
+			$end01 = substr($lectureEnd,0,4);
+			$end02 = substr($lectureEnd,5,2);
+			$end03 = substr($lectureEnd,8,2);
+
+			$queryEnd = " SELECT inputDate
+										FROM nynStudyEnd
+										WHERE gubun='studyEnd' AND lectureStart='".$lectureStart."' AND lectureEnd='".$lectureEnd."' AND companyCode='".$companyCode."'";
+			$resultEnd = mysql_query($queryEnd);
+			$rsEnd = mysql_fetch_array($resultEnd);
+
+			if(!$rsEnd['inputDate']) {
+				$endDate = $inputDate;
+			} else {
+				$endDate = $rsEnd['inputDate'];
+			}
+
+			$resultDate00 = substr($endDate,0,10);
+			$resultDate01 = substr($resultDate00,0,4);
+			$resultDate02 = substr($resultDate00,5,2);
+			$resultDate03 = substr($resultDate00,8,2);
+			$resultDate = $resultDate01."년 ".$resultDate02."월 ".$resultDate03."일";
+				
+				$birth01 = substr($rs[birth],0,2);
+				if($birth01 < 25) {
+					$birth01 = "20".$birth01;
+				} else {
+					$birth01 = "19".$birth01;
+				}
+				$birth02 = substr($rs[birth],2,2);
+				$birth03 = substr($rs[birth],4,2);
+
+				$contentsCode =	$rs['contentsCode'];
+				$chapter = $rs['chapter'];
+?>
+				<div class="printArea">
+	        <img src="../images/study/print_img01.jpg" alt=""/>
+					<h1>수&nbsp;&nbsp;&nbsp;&nbsp;료&nbsp;&nbsp;&nbsp;&nbsp;증</h1>
+					<ul>
+						<li><h1>소속회사&nbsp;&nbsp;</h1><?=$rs[companyName];?> <!--(<?=$rs[department];?>)--></li>
+						<li><h1>성&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;명&nbsp;&nbsp;</h1><span style="letter-spacing:8px;"><?=$rs[userName];?></span></li>
+						<li><h1>생년월일&nbsp;&nbsp;</h1><?=$birth01?>년 <?=$birth02?>월 <?=$birth03?>일</li>
+						<li><h1>교육과정&nbsp;&nbsp;</h1><?=$rs[contentsName];?></li>
+						<li><h1>교육직종&nbsp;&nbsp;</h1>인터넷 훈련</li>
+						<li><h1>교육기간&nbsp;&nbsp;</h1><?=$start01;?>년 <?=$start02;?>월 <?=$start03;?>일&nbsp;~&nbsp;<?=$end01;?>년 <?=$end02;?>월 <?=$end03;?>일</li>
+						<li><h1>교육시간&nbsp;&nbsp;</h1>2시간</li>
+					</ul>
+						<p>위 사람은 장애인 고용촉진 및 직업재활법<br />제 5조의 2 제 1항 규정에 의하여<br />위 과정을 수료하였으므로 이 증서를 수여합니다.</p>
+						<h3><img src="../attach/print/print_img02.png" alt="" /></h3>
+					<h2>제<?=$start01;?>-<?=$rs[seq]?>호<br />발급일 : <?=$resultDate?></h2>
+				</div>
+<?
+			}	
+?>
+</body>
+</html>

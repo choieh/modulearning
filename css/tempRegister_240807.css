@@ -1,0 +1,148 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+body {
+    overflow: hidden;
+    font-size: 12px;
+}
+
+div.infoArea {
+    overflow-Y: scroll;
+    height: 645px;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+}
+
+div.infoArea table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+div.infoArea table td {
+    background: #f4f4f4;
+    border: 1px solid #ccc;
+    padding: 10px 5px 4px;
+}
+
+div.infoArea table th {
+    border: 1px solid #ccc;
+    padding: 8px 0;
+    color: #666;
+}
+
+div.infoArea table td, div.infoArea table th {
+    line-height: 20px;
+}
+
+div.infoArea table td.center {
+    text-align: center !important;
+}
+
+div.infoArea input {
+    height: 26px;
+    margin-bottom: 6px;
+    border: 1px solid #999;
+    padding: 0 5px;
+    vertical-align: middle;
+    width: 80px;
+}
+
+div.infoArea input.error {
+    border: 2px solid #ff0000 !important;
+}
+
+input[name="userName"], input[name="birth"] {
+    width: 46px !important;
+}
+
+input[name="sex"], input[name="serviceType"] {
+    width: 20px !important;
+}
+
+input[name="mobile01"], input[name="mobile02"], input[name="mobile03"] {
+    width: 32px !important;
+}
+
+input[name="email01"], input[name="email02"] {
+    width: 80px !important;
+}
+
+input[name="price"], input[name="rPrice"] {
+    width: 60px !important;
+}
+
+input[name="openChapter"] {
+    width: 40px !important;
+}
+
+div.infoArea button {
+    height: 32px;
+    border: none;
+    background: #666;
+    color: #fff;
+    font-weight: 800;
+}
+
+div.totalArea {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+div.totalArea > h1 {
+    float: left;
+    width: 200px;
+    margin-right: 10px;
+    border-right: 1px solid #ccc;
+    text-align: center;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+div.totalArea > h1 strong {
+    font-size: 26px;
+    font-weight: 800;
+}
+
+div.totalArea > h1 button {
+    height: 32px;
+    border: none;
+    background: #343434;
+    font-style: 15px;
+    color: #fff;
+    font-weight: 800;
+}
+
+div.totalArea > div {
+    padding: 10px;
+}
+
+div.totalArea > div button {
+    border: 1px solid #666;
+    margin: 2.5px;
+    background: #fff;
+    line-height: 32px;
+}
+
+div.totalArea > div button:hover {
+    background: #efefef;
+}
+
+.loadingScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/admin/bg_modal.png);
+}
+
+.loadingScreen img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -42px 0 0 -42px;
+}
+
+.displayNone {
+    display: none;
+}

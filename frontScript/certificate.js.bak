@@ -1,0 +1,292 @@
+//보드 정보 선언
+var useApi = '../api/apiStudyEnd2.php';
+//var memberApi = '../api/apiMember.php';
+var chainsearchApi = '../api/apiSearch.php';
+var seq = seq ? seq : '' ;
+userLevel = userLevel ? userLevel :9;
+var page = page ? page : 1;
+var totalCount = '';
+var listCount = 5; //한페이지 게시물 소팅개수
+var pagerCount = 10; //페이저카운트
+var sortData = '';
+
+if(loginUserLevel != '8'){
+    alert('교육담당자만 사용가능합니다.');
+    window.location.href="/";
+}
+
+function getList(chk){
+    let chkVal = chk.value;
+    var actionArea = '';
+    var today = new Date();
+    actionArea += '<div class="searchArea"><form class="searchForm" action="javascript:searchAct()">';
+    actionArea += '<div class="searchChangeArea">';
+    actionArea += `<input type="hidden" name="companyCode" value="${companyCode}">`;
+    actionArea += `<input type="hidden" name="searchType" value="${chkVal}">`;
+    actionArea += '<div class="checkedBox" style="display:inline-block">';
+    actionArea += '<input id="date" type="radio" name="searchTypes" value="date" onclick="getList(this);"> <label for="date">날짜별</label>';
+    actionArea += '<input id="content" type="radio" name="searchTypes" value="content" onclick="getList(this);"> <label for="content">과정별</label>';
+    actionArea += '</div>&nbsp;&nbsp;&nbsp;';
+    actionArea += '<select id="searchYear" name="searchYear" >';
+    var i= '';
+    var thisYear = today.getFullYear();
+    for(i= 2015; i <= thisYear; i++){
+        if(i != thisYear){
+            actionArea += '<option>'+i+'년</option>';
+        }else{
+            actionArea += '<option selected="selected">'+i+'년</option>';
+        }
+    }
+    actionArea += '</select>&nbsp;&nbsp;&nbsp;';
+    if(chkVal == 'date'){
+        actionArea += '<select id="searchMonth" name="searchMonth"  selected="selected">';
+        actionArea += '<option value="" selected="selected">전체</option>';
+        var h = '';
+        var thisMonth = today.getMonth()+1; //January is 0!
+        for(h = 1; h <= 12; h++){
+            actionArea += '<option >'+h+'월</option>';
+        }
+
+        actionArea += '</select>';
+    } else {
+        actionArea += '<input type="text" name="contentsName" placeholder="과정명을 입력해주세요.">';
+    }
+
+    actionArea += '<button style="margin-left:10px; padding:2px 14px;" type="submit">검색</button>';
+    if(loginUserLevel < 4){
+        actionArea += '<a href="/attach/docs/certificate.xlsx"> | 수료증출력기준보기(클릭다운로드)</a>';
+    }
+    actionArea += '</div>';
+    actionArea += '</form></div>';
+
+    $('#contents > .searchArea').remove();
+    $('#contents > h1').after(actionArea);
+
+    document.getElementById(chkVal).checked = true;
+    searchValue = $('.searchForm').serialize();
+    searchValue = '&'+searchValue;
+    ajaxAct(searchValue);
+//	loadingAct();
+}
+
+
+
+//리스트 소팅
+function listAct(page){
+    //상단 액션 부분
+    var actionArea = '';
+    var today = new Date();
+
+    actionArea += '<div class="searchArea"><form class="searchForm" action="javascript:searchAct()">';
+    actionArea += '<div class="searchChangeArea">';
+    actionArea += `<input type="hidden" name="companyCode" value="${companyCode}">`;
+    actionArea += `<input type="hidden" name="searchType" value="date">`;
+    actionArea += '<div class="checkedBox" style="display:inline-block">';
+    actionArea += '<input id="date" type="radio" name="searchTypes" value="date" onclick="getList(this);" checked> <label for="date">날짜별</label>';
+    actionArea += '<input id="content" type="radio" name="searchTypes" value="content" onclick="getList(this);"> <label for="content">과정별</label>';
+    actionArea += '</div>&nbsp;&nbsp;&nbsp;';
+    actionArea += '<select id="searchYear" name="searchYear" >';
+    var i = '';
+    var thisYear = today.getFullYear();
+    for(i= 2015; i <= thisYear; i++){
+        if(i != thisYear){
+            actionArea += '<option>'+i+'년</option>';
+        }else{
+            actionArea += '<option selected="selected">'+i+'년</option>';
+        }
+
+    }
+    actionArea += '</select>';
+    actionArea += '<select id="searchMonth" name="searchMonth"  selected="selected">';
+    actionArea += '<option value="" selected="selected">전체</option>';
+    var h= '';
+    var thisMonth = today.getMonth()+1; //January is 0!
+    for(h = 1; h <= 12; h++){
+        actionArea += '<option >'+h+'월</option>';
+    }
+    actionArea += '</select>';
+    actionArea += '<button style="margin-left:10px; padding:2px 14px;" type="submit">검색</button>';
+    if(loginUserLevel < 4){
+        actionArea += '<a href="/attach/docs/certificate.xlsx"> | 수료증출력기준보기(클릭다운로드)</a>';
+    }
+    actionArea += '</div>';
+    actionArea += '</form></div>';
+    $('#contents > h1').after(actionArea);
+
+
+    //게시물 소팅부분
+    var contents = '';
+    contents += '<div class="scrollArea">';
+    contents += '<table style="min-width:1360px;"><thead><tr>';
+    contents += '<th style="width:50px;">번호</th>';
+    contents += '<th style="width:200px;">수강기간</th>';
+    contents += '<th style="width:200px;">과정명</th>';
+    contents += '<th style="width:120px;">교육비</th>';
+    contents += '<th style="width:120px;">최종 환급액</th>';
+    contents += '<th style="width:120px;">수강인원</th>';
+    contents += '<th style="width:120px;">수료인원</th>';
+    contents += '<th style="width:120px;">수료증</th>';
+    contents += '<th style="width:120px;">수료결과보고서</th>';
+    contents += '</tr></thead><tbody>';
+    contents += '<tr><td colspan=13>검색값을 선택하세요.</td></tr>';
+    contents += '</tbody></table>';
+    contents += '</div>'
+    $('#contentsArea').removeAttr('class');
+    $('#contentsArea').addClass('BBSList');
+    $('#contentsArea').html(contents);
+    searchValue = $('.searchForm').serialize();
+    searchValue = '&'+searchValue;
+    ajaxAct(searchValue);
+//	loadingAct();
+}
+
+
+function ajaxAct(sortDatas,scHeight){
+//	loadingAct();
+    sortDatas = sortDatas ? sortDatas : '';
+    if(sortDatas != ''){
+        sortData = sortDatas
+    }
+    var listAjax = $.get(useApi,'page='+page+'&list='+listCount+sortData,function(data){
+        totalCount = data.totalCount;
+        var lists = '';
+        var j = totalCount;
+        if (totalCount != 0){
+            var i = 0;
+            var lectureDay = '';
+
+            var contents = '';
+            if(data.types == 'date'){
+                contents += '<div class="scrollArea">';
+                contents += '<table style="min-width:1360px;"><thead><tr>';
+                contents += '<th style="width:50px;">번호</th>';
+                contents += '<th style="width:200px;">수강기간</th>';
+                contents += '<th style="width:200px;">과정명</th>';
+                contents += '<th style="width:120px;">수강인원</th>';
+                contents += '<th style="width:120px;">수료인원</th>';
+                contents += '<th style="width:120px;">교육실시확인서</th>';
+                contents += '<th style="width:120px;">수료증</th>';
+                contents += '<th style="width:120px;">수료결과보고서</th>';
+                contents += '</tr></thead><tbody>';
+                contents += '<tr><td colspan=13>검색값을 선택하세요.</td></tr>';
+                contents += '</tbody></table>';
+                contents += '</div>';
+                var prevDay = '';
+                $.each(data.study, function(){
+                    if(this.lectureStart != prevDay){
+                        lists += '<tr class="BBSListBg" style="height:80px;">';
+                        lists += `<td></td>`;
+                        lists += `<td style="font-size:18px; font-weight:bold;">${this.lectureStart}</td>`;
+                        lists += `<td></td>`;
+                        lists += `<td></td>`;
+                        lists += `<td></td>`;
+                        lists += `<td></td>`;
+                        lists += `<td><a href="certificatePDF.php?lectureStart=${this.lectureStart}${searchValue}" target="_blank"><button>수료증</button></a></td>`;
+                        lists += `<td>`;
+                        lists += `<a href="resultDocumentPDF.php?lectureStart=${this.lectureStart}${searchValue}" target="_blank"><button>보고서</button></a>`;
+                        lists += '<br><br>';
+                        lists += `<a href="resultDocumentPDF.php?lectureStart=${this.lectureStart}${searchValue}&passOK=Y" target="_blank"><button>미수료 제외</button></a>`;
+                        lists += '</td>';
+                        lists += '</tr>';
+                    }
+                    lists += '<tr class="">';
+                    lists += `<td>${j}</td>`;
+                    lists += `<td>${this.companyName}</td>`;
+                    lists += `<td>${this.contentsName}</td>`;
+
+                    if(this.serviceType == '1'){
+                        lists += `<td>환급 : ${this.studyUser}</td>`;
+                        lists += `<td>환급 : ${this.passOkUser}</td>`;
+                    } else if(this.serviceType == '3'){
+                        lists += `<td>비환급(평가없음) : ${this.studyUser}</td>`;
+                        lists += `<td>비환급(평가없음) : ${this.passOkUser}</td>`;
+                    } else if(this.serviceType == '5'){
+                        lists += `<td>비환급(평가있음) : ${this.studyUser}</td>`;
+                        lists += `<td>비환급(평가있음) : ${this.passOkUser}</td>`;
+                    } else {
+                        lists += `<td>${this.studyUser}</td>`;
+                        lists += `<td>${this.passOkUser}</td>`;
+                    }
+                    lists += `<td><button onClick="window.open('accomplish.php?lectureStart=${data.study[i].lectureStart}&lectureEnd=${data.study[i].lectureEnd}&sort01=lecture03&sort02=lecture0302&companyCode=${this.companyCode}','수료증','width=740, height=900, menubar=no, status=no, titlebar=no, toolbar=no, scrollbars=yes, resizeable=no','printPop')">산업(근로자)</button>`;
+                    lists += `<br /><button onClick="window.open('accomplish.php?lectureStart=${data.study[i].lectureStart}&lectureEnd=${data.study[i].lectureEnd}&sort01=lecture03&sort02=lecture0301&companyCode=${this.companyCode}','수료증','width=740, height=900, menubar=no, status=no, titlebar=no, toolbar=no, scrollbars=yes, resizeable=no','printPop')">산업(감독)</button></td>`;
+                    lists += `<td><a href="certificatePDF.php?lectureStart=${this.lectureStart}&contentsCode=${this.contentsCode}${searchValue}" target="_blank"><button>수료증</button></a></td>`;
+                    lists += `<td>`;
+                    lists += `<a href="resultDocumentPDF.php?lectureStart=${this.lectureStart}&contentsCode=${this.contentsCode}${searchValue}" target="_blank"><button>보고서</button></a>`;
+                    lists += '<br><br>';
+                    lists += `<a href="resultDocumentPDF.php?lectureStart=${this.lectureStart}&contentsCode=${this.contentsCode}${searchValue}&passOK=Y" target="_blank"><button>미수료 제외</button></a>`;
+                    lists += '</td>';
+                    lists += '</tr>';
+
+                    prevDay = this.lectureStart;
+                    j--;
+                    i++;
+                })
+            } else {
+                contents += '<div class="scrollArea">';
+                contents += '<table style="min-width:1360px;"><thead><tr>';
+                contents += '<th style="width:50px;">번호</th>';
+                contents += '<th style="width:200px;">과정명</th>';
+                contents += '<th style="width:120px;">수강인원</th>';
+                contents += '<th style="width:120px;">수료인원</th>';
+                contents += '<th style="width:120px;">수료증</th>';
+                contents += '<th style="width:120px;">수료결과보고서</th>';
+                contents += '</tr></thead><tbody>';
+                contents += '<tr><td colspan=13>검색값을 선택하세요.</td></tr>';
+                contents += '</tbody></table>';
+                contents += '</div>';
+                lists += '<tr class="BBSListBg" style="height:80px;">';
+                lists += `<td></td>`;
+                lists += `<td></td>`;
+                lists += `<td></td>`;
+                lists += `<td></td>`;
+                lists += `<td><a href="certificatePDF.php?${searchValue}" target="_blank"><button>수료증</button></a></td>`;
+                lists += `<td>`;
+                lists += `<a href="resultDocumentPDF.php?${searchValue}" target="_blank"><button>보고서</button></a>`;
+                lists += '<br><br>';
+                lists += `<a href="resultDocumentPDF.php?${searchValue}&passOK=Y" target="_blank"><button>미수료 제외</button></a>`;
+                lists += '</td>';
+                lists += '</tr>';
+
+                $.each(data.study, function(){
+                    lists += '<tr class="">';
+                    lists += `<td>${j}</td>`;
+                    lists += `<td>${this.contentsName}</td>`;
+
+                    if(this.serviceType == '1'){
+                        lists += `<td>환급 : ${this.studyUser}</td>`;
+                        lists += `<td>환급 : ${this.passOkUser}</td>`;
+                    } else if(this.serviceType == '3'){
+                        lists += `<td>비환급(평가없음) : ${this.studyUser}</td>`;
+                        lists += `<td>비환급(평가없음) : ${this.passOkUser}</td>`;
+                    } else if(this.serviceType == '5'){
+                        lists += `<td>비환급(평가있음) : ${this.studyUser}</td>`;
+                        lists += `<td>비환급(평가있음) : ${this.passOkUser}</td>`;
+                    } else {
+                        lists += `<td>${this.studyUser}</td>`;
+                        lists += `<td>${this.passOkUser}</td>`;
+                    }
+                    lists += `<td><a href="certificatePDF.php?contentsCode=${this.contentsCode}${searchValue}" target="_blank"><button>수료증</button></a></td>`;
+                    lists += `<td>`;
+                    lists += `<a href="resultDocumentPDF.php?contentsCode=${this.contentsCode}${searchValue}" target="_blank"><button>보고서</button></a>`;
+                    lists += '<br><br>';
+                    lists += `<a href="resultDocumentPDF.php?contentsCode=${this.contentsCode}${searchValue}&passOK=Y" target="_blank"><button>미수료 제외</button></a>`;
+                    lists += '</td>';
+                    lists += '</tr>';
+
+                    j--;
+                    i++;
+                })
+            }
+            $('#contentsArea').removeAttr('class');
+            $('#contentsArea').addClass('BBSList');
+            $('#contentsArea').html(contents);
+
+        }else{
+            lists += '<tr><td class="notResult" colspan="13">검색 결과가 없습니다.</td></tr>'
+        }
+        $('.BBSList tbody').html(lists);
+//		pagerAct();
+//		loadingAct();
+        window.scrollTo(0,scHeight);
+    })
+}

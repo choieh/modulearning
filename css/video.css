@@ -1,0 +1,470 @@
+/* reset */
+/* 수강창용 */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+a {
+    text-decoration: none;
+}
+img {
+    vertical-align: bottom;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.hidden {
+    overflow: hidden;
+    display: inline-block;
+    position: absolute;
+    z-index: -1;
+    border: 0;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+}
+#skip {
+    position: relative;
+    z-index: 99;
+}
+#skip > a {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 35px;
+    background: #333;
+    color: #fff;
+    line-height: 35px;
+    text-align: center;
+    left: 0;
+    top: -35px;
+}
+#skip > a:focus, #skip > a:active {
+    top: 0;
+}
+
+input[type="text"], button, select {
+    outline: none;
+}
+button {
+    cursor: pointer;
+}
+
+
+/* ios대응 */
+html {
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+
+    /* text크기를 자동으로 조절하지 말아라 */
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    background: url('/plus/img/reset/select-arrow.png') no-repeat 99% 45%;
+
+}
+
+select::-ms-expand {
+    display: none;
+    /* 화살표없애기 for ie10, 11 */
+}
+
+
+a {
+    color: #333;
+}
+.txt_red {
+    color: red;
+}
+html {
+    font-size: 10px;
+}
+@media (max-width:  900px) {
+    html {
+        font-size: 8px;
+    }
+}
+
+video {
+    width: 90%;
+    margin: 0 auto;
+}
+
+iframe {
+    margin: 0 auto;
+}
+
+.video-wrap {
+    display: flex;
+    height: 100vh;
+}
+.video-wrap .video {
+    width: 78%;
+    position: relative;
+    background-color: #efefef;
+}
+.video-wrap .video .video-tit {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+.video-wrap .video .video-in {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+.video-wrap .video h1 {
+    padding-left: 20px;
+    font-size: 1.6rem;
+}
+.video-wrap .video .back {
+    padding-left: 20px;
+}
+.video-wrap .video .back img {
+    width: 30px;
+}
+.video-wrap .video .next-btn {
+    position: absolute;
+    bottom: -40px;
+    left: 5%;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.video-wrap .video .next-btn a {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+.video-wrap .video .next-btn a > img {
+    width: 20px;
+}
+.video-wrap .video .next-btn .right-btn {
+    justify-content: flex-end;
+}
+.video-wrap .video .next-btn .left-btn > img {
+    transform: rotate(180deg);
+}
+.video-wrap .video .full-s-btn {
+    position: absolute;
+    bottom: -30px;
+    right: 5%;
+    background: url(/plus/img/icon/full-screen.png) no-repeat center / 100%;
+    width: 26px;
+    height: 18px;
+}
+
+
+video {
+    max-height: 700px;
+}
+.object-fill {
+    object-fit: fill;
+}
+.video-tab {
+    width: 25%;
+}
+.tab-wrap {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.tab-wrap .video-tab-in {
+    display: none;
+    padding-top: 70px;
+}
+.tab-wrap .active .video-tab-in {
+    display: block;
+}
+.tab-wrap .btn {
+    display: none;
+}
+.tab-wrap .active .btn {
+    display: block;
+}
+.tab-wrap-box {
+    position: relative;
+}
+.tab-wrap-box .video-tab-in > li {
+    background-color: #efefef;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 5%;
+    margin: 5%;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.3);
+}
+.video-tab h3 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    /*width: 50%;*/
+    width: 25%;
+    font-size: 1.6rem;
+    color: #aaa;
+    text-align: center;
+    padding-top: 24px;
+    cursor: pointer;
+    height: 70px;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    background-color: #fff;
+}
+.video-tab .tab02 > h3 {
+    left: 25%;
+    /*left: 33%;*/
+}
+.video-tab .tab03 > h3 {
+    left: 50%;
+    /*left: 75%;*/
+}
+.video-tab .tab04 > h3 {
+    left: 75%;
+    /*left: 100%;*/
+}
+.video-tab .active h3 {
+    border-color: #F6B618;
+    color: #F6B618;
+    font-weight: 500;
+}
+.tab-wrap .active .video-tab-in {
+    max-height: 100vh;
+    overflow: auto;
+}
+.tab-wrap .active .video-tab-in > li > a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tab-wrap .active .video-tab-in > li > p {
+    color: #aaa;
+    font-size: 15px;
+    padding-top: 10px;
+}
+.tab-wrap .active .video-tab-in > li > a > img {
+    width: 20px;
+    height: 20px;
+}
+.tab-wrap .active .video-tab-in > li > strong {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 1.6rem;
+}
+.tab-wrap .active .video-tab-in > li > b {
+    color: #aaa;
+    font-size: 12px;
+    border: 1px solid #aaa;
+    padding: 2px 5px;
+    margin-top: 10px;
+    display: inline-block;
+}
+.tab-wrap .active .video-tab-in .tab-in-txt {
+    display: flex;
+    flex-wrap: wrap;
+}
+.tab-wrap .active .video-tab-in .tab-in-txt > li {
+    width: 50%;
+}
+.tab-wrap .active .video-tab-in .tab-in-txt > li > p {
+    color: #333;
+    font-size: 2rem;
+    padding-bottom: 10px;
+}
+.tab-wrap .active .video-tab-in .tab-in-txt > li > p > span {
+    color: #aaa;
+}
+.tab-wrap .active .video-tab-in .tab-btn > ul {
+    display: flex;
+    text-align: center;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+.tab-wrap .active .video-tab-in .tab-btn > ul li strong {
+    font-size: 2rem;
+}
+.tab-wrap .active .video-tab-in .tab-btn > ul li span {
+    display: block;
+    padding-top: 10px;
+    font-size: 1.6rem;
+    color: #aaa;
+}
+.tab-wrap .active .video-tab-in .tab-btn > ul li .star {
+    margin: 0 auto;
+    display: block;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    background: url(/plus/img/icon/star.png) no-repeat center center / 100%;
+    text-indent: -9999px;
+}
+.tab-wrap .active .video-tab-in .tab-btn > ul li .star.active {
+    background-image: url(/plus/img/icon/star_f.png);
+}
+.tab-wrap .active .video-tab-in .tab-btn > ul li .heart {
+    margin: 0 auto;
+    display: block;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    background: url(/plus/img/icon/heart_line_r.png) no-repeat center center / 100%;
+    text-indent: -9999px;
+}
+.tab-wrap .active .video-tab-in .tab-btn > ul li .heart.active {
+    background-image: url(/plus/img/icon/heart_line_r_f.png);
+}
+@media (max-width: 1300px) {
+    .video-wrap {
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+    .video-wrap .video {
+        width: 100%;
+    }
+    .video-tab {
+        width: 100%;
+    }
+    .video-wrap .video .video-in {
+        padding: 20px 0 50px;
+        position: static;
+        transform: translate(0, 0);
+    }
+    .tab-wrap .active .video-tab-in {
+        max-height: none;
+        overflow: hidden;
+    }
+    .tab-wrap-box .video-tab-in > li {
+        padding: 3%;
+        margin: 3%;
+    }
+    .video-wrap .video .full-s-btn {
+        display: none;
+    }
+}
+@media (max-width: 900px) {
+    .video-tab h3 {
+        height: 50px;
+        padding-top: 18px;
+    }
+    .video-wrap .video .video-tit {
+        height: 50px;
+    }
+    .video-wrap .video .back img  {
+        width: 20px;
+    }
+}
+
+
+/* 메모장 앱의 전체 스타일을 설정합니다. */
+.memo-app {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 5%;
+}
+
+/* 사용자가 메모를 입력할 수 있는 textarea의 스타일을 설정합니다. */
+.memo-input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border: 1px solid #efefef;
+}
+
+/* "Save Memo" 버튼의 스타일을 설정합니다. */
+#save-memo {
+    display: block;
+    background-color: #F6B618;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#save-consult {
+    display: block;
+    background-color: #F6B618;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+
+/* 저장된 메모들의 출력 영역 스타일을 설정합니다. */
+#memo-list {
+    margin-top: 20px;
+}
+
+.tab-wrap-box .video-tab-in #memo-list li {
+    background-color: #efefef;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 5%;
+    margin: 5%;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.3);
+}
+.tab-wrap-box .video-tab-in #memo-list .memo-x p {
+    text-align: center;
+}
+.tab-wrap-box .video-tab-in #memo-list .meno-btn {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 5px;
+    font-size: 1.4rem;
+}
+.tab-wrap-box .video-tab-in #memo-list .meno-btn button {
+    padding: 5px 12px;
+    background-color: #F6B618;
+    border-radius: 5px;
+    margin-left: 6px;
+}
+
+@media (max-width: 1300px) {
+    .memo-app {
+        margin: 3%;
+    }
+    .tab-wrap-box .video-tab-in #memo-list li {
+        margin: 3%;
+        padding: 3%;
+    }
+}

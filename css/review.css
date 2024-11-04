@@ -1,0 +1,82 @@
+#wrap_main {
+	width: 100%;
+	min-width: 1300px;
+	    font-family: "NanumSquareRound","Noto Sans KR", "맑은 고딕","AppleSDGothcNeo","AppleGothic", sans-serif;
+}
+.main_title {
+    font-family: "NanumSquare";
+    height: 45px;
+    line-height: 45px;
+    font-size: 30px;
+    font-weight: 400;
+    color: #30323e;
+    margin: 0px 0 20px 0;
+    text-align: center;
+}
+.main_title b {
+    font-weight: 600;
+}
+.bgGray {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    background: #f1f1f1;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+
+
+
+.review_wrap {
+	max-width: 1300px;
+	margin: 0 auto;
+}
+.review_wrap .review_slider .review_in_box {
+    position: relative;
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 20px;
+	box-sizing: border-box;
+	text-align: left;
+    width: 94%;
+    margin: 20px auto;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .1);
+}
+.review_wrap .review_slider .review_in_box::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 38px;
+    height: 34px;
+    background: url(/images/common/brown_quotes.png) no-repeat center;
+}
+.review_wrap .review_slider .review_in_box img {
+    margin: 0 auto;
+}
+.review_wrap .review_slider .review_in_box strong {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 3em;
+    font-weight: bold;
+}
+.review_wrap .review_slider .review_in_box p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-height: 1.3em;
+    height: 62.39px;
+}
+
+.review_slider .slick-dots li button:before {
+    content: "";
+    width: 13px;
+    height: 13px;
+    background-color: #595343;
+    border-radius: 10px;
+}

@@ -1,0 +1,271 @@
+/* 나눔고딕 */
+@import url("/font/font.css");
+
+
+/* open sans */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800);
+/* font-family:'Open Sans', sans-serif; */
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family:'Nanum Gothic', serif;
+	font-size: 12px;
+}
+input, button, select, textarea { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; outline:0; }
+button { cursor:pointer; background:none; border:none; padding:0; }
+button img, img { vertical-align:middle; }
+ul, ol { margin:0; padding:0; list-style:none; }
+h1, h2, h3, h4,p { margin:0; }
+
+#loginPage { background:url(/images/app/bg_login.jpg) center center no-repeat; background-size:cover; }
+#loginPage > h1 { width:220px; margin:71px auto 0; }
+#loginArea { margin:50px 0 30px; text-align:center; }
+#loginArea ul { margin-top:13px; font-size:0; }
+#loginArea ul > li { display:inline-block; vertical-align:top; padding:0 10px; font-size:13px; color:#7a7e82; }
+#loginArea ul > li img { vertical-align:top; }
+#loginArea ul > li + li { border-left:1px solid #a4a7aa; }
+#loginArea input { width:292px; height:50px; padding-left:10px; border:1px solid #ebebeb; background-repeat:no-repeat; background-size:17px auto; font-size:15px; color:#959595; }
+#loginArea input[type="password"] { margin-top:-1px; }
+#loginArea button { width:100%; max-width:292px; height:42px; margin-top:9px; background:#1c86eb; border:none; font-size:16px; color:#fff; }
+
+#loginFind { background:#bfd2e3; }
+header { position:fixed; overflow:hidden; top:0; width:100%; height:46px; line-height:46px; background:#293851; text-align:center; z-index:11; box-sizing:border-box; }
+header button { overflow:hidden; float:left; width:33px; height:22px; position:absolute; top:10px; left:14px; }
+header button.menu { width:18px; height:13px; top:16px; left:13px; }
+header button.btnClose { width:21px; height:21px; left:auto; right:16px; top:11px; }
+header img { width:100%; display:block; }
+header h1 { display:inline-block; font-size:19px; font-weight:700; color:#fff; }
+/*background-color: rgba( 0, 0, 0, 0.59 ); */
+/* nav */
+.GNBBg { display:none; position:fixed; top:0; bottom:0; width:100%; background-color: rgba( 0, 0, 0, 0.59 ); z-index:11;  }
+nav { position:fixed; top:0; left:-264px; bottom:0; z-index:111; }
+#GNB { width:234px; height:100%; background:#fff; }
+#GNB .logout { margin:8px 0 0 14px; font-size:12px; color:#9dabc2; }
+#GNB .logout img { margin-right:7px; }
+#GNB .userInfo { overflow:hidden; background:#293851; padding-bottom:26px; }
+#GNB .userInfo .logout { display:block; }
+#GNB .userInfo h1 { margin-top:22px; text-align:center; font-size:20px; font-weight:400; color:#c1cbdc; }
+#GNB .userInfo h1 strong { font-size:25px; font-weight:400; color:#fff; }
+#GNB .userInfo h2 { margin:22px 0 0 39px; padding:2px 0 2px 60px; background:url(/images/app/icon_gnb.png) 0 0 no-repeat; background-size:50px auto; font-size:16px; font-weight:400; line-height:22px; color:#9dabc2; }
+#GNB .userInfo h2 strong { font-size:21px; color:#fff; }
+#GNB .GNBList { padding:0 14px; }
+#GNB .GNBList > li { border-bottom:1px solid #ebebeb; background:url(/images/app/icon_gnbLink.png) right 21px no-repeat; background-size:8px auto; font-size:16px; line-height:53px; color:#3d3d3d; cursor:pointer; }
+#GNB .GNBList > li img { margin-right:11px; }
+
+/*
+.GNBClose { position:absolute; top:6px; left:243px; width:21px; height:21px; }
+*/
+.GNBClose { position:absolute; top:6px; left:200px; width:21px; height:21px; }
+.GNBClose img { display:block; width:100%; }
+
+#loginFindArea { overflow:hidden; margin:62px 15px 16px; padding:0 16px 25px 16px; background:#fff; border-bottom:2px solid #99a8b6; border-right:2px solid #99a8b6; border-radius:4px; text-align:center; }
+#loginFindArea h1 { width:141px; margin:29px auto 0; }
+#loginFindArea h1 img { width:100%; }
+#loginFindArea h2 { margin:13px 0 42px; font-size:12px; font-weight:400; color:#787878; }
+
+#loginFindArea table { margin-top:44px; width:100%; border-collapse:collapse; }
+#loginFindArea table th, #loginFindArea table td { font-size:14px; font-weight:400; text-align:left; color:#5e5e5e; }
+#loginFindArea table th { vertical-align:top; padding-top:11px; }
+#loginFindArea table td { padding-bottom:11px; }
+#loginFindArea table td span { display:inline-block; margin-top:3px; }
+#loginFindArea table input { padding:0 0 0 4px; height:39px; border:1px solid #d9d9d9; border-radius:4px; }
+#loginFindArea table input[type="text"], #loginFindArea table input.mobile  { width:100%; }
+#loginFindArea table input.tel { width:21%; }
+
+#loginFindArea button { width:100%; height:35px; margin-top:26px; background:#1c86eb; font-size:16px; color:#fff; }
+#loginFindArea button img { vertical-align:top; width:17px; margin-right:18px; }
+/*
+#loginFindArea form > h1 { font-size:10px; font-weight:normal; color:#565656; }
+#loginFindArea form > div { padding:5px 0; font-size:12px; text-align:left; }
+#loginFindArea form > div > h1 { display:inline-block; width:25%; margin:0; font-size:14px; font-weight:400; text-align:left; color:#5e5e5e; text-align:left; }
+#loginFindArea form input { padding:0 0 0 4px; width:70%; height:39px; border:1px solid #d9d9d9; border-radius:4px; }
+#loginFindArea form > div .tel  { width:14%; ime-mode:disabled }
+#loginFindArea form > div > input.email { width:32%; }
+#loginFindArea form > div > strong { display:block; margin-top:5px; padding-left:25%; }
+*/
+#loginFindArea ul { margin-top:14px; font-size:0; }
+#loginFindArea ul > li { display:inline-block; vertical-align:top; padding:0 10px; font-size:13px; color:#7a7e82; }
+#loginFindArea ul > li img { vertical-align:top; }
+#loginFindArea ul > li + li { border-left:1px solid #a4a7aa; }
+
+section { overflow:hidden; margin-top:46px; }
+/* 내강의실 주의사항 */
+.studyNotice { padding:17px 14px 16px; background:#1c86eb; }
+.studyNotice h1 { overflow:hidden; padding-bottom:13px; border-bottom:1px solid #4da4f7; line-height:1; }
+.studyNotice .user { font-size:23px; font-weight:400; color:#fff; }
+.studyNotice .lecture { float:right; font-size:13px; color:#9dcefd; }
+.studyNotice .lecture img { width:15px; margin-right:5px; }
+.studyNotice .lecture span { font-size:15px; color:#fff; }
+.studyNotice .lecture span .num { font-size:20px; font-weight:400; }
+.studyNotice h2 { margin-top:12px; font-size:12px; line-height:15px; font-weight:400; color:#9dcefd; }
+.studyNotice h2 span { color:#fff; }
+
+/* 진행중인 과정 */
+.studyListArea { overflow:hidden; background:#f3f3f3; padding:0 8px 30px; }
+.studyListArea > h1 { margin-top:10px; font-size:16px; color:#3d3d3d; }
+.studyListArea progress { vertical-align:top; width:30%; max-width:97px; height:8px; margin-top:5px; border-radius:4px; background-color:#91c0f9; }
+.studyListArea progress::-webkit-progress-bar { height:8px; border-radius:4px; box-shadow:inset 0px 2px 3px 0px rgba(0,0,0,0.15); background:#ededed; }
+.studyListArea progress::-webkit-progress-value { height:8px; border-radius:4px; background-color:#91c0f9; } 
+.studyListArea progress::-moz-progress-bar { vertical-align:top; width:30%; max-width:97px; height:8px; margin-top:5px; border-radius:4px; background-color:#91c0f9; }
+
+/* 과정리스트 정보 */
+.chapterNum, .chapterInfo, .play { display:table-cell; vertical-align:middle; }
+
+.studyList { margin-top:11px; }
+.studyList > li { overflow:hidden; border:1px solid #eaeaea; background:#fff; }
+.studyList > li + li { margin-top:3px; }
+.studyList .img { float:left; width:67px; height:67px; margin:21px 0 0 5px; border-radius:33px; background-position:center center; background-repeat:no-repeat; background-size:cover; }
+.studyInfo { float:left; width:72%; margin-left:10px; padding-bottom:16px; }
+.studyInfo h1 { overflow:hidden; width:100%; margin:19px 0 10px; font-size:22px;  color:#00205a; }
+
+.studyInfo h2 { margin-top:5px; font-size:14px; line-height:1.2; color:#737f99; }
+.studyInfo h2 span { font-weight:400; }
+.studyInfo h2 .blue { color:#1c86eb; }
+.studyInfo h3 { margin-top:2px; font-size:14px; font-weight:400; color:#737f99; }
+.studyInfo button { width:95%; margin-top:12px; max-width:244px; height:36px; line-height:34px; border:1px solid #e1e1e1; border-radius:5px; font-size:14px; color:#5b5b5b; }
+.studyInfo button span { float:right; display:inline-block; width:24%; border-left:1px solid #e1e1e1; }
+.studyInfo .chapter { margin-left:9px; }
+/* 과정 차시 리스트 */
+.chapterList { clear:both; border-top:3px solid #f3f3f3; background:#f3f3f3; }
+.chapterList > li { overflow:hidden; width:100%; background:#fff; border:1px solid #eaeaea; display:table; }
+.chapterList > li + li { margin-top:2px; }
+
+.chapterNum { width:71px; padding:10px 0; font-size:13px; color:#3d3d3d; text-align:center; }
+.chapterNum strong { display:inline-block; width:29px; height:29px; margin:0 2px 0 0; background:#ced3dc; border-radius:15px; font-size:14px; text-align:center; line-height:29px; color:#fff; }
+.chapterNum .blue { font-size:15px; color:#919cb0; }
+/* 과정 차시 정보 */
+.chapterInfo { margin-left:7px; padding:13px 0 10px 7px; border-left:1px dashed #c2c2c2; box-sizing:border-box; }
+.chapterInfo > h1 { font-size:15px; color:#8d96a6; }
+.chapterInfo > h2 { margin-top:2px; font-size:13px; color:#919cb0; font-weight:400; }
+.chapterInfo button { width:103px; height:25px; margin-top:2px; border:1px solid #e1e1e1; border-radius:5px; font-size:14px; color:#5b5b5b; }
+.chapterInfo button img { vertical-align:top; margin-right:8px; }
+.chapterInfo button.delete { width:80px; }
+.chapterList .play { width:30px; }
+.chapterList .play button { width:30px; height:25px; margin-right:6px; border:1px solid #e1e1e1; border-radius:4px; }
+.chapterList .play img { width:10px; display:block; margin:0 auto; }
+
+.chapterList .view .chapterNum strong { background:#9cc4eb; }
+.chapterList .view .chapterNum .blue { color:#1c86eb; }
+.chapterList .view .chapterInfo > h1 { color:#00205a; }
+.chapterList .view .chapterInfo button { color:#5b5b5b; }
+
+/* 강의 view */
+.viewNotice { padding:11px 14px 10px; background:#1c86eb; }
+.viewNotice > h1 { font-size:15px; font-weight:400; color:#9dcefd; }
+.viewNotice > h2 { font-size:18px; color:#fff; }
+#viewMovie { position:relative; padding:10px 8px; background:#f3f3f3; }
+#viewMovie video { display:block; width:100%; height:206px; background:#000; }
+.videoNotice { position:absolute; top:10px; left:8px; right:8px; height:206px; background:#000; text-align:center; }
+.videoNotice p { margin-top:46px; font-size:15px; line-height:21px; color:#fff; }
+.videoNotice .btnVideo { margin-top:21px; }
+.videoNotice button { width:112px; height:41px; border:1px solid #1c86eb; border-radius:56px; font-size:20px; font-weight:700; color:#fff; }
+.videoNotice button.blue { background:#1c86eb; margin-left:16px; }
+
+.videoControl { position:relative; overflow:hidden;  background:#1a2029; text-align:center; padding:6px 0; }
+.videoControl .btnPrev, .videoControl .btnNext { width:33px; height:33px; }
+.videoControl .videoList { position:absolute; top:16px; right:11px; width:18px; height:13px; }
+.videoControl button img { display:block; width:100%; }
+.videoControl .controlNum { display:inline-block; vertical-align:top; padding:0 42px; margin-top:8px; font-size:14px; line-height:1; color:#93989f; }
+.videoControl .controlNum strong { color:#fff; }
+
+.viewInfo { border:1px solid #eaeaea; padding:6px 16px; background:#fff; }
+.viewInfo > li { padding-bottom:15px; }
+.viewInfo > li + li { border-top:1px solid #e1e1e1; }
+.viewInfo > li > h1 { margin-top:11px; font-size:16px; color:#00205a; }
+.viewInfo > li > p { margin-top:10px; font-size:14px; line-height:17px; }
+
+/* 캡챠 */
+.captchaBg { background:#f3f3f3; }
+.captcha { margin:9px 8px; padding:0 11px 22px; border:1px solid #eaeaea; background:#fff; text-align:center; }
+.captcha h1 { margin-top:16px; font-size:20px; color:#00205a; }
+.captcha h2 { margin-top:8px; font-size:14px; line-height:17px; color:#737f99; }
+.captchaInfo { margin-top:19px; text-align:center; font-size:0; }
+.captchaInfo > li { display:inline-block; vertical-align:top; width:30%; font-size:14px; line-height:17px; color:#5b5b5b; box-sizing:border-box; }
+.captchaInfo > li:first-child { width:40%; }
+.captchaInfo > li img { height:35px; margin-bottom:4px; }
+.captchaInfo > li + li { background:url(/images/app/bg_captcha.png) left bottom no-repeat; background-size:1px auto; }
+.capchaImg { margin-top:20px; height:62px; }
+#btnRefresh, #btnVoice  { width:40%; max-width:127px; height:24px; margin-top:20px; background:#efefef; border:1px solid #999; color:#565656; }
+.capchaArea { margin-top:16px; padding:0 20px 20px; border:1px solid #ccc; }
+.capchaArea h1 { padding-top:7px; border-top:1px dashed #ccc; font-size:16px; font-weight:400; color:#1c86eb; }
+.capchaArea input[type="text"] { margin-top:12px; padding:0 4px; border:1px solid #999; width:227px; height:28px; }
+.capchaArea #btnConfirm { width:227px; height:36px; margin-top:5px; background:#1c86eb; border:none; font-size:18px; font-weight:700; color:#fff; }
+
+/* 공지사항 */
+.boardList { margin:9px 8px 0; }
+.boardList > li { padding:0 12px; border:1px solid #eaeaea; background:#fff; }
+.boardList > li + li { margin-top:3px; }
+.boardList > li > h1 { margin-top:8px; font-size:15px; line-height:20px; color:#00205a; }
+.boardList > li > h2 { margin:2px 0 11px; line-height:17px; font-size:14px; font-weight:400; color:#737f99; }
+.boardList > li .new { display:inline-block; vertical-align:top; width:17px; height:17px; margin-left:6px; border-radius:9px; text-align:center; background:#1c86eb; font-size:12px; line-height:17px; color:#fff; }
+.boardView { padding:0 0 14px; border-top:1px solid #e1e1e1; }
+.boardView p, .boardView div { font-size:14px; line-height:20px; color:#5b5b5b; }
+.boardView p img, .boardView div img { width:100%; }
+.boardView p:first-child, .boardView div:first-child { margin-top:14px; }
+.btnMore { margin:7px 0 14px;text-align:center; font-size:15px; }
+.btnMore button { color:#1c86eb; }
+.btnMore button img { margin-right:10px; }
+.btnMore span { margin-left:14px; color:#818181; }
+
+/* 1:1 문의 */
+.mantoman { margin:9px 8px 0; }
+.mantomanList > li { overflow:hidden; padding:0 12px; border:1px solid #eaeaea; background:#fff; }
+.mantomanList > li + li { margin-top:3px; }
+.mantomanList > li > h1 { margin-top:8px; font-size:15px; line-height:20px; color:#00205a; }
+.mantomanList > li > h2 { float:left; margin:2px 0 11px; line-height:17px; font-size:14px; font-weight:400; color:#737f99; }
+.mantomanList > li > h3 { float:right; margin-top:2px; font-size:14px; font-weight:400; color:#323232; }
+.mantomanList > li > h3 .end { color:#1c86eb; }
+.mantomanView { display:none; clear:both; padding:0 0 14px; border-top:1px solid #e1e1e1; }
+.mantomanView p, .mantomanView div { font-size:14px; line-height:20px; color:#5b5b5b; }
+.mantomanView p img, .mantomanView div img { width:100%; }
+.mantomanView .question, .mantomanView .answer { padding-left:31px; background-repeat:no-repeat; background-position:0 3px; background-size:24px auto; }
+.mantomanView .question { margin-top:6px; background-image:url(/images/app/icon_question01.png);  }
+.mantomanView .answer { margin-top:8px; background-image:url(/images/app/icon_answer01.png); }
+.btnMantoman { width:100%; height:36px; margin-top:8px; background:#1c86eb; font-size:18px; color:#fff; }
+
+/* 1:1 문의 글쓰기 */
+.mantomanWrite { padding:8px;  }
+.mantomanTable { width:100%; padding:21px 21px 16px 21px; background:#fff; border-spacing:0; border:1px solid #eaeaea; } 
+.mantomanTable th { width:20%; text-align:left; font-size:14px; line-height:33px; color:#323232; }
+.mantomanTable td { text-align:left; font-size:14px; color:#595959; }
+.mantomanTable .lineNone { border:none; }
+.mantomanTable tr + tr th, .mantomanTable tr + tr td { border-top:1px solid #ccc; }
+.mantomanTable select, .mantomanTable input, .mantomanTable textarea { padding-left:4px; height:31px; border:1px solid #bababa; background:#fff; margin-bottom:5px; }
+.mantomanTable input[type="text"] { width:100%; }
+.mantomanTable textarea { width:100%; height:73px; }
+.mantomanTable .tel { width:25%!important; }
+.mantomanWrite .btnArea { margin-top:7px; font-size:0; }
+.mantomanWrite .btnArea button { width:48%; background:#1c86eb; height:36px; font-size:18px; font-weight:700; color:#fff; }
+.mantomanWrite .btnArea button.gray { margin-left:4%; background:#878c94; }
+/* 동영상 풀사이즈 */
+.videoFull { overflow:hidden; position:fixed; top:0; height:100%; width:100%; background:url(/images/app/bg_videoFull.png) 0 0 no-repeat; background-size:cover; text-align:center; }
+.videoFull .fullClose { position:absolute; right:10px; top:10px; width:21px; height:21px; }
+.videoFull .fullClose img { width:100%; }
+.fullControls { display:inline-block; }
+.btnVideoFull { margin-top:50px; }
+.btnVideoFull button { text-align:center; padding:0 10px; font-size:16px; line-height:1; color:#d1d4d7; }
+@media screen and (max-width: 639px) {
+.btnVideoFull button { padding:0 3px; }
+}
+.btnVideoFull button img { display:block; width:42px; height:42px; margin:0 auto 11px; }
+.videoPage { margin-top:18px; font-size:33px; color:#fff; }
+.fullListArea { float:right; width:57%; height:100%; margin-right:-60%; position:relative; }
+.fullListArea .closeFull { position:absolute; top:50%; left:-16px; margin-top:-39px; z-index:1; width:20px; height:78px; }
+.fullListArea .closeFull img { width:100%; display:block; }
+.fullList { overflow:auto; height:100%; padding:0 7px 10px; text-align:left; background-color: rgba( 0, 0, 0, 0.5 ); box-sizing:border-box; }
+.fullList > h1 { margin-top:17px; line-height:24px; font-weight:700; font-size:19px; color:#fff; }
+.fullList .chapterList { margin-top:7px; background:none; border:none; }
+
+/* Paser */
+.pager { overflow:hidden; padding:5px 0; text-align:center; }
+.pager a, .pager b, .pager button { vertical-align:middle; background:#fff; }
+.pager button { width:26px; height:26px; margin:0; padding:3px; border:1px solid #dfdfdf; }
+.pager button img { width:20px; height:20px; vertical-align:middle; }
+.pager a, .pager b { display:inline-block; height:24px; margin:0 1px; padding:0 10px; border:1px solid #dfdfdf; text-align:center; line-height:24px; font-size:12px; font-weight:bold; }
+.pager a { color:#787878; text-decoration:none; }
+.pager b { color:#ec772d; }
+.pager a:hover { text-decoration:underline; }
+
+.videoMenu { position:absolute; top:0; right:15px; }
+.videoMenu button { width:42px; height:42px; margin-top:10px; border-radius:21px; background-color: rgba( 0, 0, 0, 0.45 ); color:#fff; }

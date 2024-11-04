@@ -1,0 +1,405 @@
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
+﻿
+/*basic*/
+html,body{height:100%;}
+article, aside, canvas, details, figcaption, figure, footer, header, main, menu, nav, section, summary {display: block;}
+body, html, div, p, span, strong, h1, h2, h3, h4, h5, h6, a, img, dd, dl, dt, li, ol, ul, fieldset, form, input, button, select, textarea, table, td, th, legend{margin:0;padding:0; box-sizing:border-box; letter-spacing:-1px;}
+body{font-family: 'Noto Sans KR', 'Roboto', 'Montserrat', "Apple SD Gothic Neo", sans-serif; font-weight:400; color:#323232; font-size:16px}
+body, button, input, select, table, textarea {color: #323232;}
+button, input, select{border: 0; border-radius: 0; font-family: 'Noto Sans KR', 'Roboto', 'Montserrat', "Apple SD Gothic Neo", sans-serif; font-size:16px; padding:12px; border:1px solid #ddd; vertical-align:middle;}
+select{padding:11px 12px;}
+input:hover{border:1px solid #61564b;}
+
+a:link, a:visited{opacity:1; transition:all 0.3s ease-in-out; color: #323232; text-decoration: none}
+a:hover, a:active{opacity:.9; transition:all 0.3s ease-in-out; text-decoration: none; color:#555;}
+
+img {display: block; border: 0;}
+ol, ul {list-style: none}
+address, em {font-style: normal}
+
+h1,h2,h3,h4,h5,h6{font-family:'NanumSquare', '나눔스퀘어', 'Roboto', 'Montserrat', 'Noto Sans KR', "Apple SD Gothic Neo", sans-serif; font-weight:900}
+
+
+/* Clearfix hack*/
+.clearfix:before, .clearfix:after {content: " "; display:table;}
+.clearfix:after {clear:both;}
+
+
+/*font*/
+.f_size1{font-size:42px; }
+.f_size2{font-size:14px;}
+.f_c_red{color:#d83a0a !important}
+.txt_left{text-align:left;}
+.m_right10{margin-right:10px;}
+.m_right20{margin-right:17px;}
+.m_right30{margin-right:30px;}
+.m_top100{margin-top:100px;}
+.m_side5{margin:0 6px;}
+.m_side10{margin:0 9px;}
+.d_block{display:block !important; margin:0 auto;}
+.bg_color{background:#f5f5f5; padding:10px 0;}
+
+/*form*/
+input[type="checkbox"] {position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip:rect(0,0,0,0); border: 0 }
+input[type="checkbox"] + label { display: inline-block; position: relative; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; }
+input[type="checkbox"] + label:before {content: ' '; display: inline-block; width: 15px;height: 15px;line-height: 15px;margin: -2px 8px 0 0; text-align: center; vertical-align: middle; background: #f1f1f1; border: 1px solid #ddd;}
+input[type="checkbox"]:checked + label:before {content: '\2714';color: #fff; background: #61564b;}
+
+input[type="radio"] {}
+input[type="radio"] + label {}
+input[type="radio"] + label:before {}
+input[type="radio"]:checked + label:before {}
+
+.input_filled{background:#f5f5f5; color:#555;}
+.input_filled:hover{border:1px solid #ddd;}
+
+
+.width_2{width:20%;}
+.width_3{width:25%;}
+.width_7{width:75%; margin-bottom:10px;}
+.width_8{width:80%; margin-bottom:10px;}
+
+.width65{width:65px;}
+.width80{width:px;}
+.width100{width:100px;}
+.width120{width:120px;}
+.width130{width:130px;}
+.width140{width:140px;}
+.width150{width:150px;}
+.width180{width:180px;}
+.width200{width:200px;}
+.width210{width:210px;}
+.width300{width:300px;}
+.width400{width:490px;}
+.width500{width:567px;}
+.width600{width:634px;}
+
+/*btn*/
+.btn_001{text-align:center; vertical-align:middle;}
+.btn_001 a{padding:15px 0; color:#fff; display:inline-block; width:100%; background:#61564b; height:50px;}
+.btn_001 a:hover{background:#ffcc00; color:#323232}
+
+.btn_002{text-align:center;}
+.btn_002 a{padding:15px 0; color:#323232; display:inline-block; width:100%; background:#ffcc00; height:50px;}
+.btn_002 a:hover{background:#61564b; color:#fff}
+
+.btn_003{text-align:center; vertical-align:middle;}
+.btn_003 a{padding:15px 0; color:#fff; display:inline-block; width:100%; height:50px; padding-left:30px;}
+
+.btn_004{text-align:center; vertical-align:middle; display:inline-block;}
+.btn_004 a{padding:15px 0; color:#fff; display:inline-block; width:100%; height:50px; background:#61564b;}
+
+.btn_005{text-align:center; vertical-align:middle; display:inline-block;}
+.btn_005 a{padding:11px 0; color:#fff; display:inline-block; width:100%; height:46px; background:#999999;}
+
+.btn_calendar{text-align:center; vertical-align:middle; display:inline-block; width:46px; height:46px;}
+.btn_calendar a{width:46px; color:#fff; display:inline-block; width:100%; height:46px; background:#61564b url(../images/icon_calendar.png) no-repeat center; background-size:22px}
+
+
+/*table*/
+table{width:100%;}
+table th{padding:15px 0; background-color:#e0d2c7;}
+table td{text-align:center;}
+table td input[type="checkbox"] + label:before{margin:0 !important;}
+table tr:nth-child(odd){background-color:#f8f8f8;}
+table tr:nth-child(even){background-color:#ffffff;}
+
+
+/*pagenation*/
+.pagenation{font-size:12px; text-align:center; margin:30px 0;}
+.pagenation li{display:inline-block; height:30px; width:30px;}
+.pagenation li a{padding:6px; margin:2px; display:inline-block; width:100%; height:100%;} 
+.pagenation li a.select{background:#60564c; color:#fff;}
+
+
+
+/* /////////// 메인화면 //////////////*/
+#main_wrap{width:1200px; margin:50px auto;}
+
+/*logo*/
+.top_logo{width:450px; background:#ffcc00; height:146px; padding:30px 0; float:left;}
+.top_logo h1{background:url(../images/logo.png) no-repeat; margin-left:40px; padding-left:92px; height:84px; background-size:84px;}
+.top_logo h1 img{width:270px; padding-top:3px;}
+
+/*slide_img*/
+.slide_img{width:750px; height:500px; overflow:hidden; float:right; position: relative;}
+.slide_img p{position:absolute; top:48px; z-index:9999; font-size:48px; color:#fff; font-weight:600; text-shadow: 0 0 3px #777}
+.slide_img .slide_txt1{right:50px; text-align:right;}
+.slide_img .slide_txt1 span{font-size:30px; display:block; font-weight:500}
+.slide_img .slide_txt2{right:0; text-align:center; width:100%; font-size:46px;}
+.slide_img .slide_txt2 span{font-size:26px; display:block; font-weight:500}
+.slide_img img{width:100%;}
+
+
+/*left_block*/
+.left_block{float:left; height:254px; width:450px; padding:40px 40px 0; border-left:1px solid #ddd;}
+.left_block h2{font-size:36px; text-align:center; padding-bottom:20px; font-weight:800;}
+.study_btn{}
+.study_list{width:370px; height:100px;}
+.study_list li{position:relative;}
+.study_list li span{position:absolute; right:44px; top:35px; font-size:20px;}
+.study_list li span img{width:100%;}
+.study_list a{display:inline-block; background:#ddd; color:#323232; font-weight:700; width:100%; line-height:30px; padding:20px 44px;}
+.study_list a:hover{background:#61564b; color:#fff; }
+.list_page{height:8px; text-align:center;}
+.list_page li{height:8px; font-size:0; display:inline;}
+.list_page a{background:#bbbbbb; display:inline-block;border-radius:50%; width:8px; height:8px;}
+.list_page a.select{background:#61564b;}
+
+
+.quick_menu{float:left; width:450px;background:#61564b}
+.quick_menu li{float:left;width:33.3333%; text-align:center; height:100px;transition:all 0.3s ease-in-out; position:relative;}
+.quick_menu li span{width:1px; background:#71675d; height:52px;position:absolute; display:inline-block; top:24px;}
+.quick_menu a{display:inline-block; background:#61564b; width:100%; height:100%; color:#fff}
+a.quick_bg1{background:url(../images/main_quick_1.png)no-repeat; background-position:center 20px; background-size:25%; padding-top:60px;}
+a.quick_bg2{background:url(../images/main_quick_2.png)no-repeat; background-position:center 20px; background-size:25%; padding-top:60px;}
+a.quick_bg3{background:url(../images/main_quick_3.png)no-repeat; background-position:center 20px; background-size:25%; padding-top:60px;}
+.quick_menu li:hover{background:#71675d;transition:all 0.3s ease-in-out;}
+
+
+
+/*bottom_block*/
+.bottom_block{height:284px}
+.bottom_block h3{font-size:30px;}
+.bottom_block li{line-height:46px; border-bottom:1px solid #ddd; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; height:47px;}
+.bottom_block li a:hover{text-decoration:underline;}
+.bbs_more{position:absolute; top:30px; right:40px; font-size:12px; border:1px solid #b8b8b8; display:inline-block; padding:5px 12px;}
+.bbs_more a{display:inline-block; width:100%; height:100%;}
+.notice{padding:30px 40px 30px 30px; border-left:1px solid #ddd; float:left; width:470px; position:relative; border-bottom:1px solid #ddd;}
+.notice h3{background:url(../images/main_notice.png) no-repeat 0 3px; background-size:28px; padding-left:35px;}
+
+.faq{width:430px; float:left; padding:30px 40px 30px 0; position:relative; border-bottom:1px solid #ddd;}
+.faq h3{background:url(../images/main_faq.png) no-repeat 0 3px; background-size:28px; padding-left:35px;}
+.faq .f_c_red{display:inline-block; padding-right:10px;}
+
+.cscenter{width:300px; background:#dfd2c6 url(../images/main_call.png) no-repeat 120px 110px; float:left; height:100%; padding:30px; background-size:50%;}
+.cs_number{font-family:'Roboto', 'Montserrat', "Apple SD Gothic Neo", sans-serif; font-weight:800; padding-top:10px;}
+.cs_time{padding-top:70px}
+
+
+
+/* /////////////////// *로그인페이지* ///////////////////////////*/
+#header{background:#ffcc00; padding:50px 0; text-align:center;}
+#container{background:#f1f1f1; padding:50px 0;}
+#footer{width:950px; margin:30px auto;  color:#555;}
+
+
+/*header*/
+#header h1{background:url(../images/logo.png) no-repeat; padding-left:92px; height:84px; background-size:84px; width:365px; margin:0 auto;}
+#header h1 img{width:270px; padding-top:3px;}
+
+
+/*footer*/
+#footer address{font-size:12px; float:left; line-height:20px;}
+#footer address span{font-weight:600}
+#footer .cs_center{font-family:'NanumSquare', '나눔스퀘어', 'Roboto', 'Montserrat', 'Noto Sans KR', "Apple SD Gothic Neo", sans-serif; float:right; text-align:right; font-size:24px; font-weight:700; background:url(../images/main_call_2.png) no-repeat 0 8px; background-size:24px; padding-left:30px;}
+#footer .cs_center p span{font-family:'Roboto', 'Montserrat', "Apple SD Gothic Neo", sans-serif; font-weight:700; font-size:30px;}
+#footer .cs_center p:last-child{font-size:14px; font-weight:400; font-family:'Noto Sans KR', "Apple SD Gothic Neo", 'NanumSquare', '나눔스퀘어', 'Roboto', 'Montserrat', sans-serif; }
+
+#container label{display:inline-block;}
+
+
+
+
+/*container*/
+.login_form{width:950px; margin:30px auto;}
+.login_form h2{text-align:center; background:#60564c; color:#fff; font-size:30px; font-weight:700; padding:15px 0;}
+.login_admin, .find_id{float:left; width:460px; background:#fff;}
+.login_student, .find_pass{float:right; width:460px; background:#fff;}
+.login_input{padding:40px 40px 10px}
+.login_check{margin-left:115px;}
+.login_check p{display:inline-block;}
+.login_check p:nth-child(2){float:right; padding-right:40px;}
+.login_check a{text-decoration:underline;}
+.login_more{padding:30px 40px; text-align:center;}
+.login_more span{font-weight:600; padding:20px 20px 0; display:inline-block;}
+.login_more span a:hover{text-decoration:underline;}
+.block_btn{width:236px; margin:50px auto 0}
+
+
+
+
+
+
+/* ///////////////////// 학원회원등록 /////////////////////// */
+.join_wrap{width:1280px; margin:0px auto; font-size:18px; font-family:'NanumSquare', '나눔스퀘어', 'Roboto', 'Montserrat', 'Noto Sans KR', "Apple SD Gothic Neo", sans-serif;}
+.join_wrap h1{font-size:30px;}
+.join_wrap .join_wraptxt{padding:10px 0;}
+
+.search_block{margin:20px 0 50px;}
+.search_block select{}
+.search_block p{display:inline-block;}
+.search_table td{padding:20px;}
+.search_table input[type="checkbox"] + label:before {background: #fff;}
+.search_table input[type="checkbox"]:checked + label:before {background: #61564b;}
+
+
+.join_block{margin-top:20px}
+.join_block 
+.btn_phone{background:#61564b url(../images/icon_phone.png) no-repeat 30px center; display:inline-block; background-size:20px;}
+.btn_ipin{background: #61564b url(../images/icon_ipin.png) no-repeat 27px center; display:inline-block; background-size:23px;}
+
+
+.join_form{width:1280px; margin:50px auto; background:#fff; padding:80px; font-size:18px;}
+.join_form ul{margin:50px 0;}
+.join_form li{padding:10px 0;}
+.join_form li label{font-weight:600; width:170px;}
+.join_form li span{margin-left:10px;}
+.join_form label.f_c_red{margin-bottom:50px;}
+.join_form .btn_004 a{padding:11px 0;}
+
+
+
+
+/* /////////////////////////// 관리자페이지 //////////////////////////////// */
+#admin_wrap{font-size:16px; width:100%;}
+#admin_wrap input{padding:10px;}
+#admin_wrap select{padding:9px 10px;}
+#admin_wrap .btn_004 a{padding:11px 0; height:46px;}
+
+#admin_header{width:100%;padding-bottom:50px; background:#ffcc00;}
+#admin_header h1{font-size:16px; padding:15px 20px; font-family: 'Noto Sans KR', 'Roboto', 'Montserrat', "Apple SD Gothic Neo", sans-serif; background:#fff7da; }
+
+#admin_wrap .btn_001{display:inline-block;}
+
+/*서브메뉴*/
+#admin_container{width:100%; height:100%; background:#f1f1f1;}
+.admin_sub{width:14%; padding-top:20px; float:left;}
+.admin_sub .admin_log{padding:20px; background:#fff; margin:0 20px 10px; text-align:center;}
+.admin_sub .admin_log span{font-weight:600}
+.admin_sub .btn_005{display:block; margin:0 auto; margin:0 20px;}
+.admin_sub .sub_menu{text-align:center; margin-top:50px; border-top:1px solid #ddd;}
+.admin_sub .sub_menu li{line-height:55px; border-bottom:1px solid #ddd;}
+.admin_sub .sub_menu .select{font-weight:600}
+
+/*학원관리자 시스템 수강등록*/
+.admin_contentes{float:left; width:86%; padding:30px 10px 50px 30px; position:relative; background:#fff;}
+.admin_tab{position:absolute; top:-55px; margin-left:-30px;}
+.admin_tab ul{margin-top:5px; padding-top:6px;}
+.admin_tab li{float:left; text-align:center;}
+.admin_tab li a{display:inline-block; padding:10px 20px;}
+.admin_tab li a:hover{opacity:1}
+.admin_tab li a.select{background:#fff}
+
+.admin_contentes h2{font-size:24px; margin-bottom:5px;}
+
+.admin_search01{padding:20px; border-top:1px solid #ddd; border-bottom:1px solid #ddd; margin:50px 0;}
+.admin_search01 .f_c_red{display:inline-block; vertical-align:middle; margin-left:10px;}
+
+.admin_table{margin-top:30px; min-width:1250px;}
+.admin_table td{padding:10px 0;}
+.admin_table .btn_005{width:80px;}
+.admin_table .btn_005 a{padding:11px 0;}
+
+.admin_contentes dl{width:100%; text-align:center; border-top:1px solid #ddd; border-bottom:1px solid #ddd; margin:50px 0;}
+.admin_contentes dt{float:left; width:16.6%; background:#f5f5f5; font-weight:600;padding:20px 0; }
+.admin_contentes dd{float:left; width:16.6%; padding:20px 0; }
+
+
+
+/*학원관리자 시스템 수강생관리*/
+.search_box{border:1px solid #ddd; padding:20px; width:100%; max-width:1000px; min-width:940px}
+.search_box li{border-bottom:1px solid #ddd; margin-bottom:10px; padding-bottom:10px;}
+.search_box li:last-child{margin-bottom:20px;}
+.search_box p, .search_box div, .search_box2 p, .search_box2 div{display:inline-block;}
+.search_box .bg_line, .search_box2 .bg_line{margin: 0 20px; width:1px; background:#ddd; vertical-align:middle; display:inline-block; height:16px;}
+.search_box input, .search_box select, .search_box2 input, .search_box2 select{vertical-align:baseline;}
+.search_box select, .search_box2 select{margin-left:-3px;}
+.search_box label, .search_box2 label{display:inline-block;}
+.search_box .btn_005, .search_box2 .btn_005{vertical-align:top}
+.search_box .btn_004, .search_box2 .btn_004{display:block; margin:0 auto;}
+
+
+/*지회관리자 시스템 수강생관리*/
+.right_align{float:right;}
+.admin_search02{padding:20px; border-top:1px solid #ddd; border-bottom:1px solid #ddd; margin-bottom:50px; min-width:800px; width:100%;}
+
+
+/*지회관리자 시스템 학원정보관리*/
+.search_box2{border:1px solid #ddd; padding:20px; width:986px;}
+.search_box2 .btn_004{margin-top:20px;}
+
+/*지회관리자 시스템 학원정보등록*/
+.admin_joinform h2{border-bottom:2px solid #555; padding-bottom:15px;}
+.admin_joinform ul{margin-bottom:40px;}
+.admin_joinform li{padding:10px 20px; border-bottom:1px solid #ddd;}
+.admin_joinform label{display:inline-block; width:180px; font-weight:600; vertical-align:top; padding-top:10px;}
+.admin_joinform select{margin-left:-3px;}
+.admin_joinform .f_c_red{margin-left:5px;}
+.admin_joinform div{display:inline-block;}
+.admin_joinform div p:first-child{margin-bottom:10px;}
+
+
+
+
+
+
+/*-----------------------max 768px----------------------*/
+@media screen and (max-width: 768px) {
+/*메인페이지 태블릿*/
+
+}
+
+
+
+
+
+
+
+/*-----------------------max 425px----------------------*/
+@media screen and (max-width: 425px) {
+/*메인페이지 모바일*/
+#main_wrap{width:100%; margin:0;}
+.top_logo{width:100%; padding:40px 0 30px; float:none; height:100%; text-align:center;}
+.top_logo h1{padding-left:65px; height:60px; background-size:60px; display:inline-block; width:auto; margin-left:0;}
+.top_logo h1 img{width:200px; padding-top:0;}
+
+.slide_img{width:100%; height:100%; float:none;}
+.slide_img p{font-size:24px; right:30px; top:30px;}
+.slide_img .slide_txt1{right:50px; text-align:right;}
+.slide_img .slide_txt1 span{font-size:16px; display:block; font-weight:500}
+.slide_img .slide_txt2{right:0; text-align:center; width:100%; font-size:22px;}
+.slide_img .slide_txt2 span{font-size:14px; display:block; font-weight:400}
+
+
+.left_block{width:100%; float:none; padding:40px; 20px;}
+.left_block h2{font-size:30px;}
+.study_btn{}
+.study_list{width:100%;}
+.study_list a{padding:20px 30px;}
+.study_list li span{right:30px;}
+
+.quick_menu{width:100%;}
+
+.bottom_block{height:auto;}
+.notice{width:100%; padding:30px 20px; border-left:none; float:none; border-bottom:none;}
+.bbs_more{right:30px; top:25px;}
+.faq{width:100%; padding:20px; border-bottom:none; float:none;}
+.cscenter{width:100%; margin-top:40px; float:none; background-size:30%; background-position:90% 70%;}
+.cs_time{padding-top:30px;}
+
+
+
+/*로그인페이지 모바일*/
+#header{height:100%; padding:35px 0 30px;}
+#header h1{padding-left:65px; height:60px; background-size:60px; display:inline-block; width:auto;}
+#header h1 img{width:200px; padding-top:0;}
+
+#container{width:100%; padding:20px 0;}
+.login_form{width:100%;}
+.login_admin, .login_student, .find_id{float:none; width:90%; margin:0 auto 50px;}
+.find_pass{float:none; width:90%; margin:0 auto;}
+.login_form h2{font-size:24px;}
+.login_input{padding:20px 20px 10px}
+.login_check{padding-left:23%; margin:0;}
+.login_check p:nth-child(2){padding-right:20px;}
+.login_more{padding:20px;}
+.login_more span{padding:10px 10px 0}
+.block_btn{margin:50px auto;}
+
+#footer{width:100%; margin:20px auto;}
+#footer address{font-size:10.5px; float:none; padding:20px}
+#footer .cs_center{float:none; text-align:left; margin-left:20px;}
+
+}
