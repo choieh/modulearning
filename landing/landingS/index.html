@@ -1,14 +1,16 @@
+<?
+//ini_set('display_errors', 1);
+include '../lib/header.php';
+$managerID = $_GET['code'];
+
+$sql = "select landingTel from nynMember where userID = '".$managerID."'";
+$res = mysql_query($sql);
+$tel = mysql_result($res,0,"landingTel");
+
+?>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PK297RLF');</script>
-<!-- End Google Tag Manager -->
-
 <title>모두의러닝｜법정의무교육</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -59,7 +61,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <!-- HEADER -->
 	<header class="">
-		<h1 class="w100 h100"><a href="https://modulearning.kr/main/index.php" class="flex_cnt items_cnt w100 h100"><img src="./img/comm__logo.png" alt="모두의러닝"></a></h1>
+		<h1 class="w35 h100"><a href="https://modulearning.kr/main/index.php" class="flex_cnt items_cnt w100 h100"><img src="./img/comm__logo.png" alt="모두의러닝"></a></h1>				
 	</header>
   <!-- //HEADER -->
   <!-- MAIN CONT -->
@@ -233,7 +235,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<!-- <form id="user_form"> -->
 						<form class="writeForm" id="writeForm">
 							<input type="hidden" name="in" class="form-control" value="<?=$_GET['in']?>" />
-							<input type="hidden" name="consultType" class="form-control" value="23" />							
+							<input type="hidden" name="code" class="form-control" value="<?=$managerID?>" />
+							<!-- <input type="hidden" name="consultType" class="form-control" value="23" /> -->
 							<div class="input_container required">
 								<label for="company">기업명</label>
 								<input type="text" id="company" name="companyName" class="form-control w100" required />
@@ -453,7 +456,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 				if(confirm('등록하시겠습니까?')){
 					$.ajax({
-						url: '/api/apiConsultNew2.php',
+						url: '/api/apiConsultLandingS.php',
 						type:'POST',
 						data: formData,
 						//processData: false,
@@ -461,7 +464,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						dataType:'text',
 						success:function(data){	
 							alert('상담 문의가 등록되었습니다. 담당자 확인 후 연락 드리겠습니다.');										
-							location.reload();
+							//location.reload();
 							//location.href = "https://modulearning.kr/modube/";
 						
 						},

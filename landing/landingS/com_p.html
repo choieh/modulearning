@@ -1,0 +1,29 @@
+<? include $_SERVER['DOCUMENT_ROOT'].'/include/header.html'; ?>
+
+	<div class="com_wrap">
+		<div class="com_in">
+			<div class="logo"><img src="img/logo.jpg" alt="logo"></div>
+			<div class="check"><img src="img/check_icon.png" alt="check_icon"></div>
+			<p>상담 문의 등록이 완료되었습니다. <br>모두의러닝 고객센터에서 신속히 확인하여 연락드리겠습니다.</p>
+			<button class="btn" onclick="location.href='/'">확인</button>
+		</div>
+	</div>
+
+<!-- 전환페이지 설정 -->
+<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script> 
+<script type="text/javascript"> 
+var _nasa={};
+if(window.wcs) _nasa["cnv"] = wcs.cnv("5","1"); // 전환유형, 전환가치 설정해야함. 설치매뉴얼 참고
+</script> 
+
+<!-- Enliple Tracker Start -->
+<script type="text/javascript">
+(function(a,g,e,n,t){a.enp=a.enp||function(){(a.enp.q=a.enp.q||[]).push(arguments)};n=g.createElement(e);n.defer=!0;n.src="https://cdn.megadata.co.kr/dist/prod/enp_tracker_self_hosted.min.js";t=g.getElementsByTagName(e)[0];t.parentNode.insertBefore(n,t)})(window,document,"script");
+enp('create', 'conversion', 'KIRAHRD20', { device: 'b', convType: 'etc', productName: 'join'}); // 디바이스 타입  W:웹, M: 모바일, B: 반응형
+enp('send', 'conversion', 'KIRAHRD20', { device: 'b', convType: 'etc', productName: 'join'});
+</script>
+<!-- Enliple Tracker End -->
+
+
+
+<? include $_SERVER['DOCUMENT_ROOT'].'/include/footer.html'; ?>	

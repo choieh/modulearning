@@ -1,0 +1,511 @@
+<?
+//ini_set('display_errors', 1);
+include '../lib/header.php';
+$managerID = $_GET['code'];
+
+$sql = "select landingTel from nynMember where userID = '".$managerID."'";
+$res = mysql_query($sql);
+$tel = mysql_result($res,0,"landingTel");
+
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>모두의러닝｜법정의무교육</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+    <!-- seo meta -->
+    <meta name="description" content="모두의러닝｜법정의무교육">
+    <meta name="keywords" content="모두의러닝, 관리감독자, 법정의무교육">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="url입력">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="모두의러닝｜법정의무교육">
+    <meta property="og:url" content="url입력">
+    <meta property="og:image" content="./img/og__img.png">
+    <meta property="og:description" content="모두의러닝｜법정의무교육">
+    <meta property="og:site_name" content="모두의러닝｜법정의무교육">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <!-- //seo meta -->
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <!-- //favicon -->
+    <!-- style -->
+    <link rel="stylesheet" href="./css/root.css">
+    <link rel="stylesheet" href="./fonts/pretendard.css">
+    <link rel="stylesheet" href="./fonts/nexonLv2.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <!--<link rel="stylesheet" href="./css/pages.css">-->
+    <link rel="stylesheet" href="./css/pages_241101.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/scroll-out.css">
+    <!-- //style -->
+    <!-- script -->
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/scroll-out.min.js"></script>
+    <!-- //script -->
+
+<body id="index" onselectstart="return false" ondragstart="return false">
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK297RLF"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- HEADER -->
+<header class="">
+    <div class="top_container">
+        <h1 class="h100"><a href="https://modulearning.kr/main/index.php" class="flex_cnt items_cnt w100 h100"><img
+                src="./img/comm__logo.png" alt="모두의러닝"></a></h1>
+        <div class="call">
+            <strong>1544-9335</strong>
+        </div>
+    </div>
+</header>
+<!-- //HEADER -->
+<!-- MAIN CONT -->
+<main class="main">
+    <section>
+        <article class="article_01">
+            <!-- <div class="blind">
+                <h1>고용노동부지정 위탁기관 모두의러닝 법정의무교육</h1>
+                <strong>법정의무교육은 선택이 아닌 의무!</strong>
+                <p>2024년 빈틈없이 꽉찬 새로워진 법정교육 개그맨, 아나운서, 전문가 콘텐츠로 함께합니다.</p>
+            </div>
+            <div class="img_wrap">
+                <img src="./img/img_01_pc.jpg" class="pc" alt="모두의러닝  법정의무교육">
+                <img src="./img/img_01_m.jpg" class="m" alt="모두의러닝  법정의무교육">
+            </div>
+            <a href="#mainProcInq" class="btn_link"><span class="blind">법정의무교육 문의하기</span></a>
+        </article> -->
+            <div class="blind">
+                <h1>고용노동부지정 위탁기관 모두의러닝 법정의무교육</h1>
+                <strong>법정의무교육은 선택이 아닌 의무!</strong>
+                <p>2024년 빈틈없이 꽉찬 새로워진 법정교육 개그맨, 아나운서, 전문가 콘텐츠로 함께합니다.</p>
+            </div>
+            <div class="img_wrap">
+                <img src="./img/pc_modu_edu_01_image.gif" class="pc" alt="모두의러닝  법정의무교육">
+                <img src="./img/mo_modu_edu_01_image.gif" class="m" alt="모두의러닝  법정의무교육">
+            </div>
+        </article>
+    </section>
+
+    <section>
+        <!-- <article class="article_02">
+            <div class="blind">
+                <strong>전 직원 1회 필수!</strong>
+                <h2>모두의러닝에서 업무 공백 없이 법정의무교육</h2>
+                <p>간편한 온라인 교육으로, 업무 공백 최소화!</p>
+                <p>오리지널 (연애인 /아나운서/ 전문가) 콘텐츠로 몰입감은 UP!</p>
+                <p>인사담당자가 편~한 기업맞춤 학습관리까지!</p>
+            </div>
+            <div class="img_wrap">
+                <img src="./img/img_02_pc.jpg" class="pc" alt="법정의무교육 크루소개">
+                <img src="./img/img_02_m.jpg" class="m" alt="법정의무교육 크루소개">
+                <p class="blind">지루한 법정교육은 NO! 천의 목소리를 가진 SNL크루 정성호와 상큼발랄 매력만점 박하윤 아나운서가 함께하는 직장인 리얼 토크쇼!</p>
+            </div>
+        </article>
+
+        <article class="article_03">
+            <div class="blind">
+                <strong>법정의무교육</strong>
+                <h2>모두의 러닝이 필요한 이유!</h2>
+                <ul>
+                    <li>
+                        <strong>최신 법령 반영 콘텐츠</strong>
+                        <p>매년 최신 개정 법령 및 사례에 맞춰 법정필수 교육 콘텐츠를 제작!</p>
+                    </li>
+                    <li>
+                        <strong>믿을 수 있는 고용노동부 인증기관</strong>
+                        <p>7년 연속 인증 우수기관 최신 정부지원 정책 바로 반영</p>
+                    </li>
+                    <li>
+                        <strong>FUN한 몰입도 있는 학습과정</strong>
+                        <p>몰입 안되고 지루한 콘텐츠는 NO! 연애인,전문가들의 재미있는 콘텐츠!</p>
+                    </li>
+                    <li>
+                        <strong>우리 기업 FIT한 맞춤 서비스</strong>
+                        <p>우리회사에 꼭 필요한 교육과정 제안부터, 학습관리, 교육이수 관리까지 맞춤관리!</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="img_wrap">
+                <img src="./img/img_03_pc.jpg" class="pc" alt="법정의무교육 모두의 러닝이 필요한 이유!">
+                <img src="./img/img_03_m.jpg" class="m" alt="법정의무교육 모두의 러닝이 필요한 이유!">
+            </div>
+        </article> -->
+
+        <article class="article_04">
+            <!-- <div class="img_wrap">
+                <img src="./img/img_04_tit.jpg " class="pc" alt="선택 NO, 필수 교육! 법정의무교육 반드시 들어야 합니다.">
+                <img src="./img/img_04_tit_m.jpg " class="m" alt="선택 NO, 필수 교육! 법정의무교육 반드시 들어야 합니다.">
+            </div>
+            <div class="swiper_container">
+                <div class="swiper eduSwiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <div class="img_wrap">
+                                <img src="./img/img_group_103_pc.png" alt="퇴직연금교육">
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img_wrap">
+                                <img src="./img/img_group_104_pc.png" alt="성희롱 예방교육">
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img_wrap">
+                                <img src="./img/img_group_105_pc.png" alt="산업안전보건교육">
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img_wrap">
+                                <img src="./img/img_group_106_pc.png" alt="개인정보보호교육">
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img_wrap">
+                                <img src="./img/img_group_107_pc.png" alt="장애인인식개선교육">
+                            </div>
+                        </li>
+                    </ul> -->
+            <div class="swiper_container">
+                <div class="swiper eduSwiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <div class="img_wrap">
+                                <img src="./img/contents01.png" alt="Fun하고 생생한 직장인 리얼 토크쇼
+                                            정성호, 박하윤과 함께하는 ”모두의 TALK”">
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img_wrap">
+                                <img src="./img/contents02.png " alt="한블리 한문철의
+                                            법정의무교육 시리즈
+                                            한문철의 현장 속으로!">
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img_wrap">
+                                <img src="./img/contents03.png "
+                                     alt="셀럽 변호사 손수호와 함께 사건속으로! 뉴스에서 접할 수 없었던 실감나는 변호사의 사건이야기!">
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img_wrap">
+                                <img src="./img/contents04.png " alt="이상한 변호사 우영우 에피소드의 원작 작가 신주영 변호사의 법정탐구">
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img_wrap">
+                                <img src="./img/contents05.png " alt="외국인 직장인을 위한 영문 과정, 법정의무교육은 모든 직원이 받아야 하는 교육!">
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </article>
+
+        <!-- <article class="article_05">
+            <div class="img_wrap">
+                <img src="./img/img_05_pc.jpg" class="pc" alt="우리기업 맞춤 서비스">
+                <img src="./img/img_05_m.png" class="m" alt="우리기업 맞춤 서비스">
+            </div>
+        </article> -->
+        <article class="article_05">
+            <div class="img_wrap">
+                <img src="./img/pc_modu_edu_03_image.jpg" class="pc" alt="우리기업 맞춤 서비스">
+                <img src="./img/mo_modu_edu_03_image.jpg" class="m" alt="우리기업 맞춤 서비스">
+            </div>
+        </article>
+
+    </section>
+    <!-- [D]문의사항 -->
+    <!-- [D] html 태그(input, select)에 필수값 확인 속성 추가 : required -->
+    <article id="mainProcInq">
+        <section>
+            <div class="cont flex_cnt m_flex_col gap_half">
+                <div class="sec_tit items_str m_flex_col gap_half w30 m_w100 pdT_max pdB_max pd_half">
+                    <h2 class="txt_size26 txt_extrabold mgB_half">서비스문의 및 제휴에 대해<br>궁금한 사항이 있으시면<br>언제든지 문의해 주세요.</h2>
+                    <p class="txt_size16 txt_regular">어떠한 내용이라도 좋습니다.<br>문의에 남겨주시면 친절히 답변 드리겠습니다.</p>
+                </div>
+                <div class="items_str m_flex_col gap_half w70 m_w100 pd_comm txt_size16">
+                    <!-- <form id="user_form"> -->
+                    <form class="writeForm" id="writeForm">
+                        <input type="hidden" name="in" class="form-control" value="<?=$_GET['in']?>"/>
+                        <input type="hidden" name="code" class="form-control" value="<?=$managerID?>"/>
+                        <!-- <input type="hidden" name="consultType" class="form-control" value="23" /> -->
+                        <div class="input_container required">
+                            <label for="company">기업명</label>
+                            <input type="text" id="company" name="companyName" class="form-control w100" required/>
+                        </div>
+                        <div class="input_container required fz0">
+                            <label for="company_type" class="txt_size16">기업유형</label>
+                            <select id="company_type" name="companyType"
+                                    class="option_box type_list w60 txt_size16 form-control" required>
+                                <option value="">선택</option>
+                                <option value="대기업">대기업</option>
+                                <option value="중견기업">중견기업</option>
+                                <option value="중소기업">중소기업</option>
+                                <option value="스타트업">스타트업</option>
+                                <option value="공공기관">공공기관</option>
+                                <option value="학교">학교</option>
+                                <option value="etc">기타</option>
+                            </select>
+                            <input type="text" id="type_text" class="w40 txt_size16 form-control" name="etc_type"
+                                   placeholder="기타 기업유형"/>
+                        </div>
+                        <div class="input_container required">
+                            <label for="emp_list">임직원수</label>
+                            <select id="emp_list" name="people_number" class="emp option_box w100 form-control"
+                                    required>
+                                <option value="">선택</option>
+                                <option value="50명 이하">~50명</option>
+                                <option value="100명 이하">~100명</option>
+                                <option value="200명 이하">~200명</option>
+                                <option value="500명 이하">~500명</option>
+                                <option value="1000명 이하">~1000명</option>
+                                <option value="1000명 이상">1000명 이상</option>
+                            </select>
+                        </div>
+                        <div class="input_container">
+                            <label for="user_af">소속</label>
+                            <input type="text" id="user_af" name="department" class="w100"/>
+                        </div>
+                        <div class="input_container required">
+                            <label for="user_name">이름</label>
+                            <input type="text" id="user_name" name="reg_name" class="w100 form-control" required/>
+                        </div>
+                        <div class="input_container">
+                            <label for="user_rank">직급/직책</label>
+                            <input type="text" id="user_rank" name="position" class="w100"/>
+                        </div>
+                        <div class="input_container required">
+                            <label for="user_tel">연락처</label>
+                            <input type="text" id="user_tel" name="tel" class="w100 form-control"
+                                   placeholder="010-1111-1111" required/>
+                        </div>
+                        <div class="input_container">
+                            <label for="user_email">이메일</label>
+                            <input type="text" id="user_email" name="emailPrefix" class="w33"/> &#64;
+                            <input type="text" id="domain_txt" name="customEmailDomain" class="w33"/>
+                            <select id="domain_list" class="option_box" name="emailDomain">
+                                <option value="">직접 입력</option>
+                                <option value="naver.com">naver.com</option>
+                                <option value="gmail.com">gmail.com</option>
+                                <option value="hanmail.net">hanmail.net</option>
+                                <option value="daum.net">daum.net</option>
+                                <option value="kakao.com">kakao.com</option>
+                                <option value="nate.com">nate.com</option>
+                            </select>
+                        </div>
+                        <div class="input_container user_message">
+                            <label for="message" class="subtitle">문의내용</label>
+                            <textarea id="message" class="w100 txt_size16" name="content" rows="10"></textarea>
+                        </div>
+                        <div class="input_container agree align_cnt pd_half">
+                            <input type="checkbox" name="checkYN" id="checkYN" value="Y" required>
+                            <label for="checkYN" class="txt_size16 txt_extrabold">개인정보처리방침에 동의합니다.</label>
+                            <a href="https://modulearning.kr/landing/member/privacy.html" class="terms_link txt_size12">약관
+                                확인하기</a>
+                        </div>
+                        <button type="button" class="btn_submit w100 btn btn_rnd btn_sm btn_ylw">상담신청하기</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </article>
+
+    <div class="customer_center_wrap">
+        <div class="center_info">
+            <strong>모두의러닝 고객지원센터</strong>
+            <span>( 평일 09:00 - 18:00 )</span>
+        </div>
+        <div class="call">
+            <strong>1544-9335</strong>
+        </div>
+    </div>
+</main>
+<!-- //MAIN CONT -->
+
+
+<!-- FOOTER -->
+<footer class="pdY_double flex_cnt items_cnt align_cnt txt_wht">
+    <div class="txt_size14">
+        <p class="mgB_half"><a href="./index.html"><img src="./img/comm__logo_wht.png" alt="모두의러닝" style="width:16rem"></a>
+        </p>
+        <p>주식회사 모두의교육그룹 | 대표자 : 이영신 | 주소 : 서울특별시 금천구 가산디지털1로 75-15, 6층 621-625호(가산동, 가 산 하우스디 와이즈타워)</p>
+        <p>TEL : 1544-9335 | 사업자등록번호 : 209-88-01773 | 통신판매업번호 : 2022-서울동작-1875</p>
+        <p>개인정보 관리책임자 : 이응민(eungmin2@lksc.kr) | 개인정보 보유기간 : 회원탈퇴시까지</p>
+        <p class="mgT_half"><small>COPYRIGHT 주식회사 모두의교육그룹 ALLRIGHT & RESERVED.</small></p>
+    </div>
+</footer>
+<!-- //FOOTER -->
+
+
+<!-- 페이지별 script -->
+<script>
+
+    // 교육 swiper
+    var swiper = new Swiper(".eduSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        freeMode: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 3,
+            }
+        }
+    });
+
+    // [D]기업유형 : select 옵션 선택값이 없을 때와 '기타' 선택하였을때 입력필드 나타남.
+    const company_type = document.querySelector("#company_type");
+    const type_text = document.querySelector("#type_text");
+    company_type.addEventListener('change', (event) => {
+        if (event.target.value === "" || event.target.value === "etc") {
+            type_text.style.display = "inline-block";
+            company_type.style.width = "60%";
+        } else {
+            type_text.style.display = "none";
+            company_type.style.width = "100%";
+        }
+    });
+
+
+    // [D]Email : '직접입력' 선택 시 입력필드 초기화.
+    const domainListEl = document.querySelector("#domain_list");
+    const domainInputEl = document.querySelector("#domain_txt");
+    domainListEl.addEventListener("change", (event) => {
+        if (event.target.value !== "") {
+            domainInputEl.value = event.target.value;
+            domainInputEl.disabled = true;
+        } else {
+            domainInputEl.value = "";
+            domainInputEl.disabled = false;
+        }
+    });
+
+    var requiredValue = {
+        consultType: "문의유형을 선택해주세요.",
+        place_list: "강의장을 선택해주세요.",
+        companyType: "기업유형을 선택해주세요.",
+        otherCompanyType: "기업유형을 입력해주세요.",
+        people_number: "임직원수를 선택해주세요.",
+        expect_number: "예상 교육인원을 입력해주세요.",
+        companyName: "기업명을 입력해주세요.",
+        department: "소속을 입력해주세요.",
+        reg_name: "이름을 입력해주세요.",
+        position: "직급/직책을 입력해주세요.",
+        tel: "연락처를 입력해주세요.",
+        emailPrefix: "이메일을 입력해주세요.",
+        emailDomain: "이메일을 입력해주세요.",
+        customEmailDomain: "이메일을 입력해주세요.",
+    };
+
+    $('.btn_submit').on('click', function () {
+
+        var formData = new FormData();
+        var data = $(".form-control:visible");
+        var checkYN = $('input:checkbox[id=checkYN]').is(':checked');
+        var checkOK = true;
+
+        data.each(function () {
+
+            var name = $(this).attr('name');
+            var value = $(this).val();
+
+            if (value.trim() == "" && name != 'position' && name != 'emailPrefix' && name != 'emailDomain' && name != 'customEmailDomain' && name != 'department' && name != 'etc_referral' && name != 'etc_opinion' && name != 'place_list') {
+                alert(requiredValue[name]);
+                checkOK = false;
+                return false;
+            } else {
+                if (name == 'tel') {
+                    var phoneRegex = /^(\d{2}-\d{3,4}-\d{4}|\d{3}-\d{3,4}-\d{4})$/;
+                    if (!(phoneRegex.test(value))) {
+                        alert('하이픈(-)과 같이 번호를 입력해주세요.');
+                        checkOK = false;
+                        return false;
+                    }
+                }
+                formData.append(name, value);
+                checkOK = true;
+            }
+        });
+
+        if (checkOK) {
+            if (checkYN == false) {
+                alert('개인정보 수집 이용에 동의 해 주세요');
+                return;
+            }
+        }
+
+
+        if (checkOK && checkYN) {
+
+            var visit_radio = $('input[name="visitPath"]:checked').attr('id');
+
+            formData.append("visitPath", visit_radio);
+            //formData.append("in","landing");
+
+            if (visit_radio == 'referral') {
+                var value = $('#etc_referral').val() || '';
+                formData.append(visit_radio, value);
+            }
+
+            if (visit_radio == 'etc') {
+                var value = $('#etc_opinion').val() || '';
+                formData.append(visit_radio, value);
+            }
+
+            var formData = $('#writeForm').serialize();
+
+            if (confirm('등록하시겠습니까?')) {
+                $.ajax({
+                    url: '/api/apiConsultLandingS.php',
+                    type: 'POST',
+                    data: formData,
+                    //processData: false,
+                    //contentType: false,
+                    dataType: 'text',
+                    success: function (data) {
+                        alert('상담 문의가 등록되었습니다. 담당자 확인 후 연락 드리겠습니다.');
+                        //location.reload();
+                        //location.href = "https://modulearning.kr/modube/";
+
+                    },
+                    fail: function () {
+                        alert('등록에 실패하였습니다.')
+                    }
+                })
+            } else {
+                return false;
+            }
+        }
+
+    });
+</script>
+<!-- //페이지별 script -->
+
+</body>
+<html>
