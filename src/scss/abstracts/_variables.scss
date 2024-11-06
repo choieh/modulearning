@@ -1,0 +1,38 @@
+// 색상, 폰트 크기 등 변수 정의
+
+//색상 팔레트
+$color-black: #000;
+$color-white: #fff;
+$color-yellow: #fdb515;
+$color-brown: #545046;
+$color-yellow-light: #fffaf0;
+$color-brown-light: #dcd3c8;
+$color-navy: #003362;
+$color-navy-light: #f1f2f5;
+$color-lavender: #c2c8e5;
+$color-lavender-light: #e6ebf2;
+$color-lavender-dark: #7879b9;
+$color-green: #c3dee7;
+$color-green-light: #e6f5f5;
+$color-green-dark: #558493;
+$color-blue: #ddecfd;
+$color-blue-light: #eef6ff;
+$color-blue-dark: #b8d6f8;
+$color-gray: #c2c2c2;
+$color-gray-light: #f7f6f6;
+$color-gray-dark: #7a7a7a;
+
+
+//역할 기반 색상 변수
+$primary-color-light: $color-yellow;
+$primary-color-bg-light: $color-yellow-light;
+$primary-color-dark: $color-brown;
+$primary-color-bg-dark: $color-brown-light;
+$secondary-color: $color-navy;
+$secondary-color-bg: $color-navy;
+$title-color: $color-black;
+$sub-title-color: $color-gray;
+$text-color-default: $color-black;
+$text-color-sub: $color-gray-light;
+$point-color: $color-lavender-dark; 
+

@@ -1,0 +1,37 @@
+$colorMain: #000;
+$colorPoint: #fdb515;
+$isMulti: true;
+
+$iconList: (
+        checkList: (
+                type: "multi",
+                content: "%3Csvg width='48' height='48' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='solar:checklist-minimalistic-linear'%3E%3Cg id='Group'%3E%3Cpath id='Vector' d='M5 22C5 13.0434 5 8.5651 7.7816 5.7816C10.567 3 15.0434 3 24 3C32.9566 3 37.4349 3 40.2165 5.7816C43 8.567 43 13.0434 43 22C43 30.9566 43 35.4349 40.2165 38.2165C37.4368 41 32.9566 41 24 41C15.0434 41 10.5651 41 7.7816 38.2165C5 35.4368 5 30.9566 5 22Z' stroke='%23#{$colorMain}' stroke-width='2'/%3E%3Cpath id='Vector_2' d='M13 28.72L15.0003 31L20 25.3M13 15.42L15.0003 17.7L20 12' stroke='%23#{$colorPoint}' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath id='Vector_3' d='M26 16H35M26 30H35' stroke='%23#{$colorMain}' stroke-width='2' stroke-linecap='round'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A"
+        ),
+        calendarSm: (
+                type: "single",
+                content: "%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none'%3E%3Cpath fill='%23#{$colorMain}' d='M22.5 2.245h-6.005V.75a.75.75 0 1 0-1.5 0v1.495h-6V.75a.75.75 0 1 0-1.5 0v1.495H1.5a1.5 1.5 0 0 0-1.5 1.5V22.5A1.5 1.5 0 0 0 1.5 24h21a1.5 1.5 0 0 0 1.5-1.5V3.745a1.5 1.5 0 0 0-1.5-1.5Zm0 20.255h-21V3.745h5.995v.756a.75.75 0 1 0 1.5 0v-.755h6V4.5a.75.75 0 1 0 1.5 0v-.755H22.5V22.5Zm-5.25-10.502h1.5a.75.75 0 0 0 .75-.75V9.746a.75.75 0 0 0-.75-.75h-1.5a.75.75 0 0 0-.75.75v1.5c0 .415.336.75.75.75Zm0 6h1.5a.75.75 0 0 0 .75-.75v-1.5a.75.75 0 0 0-.75-.75h-1.5a.75.75 0 0 0-.75.75v1.5c0 .415.336.75.75.75Zm-4.5-3h-1.5a.75.75 0 0 0-.75.75v1.5c0 .415.336.75.75.75h1.5a.75.75 0 0 0 .75-.75v-1.5a.75.75 0 0 0-.75-.75Zm0-6.001h-1.5a.75.75 0 0 0-.75.75v1.5c0 .415.336.75.75.75h1.5a.75.75 0 0 0 .75-.75v-1.5a.75.75 0 0 0-.75-.75Zm-6 0h-1.5a.75.75 0 0 0-.75.75v1.5c0 .415.336.75.75.75h1.5a.75.75 0 0 0 .75-.75v-1.5a.75.75 0 0 0-.75-.75Zm0 6h-1.5a.75.75 0 0 0-.75.751v1.5c0 .415.336.75.75.75h1.5a.75.75 0 0 0 .75-.75v-1.5a.75.75 0 0 0-.75-.75Z'/%3E%3C/svg%3E"
+        )
+);
+
+@function getSvgIcon($iconName, $colorMain: $main, $colorPoint: $point) {
+  $icon: map-get($iconList, $iconName);
+  @if $icon == null {
+    @error "Icon #{$iconName} not found";
+  }
+
+  $type: map-get($icon, type);
+  $content: map-get($icon, content);
+
+  @if $type == "multi" {
+    $content: str-replace($content, "%23#{$colorMain}", "%23#{$colorMain}");
+    $content: str-replace($content, "%23#{$colorPoint}", "%23#{$colorPoint}");
+  } @else if $type == "single" {
+    $content: str-replace($content, "%23#{$colorMain}", "%23#{$colorMain}");
+  }
+
+  @return url("data:image/svg+xml;charset=utf8,#{$content}");
+}
+
+@function svgIcon($iconName, $isBoolean: $isMulti, $colorMain: $colorMain, $colorPoint: $colorPoint) {
+  @return getSvgIcon($iconName, $colorMain, $colorPoint);
+}

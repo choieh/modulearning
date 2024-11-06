@@ -1,0 +1,18 @@
+/* Error: "Icon true not found"
+ *    ,
+ * 36 |   @return getSvgIcon($iconName, $colorMain, $colorPoint);
+ *    |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   abstracts\_icons.scss 36:11  svgIcon()
+ *   main.scss 19:21              root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: "Icon true not found"\a    \2577 \a 36 \2502    @return getSvgIcon($iconName, $colorMain, $colorPoint);\d\a    \2502            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   abstracts\\_icons.scss 36:11  svgIcon()\a   main.scss 19:21              root stylesheet';
+}

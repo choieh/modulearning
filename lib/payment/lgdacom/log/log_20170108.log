@@ -1,0 +1,1693 @@
+2017-01-08 13:27:44 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 13:27:44 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 13:27:44 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 13:27:44 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 13:27:44 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 13:27:44 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 13:27:44 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 13:27:44 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 13:27:44 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 13:27:44 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 13:27:44 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:27:44 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:27:44 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 13:27:44 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 13:27:44 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 13:38:13 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 13:38:13 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 13:38:13 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 13:38:13 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 13:38:13 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 13:38:13 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 13:38:13 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 13:38:13 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 13:38:13 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 13:38:13 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 13:38:13 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:38:13 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:38:13 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 13:38:13 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 13:38:13 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 13:39:13 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 13:39:13 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 13:39:13 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 13:39:13 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 13:39:13 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 13:39:13 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 13:39:13 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 13:39:13 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 13:39:13 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 13:39:13 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 13:39:13 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:39:13 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:39:13 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 13:39:13 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 13:39:13 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 13:39:51 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 13:39:51 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 13:39:51 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 13:39:51 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 13:39:51 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 13:39:51 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 13:39:51 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 13:39:51 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 13:39:51 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 13:39:51 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 13:39:51 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:39:51 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:39:51 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 13:39:51 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 13:39:51 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 13:44:29 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 13:44:29 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 13:44:29 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 13:44:29 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 13:44:29 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 13:44:29 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 13:44:29 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 13:44:29 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 13:44:29 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 13:44:29 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 13:44:29 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:44:29 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:44:29 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 13:44:29 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 13:44:29 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 13:45:23 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 13:45:23 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 13:45:23 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 13:45:23 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 13:45:23 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 13:45:23 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 13:45:23 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 13:45:23 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 13:45:23 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 13:45:23 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 13:45:23 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:45:23 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:45:23 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 13:45:23 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 13:45:23 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 13:45:31 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 13:45:31 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 13:45:31 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 13:45:31 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 13:45:31 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 13:45:31 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 13:45:31 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 13:45:31 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 13:45:31 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 13:45:31 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 13:45:31 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:45:31 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:45:31 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 13:45:31 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 13:45:31 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 13:45:35 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 13:45:35 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 13:45:35 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 13:45:35 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 13:45:35 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 13:45:35 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 13:45:35 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 13:45:35 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 13:45:35 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 13:45:35 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 13:45:35 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:45:35 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:45:35 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 13:45:35 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 13:45:35 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 13:45:59 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 13:45:59 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 13:45:59 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 13:45:59 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 13:45:59 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 13:45:59 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 13:45:59 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 13:45:59 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 13:45:59 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 13:45:59 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 13:45:59 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:45:59 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:45:59 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 13:45:59 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 13:45:59 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 13:46:01 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 13:46:01 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 13:46:01 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 13:46:01 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 13:46:01 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 13:46:01 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 13:46:01 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 13:46:01 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 13:46:01 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 13:46:01 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 13:46:01 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:46:01 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:46:01 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 13:46:01 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 13:46:01 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 13:46:19 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 13:46:19 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 13:46:19 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 13:46:19 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 13:46:19 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 13:46:19 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 13:46:19 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 13:46:19 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 13:46:19 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 13:46:19 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 13:46:19 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:46:19 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:46:19 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 13:46:19 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 13:46:19 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 13:46:24 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 13:46:24 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 13:46:24 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 13:46:24 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 13:46:24 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 13:46:24 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 13:46:24 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 13:46:24 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 13:46:24 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 13:46:24 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 13:46:24 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:46:24 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:46:24 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 13:46:24 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 13:46:24 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 13:46:58 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 13:46:58 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 13:46:58 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 13:46:58 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 13:46:58 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 13:46:58 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 13:46:58 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 13:46:58 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 13:46:58 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 13:46:58 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 13:46:58 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:46:58 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:46:58 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 13:46:58 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 13:46:58 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 13:47:43 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 13:47:43 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 13:47:43 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 13:47:43 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 13:47:43 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 13:47:43 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 13:47:43 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 13:47:43 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 13:47:43 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 13:47:43 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 13:47:43 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:47:43 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:47:43 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 13:47:43 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 13:47:43 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 13:47:45 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 13:47:45 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 13:47:45 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 13:47:45 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 13:47:45 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 13:47:45 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 13:47:45 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 13:47:45 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 13:47:45 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 13:47:45 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 13:47:45 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:47:45 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:47:45 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 13:47:45 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 13:47:45 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 13:47:53 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 13:47:53 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 13:47:53 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 13:47:53 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 13:47:53 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 13:47:53 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 13:47:53 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 13:47:53 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 13:47:53 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 13:47:53 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 13:47:53 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:47:53 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:47:53 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 13:47:53 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 13:47:53 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 13:52:21 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 13:52:21 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 13:52:21 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 13:52:21 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 13:52:21 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 13:52:21 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 13:52:21 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 13:52:21 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 13:52:21 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 13:52:21 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 13:52:21 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:52:21 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:52:21 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 13:52:21 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 13:52:21 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 13:52:23 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 13:52:23 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 13:52:23 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 13:52:23 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 13:52:23 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 13:52:23 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 13:52:23 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 13:52:23 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 13:52:23 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 13:52:23 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 13:52:23 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:52:23 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:52:23 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 13:52:23 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 13:52:23 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 13:52:25 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 13:52:25 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 13:52:25 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 13:52:25 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 13:52:25 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 13:52:25 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 13:52:25 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 13:52:25 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 13:52:25 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 13:52:25 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 13:52:25 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:52:25 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:52:25 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 13:52:25 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 13:52:25 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 13:52:27 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 13:52:27 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 13:52:27 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 13:52:27 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 13:52:27 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 13:52:27 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 13:52:27 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 13:52:27 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 13:52:27 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 13:52:27 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 13:52:27 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:52:27 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:52:27 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 13:52:27 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 13:52:27 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 13:53:52 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 13:53:52 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 13:53:52 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 13:53:52 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 13:53:52 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 13:53:52 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 13:53:52 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 13:53:52 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 13:53:52 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 13:53:52 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 13:53:52 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:53:52 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:53:52 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 13:53:52 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 13:53:52 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 13:54:05 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 13:54:05 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 13:54:05 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 13:54:05 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 13:54:05 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 13:54:05 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 13:54:05 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 13:54:05 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 13:54:05 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 13:54:05 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 13:54:05 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:54:05 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:54:05 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 13:54:05 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 13:54:05 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 13:54:16 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 13:54:16 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 13:54:16 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 13:54:16 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 13:54:16 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 13:54:16 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 13:54:16 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 13:54:16 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 13:54:16 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 13:54:16 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 13:54:16 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:54:16 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:54:16 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 13:54:16 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 13:54:16 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 13:55:43 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 13:55:43 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 13:55:43 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 13:55:43 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 13:55:43 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 13:55:43 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 13:55:43 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 13:55:43 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 13:55:43 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 13:55:43 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 13:55:43 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:55:43 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:55:43 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 13:55:43 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 13:55:43 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 13:55:50 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 13:55:50 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 13:55:50 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 13:55:50 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 13:55:50 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 13:55:50 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 13:55:50 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 13:55:50 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 13:55:50 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 13:55:50 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 13:55:50 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:55:50 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:55:50 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 13:55:50 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 13:55:50 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 13:56:13 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 13:56:13 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 13:56:13 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 13:56:13 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 13:56:13 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 13:56:13 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 13:56:13 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 13:56:13 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 13:56:13 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 13:56:13 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 13:56:13 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:56:13 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:56:13 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 13:56:13 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 13:56:13 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 13:56:29 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 13:56:29 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 13:56:29 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 13:56:29 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 13:56:29 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 13:56:29 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 13:56:29 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 13:56:29 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 13:56:29 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 13:56:29 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 13:56:29 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:56:29 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 13:56:29 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 13:56:29 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 13:56:29 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 14:02:56 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 14:02:56 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 14:02:56 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 14:02:56 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 14:02:56 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 14:02:56 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 14:02:56 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 14:02:56 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 14:02:56 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 14:02:56 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 14:02:56 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:02:56 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:02:56 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 14:02:56 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 14:02:56 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 14:03:34 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 14:03:34 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 14:03:34 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 14:03:34 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 14:03:34 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 14:03:34 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 14:03:34 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 14:03:34 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 14:03:34 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 14:03:34 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 14:03:34 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:03:34 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:03:34 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 14:03:34 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 14:03:34 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 14:03:35 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 14:03:35 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 14:03:35 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 14:03:35 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 14:03:35 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 14:03:35 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 14:03:35 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 14:03:35 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 14:03:35 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 14:03:35 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 14:03:35 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:03:35 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:03:35 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 14:03:35 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 14:03:35 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 14:03:45 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 14:03:45 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 14:03:45 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 14:03:45 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 14:03:45 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 14:03:45 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 14:03:45 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 14:03:45 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 14:03:45 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 14:03:45 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 14:03:45 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:03:45 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:03:45 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 14:03:45 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 14:03:45 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 14:03:50 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 14:03:50 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 14:03:50 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 14:03:50 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 14:03:50 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 14:03:50 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 14:03:50 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 14:03:50 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 14:03:50 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 14:03:50 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 14:03:50 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:03:50 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:03:50 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 14:03:50 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 14:03:50 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 14:03:54 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 14:03:54 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 14:03:54 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 14:03:54 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 14:03:54 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 14:03:54 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 14:03:54 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 14:03:54 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 14:03:54 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 14:03:54 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 14:03:54 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:03:54 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:03:54 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 14:03:54 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 14:03:54 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 14:06:55 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 14:06:55 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 14:06:55 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 14:06:55 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 14:06:55 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 14:06:55 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 14:06:55 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 14:06:55 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 14:06:55 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 14:06:55 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 14:06:55 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:06:55 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:06:55 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 14:06:55 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 14:06:55 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 14:06:58 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 14:06:58 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 14:06:58 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 14:06:58 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 14:06:58 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 14:06:58 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 14:06:58 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 14:06:58 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 14:06:58 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 14:06:58 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 14:06:58 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:06:58 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:06:58 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 14:06:58 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 14:06:58 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 14:07:00 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 14:07:00 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 14:07:00 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 14:07:00 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 14:07:00 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 14:07:00 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 14:07:00 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 14:07:00 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 14:07:00 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 14:07:00 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 14:07:00 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:07:00 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:07:00 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 14:07:00 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 14:07:00 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 14:07:04 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 14:07:04 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 14:07:04 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 14:07:04 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 14:07:04 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 14:07:04 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 14:07:04 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 14:07:04 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 14:07:04 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 14:07:04 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 14:07:04 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:07:04 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:07:04 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 14:07:04 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 14:07:04 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 14:08:04 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 14:08:04 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 14:08:04 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 14:08:04 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 14:08:04 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 14:08:04 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 14:08:04 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 14:08:04 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 14:08:04 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 14:08:04 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 14:08:04 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:08:04 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:08:04 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 14:08:04 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 14:08:04 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 14:08:14 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 14:08:14 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 14:08:14 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 14:08:14 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 14:08:14 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 14:08:14 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 14:08:14 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 14:08:14 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 14:08:14 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 14:08:14 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 14:08:14 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:08:14 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:08:14 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 14:08:14 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 14:08:14 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 14:20:47 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 14:20:47 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 14:20:47 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 14:20:47 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 14:20:47 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 14:20:47 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 14:20:47 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 14:20:47 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 14:20:47 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 14:20:47 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 14:20:47 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:20:47 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:20:47 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 14:20:47 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 14:20:47 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 14:20:53 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 14:20:53 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 14:20:53 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 14:20:53 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 14:20:53 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 14:20:53 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 14:20:53 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 14:20:53 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 14:20:53 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 14:20:53 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 14:20:53 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:20:53 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:20:53 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 14:20:53 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 14:20:53 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 14:21:12 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 14:21:12 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 14:21:12 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 14:21:12 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 14:21:12 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 14:21:12 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 14:21:12 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 14:21:12 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 14:21:12 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 14:21:12 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 14:21:12 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:21:12 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:21:12 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 14:21:12 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 14:21:12 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 14:24:27 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 14:24:27 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 14:24:27 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 14:24:27 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 14:24:27 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 14:24:27 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 14:24:27 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 14:24:27 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 14:24:27 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 14:24:27 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 14:24:27 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:24:27 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:24:27 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 14:24:27 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 14:24:27 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 14:26:46 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 14:26:46 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 14:26:46 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 14:26:46 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 14:26:46 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 14:26:46 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 14:26:46 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 14:26:46 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 14:26:46 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 14:26:46 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 14:26:46 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:26:46 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:26:46 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 14:26:46 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 14:26:46 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 14:27:19 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 14:27:19 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 14:27:19 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 14:27:19 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 14:27:19 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 14:27:19 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 14:27:19 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 14:27:19 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 14:27:19 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 14:27:19 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 14:27:19 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:27:19 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:27:19 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 14:27:19 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 14:27:19 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 14:27:29 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 14:27:29 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 14:27:29 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 14:27:29 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 14:27:29 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 14:27:29 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 14:27:29 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 14:27:29 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 14:27:29 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 14:27:29 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 14:27:29 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:27:29 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:27:29 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 14:27:29 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 14:27:29 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 14:28:36 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 14:28:36 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 14:28:36 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 14:28:36 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 14:28:36 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 14:28:36 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 14:28:36 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 14:28:36 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 14:28:36 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 14:28:36 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 14:28:36 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:28:36 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:28:36 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 14:28:36 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 14:28:36 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 14:28:36 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Post [LGD_TXID] = [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce]
+2017-01-08 14:28:36 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Post [LGD_AUTHCODE] = [884fec1d9a69f0c507f2a27ed4e019c31531797d]
+2017-01-08 14:28:36 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Post [LGD_MID] = [tnayanet]
+2017-01-08 14:28:36 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Post [LGD_TXNAME] = [PaymentByKey]
+2017-01-08 14:28:36 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Post [LGD_PAYKEY] = [201701081428356C6C59C4C02D7775300FA487A5493D2BEE84A294]
+2017-01-08 14:28:36 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] post_string = LGD_TXID=tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce&LGD_AUTHCODE=884fec1d9a69f0c507f2a27ed4e019c31531797d&LGD_MID=tnayanet&LGD_TXNAME=PaymentByKey&LGD_PAYKEY=201701081428356C6C59C4C02D7775300FA487A5493D2BEE84A294
+2017-01-08 14:28:37 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Result = [
+
+
+
+
+
+
+
+
+
+{"LGD_RESPCODE":"0000","LGD_RESPMSG":"결제성공","LGD_RESPONSE":[{"LGD_CARDACQUIRER":"61","LGD_CARDNOINTEREST_YN":"0","LGD_IFOS":"306C0C","LGD_MID":"tnayanet","LGD_FINANCENAME":"현대VISA","LGD_PCANCELFLAG":"1","LGD_FINANCEAUTHNUM":"00000000","LGD_DELIVERYINFO":"","LGD_BUYER":"zeroha","LGD_AFFILIATECODE":"******","LGD_TRANSAMOUNT":"100000","LGD_BUYERID":"","LGD_OID":"170108148385324980b5a7c9272db","LGD_CARDNUM":"433087******9812","LGD_RECEIVERPHONE":"","LGD_2TR_FLAG":"Y","LGD_DEVICE":"","LGD_TID":"tnaya2017010814283699876","LGD_TIMESTAMP":"20170108142836","LGD_FINANCECODE":"61100","LGD_CARDNOINTYN":"0","LGD_PCANCELSTR":"0","LGD_DISCOUNTUSEYN":"0","LGD_BUYERPHONE":"","LGD_ESCROWYN":"N","LGD_PAYTYPE":"SC0010","LGD_AMOUNT":"100000","LGD_VANCODE":"van0012","LGD_EXCHANGERATE":"1.0","LGD_BUYERSSN":"","LGD_CARDINSTALLMONTH":"00","LGD_RESPMSG":"결제성공","LGD_PAYDATE":"20170108142836","LGD_PRODUCTINFO":"[의료인을 위한 스마트한 길잡이] 핵심 직무 역량 강화","LGD_PRODUCTCODE":"","LGD_HASHDATA":"fb9d222617b3d39df4658c0fb3256ef8","LGD_CARDGUBUN1":"0","LGD_CARDGUBUN2":"0","LGD_BUYERADDRESS":"","LGD_RECEIVER":"","LGD_RESPCODE":"0000","LGD_BUYEREMAIL":"zeroha@nayanet.kr","LGD_DISCOUNTUSEAMOUNT":"0"}]}
+]
+2017-01-08 14:28:37 [INFO ] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Response Code=[0000], Msg=[��������], Count=1
+2017-01-08 14:28:37 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Response (LGD_CARDACQUIRER, 0) = 61
+2017-01-08 14:28:37 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Response (LGD_CARDNOINTEREST_YN, 0) = 0
+2017-01-08 14:28:37 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Response (LGD_IFOS, 0) = 306C0C
+2017-01-08 14:28:37 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Response (LGD_MID, 0) = tnayanet
+2017-01-08 14:28:37 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Response (LGD_FINANCENAME, 0) = 현대VISA
+2017-01-08 14:28:37 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Response (LGD_PCANCELFLAG, 0) = 1
+2017-01-08 14:28:37 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Response (LGD_FINANCEAUTHNUM, 0) = 00000000
+2017-01-08 14:28:37 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Response (LGD_DELIVERYINFO, 0) = 
+2017-01-08 14:28:37 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Response (LGD_BUYER, 0) = zeroha
+2017-01-08 14:28:37 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Response (LGD_AFFILIATECODE, 0) = ******
+2017-01-08 14:28:37 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Response (LGD_TRANSAMOUNT, 0) = 100000
+2017-01-08 14:28:37 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Response (LGD_BUYERID, 0) = 
+2017-01-08 14:28:37 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Response (LGD_OID, 0) = 170108148385324980b5a7c9272db
+2017-01-08 14:28:37 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Response (LGD_CARDNUM, 0) = 433087******9812
+2017-01-08 14:28:37 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Response (LGD_RECEIVERPHONE, 0) = 
+2017-01-08 14:28:37 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Response (LGD_2TR_FLAG, 0) = Y
+2017-01-08 14:28:37 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Response (LGD_DEVICE, 0) = 
+2017-01-08 14:28:37 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Response (LGD_TID, 0) = tnaya2017010814283699876
+2017-01-08 14:28:37 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Response (LGD_TIMESTAMP, 0) = 20170108142836
+2017-01-08 14:28:37 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Response (LGD_FINANCECODE, 0) = 61100
+2017-01-08 14:28:37 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Response (LGD_CARDNOINTYN, 0) = 0
+2017-01-08 14:28:37 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Response (LGD_PCANCELSTR, 0) = 0
+2017-01-08 14:28:37 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Response (LGD_DISCOUNTUSEYN, 0) = 0
+2017-01-08 14:28:37 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Response (LGD_BUYERPHONE, 0) = 
+2017-01-08 14:28:37 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Response (LGD_ESCROWYN, 0) = N
+2017-01-08 14:28:37 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Response (LGD_PAYTYPE, 0) = SC0010
+2017-01-08 14:28:37 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Response (LGD_AMOUNT, 0) = 100000
+2017-01-08 14:28:37 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Response (LGD_VANCODE, 0) = van0012
+2017-01-08 14:28:37 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Response (LGD_EXCHANGERATE, 0) = 1.0
+2017-01-08 14:28:37 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Response (LGD_BUYERSSN, 0) = 
+2017-01-08 14:28:37 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Response (LGD_CARDINSTALLMONTH, 0) = 00
+2017-01-08 14:28:37 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Response (LGD_RESPMSG, 0) = 결제성공
+2017-01-08 14:28:37 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Response (LGD_PAYDATE, 0) = 20170108142836
+2017-01-08 14:28:37 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Response (LGD_PRODUCTINFO, 0) = [의료인을 위한 스마트한 길잡이] 핵심 직무 역량 강화
+2017-01-08 14:28:37 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Response (LGD_PRODUCTCODE, 0) = 
+2017-01-08 14:28:37 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Response (LGD_HASHDATA, 0) = fb9d222617b3d39df4658c0fb3256ef8
+2017-01-08 14:28:37 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Response (LGD_CARDGUBUN1, 0) = 0
+2017-01-08 14:28:37 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Response (LGD_CARDGUBUN2, 0) = 0
+2017-01-08 14:28:37 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Response (LGD_BUYERADDRESS, 0) = 
+2017-01-08 14:28:37 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Response (LGD_RECEIVER, 0) = 
+2017-01-08 14:28:37 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Response (LGD_RESPCODE, 0) = 0000
+2017-01-08 14:28:37 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Response (LGD_BUYEREMAIL, 0) = zeroha@nayanet.kr
+2017-01-08 14:28:37 [DEBUG] [tnayanet-0120170108142836f94e2c8f212d2c1580f3cd445f3da8ef3d36e0ce] Response (LGD_DISCOUNTUSEAMOUNT, 0) = 0
+2017-01-08 14:34:34 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 14:34:34 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 14:34:34 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 14:34:34 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 14:34:34 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 14:34:34 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 14:34:34 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 14:34:34 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 14:34:34 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 14:34:34 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 14:34:34 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:34:34 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:34:34 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 14:34:34 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 14:34:34 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 14:34:36 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 14:34:36 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 14:34:36 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 14:34:36 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 14:34:36 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 14:34:36 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 14:34:36 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 14:34:36 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 14:34:36 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 14:34:36 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 14:34:36 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:34:36 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:34:36 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 14:34:36 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 14:34:36 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 14:35:05 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 14:35:05 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 14:35:05 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 14:35:05 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 14:35:05 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 14:35:05 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 14:35:05 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 14:35:05 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 14:35:05 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 14:35:05 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 14:35:05 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:35:05 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:35:05 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 14:35:05 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 14:35:05 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 14:35:05 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Post [LGD_TXID] = [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4]
+2017-01-08 14:35:05 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Post [LGD_AUTHCODE] = [4d4527a55f8b79b73bd7c47c17997705b27d7961]
+2017-01-08 14:35:05 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Post [LGD_MID] = [tnayanet]
+2017-01-08 14:35:05 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Post [LGD_TXNAME] = [PaymentByKey]
+2017-01-08 14:35:05 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Post [LGD_PAYKEY] = [201701081435047DAD144F9F4E003603C712015429DDE64E3AB5E2]
+2017-01-08 14:35:05 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] post_string = LGD_TXID=tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4&LGD_AUTHCODE=4d4527a55f8b79b73bd7c47c17997705b27d7961&LGD_MID=tnayanet&LGD_TXNAME=PaymentByKey&LGD_PAYKEY=201701081435047DAD144F9F4E003603C712015429DDE64E3AB5E2
+2017-01-08 14:35:16 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Result = [
+
+
+
+
+
+
+
+
+
+{"LGD_RESPCODE":"0000","LGD_RESPMSG":"결제성공","LGD_RESPONSE":[{"LGD_CARDACQUIRER":"61","LGD_CARDNOINTEREST_YN":"0","LGD_IFOS":"306C0C","LGD_MID":"tnayanet","LGD_FINANCENAME":"현대VISA","LGD_PCANCELFLAG":"1","LGD_FINANCEAUTHNUM":"00000000","LGD_DELIVERYINFO":"","LGD_BUYER":"zeroha","LGD_AFFILIATECODE":"******","LGD_TRANSAMOUNT":"110000","LGD_BUYERID":"","LGD_OID":"17010814838536768d4329051ab8a","LGD_CARDNUM":"433087******9812","LGD_RECEIVERPHONE":"","LGD_2TR_FLAG":"Y","LGD_DEVICE":"","LGD_TID":"tnaya2017010814351499881","LGD_TIMESTAMP":"20170108143515","LGD_FINANCECODE":"61100","LGD_CARDNOINTYN":"0","LGD_PCANCELSTR":"0","LGD_DISCOUNTUSEYN":"0","LGD_BUYERPHONE":"","LGD_ESCROWYN":"N","LGD_PAYTYPE":"SC0010","LGD_AMOUNT":"110000","LGD_VANCODE":"van0011","LGD_EXCHANGERATE":"1.0","LGD_BUYERSSN":"","LGD_CARDINSTALLMONTH":"00","LGD_RESPMSG":"결제성공","LGD_PAYDATE":"20170108143515","LGD_PRODUCTINFO":"근로자 산업안전보건교육 1","LGD_PRODUCTCODE":"","LGD_HASHDATA":"58a1fc2b6557fe5f0538a6b2efc80670","LGD_CARDGUBUN1":"0","LGD_CARDGUBUN2":"0","LGD_BUYERADDRESS":"","LGD_RECEIVER":"","LGD_RESPCODE":"0000","LGD_BUYEREMAIL":"zeroha@nayanet.kr","LGD_DISCOUNTUSEAMOUNT":"0"}]}
+]
+2017-01-08 14:35:16 [INFO ] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Response Code=[0000], Msg=[��������], Count=1
+2017-01-08 14:35:16 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Response (LGD_CARDACQUIRER, 0) = 61
+2017-01-08 14:35:16 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Response (LGD_CARDNOINTEREST_YN, 0) = 0
+2017-01-08 14:35:16 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Response (LGD_IFOS, 0) = 306C0C
+2017-01-08 14:35:16 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Response (LGD_MID, 0) = tnayanet
+2017-01-08 14:35:16 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Response (LGD_FINANCENAME, 0) = 현대VISA
+2017-01-08 14:35:16 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Response (LGD_PCANCELFLAG, 0) = 1
+2017-01-08 14:35:16 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Response (LGD_FINANCEAUTHNUM, 0) = 00000000
+2017-01-08 14:35:16 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Response (LGD_DELIVERYINFO, 0) = 
+2017-01-08 14:35:16 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Response (LGD_BUYER, 0) = zeroha
+2017-01-08 14:35:16 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Response (LGD_AFFILIATECODE, 0) = ******
+2017-01-08 14:35:16 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Response (LGD_TRANSAMOUNT, 0) = 110000
+2017-01-08 14:35:16 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Response (LGD_BUYERID, 0) = 
+2017-01-08 14:35:16 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Response (LGD_OID, 0) = 17010814838536768d4329051ab8a
+2017-01-08 14:35:16 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Response (LGD_CARDNUM, 0) = 433087******9812
+2017-01-08 14:35:16 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Response (LGD_RECEIVERPHONE, 0) = 
+2017-01-08 14:35:16 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Response (LGD_2TR_FLAG, 0) = Y
+2017-01-08 14:35:16 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Response (LGD_DEVICE, 0) = 
+2017-01-08 14:35:16 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Response (LGD_TID, 0) = tnaya2017010814351499881
+2017-01-08 14:35:16 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Response (LGD_TIMESTAMP, 0) = 20170108143515
+2017-01-08 14:35:16 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Response (LGD_FINANCECODE, 0) = 61100
+2017-01-08 14:35:16 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Response (LGD_CARDNOINTYN, 0) = 0
+2017-01-08 14:35:16 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Response (LGD_PCANCELSTR, 0) = 0
+2017-01-08 14:35:16 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Response (LGD_DISCOUNTUSEYN, 0) = 0
+2017-01-08 14:35:16 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Response (LGD_BUYERPHONE, 0) = 
+2017-01-08 14:35:16 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Response (LGD_ESCROWYN, 0) = N
+2017-01-08 14:35:16 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Response (LGD_PAYTYPE, 0) = SC0010
+2017-01-08 14:35:16 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Response (LGD_AMOUNT, 0) = 110000
+2017-01-08 14:35:16 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Response (LGD_VANCODE, 0) = van0011
+2017-01-08 14:35:16 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Response (LGD_EXCHANGERATE, 0) = 1.0
+2017-01-08 14:35:16 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Response (LGD_BUYERSSN, 0) = 
+2017-01-08 14:35:16 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Response (LGD_CARDINSTALLMONTH, 0) = 00
+2017-01-08 14:35:16 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Response (LGD_RESPMSG, 0) = 결제성공
+2017-01-08 14:35:16 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Response (LGD_PAYDATE, 0) = 20170108143515
+2017-01-08 14:35:16 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Response (LGD_PRODUCTINFO, 0) = 근로자 산업안전보건교육 1
+2017-01-08 14:35:16 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Response (LGD_PRODUCTCODE, 0) = 
+2017-01-08 14:35:16 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Response (LGD_HASHDATA, 0) = 58a1fc2b6557fe5f0538a6b2efc80670
+2017-01-08 14:35:16 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Response (LGD_CARDGUBUN1, 0) = 0
+2017-01-08 14:35:16 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Response (LGD_CARDGUBUN2, 0) = 0
+2017-01-08 14:35:16 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Response (LGD_BUYERADDRESS, 0) = 
+2017-01-08 14:35:16 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Response (LGD_RECEIVER, 0) = 
+2017-01-08 14:35:16 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Response (LGD_RESPCODE, 0) = 0000
+2017-01-08 14:35:16 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Response (LGD_BUYEREMAIL, 0) = zeroha@nayanet.kr
+2017-01-08 14:35:16 [DEBUG] [tnayanet-012017010814350521146c105e41269a710c3f0aed1d2279847545b4] Response (LGD_DISCOUNTUSEAMOUNT, 0) = 0
+2017-01-08 14:46:51 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 14:46:51 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 14:46:51 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 14:46:51 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 14:46:51 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 14:46:51 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 14:46:51 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 14:46:51 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 14:46:51 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 14:46:51 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 14:46:51 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:46:51 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:46:51 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 14:46:51 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 14:46:51 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 14:46:54 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 14:46:54 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 14:46:54 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 14:46:54 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 14:46:54 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 14:46:54 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 14:46:54 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 14:46:54 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 14:46:54 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 14:46:54 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 14:46:54 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:46:54 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:46:54 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 14:46:54 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 14:46:54 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 14:46:59 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 14:46:59 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 14:46:59 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 14:46:59 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 14:46:59 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 14:46:59 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 14:46:59 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 14:46:59 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 14:46:59 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 14:46:59 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 14:46:59 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:46:59 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:46:59 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 14:46:59 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 14:46:59 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 14:47:01 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 14:47:01 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 14:47:01 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 14:47:01 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 14:47:01 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 14:47:01 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 14:47:01 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 14:47:01 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 14:47:01 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 14:47:01 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 14:47:01 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:47:01 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:47:01 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 14:47:01 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 14:47:01 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 14:47:30 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 14:47:30 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 14:47:30 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 14:47:30 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 14:47:30 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 14:47:30 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 14:47:30 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 14:47:30 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 14:47:30 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 14:47:30 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 14:47:30 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:47:30 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:47:30 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 14:47:30 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 14:47:30 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 14:47:30 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Post [LGD_TXID] = [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9]
+2017-01-08 14:47:30 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Post [LGD_AUTHCODE] = [f1e5c6f94adc853d365cb9101d648423dcebc5fa]
+2017-01-08 14:47:30 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Post [LGD_MID] = [tnayanet]
+2017-01-08 14:47:30 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Post [LGD_TXNAME] = [PaymentByKey]
+2017-01-08 14:47:30 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Post [LGD_PAYKEY] = [20170108144729C57FF67FE8399ECD77ABE43E8AE8D61886D7A141]
+2017-01-08 14:47:30 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] post_string = LGD_TXID=tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9&LGD_AUTHCODE=f1e5c6f94adc853d365cb9101d648423dcebc5fa&LGD_MID=tnayanet&LGD_TXNAME=PaymentByKey&LGD_PAYKEY=20170108144729C57FF67FE8399ECD77ABE43E8AE8D61886D7A141
+2017-01-08 14:47:36 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Result = [
+
+
+
+
+
+
+
+
+
+{"LGD_RESPCODE":"0000","LGD_RESPMSG":"결제성공","LGD_RESPONSE":[{"LGD_CARDACQUIRER":"61","LGD_CARDNOINTEREST_YN":"0","LGD_IFOS":"306C0C","LGD_MID":"tnayanet","LGD_FINANCENAME":"현대VISA","LGD_PCANCELFLAG":"1","LGD_FINANCEAUTHNUM":"00000000","LGD_DELIVERYINFO":"","LGD_BUYER":"zeroha","LGD_AFFILIATECODE":"******","LGD_TRANSAMOUNT":"110000","LGD_BUYERID":"","LGD_OID":"1701081483854421cf426a65461e4","LGD_CARDNUM":"433087******9812","LGD_RECEIVERPHONE":"","LGD_2TR_FLAG":"Y","LGD_DEVICE":"","LGD_TID":"tnaya2017010814473599884","LGD_TIMESTAMP":"20170108144735","LGD_FINANCECODE":"61100","LGD_CARDNOINTYN":"0","LGD_PCANCELSTR":"0","LGD_DISCOUNTUSEYN":"0","LGD_BUYERPHONE":"","LGD_ESCROWYN":"N","LGD_PAYTYPE":"SC0010","LGD_AMOUNT":"110000","LGD_VANCODE":"van0011","LGD_EXCHANGERATE":"1.0","LGD_BUYERSSN":"","LGD_CARDINSTALLMONTH":"00","LGD_RESPMSG":"결제성공","LGD_PAYDATE":"20170108144735","LGD_PRODUCTINFO":"근로자 산업안전보건교육 1","LGD_PRODUCTCODE":"","LGD_HASHDATA":"c325a431ac7ebd880c4043189777773a","LGD_CARDGUBUN1":"0","LGD_CARDGUBUN2":"0","LGD_BUYERADDRESS":"","LGD_RECEIVER":"","LGD_RESPCODE":"0000","LGD_BUYEREMAIL":"zeroha@nayanet.kr","LGD_DISCOUNTUSEAMOUNT":"0"}]}
+]
+2017-01-08 14:47:36 [INFO ] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Response Code=[0000], Msg=[��������], Count=1
+2017-01-08 14:47:36 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Response (LGD_CARDACQUIRER, 0) = 61
+2017-01-08 14:47:36 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Response (LGD_CARDNOINTEREST_YN, 0) = 0
+2017-01-08 14:47:36 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Response (LGD_IFOS, 0) = 306C0C
+2017-01-08 14:47:36 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Response (LGD_MID, 0) = tnayanet
+2017-01-08 14:47:36 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Response (LGD_FINANCENAME, 0) = 현대VISA
+2017-01-08 14:47:36 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Response (LGD_PCANCELFLAG, 0) = 1
+2017-01-08 14:47:36 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Response (LGD_FINANCEAUTHNUM, 0) = 00000000
+2017-01-08 14:47:36 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Response (LGD_DELIVERYINFO, 0) = 
+2017-01-08 14:47:36 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Response (LGD_BUYER, 0) = zeroha
+2017-01-08 14:47:36 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Response (LGD_AFFILIATECODE, 0) = ******
+2017-01-08 14:47:36 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Response (LGD_TRANSAMOUNT, 0) = 110000
+2017-01-08 14:47:36 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Response (LGD_BUYERID, 0) = 
+2017-01-08 14:47:36 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Response (LGD_OID, 0) = 1701081483854421cf426a65461e4
+2017-01-08 14:47:36 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Response (LGD_CARDNUM, 0) = 433087******9812
+2017-01-08 14:47:36 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Response (LGD_RECEIVERPHONE, 0) = 
+2017-01-08 14:47:36 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Response (LGD_2TR_FLAG, 0) = Y
+2017-01-08 14:47:36 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Response (LGD_DEVICE, 0) = 
+2017-01-08 14:47:36 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Response (LGD_TID, 0) = tnaya2017010814473599884
+2017-01-08 14:47:36 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Response (LGD_TIMESTAMP, 0) = 20170108144735
+2017-01-08 14:47:36 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Response (LGD_FINANCECODE, 0) = 61100
+2017-01-08 14:47:36 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Response (LGD_CARDNOINTYN, 0) = 0
+2017-01-08 14:47:36 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Response (LGD_PCANCELSTR, 0) = 0
+2017-01-08 14:47:36 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Response (LGD_DISCOUNTUSEYN, 0) = 0
+2017-01-08 14:47:36 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Response (LGD_BUYERPHONE, 0) = 
+2017-01-08 14:47:36 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Response (LGD_ESCROWYN, 0) = N
+2017-01-08 14:47:36 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Response (LGD_PAYTYPE, 0) = SC0010
+2017-01-08 14:47:36 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Response (LGD_AMOUNT, 0) = 110000
+2017-01-08 14:47:36 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Response (LGD_VANCODE, 0) = van0011
+2017-01-08 14:47:36 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Response (LGD_EXCHANGERATE, 0) = 1.0
+2017-01-08 14:47:36 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Response (LGD_BUYERSSN, 0) = 
+2017-01-08 14:47:36 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Response (LGD_CARDINSTALLMONTH, 0) = 00
+2017-01-08 14:47:36 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Response (LGD_RESPMSG, 0) = 결제성공
+2017-01-08 14:47:36 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Response (LGD_PAYDATE, 0) = 20170108144735
+2017-01-08 14:47:36 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Response (LGD_PRODUCTINFO, 0) = 근로자 산업안전보건교육 1
+2017-01-08 14:47:36 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Response (LGD_PRODUCTCODE, 0) = 
+2017-01-08 14:47:36 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Response (LGD_HASHDATA, 0) = c325a431ac7ebd880c4043189777773a
+2017-01-08 14:47:36 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Response (LGD_CARDGUBUN1, 0) = 0
+2017-01-08 14:47:36 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Response (LGD_CARDGUBUN2, 0) = 0
+2017-01-08 14:47:36 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Response (LGD_BUYERADDRESS, 0) = 
+2017-01-08 14:47:36 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Response (LGD_RECEIVER, 0) = 
+2017-01-08 14:47:36 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Response (LGD_RESPCODE, 0) = 0000
+2017-01-08 14:47:36 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Response (LGD_BUYEREMAIL, 0) = zeroha@nayanet.kr
+2017-01-08 14:47:36 [DEBUG] [tnayanet-0120170108144730f7887e2c16bef25088d4bdef9d491319006cf2f9] Response (LGD_DISCOUNTUSEAMOUNT, 0) = 0
+2017-01-08 14:51:04 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 14:51:04 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 14:51:04 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 14:51:04 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 14:51:04 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 14:51:04 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 14:51:04 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 14:51:04 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 14:51:04 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 14:51:04 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 14:51:04 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:51:04 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:51:04 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 14:51:04 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 14:51:04 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 14:51:04 [DEBUG] [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f] Post [LGD_TXID] = [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f]
+2017-01-08 14:51:04 [DEBUG] [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f] Post [LGD_AUTHCODE] = [f69f2f2039a90bf2e21b9f025b820e498aa33c8d]
+2017-01-08 14:51:04 [DEBUG] [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f] Post [LGD_MID] = [tnayanet]
+2017-01-08 14:51:04 [DEBUG] [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f] Post [LGD_TXNAME] = [PaymentByKey]
+2017-01-08 14:51:04 [DEBUG] [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f] Post [LGD_PAYKEY] = [20170108144729C57FF67FE8399ECD77ABE43E8AE8D61886D7A141]
+2017-01-08 14:51:04 [DEBUG] [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f] post_string = LGD_TXID=tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f&LGD_AUTHCODE=f69f2f2039a90bf2e21b9f025b820e498aa33c8d&LGD_MID=tnayanet&LGD_TXNAME=PaymentByKey&LGD_PAYKEY=20170108144729C57FF67FE8399ECD77ABE43E8AE8D61886D7A141
+2017-01-08 14:51:04 [DEBUG] [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f] Result = [
+
+
+
+
+
+
+
+
+
+{"LGD_RESPCODE":"S007","LGD_RESPMSG":"요청하신 거래[주문번호:1701081483854421cf426a65461e4]는  2017/01/08 14:47:35 에 이미 신용카드로 결제로 시도한 거래입니다. 상점연락처[02-6494-2010]","LGD_RESPONSE":[{"LGD_CARDACQUIRER":"0","LGD_IFOS":"306C0C","LGD_MID":"tnayanet","LGD_FINANCENAME":"","LGD_PCANCELFLAG":"0","LGD_FINANCEAUTHNUM":"00000000","LGD_DELIVERYINFO":"","LGD_BUYER":"zeroha","LGD_AFFILIATECODE":"******","LGD_TRANSAMOUNT":"","LGD_BUYERID":"","LGD_OID":"1701081483854421cf426a65461e4","LGD_CARDNUM":"","LGD_RECEIVERPHONE":"","LGD_2TR_FLAG":"Y","LGD_DEVICE":"","LGD_TID":"tnaya2017010814473599884","LGD_TIMESTAMP":"20170108145103","LGD_FINANCECODE":"","LGD_CARDNOINTYN":"0","LGD_PCANCELSTR":"0","LGD_BUYERPHONE":"","LGD_ESCROWYN":"N","LGD_PAYTYPE":"SC0010","LGD_AMOUNT":"110000","LGD_VANCODE":"0","LGD_EXCHANGERATE":"","LGD_BUYERSSN":"","LGD_CARDINSTALLMONTH":"00","LGD_RESPMSG":"요청하신 거래[주문번호:1701081483854421cf426a65461e4]는  2017/01/08 14:47:35 에 이미 신용카드로 결제로 시도한 거래입니다. 상점연락처[02-6494-2010]","LGD_PAYDATE":"20170108145103","LGD_PRODUCTINFO":"근로자 산업안전보건교육 1","LGD_PRODUCTCODE":"","LGD_HASHDATA":"f0b61a86236b039010834dab634b299b","LGD_CARDGUBUN1":"9","LGD_CARDGUBUN2":"9","LGD_BUYERADDRESS":"","LGD_RECEIVER":"","LGD_RESPCODE":"S007","LGD_BUYEREMAIL":"zeroha@nayanet.kr"}]}
+]
+2017-01-08 14:51:04 [INFO ] [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f] Response Code=[S007], Msg=[��û�Ͻ� �ŷ�[�ֹ���ȣ:1701081483854421cf426a65461e4]��  2017/01/08 14:47:35 �� �̹� �ſ�ī��� ������ �õ��� �ŷ��Դϴ�. ��������ó[02-6494-2010]], Count=1
+2017-01-08 14:51:04 [DEBUG] [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f] Response (LGD_CARDACQUIRER, 0) = 0
+2017-01-08 14:51:04 [DEBUG] [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f] Response (LGD_IFOS, 0) = 306C0C
+2017-01-08 14:51:04 [DEBUG] [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f] Response (LGD_MID, 0) = tnayanet
+2017-01-08 14:51:04 [DEBUG] [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f] Response (LGD_FINANCENAME, 0) = 
+2017-01-08 14:51:04 [DEBUG] [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f] Response (LGD_PCANCELFLAG, 0) = 0
+2017-01-08 14:51:04 [DEBUG] [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f] Response (LGD_FINANCEAUTHNUM, 0) = 00000000
+2017-01-08 14:51:04 [DEBUG] [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f] Response (LGD_DELIVERYINFO, 0) = 
+2017-01-08 14:51:04 [DEBUG] [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f] Response (LGD_BUYER, 0) = zeroha
+2017-01-08 14:51:04 [DEBUG] [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f] Response (LGD_AFFILIATECODE, 0) = ******
+2017-01-08 14:51:04 [DEBUG] [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f] Response (LGD_TRANSAMOUNT, 0) = 
+2017-01-08 14:51:04 [DEBUG] [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f] Response (LGD_BUYERID, 0) = 
+2017-01-08 14:51:04 [DEBUG] [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f] Response (LGD_OID, 0) = 1701081483854421cf426a65461e4
+2017-01-08 14:51:04 [DEBUG] [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f] Response (LGD_CARDNUM, 0) = 
+2017-01-08 14:51:04 [DEBUG] [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f] Response (LGD_RECEIVERPHONE, 0) = 
+2017-01-08 14:51:04 [DEBUG] [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f] Response (LGD_2TR_FLAG, 0) = Y
+2017-01-08 14:51:04 [DEBUG] [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f] Response (LGD_DEVICE, 0) = 
+2017-01-08 14:51:04 [DEBUG] [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f] Response (LGD_TID, 0) = tnaya2017010814473599884
+2017-01-08 14:51:04 [DEBUG] [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f] Response (LGD_TIMESTAMP, 0) = 20170108145103
+2017-01-08 14:51:04 [DEBUG] [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f] Response (LGD_FINANCECODE, 0) = 
+2017-01-08 14:51:04 [DEBUG] [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f] Response (LGD_CARDNOINTYN, 0) = 0
+2017-01-08 14:51:04 [DEBUG] [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f] Response (LGD_PCANCELSTR, 0) = 0
+2017-01-08 14:51:04 [DEBUG] [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f] Response (LGD_BUYERPHONE, 0) = 
+2017-01-08 14:51:04 [DEBUG] [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f] Response (LGD_ESCROWYN, 0) = N
+2017-01-08 14:51:04 [DEBUG] [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f] Response (LGD_PAYTYPE, 0) = SC0010
+2017-01-08 14:51:04 [DEBUG] [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f] Response (LGD_AMOUNT, 0) = 110000
+2017-01-08 14:51:04 [DEBUG] [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f] Response (LGD_VANCODE, 0) = 0
+2017-01-08 14:51:04 [DEBUG] [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f] Response (LGD_EXCHANGERATE, 0) = 
+2017-01-08 14:51:04 [DEBUG] [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f] Response (LGD_BUYERSSN, 0) = 
+2017-01-08 14:51:04 [DEBUG] [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f] Response (LGD_CARDINSTALLMONTH, 0) = 00
+2017-01-08 14:51:04 [DEBUG] [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f] Response (LGD_RESPMSG, 0) = 요청하신 거래[주문번호:1701081483854421cf426a65461e4]는  2017/01/08 14:47:35 에 이미 신용카드로 결제로 시도한 거래입니다. 상점연락처[02-6494-2010]
+2017-01-08 14:51:04 [DEBUG] [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f] Response (LGD_PAYDATE, 0) = 20170108145103
+2017-01-08 14:51:04 [DEBUG] [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f] Response (LGD_PRODUCTINFO, 0) = 근로자 산업안전보건교육 1
+2017-01-08 14:51:04 [DEBUG] [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f] Response (LGD_PRODUCTCODE, 0) = 
+2017-01-08 14:51:04 [DEBUG] [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f] Response (LGD_HASHDATA, 0) = f0b61a86236b039010834dab634b299b
+2017-01-08 14:51:04 [DEBUG] [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f] Response (LGD_CARDGUBUN1, 0) = 9
+2017-01-08 14:51:04 [DEBUG] [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f] Response (LGD_CARDGUBUN2, 0) = 9
+2017-01-08 14:51:04 [DEBUG] [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f] Response (LGD_BUYERADDRESS, 0) = 
+2017-01-08 14:51:04 [DEBUG] [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f] Response (LGD_RECEIVER, 0) = 
+2017-01-08 14:51:04 [DEBUG] [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f] Response (LGD_RESPCODE, 0) = S007
+2017-01-08 14:51:04 [DEBUG] [tnayanet-0120170108145104b1dbc91fb2d27381f2f3263ca73653b3032eff6f] Response (LGD_BUYEREMAIL, 0) = zeroha@nayanet.kr
+2017-01-08 14:56:31 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 14:56:31 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 14:56:31 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 14:56:31 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 14:56:31 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 14:56:31 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 14:56:31 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 14:56:31 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 14:56:31 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 14:56:31 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 14:56:31 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:56:31 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:56:31 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 14:56:31 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 14:56:31 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 14:56:32 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 14:56:32 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 14:56:32 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 14:56:32 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 14:56:32 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 14:56:32 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 14:56:32 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 14:56:32 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 14:56:32 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 14:56:32 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 14:56:32 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:56:32 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:56:32 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 14:56:32 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 14:56:32 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 14:57:03 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 14:57:03 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 14:57:03 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 14:57:03 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 14:57:03 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 14:57:03 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 14:57:03 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 14:57:03 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 14:57:03 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 14:57:03 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 14:57:03 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:57:03 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 14:57:03 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 14:57:03 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 14:57:03 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 14:57:03 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Post [LGD_TXID] = [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22]
+2017-01-08 14:57:03 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Post [LGD_AUTHCODE] = [e1a6d6ea9c9da510bce628b2273856ef9a09765c]
+2017-01-08 14:57:03 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Post [LGD_MID] = [tnayanet]
+2017-01-08 14:57:03 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Post [LGD_TXNAME] = [PaymentByKey]
+2017-01-08 14:57:03 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Post [LGD_PAYKEY] = [20170108145701B44F005211A2AD14CE075A8F29BC7B9F9686AD44]
+2017-01-08 14:57:03 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] post_string = LGD_TXID=tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22&LGD_AUTHCODE=e1a6d6ea9c9da510bce628b2273856ef9a09765c&LGD_MID=tnayanet&LGD_TXNAME=PaymentByKey&LGD_PAYKEY=20170108145701B44F005211A2AD14CE075A8F29BC7B9F9686AD44
+2017-01-08 14:57:08 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Result = [
+
+
+
+
+
+
+
+
+
+{"LGD_RESPCODE":"0000","LGD_RESPMSG":"결제성공","LGD_RESPONSE":[{"LGD_CARDACQUIRER":"61","LGD_CARDNOINTEREST_YN":"0","LGD_IFOS":"306C0C","LGD_MID":"tnayanet","LGD_FINANCENAME":"현대VISA","LGD_PCANCELFLAG":"1","LGD_FINANCEAUTHNUM":"00000000","LGD_DELIVERYINFO":"","LGD_BUYER":"zeroha","LGD_AFFILIATECODE":"******","LGD_TRANSAMOUNT":"90000","LGD_BUYERID":"","LGD_OID":"1701081483854992a5a515936852d","LGD_CARDNUM":"433087******9812","LGD_RECEIVERPHONE":"","LGD_2TR_FLAG":"Y","LGD_DEVICE":"","LGD_TID":"tnaya2017010814570799892","LGD_TIMESTAMP":"20170108145707","LGD_FINANCECODE":"61100","LGD_CARDNOINTYN":"0","LGD_PCANCELSTR":"0","LGD_DISCOUNTUSEYN":"0","LGD_BUYERPHONE":"","LGD_ESCROWYN":"N","LGD_PAYTYPE":"SC0010","LGD_AMOUNT":"90000","LGD_VANCODE":"van0011","LGD_EXCHANGERATE":"1.0","LGD_BUYERSSN":"","LGD_CARDINSTALLMONTH":"00","LGD_RESPMSG":"결제성공","LGD_PAYDATE":"20170108145707","LGD_PRODUCTINFO":"심통(心通) 커뮤니케이션","LGD_PRODUCTCODE":"","LGD_HASHDATA":"eb2597190be3e5a7f25f9b61f453c7d9","LGD_CARDGUBUN1":"0","LGD_CARDGUBUN2":"0","LGD_BUYERADDRESS":"","LGD_RECEIVER":"","LGD_RESPCODE":"0000","LGD_BUYEREMAIL":"zeroha@nayanet.kr","LGD_DISCOUNTUSEAMOUNT":"0"}]}
+]
+2017-01-08 14:57:08 [INFO ] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Response Code=[0000], Msg=[��������], Count=1
+2017-01-08 14:57:08 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Response (LGD_CARDACQUIRER, 0) = 61
+2017-01-08 14:57:08 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Response (LGD_CARDNOINTEREST_YN, 0) = 0
+2017-01-08 14:57:08 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Response (LGD_IFOS, 0) = 306C0C
+2017-01-08 14:57:08 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Response (LGD_MID, 0) = tnayanet
+2017-01-08 14:57:08 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Response (LGD_FINANCENAME, 0) = 현대VISA
+2017-01-08 14:57:08 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Response (LGD_PCANCELFLAG, 0) = 1
+2017-01-08 14:57:08 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Response (LGD_FINANCEAUTHNUM, 0) = 00000000
+2017-01-08 14:57:08 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Response (LGD_DELIVERYINFO, 0) = 
+2017-01-08 14:57:08 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Response (LGD_BUYER, 0) = zeroha
+2017-01-08 14:57:08 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Response (LGD_AFFILIATECODE, 0) = ******
+2017-01-08 14:57:08 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Response (LGD_TRANSAMOUNT, 0) = 90000
+2017-01-08 14:57:08 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Response (LGD_BUYERID, 0) = 
+2017-01-08 14:57:08 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Response (LGD_OID, 0) = 1701081483854992a5a515936852d
+2017-01-08 14:57:08 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Response (LGD_CARDNUM, 0) = 433087******9812
+2017-01-08 14:57:08 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Response (LGD_RECEIVERPHONE, 0) = 
+2017-01-08 14:57:08 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Response (LGD_2TR_FLAG, 0) = Y
+2017-01-08 14:57:08 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Response (LGD_DEVICE, 0) = 
+2017-01-08 14:57:08 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Response (LGD_TID, 0) = tnaya2017010814570799892
+2017-01-08 14:57:08 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Response (LGD_TIMESTAMP, 0) = 20170108145707
+2017-01-08 14:57:08 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Response (LGD_FINANCECODE, 0) = 61100
+2017-01-08 14:57:08 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Response (LGD_CARDNOINTYN, 0) = 0
+2017-01-08 14:57:08 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Response (LGD_PCANCELSTR, 0) = 0
+2017-01-08 14:57:08 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Response (LGD_DISCOUNTUSEYN, 0) = 0
+2017-01-08 14:57:08 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Response (LGD_BUYERPHONE, 0) = 
+2017-01-08 14:57:08 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Response (LGD_ESCROWYN, 0) = N
+2017-01-08 14:57:08 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Response (LGD_PAYTYPE, 0) = SC0010
+2017-01-08 14:57:08 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Response (LGD_AMOUNT, 0) = 90000
+2017-01-08 14:57:08 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Response (LGD_VANCODE, 0) = van0011
+2017-01-08 14:57:08 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Response (LGD_EXCHANGERATE, 0) = 1.0
+2017-01-08 14:57:08 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Response (LGD_BUYERSSN, 0) = 
+2017-01-08 14:57:08 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Response (LGD_CARDINSTALLMONTH, 0) = 00
+2017-01-08 14:57:08 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Response (LGD_RESPMSG, 0) = 결제성공
+2017-01-08 14:57:08 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Response (LGD_PAYDATE, 0) = 20170108145707
+2017-01-08 14:57:08 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Response (LGD_PRODUCTINFO, 0) = 심통(心通) 커뮤니케이션
+2017-01-08 14:57:08 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Response (LGD_PRODUCTCODE, 0) = 
+2017-01-08 14:57:08 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Response (LGD_HASHDATA, 0) = eb2597190be3e5a7f25f9b61f453c7d9
+2017-01-08 14:57:08 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Response (LGD_CARDGUBUN1, 0) = 0
+2017-01-08 14:57:08 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Response (LGD_CARDGUBUN2, 0) = 0
+2017-01-08 14:57:08 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Response (LGD_BUYERADDRESS, 0) = 
+2017-01-08 14:57:08 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Response (LGD_RECEIVER, 0) = 
+2017-01-08 14:57:08 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Response (LGD_RESPCODE, 0) = 0000
+2017-01-08 14:57:08 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Response (LGD_BUYEREMAIL, 0) = zeroha@nayanet.kr
+2017-01-08 14:57:08 [DEBUG] [tnayanet-0120170108145703ed4aab377ed74e7c6a6bd8712186ff82f4f51c22] Response (LGD_DISCOUNTUSEAMOUNT, 0) = 0
+2017-01-08 15:05:00 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 15:05:00 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 15:05:00 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 15:05:00 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 15:05:00 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 15:05:00 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 15:05:00 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 15:05:00 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 15:05:00 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 15:05:00 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 15:05:00 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 15:05:00 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 15:05:00 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 15:05:00 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 15:05:00 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 15:05:02 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 15:05:02 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 15:05:02 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 15:05:02 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 15:05:02 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 15:05:02 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 15:05:02 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 15:05:02 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 15:05:02 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 15:05:02 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 15:05:02 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 15:05:02 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 15:05:02 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 15:05:02 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 15:05:02 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 15:05:34 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 15:05:34 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 15:05:34 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 15:05:34 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 15:05:34 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 15:05:34 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 15:05:34 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 15:05:34 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 15:05:34 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 15:05:34 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 15:05:34 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 15:05:34 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 15:05:34 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 15:05:34 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 15:05:34 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 15:05:34 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Post [LGD_TXID] = [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade]
+2017-01-08 15:05:34 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Post [LGD_AUTHCODE] = [19863ada6ee8fcd2da891fc5af08c89570d03aed]
+2017-01-08 15:05:34 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Post [LGD_MID] = [tnayanet]
+2017-01-08 15:05:34 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Post [LGD_TXNAME] = [PaymentByKey]
+2017-01-08 15:05:34 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Post [LGD_PAYKEY] = [201701081505320A374CF9E2CC355DF53FE663D018020680B717B4]
+2017-01-08 15:05:34 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] post_string = LGD_TXID=tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade&LGD_AUTHCODE=19863ada6ee8fcd2da891fc5af08c89570d03aed&LGD_MID=tnayanet&LGD_TXNAME=PaymentByKey&LGD_PAYKEY=201701081505320A374CF9E2CC355DF53FE663D018020680B717B4
+2017-01-08 15:05:39 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Result = [
+
+
+
+
+
+
+
+
+
+{"LGD_RESPCODE":"0000","LGD_RESPMSG":"결제성공","LGD_RESPONSE":[{"LGD_CARDACQUIRER":"61","LGD_CARDNOINTEREST_YN":"0","LGD_IFOS":"306C0C","LGD_MID":"tnayanet","LGD_FINANCENAME":"현대VISA","LGD_PCANCELFLAG":"1","LGD_FINANCEAUTHNUM":"00000000","LGD_DELIVERYINFO":"","LGD_BUYER":"zeroha","LGD_AFFILIATECODE":"******","LGD_TRANSAMOUNT":"110000","LGD_BUYERID":"","LGD_OID":"1701081483855502c8f73e6d06b0c","LGD_CARDNUM":"433087******9812","LGD_RECEIVERPHONE":"","LGD_2TR_FLAG":"Y","LGD_DEVICE":"","LGD_TID":"tnaya2017010815053899902","LGD_TIMESTAMP":"20170108150538","LGD_FINANCECODE":"61100","LGD_CARDNOINTYN":"0","LGD_PCANCELSTR":"0","LGD_DISCOUNTUSEYN":"0","LGD_BUYERPHONE":"","LGD_ESCROWYN":"N","LGD_PAYTYPE":"SC0010","LGD_AMOUNT":"110000","LGD_VANCODE":"van0012","LGD_EXCHANGERATE":"1.0","LGD_BUYERSSN":"","LGD_CARDINSTALLMONTH":"00","LGD_RESPMSG":"결제성공","LGD_PAYDATE":"20170108150538","LGD_PRODUCTINFO":"근로자 산업안전보건교육 1","LGD_PRODUCTCODE":"","LGD_HASHDATA":"0953fd44d1a7b6b65443849fa8604a2c","LGD_CARDGUBUN1":"0","LGD_CARDGUBUN2":"0","LGD_BUYERADDRESS":"","LGD_RECEIVER":"","LGD_RESPCODE":"0000","LGD_BUYEREMAIL":"zeroha@nayanet.kr","LGD_DISCOUNTUSEAMOUNT":"0"}]}
+]
+2017-01-08 15:05:39 [INFO ] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Response Code=[0000], Msg=[��������], Count=1
+2017-01-08 15:05:39 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Response (LGD_CARDACQUIRER, 0) = 61
+2017-01-08 15:05:39 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Response (LGD_CARDNOINTEREST_YN, 0) = 0
+2017-01-08 15:05:39 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Response (LGD_IFOS, 0) = 306C0C
+2017-01-08 15:05:39 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Response (LGD_MID, 0) = tnayanet
+2017-01-08 15:05:39 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Response (LGD_FINANCENAME, 0) = 현대VISA
+2017-01-08 15:05:39 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Response (LGD_PCANCELFLAG, 0) = 1
+2017-01-08 15:05:39 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Response (LGD_FINANCEAUTHNUM, 0) = 00000000
+2017-01-08 15:05:39 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Response (LGD_DELIVERYINFO, 0) = 
+2017-01-08 15:05:39 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Response (LGD_BUYER, 0) = zeroha
+2017-01-08 15:05:39 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Response (LGD_AFFILIATECODE, 0) = ******
+2017-01-08 15:05:39 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Response (LGD_TRANSAMOUNT, 0) = 110000
+2017-01-08 15:05:39 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Response (LGD_BUYERID, 0) = 
+2017-01-08 15:05:39 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Response (LGD_OID, 0) = 1701081483855502c8f73e6d06b0c
+2017-01-08 15:05:39 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Response (LGD_CARDNUM, 0) = 433087******9812
+2017-01-08 15:05:39 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Response (LGD_RECEIVERPHONE, 0) = 
+2017-01-08 15:05:39 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Response (LGD_2TR_FLAG, 0) = Y
+2017-01-08 15:05:39 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Response (LGD_DEVICE, 0) = 
+2017-01-08 15:05:39 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Response (LGD_TID, 0) = tnaya2017010815053899902
+2017-01-08 15:05:39 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Response (LGD_TIMESTAMP, 0) = 20170108150538
+2017-01-08 15:05:39 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Response (LGD_FINANCECODE, 0) = 61100
+2017-01-08 15:05:39 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Response (LGD_CARDNOINTYN, 0) = 0
+2017-01-08 15:05:39 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Response (LGD_PCANCELSTR, 0) = 0
+2017-01-08 15:05:39 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Response (LGD_DISCOUNTUSEYN, 0) = 0
+2017-01-08 15:05:39 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Response (LGD_BUYERPHONE, 0) = 
+2017-01-08 15:05:39 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Response (LGD_ESCROWYN, 0) = N
+2017-01-08 15:05:39 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Response (LGD_PAYTYPE, 0) = SC0010
+2017-01-08 15:05:39 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Response (LGD_AMOUNT, 0) = 110000
+2017-01-08 15:05:39 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Response (LGD_VANCODE, 0) = van0012
+2017-01-08 15:05:39 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Response (LGD_EXCHANGERATE, 0) = 1.0
+2017-01-08 15:05:39 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Response (LGD_BUYERSSN, 0) = 
+2017-01-08 15:05:39 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Response (LGD_CARDINSTALLMONTH, 0) = 00
+2017-01-08 15:05:39 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Response (LGD_RESPMSG, 0) = 결제성공
+2017-01-08 15:05:39 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Response (LGD_PAYDATE, 0) = 20170108150538
+2017-01-08 15:05:39 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Response (LGD_PRODUCTINFO, 0) = 근로자 산업안전보건교육 1
+2017-01-08 15:05:39 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Response (LGD_PRODUCTCODE, 0) = 
+2017-01-08 15:05:39 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Response (LGD_HASHDATA, 0) = 0953fd44d1a7b6b65443849fa8604a2c
+2017-01-08 15:05:39 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Response (LGD_CARDGUBUN1, 0) = 0
+2017-01-08 15:05:39 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Response (LGD_CARDGUBUN2, 0) = 0
+2017-01-08 15:05:39 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Response (LGD_BUYERADDRESS, 0) = 
+2017-01-08 15:05:39 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Response (LGD_RECEIVER, 0) = 
+2017-01-08 15:05:39 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Response (LGD_RESPCODE, 0) = 0000
+2017-01-08 15:05:39 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Response (LGD_BUYEREMAIL, 0) = zeroha@nayanet.kr
+2017-01-08 15:05:39 [DEBUG] [tnayanet-01201701081505349349bc622322cc1f2ac97adabd251011daa20ade] Response (LGD_DISCOUNTUSEAMOUNT, 0) = 0
+2017-01-08 15:14:26 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 15:14:26 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 15:14:26 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 15:14:26 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 15:14:26 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 15:14:26 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 15:14:26 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 15:14:26 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 15:14:26 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 15:14:26 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 15:14:26 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 15:14:26 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 15:14:26 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 15:14:26 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 15:14:26 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 15:14:28 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 15:14:28 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 15:14:28 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 15:14:28 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 15:14:28 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 15:14:28 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 15:14:28 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 15:14:28 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 15:14:28 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 15:14:28 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 15:14:28 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 15:14:28 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 15:14:28 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 15:14:28 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 15:14:28 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 15:14:56 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 15:14:56 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 15:14:56 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 15:14:56 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 15:14:56 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 15:14:56 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 15:14:56 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 15:14:56 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 15:14:56 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 15:14:56 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 15:14:56 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 15:14:56 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 15:14:56 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 15:14:56 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 15:14:56 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 15:14:56 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Post [LGD_TXID] = [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad]
+2017-01-08 15:14:56 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Post [LGD_AUTHCODE] = [fa87d3cbef61028fc0ecedfe0a29bb96ffde1bcd]
+2017-01-08 15:14:56 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Post [LGD_MID] = [tnayanet]
+2017-01-08 15:14:56 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Post [LGD_TXNAME] = [PaymentByKey]
+2017-01-08 15:14:56 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Post [LGD_PAYKEY] = [201701081514557BA33C8157707D04F4DF5460979E1F69CA8753A2]
+2017-01-08 15:14:56 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] post_string = LGD_TXID=tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad&LGD_AUTHCODE=fa87d3cbef61028fc0ecedfe0a29bb96ffde1bcd&LGD_MID=tnayanet&LGD_TXNAME=PaymentByKey&LGD_PAYKEY=201701081514557BA33C8157707D04F4DF5460979E1F69CA8753A2
+2017-01-08 15:14:57 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Result = [
+
+
+
+
+
+
+
+
+
+{"LGD_RESPCODE":"0000","LGD_RESPMSG":"결제성공","LGD_RESPONSE":[{"LGD_CARDACQUIRER":"61","LGD_CARDNOINTEREST_YN":"0","LGD_IFOS":"306C0C","LGD_MID":"tnayanet","LGD_FINANCENAME":"현대VISA","LGD_PCANCELFLAG":"1","LGD_FINANCEAUTHNUM":"00000000","LGD_DELIVERYINFO":"","LGD_BUYER":"zeroha","LGD_AFFILIATECODE":"******","LGD_TRANSAMOUNT":"80000","LGD_BUYERID":"","LGD_OID":"17010814838560686ced13dde2bd1","LGD_CARDNUM":"433087******9812","LGD_RECEIVERPHONE":"","LGD_2TR_FLAG":"Y","LGD_DEVICE":"","LGD_TID":"tnaya2017010815145699915","LGD_TIMESTAMP":"20170108151456","LGD_FINANCECODE":"61100","LGD_CARDNOINTYN":"0","LGD_PCANCELSTR":"0","LGD_DISCOUNTUSEYN":"0","LGD_BUYERPHONE":"","LGD_ESCROWYN":"N","LGD_PAYTYPE":"SC0010","LGD_AMOUNT":"80000","LGD_VANCODE":"van0011","LGD_EXCHANGERATE":"1.0","LGD_BUYERSSN":"","LGD_CARDINSTALLMONTH":"00","LGD_RESPMSG":"결제성공","LGD_PAYDATE":"20170108151456","LGD_PRODUCTINFO":"병원 CS, 병원을 고객에 맞게 디자인하다!","LGD_PRODUCTCODE":"","LGD_HASHDATA":"6663810b7263d5adf337376bb82aa8b6","LGD_CARDGUBUN1":"0","LGD_CARDGUBUN2":"0","LGD_BUYERADDRESS":"","LGD_RECEIVER":"","LGD_RESPCODE":"0000","LGD_BUYEREMAIL":"zeroha@nayanet.kr","LGD_DISCOUNTUSEAMOUNT":"0"}]}
+]
+2017-01-08 15:14:57 [INFO ] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Response Code=[0000], Msg=[��������], Count=1
+2017-01-08 15:14:57 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Response (LGD_CARDACQUIRER, 0) = 61
+2017-01-08 15:14:57 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Response (LGD_CARDNOINTEREST_YN, 0) = 0
+2017-01-08 15:14:57 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Response (LGD_IFOS, 0) = 306C0C
+2017-01-08 15:14:57 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Response (LGD_MID, 0) = tnayanet
+2017-01-08 15:14:57 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Response (LGD_FINANCENAME, 0) = 현대VISA
+2017-01-08 15:14:57 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Response (LGD_PCANCELFLAG, 0) = 1
+2017-01-08 15:14:57 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Response (LGD_FINANCEAUTHNUM, 0) = 00000000
+2017-01-08 15:14:57 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Response (LGD_DELIVERYINFO, 0) = 
+2017-01-08 15:14:57 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Response (LGD_BUYER, 0) = zeroha
+2017-01-08 15:14:57 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Response (LGD_AFFILIATECODE, 0) = ******
+2017-01-08 15:14:57 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Response (LGD_TRANSAMOUNT, 0) = 80000
+2017-01-08 15:14:57 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Response (LGD_BUYERID, 0) = 
+2017-01-08 15:14:57 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Response (LGD_OID, 0) = 17010814838560686ced13dde2bd1
+2017-01-08 15:14:57 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Response (LGD_CARDNUM, 0) = 433087******9812
+2017-01-08 15:14:57 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Response (LGD_RECEIVERPHONE, 0) = 
+2017-01-08 15:14:57 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Response (LGD_2TR_FLAG, 0) = Y
+2017-01-08 15:14:57 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Response (LGD_DEVICE, 0) = 
+2017-01-08 15:14:57 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Response (LGD_TID, 0) = tnaya2017010815145699915
+2017-01-08 15:14:57 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Response (LGD_TIMESTAMP, 0) = 20170108151456
+2017-01-08 15:14:57 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Response (LGD_FINANCECODE, 0) = 61100
+2017-01-08 15:14:57 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Response (LGD_CARDNOINTYN, 0) = 0
+2017-01-08 15:14:57 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Response (LGD_PCANCELSTR, 0) = 0
+2017-01-08 15:14:57 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Response (LGD_DISCOUNTUSEYN, 0) = 0
+2017-01-08 15:14:57 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Response (LGD_BUYERPHONE, 0) = 
+2017-01-08 15:14:57 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Response (LGD_ESCROWYN, 0) = N
+2017-01-08 15:14:57 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Response (LGD_PAYTYPE, 0) = SC0010
+2017-01-08 15:14:57 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Response (LGD_AMOUNT, 0) = 80000
+2017-01-08 15:14:57 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Response (LGD_VANCODE, 0) = van0011
+2017-01-08 15:14:57 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Response (LGD_EXCHANGERATE, 0) = 1.0
+2017-01-08 15:14:57 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Response (LGD_BUYERSSN, 0) = 
+2017-01-08 15:14:57 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Response (LGD_CARDINSTALLMONTH, 0) = 00
+2017-01-08 15:14:57 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Response (LGD_RESPMSG, 0) = 결제성공
+2017-01-08 15:14:57 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Response (LGD_PAYDATE, 0) = 20170108151456
+2017-01-08 15:14:57 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Response (LGD_PRODUCTINFO, 0) = 병원 CS, 병원을 고객에 맞게 디자인하다!
+2017-01-08 15:14:57 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Response (LGD_PRODUCTCODE, 0) = 
+2017-01-08 15:14:57 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Response (LGD_HASHDATA, 0) = 6663810b7263d5adf337376bb82aa8b6
+2017-01-08 15:14:57 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Response (LGD_CARDGUBUN1, 0) = 0
+2017-01-08 15:14:57 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Response (LGD_CARDGUBUN2, 0) = 0
+2017-01-08 15:14:57 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Response (LGD_BUYERADDRESS, 0) = 
+2017-01-08 15:14:57 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Response (LGD_RECEIVER, 0) = 
+2017-01-08 15:14:57 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Response (LGD_RESPCODE, 0) = 0000
+2017-01-08 15:14:57 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Response (LGD_BUYEREMAIL, 0) = zeroha@nayanet.kr
+2017-01-08 15:14:57 [DEBUG] [tnayanet-01201701081514564cba2d1e1f0952768157df78448c598d48961dad] Response (LGD_DISCOUNTUSEAMOUNT, 0) = 0
+2017-01-08 15:18:11 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 15:18:11 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 15:18:11 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 15:18:11 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 15:18:11 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 15:18:11 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 15:18:11 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 15:18:11 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 15:18:11 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 15:18:11 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 15:18:11 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 15:18:11 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 15:18:11 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 15:18:11 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 15:18:11 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 15:18:18 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 15:18:18 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 15:18:18 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 15:18:18 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 15:18:18 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 15:18:18 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 15:18:18 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 15:18:18 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 15:18:18 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 15:18:18 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 15:18:18 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 15:18:18 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 15:18:18 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 15:18:18 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 15:18:18 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 15:18:20 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 15:18:20 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 15:18:20 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 15:18:20 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 15:18:20 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 15:18:20 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 15:18:20 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 15:18:20 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 15:18:20 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 15:18:20 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 15:18:20 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 15:18:20 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 15:18:20 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 15:18:20 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 15:18:20 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 15:18:50 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 15:18:50 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 15:18:50 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 15:18:50 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 15:18:50 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 15:18:50 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 15:18:50 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 15:18:50 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 15:18:50 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 15:18:50 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 15:18:50 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 15:18:50 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 15:18:50 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 15:18:50 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 15:18:50 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 15:18:50 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Post [LGD_TXID] = [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991]
+2017-01-08 15:18:50 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Post [LGD_AUTHCODE] = [ddf37762b51e61519c398c10ecb63bb05c7bb83e]
+2017-01-08 15:18:50 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Post [LGD_MID] = [tnayanet]
+2017-01-08 15:18:50 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Post [LGD_TXNAME] = [PaymentByKey]
+2017-01-08 15:18:50 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Post [LGD_PAYKEY] = [20170108151849BE3BB3202B56783F3690DE55AA48CCAF98554C78]
+2017-01-08 15:18:50 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] post_string = LGD_TXID=tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991&LGD_AUTHCODE=ddf37762b51e61519c398c10ecb63bb05c7bb83e&LGD_MID=tnayanet&LGD_TXNAME=PaymentByKey&LGD_PAYKEY=20170108151849BE3BB3202B56783F3690DE55AA48CCAF98554C78
+2017-01-08 15:18:51 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Result = [
+
+
+
+
+
+
+
+
+
+{"LGD_RESPCODE":"0000","LGD_RESPMSG":"결제성공","LGD_RESPONSE":[{"LGD_CARDACQUIRER":"61","LGD_CARDNOINTEREST_YN":"0","LGD_IFOS":"306C0C","LGD_MID":"tnayanet","LGD_FINANCENAME":"현대VISA","LGD_PCANCELFLAG":"1","LGD_FINANCEAUTHNUM":"00000000","LGD_DELIVERYINFO":"","LGD_BUYER":"zeroha","LGD_AFFILIATECODE":"******","LGD_TRANSAMOUNT":"100000","LGD_BUYERID":"","LGD_OID":"17010814838563005781f8c4c5687","LGD_CARDNUM":"433087******9812","LGD_RECEIVERPHONE":"","LGD_2TR_FLAG":"Y","LGD_DEVICE":"","LGD_TID":"tnaya2017010815185099927","LGD_TIMESTAMP":"20170108151850","LGD_FINANCECODE":"61100","LGD_CARDNOINTYN":"0","LGD_PCANCELSTR":"0","LGD_DISCOUNTUSEYN":"0","LGD_BUYERPHONE":"","LGD_ESCROWYN":"N","LGD_PAYTYPE":"SC0010","LGD_AMOUNT":"100000","LGD_VANCODE":"van0012","LGD_EXCHANGERATE":"1.0","LGD_BUYERSSN":"","LGD_CARDINSTALLMONTH":"00","LGD_RESPMSG":"결제성공","LGD_PAYDATE":"20170108151850","LGD_PRODUCTINFO":"병원근무자를 위한 CS 교육과정","LGD_PRODUCTCODE":"","LGD_HASHDATA":"a41dd6de3d204caa7ada45dd59f459c3","LGD_CARDGUBUN1":"0","LGD_CARDGUBUN2":"0","LGD_BUYERADDRESS":"","LGD_RECEIVER":"","LGD_RESPCODE":"0000","LGD_BUYEREMAIL":"zeroha@nayanet.kr","LGD_DISCOUNTUSEAMOUNT":"0"}]}
+]
+2017-01-08 15:18:51 [INFO ] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Response Code=[0000], Msg=[��������], Count=1
+2017-01-08 15:18:51 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Response (LGD_CARDACQUIRER, 0) = 61
+2017-01-08 15:18:51 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Response (LGD_CARDNOINTEREST_YN, 0) = 0
+2017-01-08 15:18:51 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Response (LGD_IFOS, 0) = 306C0C
+2017-01-08 15:18:51 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Response (LGD_MID, 0) = tnayanet
+2017-01-08 15:18:51 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Response (LGD_FINANCENAME, 0) = 현대VISA
+2017-01-08 15:18:51 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Response (LGD_PCANCELFLAG, 0) = 1
+2017-01-08 15:18:51 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Response (LGD_FINANCEAUTHNUM, 0) = 00000000
+2017-01-08 15:18:51 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Response (LGD_DELIVERYINFO, 0) = 
+2017-01-08 15:18:51 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Response (LGD_BUYER, 0) = zeroha
+2017-01-08 15:18:51 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Response (LGD_AFFILIATECODE, 0) = ******
+2017-01-08 15:18:51 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Response (LGD_TRANSAMOUNT, 0) = 100000
+2017-01-08 15:18:51 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Response (LGD_BUYERID, 0) = 
+2017-01-08 15:18:51 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Response (LGD_OID, 0) = 17010814838563005781f8c4c5687
+2017-01-08 15:18:51 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Response (LGD_CARDNUM, 0) = 433087******9812
+2017-01-08 15:18:51 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Response (LGD_RECEIVERPHONE, 0) = 
+2017-01-08 15:18:51 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Response (LGD_2TR_FLAG, 0) = Y
+2017-01-08 15:18:51 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Response (LGD_DEVICE, 0) = 
+2017-01-08 15:18:51 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Response (LGD_TID, 0) = tnaya2017010815185099927
+2017-01-08 15:18:51 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Response (LGD_TIMESTAMP, 0) = 20170108151850
+2017-01-08 15:18:51 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Response (LGD_FINANCECODE, 0) = 61100
+2017-01-08 15:18:51 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Response (LGD_CARDNOINTYN, 0) = 0
+2017-01-08 15:18:51 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Response (LGD_PCANCELSTR, 0) = 0
+2017-01-08 15:18:51 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Response (LGD_DISCOUNTUSEYN, 0) = 0
+2017-01-08 15:18:51 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Response (LGD_BUYERPHONE, 0) = 
+2017-01-08 15:18:51 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Response (LGD_ESCROWYN, 0) = N
+2017-01-08 15:18:51 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Response (LGD_PAYTYPE, 0) = SC0010
+2017-01-08 15:18:51 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Response (LGD_AMOUNT, 0) = 100000
+2017-01-08 15:18:51 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Response (LGD_VANCODE, 0) = van0012
+2017-01-08 15:18:51 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Response (LGD_EXCHANGERATE, 0) = 1.0
+2017-01-08 15:18:51 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Response (LGD_BUYERSSN, 0) = 
+2017-01-08 15:18:51 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Response (LGD_CARDINSTALLMONTH, 0) = 00
+2017-01-08 15:18:51 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Response (LGD_RESPMSG, 0) = 결제성공
+2017-01-08 15:18:51 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Response (LGD_PAYDATE, 0) = 20170108151850
+2017-01-08 15:18:51 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Response (LGD_PRODUCTINFO, 0) = 병원근무자를 위한 CS 교육과정
+2017-01-08 15:18:51 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Response (LGD_PRODUCTCODE, 0) = 
+2017-01-08 15:18:51 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Response (LGD_HASHDATA, 0) = a41dd6de3d204caa7ada45dd59f459c3
+2017-01-08 15:18:51 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Response (LGD_CARDGUBUN1, 0) = 0
+2017-01-08 15:18:51 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Response (LGD_CARDGUBUN2, 0) = 0
+2017-01-08 15:18:51 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Response (LGD_BUYERADDRESS, 0) = 
+2017-01-08 15:18:51 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Response (LGD_RECEIVER, 0) = 
+2017-01-08 15:18:51 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Response (LGD_RESPCODE, 0) = 0000
+2017-01-08 15:18:51 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Response (LGD_BUYEREMAIL, 0) = zeroha@nayanet.kr
+2017-01-08 15:18:51 [DEBUG] [tnayanet-012017010815185039fc8ad920f68468b33b144ee6dddb5f2a6b0991] Response (LGD_DISCOUNTUSEAMOUNT, 0) = 0
+2017-01-08 15:19:29 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 15:19:29 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 15:19:29 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 15:19:29 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 15:19:29 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 15:19:29 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 15:19:29 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 15:19:29 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 15:19:29 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 15:19:29 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 15:19:29 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 15:19:29 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 15:19:29 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 15:19:29 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 15:19:29 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 15:24:55 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 15:24:55 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 15:24:55 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 15:24:55 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 15:24:55 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 15:24:55 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 15:24:55 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 15:24:55 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 15:24:55 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 15:24:55 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 15:24:55 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 15:24:55 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 15:24:55 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 15:24:55 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 15:24:55 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 15:25:22 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 15:25:22 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 15:25:22 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 15:25:22 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 15:25:22 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 15:25:22 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 15:25:22 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 15:25:22 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 15:25:22 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 15:25:22 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 15:25:22 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 15:25:22 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 15:25:22 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 15:25:22 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 15:25:22 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 15:25:25 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 15:25:25 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 15:25:25 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 15:25:25 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 15:25:25 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 15:25:25 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 15:25:25 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 15:25:25 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 15:25:25 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 15:25:25 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 15:25:25 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 15:25:25 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 15:25:25 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 15:25:25 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 15:25:25 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 15:25:27 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 15:25:27 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 15:25:27 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 15:25:27 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 15:25:27 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 15:25:27 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 15:25:27 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 15:25:27 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 15:25:27 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 15:25:27 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 15:25:27 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 15:25:27 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 15:25:27 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 15:25:27 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 15:25:27 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 15:25:47 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 15:25:47 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 15:25:47 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 15:25:47 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 15:25:47 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 15:25:47 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 15:25:47 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 15:25:47 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 15:25:47 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 15:25:47 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 15:25:47 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 15:25:47 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 15:25:47 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 15:25:47 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 15:25:47 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 15:26:28 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 15:26:28 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 15:26:28 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 15:26:28 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 15:26:28 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 15:26:28 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 15:26:28 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 15:26:28 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 15:26:28 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 15:26:28 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 15:26:28 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 15:26:28 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 15:26:28 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 15:26:28 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 15:26:28 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 15:26:54 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 15:26:54 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 15:26:54 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 15:26:54 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 15:26:54 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 15:26:54 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 15:26:54 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 15:26:54 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 15:26:54 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 15:26:54 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 15:26:54 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 15:26:54 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 15:26:54 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 15:26:54 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 15:26:54 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 15:27:05 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 15:27:05 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 15:27:05 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 15:27:05 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 15:27:05 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 15:27:05 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 15:27:05 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 15:27:05 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 15:27:05 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 15:27:05 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 15:27:05 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 15:27:05 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 15:27:05 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 15:27:05 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 15:27:05 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 15:27:08 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 15:27:08 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 15:27:08 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 15:27:08 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 15:27:08 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 15:27:08 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 15:27:08 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 15:27:08 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 15:27:08 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 15:27:08 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 15:27:08 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 15:27:08 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 15:27:08 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 15:27:08 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 15:27:08 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
+2017-01-08 15:27:11 [INFO ] [] XPayClient initialize [/home/nynLMS/lib/payment/lgdacom] [test]
+2017-01-08 15:27:11 [DEBUG] [] Config [server_id] = [01]
+2017-01-08 15:27:11 [DEBUG] [] Config [timeout] = [60]
+2017-01-08 15:27:11 [DEBUG] [] Config [log_level] = [4]
+2017-01-08 15:27:11 [DEBUG] [] Config [verify_cert] = [1]
+2017-01-08 15:27:11 [DEBUG] [] Config [verify_host] = [1]
+2017-01-08 15:27:11 [DEBUG] [] Config [report_error] = [1]
+2017-01-08 15:27:11 [DEBUG] [] Config [output_UTF8] = [1]
+2017-01-08 15:27:11 [DEBUG] [] Config [auto_rollback] = [1]
+2017-01-08 15:27:11 [DEBUG] [] Config [log_dir] = [/home/nynLMS/lib/payment/lgdacom/log]
+2017-01-08 15:27:11 [DEBUG] [] Config [tnayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 15:27:11 [DEBUG] [] Config [nayanet] = [aa7d95db6f74e6e55389156b2dcb7716]
+2017-01-08 15:27:11 [DEBUG] [] Config [url] = [https://xpayclient.lgdacom.net/xpay/Gateway.do]
+2017-01-08 15:27:11 [DEBUG] [] Config [test_url] = [https://xpayclient.lgdacom.net:7443/xpay/Gateway.do]
+2017-01-08 15:27:11 [DEBUG] [] Config [aux_url] = [http://xpayclient.lgdacom.net:7080/xpay/Gateway.do]
