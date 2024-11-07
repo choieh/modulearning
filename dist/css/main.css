@@ -1,18 +1,7 @@
-/* Error: "Icon true not found"
- *    ,
- * 36 |   @return getSvgIcon($iconName, $colorMain, $colorPoint);
- *    |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *    '
- *   abstracts\_icons.scss 36:11  svgIcon()
- *   main.scss 19:21              root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: "Icon true not found"\a    \2577 \a 36 \2502    @return getSvgIcon($iconName, $colorMain, $colorPoint);\d\a    \2502            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   abstracts\\_icons.scss 36:11  svgIcon()\a   main.scss 19:21              root stylesheet';
+#wrap_main {
+  width: 100%;
+  height: 30px;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none'%3E%3Cpath fill='%237a7a7a' d='M22.5 2.245h-6.005V.75a.75.75 0 1 0-1.5 0v1.495h-6V.75a.75.75 0 1 0-1.5 0v1.495H1.5a1.5 1.5 0 0 0-1.5 1.5V22.5A1.5 1.5 0 0 0 1.5 24h21a1.5 1.5 0 0 0 1.5-1.5V3.745a1.5 1.5 0 0 0-1.5-1.5Zm0 20.255h-21V3.745h5.995v.756a.75.75 0 1 0 1.5 0v-.755h6V4.5a.75.75 0 1 0 1.5 0v-.755H22.5V22.5Zm-5.25-10.502h1.5a.75.75 0 0 0 .75-.75V9.746a.75.75 0 0 0-.75-.75h-1.5a.75.75 0 0 0-.75.75v1.5c0 .415.336.75.75.75Zm0 6h1.5a.75.75 0 0 0 .75-.75v-1.5a.75.75 0 0 0-.75-.75h-1.5a.75.75 0 0 0-.75.75v1.5c0 .415.336.75.75.75Zm-4.5-3h-1.5a.75.75 0 0 0-.75.75v1.5c0 .415.336.75.75.75h1.5a.75.75 0 0 0 .75-.75v-1.5a.75.75 0 0 0-.75-.75Zm0-6.001h-1.5a.75.75 0 0 0-.75.75v1.5c0 .415.336.75.75.75h1.5a.75.75 0 0 0 .75-.75v-1.5a.75.75 0 0 0-.75-.75Zm-6 0h-1.5a.75.75 0 0 0-.75.75v1.5c0 .415.336.75.75.75h1.5a.75.75 0 0 0 .75-.75v-1.5a.75.75 0 0 0-.75-.75Zm0 6h-1.5a.75.75 0 0 0-.75.751v1.5c0 .415.336.75.75.75h1.5a.75.75 0 0 0 .75-.75v-1.5a.75.75 0 0 0-.75-.75Z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  outline: 1px solid green;
 }
