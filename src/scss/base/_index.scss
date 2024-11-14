@@ -1,2 +1,17 @@
+@use "../abstracts/index" as *;
 @forward "reset";
 @forward "typography";
+@forward "customSwiper";
+
+.btn {
+    &__close {
+        display: block;
+        width: 24px;
+        height: 24px;
+        color: transparent;
+        background-image: svgIcon(close);
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+}

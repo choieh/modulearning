@@ -1,0 +1,32 @@
+@use "../abstracts/index" as *;
+
+.swiper-container {
+    max-width: 1920px;
+    margin: 0 auto;
+
+    .swiper-slide a {
+        display: block;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: $color-gray-dark;
+        opacity: 0;
+        transition: opacity 0.3s;
+
+        &:hover {
+            color: $primary-color-light;
+        }
+    }
+
+    &:hover {
+        .swiper-button-next,
+        .swiper-button-prev {
+            opacity: 1;
+        }
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: $primary-color-light;
+    }
+}

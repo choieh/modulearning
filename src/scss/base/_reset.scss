@@ -1,1 +1,46 @@
-//기본 브라우저 스타일을 초기화
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 1204px;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+}
+
+button {
+    all: unset; /* 모든 기본 스타일을 초기화 */
+    display: inline-block; /* 버튼의 기본 display 속성을 설정 */
+    cursor: pointer; /* 커서를 포인터로 변경해 사용자 피드백을 강화 */
+    background: none; /* 배경 제거 */
+    border: none; /* 테두리 제거 */
+    padding: 0; /* 여백 제거 */
+    font: inherit; /* 부모의 폰트 스타일을 상속 */
+    color: inherit; /* 부모의 색상을 상속 */
+    text-align: center; /* 텍스트를 중앙 정렬 */
+}
+
+button:focus {
+outline: none; /* 포커스 아웃라인 제거 */
+}
+
+.blind {
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%); 
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+}
+
+.skip_nav{position:relative;}
+.skip_nav a{display:block; height:1px; width:1px; margin-bottom:-1px; overflow:hidden; font-size:0;color:transparent; color:#fff; font-weight:700; white-space:nowrap;}
+.skip_nav a:focus,.skip_nav a:active{height:auto; width:100%; padding:5px; margin-bottom:10px; position:absolute; left:0; top:0;font-size:20px; background:#2466a6;z-index:10}

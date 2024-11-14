@@ -1,0 +1,239 @@
+@use "../abstracts/index" as *;
+
+.top-banner {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 23px 0 12px;
+}
+
+.counsel {
+    width: 350px;
+    height: 82px;
+    margin-left: auto;
+    background: url('/images/common/ad.png') no-repeat center / 100%;
+}
+
+.shortcut {
+    margin-top: 58px;
+
+    &__list {
+        display: flex;
+        gap: 44px;
+        max-width: 1240px;
+        margin: 0 auto;
+    }
+
+    &__item {
+        flex-shrink: 1;
+        width: 140px;
+        height: 140px;
+        background-repeat: no-repeat;
+        background-position: center 34px;
+        background-size: 48px;
+
+        @for $i from 1 to 8 {
+            &:nth-child(#{$i}) {
+                background-image: svgIcon(shortcut_0#{$i});
+            }
+        }
+
+        &:hover {
+            @include common-boxShadow-style($box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.10))
+        }
+    }
+
+    &__link {
+        display: block;
+        height: 100%;
+        padding-top: 82px;
+        text-align: center;
+        color: $color-black;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19px;
+    }
+}
+
+.section {
+    max-width: 1240px;
+    margin: 90px auto 0;
+
+    &__title {
+        display: inline-block;
+        position: relative;
+        padding-right: 30px;
+        color: #000;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            margin-top: -3px;
+        }
+    }
+}
+
+.tab {
+    &__list {
+        display: flex;
+        gap: 10px;
+        flex-shrink: 0;
+        flex-wrap: wrap;
+        margin-top: 19px;
+    }
+
+    &__item {
+        border-radius: 40px;
+
+        &.is-active {
+            .tab__link {
+                color: $color-white;
+                background-color: $secondary-color;
+            } 
+        }
+    }
+
+    &__link {
+        display: block;
+        padding: 7px 18px;
+        color: $color-black;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 24px;
+        background-color: $color-yellow-light;
+        border-radius: 40px;
+    }
+}
+
+.thumbnail {
+    
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__item {
+        overflow: hidden;
+        border-radius: 10px;
+    }
+}
+
+.contents {
+    &__info {
+        margin-top: 13px;
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 32px;
+        color: $color-black;
+        @include text-ellipsis(2);
+    }
+
+    &__desc {
+        margin-top: 13px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        color: $color-black;
+        @include text-ellipsis(3);
+    }
+}
+
+.badge {
+    height: 38px;
+    padding: 7px 18px;
+    line-height: 27px;
+    font-size: 18px;
+    font-weight: 600;
+    color: $color-white;
+    background-color: $primary-color-light;
+    border-radius: 40px;
+    @include text-ellipsis(1);
+
+    &__wrap {
+        display: inline-flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+    }
+}
+
+.lecture {
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        margin-top: 53px;
+    }
+
+    &__item {
+        position: relative;
+
+        &::before {
+            content: '>>';
+            position: absolute;
+            top: 50%;
+            right: 71px;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__link {
+        display: block;
+        padding: 6px 12px 5px;
+        color: #000;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 16px;
+        background-color: $color-yellow-light;
+        border-radius: 4px 0px 0px 4px;
+    }
+
+    &-popular {
+        .section {
+            &__title {
+                &::before {
+                    width: 30px;
+                    height: 30px;
+                    @include section-title-icon('fire');
+                }
+            }
+        }
+
+        .tab-content {
+            display: none;
+            grid-template-columns: 670px 448px;
+            gap: 134px;
+            margin: 82px 0 38px;
+
+            &.is-active {
+                display: grid;
+            }
+        }
+    }
+
+    &-new {
+        .section {
+            &__title {
+                &::before {
+                    width: 30px;
+                    height: 30px;
+                    @include section-title-icon('star');
+                }
+            }
+        }
+    }
+} 

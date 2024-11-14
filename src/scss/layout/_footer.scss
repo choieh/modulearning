@@ -1,0 +1,82 @@
+@use "../abstracts/index" as *;
+
+.footer {
+    width: 1240px;
+    margin: 0 auto;
+
+    &__wrap {
+        padding: 58px 0 111px;
+        background-color: $text-color-sub;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-logo {
+        &__link {
+            display: block;
+            width: 124px;
+            height: 20px;
+            color: transparent;
+            background: url('/images/common/footer_logo@2x.png') no-repeat center / 100%;
+        }
+    }
+
+    &-menu {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 42px;
+
+        li + li {
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: -21px;
+                transform: translateY(-50%);
+                width: 2px;
+                height: 14px;
+                background-color: $color-black;
+            }
+        }
+
+        a {
+            display: block;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 14px;
+            color: $color-black-second;
+        }
+    }
+
+    &__body {
+        margin-top: 43px;
+    }
+
+    &-info {
+        color: $color-black;
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    &-auth {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 16px;
+        margin-top: 36px;
+        padding-top: 36px;
+        border-top: 1px solid $color-gray-dark;
+    }
+}
+
+@media (min-width:1440px) {
+    // .footer {
+    //     max-width: 1240px;
+    // }
+}
