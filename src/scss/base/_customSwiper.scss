@@ -1,8 +1,9 @@
 @use "../abstracts/index" as *;
 
 .swiper-container {
-    max-width: 1920px;
-    margin: 0 auto;
+    .swiper {
+        padding-bottom: 30px;
+    }
 
     .swiper-slide a {
         display: block;

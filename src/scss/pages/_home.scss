@@ -13,6 +13,13 @@
     background: url('/images/common/ad.png') no-repeat center / 100%;
 }
 
+.main-visual {
+    .swiper-container {
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+}
+
 .shortcut {
     margin-top: 58px;
 
@@ -24,7 +31,7 @@
     }
 
     &__item {
-        flex-shrink: 1;
+        flex-shrink: 0;
         width: 140px;
         height: 140px;
         background-repeat: no-repeat;
@@ -55,8 +62,35 @@
 }
 
 .section {
-    max-width: 1240px;
-    margin: 90px auto 0;
+    margin-top: 120px;
+
+    &__inner {
+        max-width: 1270px;
+        margin: 0 auto;
+    }
+
+    &__header {
+        padding: 0 10px;
+
+        .point {
+            display: block;
+            color: $primary-color-light;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 24px;
+        }
+
+        .desc {
+            color: #000;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 29px;
+        }
+    }
+
+    &__body {
+        margin-top: 28px;
+    }
 
     &__title {
         display: inline-block;
@@ -75,38 +109,6 @@
             transform: translateY(-50%);
             margin-top: -3px;
         }
-    }
-}
-
-.tab {
-    &__list {
-        display: flex;
-        gap: 10px;
-        flex-shrink: 0;
-        flex-wrap: wrap;
-        margin-top: 19px;
-    }
-
-    &__item {
-        border-radius: 40px;
-
-        &.is-active {
-            .tab__link {
-                color: $color-white;
-                background-color: $secondary-color;
-            } 
-        }
-    }
-
-    &__link {
-        display: block;
-        padding: 7px 18px;
-        color: $color-black;
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 24px;
-        background-color: $color-yellow-light;
-        border-radius: 40px;
     }
 }
 
@@ -211,17 +213,16 @@
                     @include section-title-icon('fire');
                 }
             }
+
+            &__body {
+                padding: 0 5px;
+            }
         }
 
-        .tab-content {
-            display: none;
+        .slide-content {
+            display: grid;
             grid-template-columns: 670px 448px;
             gap: 134px;
-            margin: 82px 0 38px;
-
-            &.is-active {
-                display: grid;
-            }
         }
     }
 
@@ -235,5 +236,126 @@
                 }
             }
         }
+
+        .slide-content {
+            padding: 0 10px 10px;
+        }
+
+        .badge {
+            background-color: $secondary-color;
+        }
     }
-} 
+}
+
+.card {
+    width: 300px;
+    height: 367px;
+    
+    @include common-boxShadow-style();
+
+    .badge {
+        &__wrap {
+            display: flex;
+        }
+    }
+
+    &__body {
+        padding: 14px 21px 44px;
+    }
+
+    &__title {
+        margin-top: 12px;
+        color: $color-black;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 21px;
+    }
+
+    &__detail {
+        margin-top: 12px;
+    }
+
+    &__item {
+        display: flex;
+        gap: 10px;
+        color: $color-black;
+        font-size: 14px;
+        line-height: 19px;
+
+        dt {
+            width: 54px;
+            font-weight: 600;
+        }
+    }
+}
+
+.review {
+    padding: 89px 0 78px;
+    background-color: $color-gray-light;
+
+    .section {
+        &__inner {
+            display: flex;
+            gap: 125px;
+        }
+
+        &__title {
+            margin-bottom: 38px;
+
+            &::before {
+                width: 30px;
+                height: 30px;
+                @include section-title-icon('good');
+            }
+        }
+
+        &__header {
+            flex-shrink: 0;
+
+            .desc {
+                margin-top: 10px;
+            }
+        }
+
+        &__body {
+            margin: 0;
+            padding: 0 5px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        position: relative;
+        width: 221px;
+        height: 331px;
+        padding: 43px 22px 0 20px;
+        @include common-boxShadow-style();
+    }
+
+    &__text {
+        color: $color-black;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19px;
+    }
+
+    .customer {
+        &__info {
+            position: absolute;
+            bottom: 33px;
+            left: 20px;
+        }
+
+        &__name {
+            color: $sub-title-color;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 19px;
+        }
+    }
+}
