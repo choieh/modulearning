@@ -1,0 +1,49 @@
+@use "../abstracts/index" as *;
+
+.lecture {
+    &__depth {
+        max-width: 1246px;
+        margin: 0 auto;
+        outline: 1px solid coral;
+    }
+}
+
+.depth {
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    &__item {
+        position: relative;
+
+        &.is-active {
+            .depth__link {
+                color: $color-black;
+            }
+        }
+
+        & + li {
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 16px;
+                transform: translateY(-50%);
+                background-image: svgIcon(arrow, 999);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 4px 7px;
+                outline: 1px solid red;
+            }
+        }
+    }
+
+    &__link {
+        color: #555;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 36px;
+    }
+}

@@ -12,7 +12,7 @@
     </div>
 
     <? include '../include/gnb_v2.php' ?>
-    <? include '../include/mainContainer.php' ?>
+    <? include './include/mainContainer.php' ?>
     <? include '../include/footer.php' ?>
 
 </body>

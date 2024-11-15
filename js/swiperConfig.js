@@ -26,7 +26,7 @@ var swiperContents = [
         customSwiper2: [
             {
                 type: "비환급",
-                title: "[모두의 TALK] 정성호의 리얼 법정교육토크쇼",
+                title: '[모두의 TALK]'+'<br>'+'정성호의 리얼 법정교육토크쇼',
                 desc: "천의 목소리를 가진 SNL크루 정성호와 상큼발랄 매력만점 박하윤 아나운서가 함께하는 직장인 리얼 토크쇼!",
                 cource: [
                     {
@@ -49,7 +49,7 @@ var swiperContents = [
             },
             {
                 type: "비환급",
-                title: "2[모두의 TALK] 정성호의 리얼 법정교육토크쇼",
+                title: '[모두의 TALK]'+'<br>'+'정성호의 리얼 법정교육토크쇼',
                 desc: "천의 목소리를 가진 SNL크루 정성호와 상큼발랄 매력만점 박하윤 아나운서가 함께하는 직장인 리얼 토크쇼!",
                 cource: [
                     {
@@ -176,6 +176,7 @@ function customSwiper2() {
                     <div class="contents__info">
                         <strong class="contents__title">${item.title}</strong>
                         <p class="contents__desc">${item.desc}</p>
+                        <a href="javascript:void(0);" class="btn__more">더보기+</a>
                         <ul class="lecture__list">
                             ${item.cource.map(course => `
                                 <li class="lecture__item">

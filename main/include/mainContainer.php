@@ -1,7 +1,9 @@
-<div class="main-container">
+<div class="container-main">
     <div class="top-banner">
         <div class="counsel">
-            <p class="blind">우리기업에 필요한 교육을 원할땐 상담문의 바로가기</p>
+            <a href="javascript:void(0);">
+                <p class="blind">우리기업에 필요한 교육을 원할땐 상담문의 바로가기</p>
+            </a>
         </div>
     </div>
 
@@ -91,26 +93,34 @@
         <div class="section__inner">
             <div class="section__header">
                 <h2 class="section__title">공지사항</h2>
-                <span class="btn__more">더보기+</span>
+                <a href="javascript:void(0);" class="btn__more">더보기+</a>
                 <ul class="notice__list">
                     <li class="notice__item">
-                        <p>2024년도 안전보건교육 (온라인) 훈련과정 9월 개강 일정 안내2024년도 안전보건교육 (온라인) 훈련</p>
+                        <a href="javascript:void(0);">
+                            <p>2024년도 안전보건교육 (온라인) 훈련과정 9월 개강 일정 안내2024년도 안전보건교육 (온라인) 훈련</p>
+                        </a>
                     </li>
                 </ul>
             </div>
             <div class="section__body">
                 <div class="help">
-                    <h3>학습지원센터</h3>
-                    <dl>
+                    <h3 class="help__title">학습지원센터</h3>
+                    <dl class="help__info">
                         <div>
                             <dt>월-금</dt>
-                            <dd>09:00~18:00</dd>
+                            <dd>09:00 ~18:00</dd>
                         </div>
                         <div>
-                            <dt></dt>
-                            <dd></dd>
+                            <dt>점심시간</dt>
+                            <dd>12:00 ~13:00</dd>
                         </div>
                     </dl>
+                    <strong class="help__number">1544-9335</strong>
+                </div>
+                <div class="bank-account">
+                    <h3 class="bank-account__title">계좌 정보</h3>
+                    <strong class="bank-account__name">하나은행 주식회사 모두의 러닝</strong>
+                    <strong class="bank-account__number">332-910046-85504</strong>
                 </div>
             </div>
         </div>

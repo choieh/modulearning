@@ -11,12 +11,21 @@
     height: 82px;
     margin-left: auto;
     background: url('/images/common/ad.png') no-repeat center / 100%;
+
+    a {
+        display: block;
+        height: 100%;
+    }
 }
 
 .main-visual {
     .swiper-container {
         max-width: 1920px;
         margin: 0 auto;
+
+        .swiper {
+            padding-bottom: 0;
+        }
     }
 }
 
@@ -178,7 +187,7 @@
         display: flex;
         flex-direction: column;
         gap: 6px;
-        margin-top: 53px;
+        margin-top: 12px;
     }
 
     &__item {
@@ -217,6 +226,18 @@
             &__body {
                 padding: 0 5px;
             }
+        }
+
+        .btn {
+            &__more {
+                display: block;
+                margin-top: 40px;
+                color: $color-black;
+                text-align: right;
+                font-size: 12px;
+                font-weight: 600;
+                line-height: 16px;
+            } 
         }
 
         .slide-content {
@@ -357,5 +378,113 @@
             font-weight: 400;
             line-height: 19px;
         }
+    }
+}
+
+.notice {
+    margin-bottom: 104px;
+
+    .section {
+        &__inner {
+            display: grid;
+            grid-template-columns: 767px 402px;
+            gap: 114px;
+        }
+
+        &__header {
+            position: relative;
+
+            .btn {
+                &__more {
+                    position: absolute;
+                    top: 11px;
+                    right: 0;
+                }
+            }
+        }
+
+        &__title {
+            &::before {
+                width: 30px;
+                height: 30px;
+                @include section-title-icon('mic');
+            }
+        }
+
+        &__body {
+            margin-top: 0;
+            padding: 0;
+        }
+    }
+
+    &__list {
+        overflow: hidden;
+        height: 222px;
+        margin-top: 25px;
+    }
+
+    &__item {
+        height: 38px;
+
+        & + li {
+            margin-top: 8px;
+        }
+
+        a {
+            display: block;
+        }
+    }
+    
+}
+
+.help {
+    background: url('/images/common/icon_help.png') no-repeat right center / 130px;
+
+    &__title {
+        color: $color-black;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+    }
+
+    &__info {
+        margin-top: 14px;
+        color: $color-black;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19px;
+
+        dt,
+        dd {
+            display: inline-block;
+        }
+    }
+
+    &__number {
+        display: block;
+        margin-top: 3px;
+        color: $color-black;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 46px;
+    }
+}
+
+.bank-account {
+    &__title {
+        margin: 40px 0 14px;
+        color: $color-black;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+    }
+
+    &__name,
+    &__number {
+        display: block;
+        color: $color-black;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 24px;
     }
 }
