@@ -1,1 +1,43 @@
-//카드 스타일 정의
+@use "../abstracts/index" as *;
+
+.card {
+    width: 300px;
+    height: 367px;
+    
+    @include common-boxShadow-style();
+
+    .badge {
+        &__wrap {
+            display: flex;
+        }
+    }
+
+    &__body {
+        padding: 14px 21px 44px;
+    }
+
+    &__title {
+        margin-top: 12px;
+        color: $color-black;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 21px;
+    }
+
+    &__detail {
+        margin-top: 12px;
+    }
+
+    &__item {
+        display: flex;
+        gap: 10px;
+        color: $color-black;
+        font-size: 14px;
+        line-height: 19px;
+
+        dt {
+            width: 54px;
+            font-weight: 600;
+        }
+    }
+}

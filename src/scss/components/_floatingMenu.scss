@@ -1,0 +1,51 @@
+@use "../abstracts/index" as *;
+
+.floating {
+    &-menu {
+        position: fixed;
+        top: 50%;
+        right: 234px;
+        transform: translateX(-50%);
+        z-index: 99999;
+        @include common-boxShadow-style($border-radius: 30px);
+    }
+
+    &__item {
+        display: block;
+        width: 90px;
+        height: 90px;
+        padding-top: 55px;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: center;
+        color: $color-black;
+        background-color: $color-white;
+        background-position: center 20px;
+        background-repeat: no-repeat;
+        background-size: 30px 29px;
+        border: 1px solid $color-gray-light;
+
+        &:first-child {
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+        }
+
+        &:last-child {
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+
+        &:nth-child(1) {
+            background-image: svgIcon('floating_01');
+        }
+
+        &:nth-child(2) {
+            background-image: svgIcon('floating_02');
+        }
+
+        &:nth-child(3) {
+            background-image: svgIcon('floating_03');
+        }
+    }
+}

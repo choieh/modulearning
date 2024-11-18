@@ -13,8 +13,8 @@
 
     <? include '../include/gnb_v2.php' ?>
     <? include './include/mainContainer.php' ?>
+    <? include '../include/floatingMenu.php' ?>
     <? include '../include/footer.php' ?>
-
 </body>
 
 </html>
