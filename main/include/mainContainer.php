@@ -93,7 +93,7 @@
         <div class="section__inner">
             <div class="section__header">
                 <h2 class="section__title">공지사항</h2>
-                <a href="javascript:void(0);" class="btn__more">더보기+</a>
+                <a href="javascript:void(0);" class="btn-more">더보기+</a>
                 <ul class="notice__list">
                     <li class="notice__item">
                         <a href="javascript:void(0);">

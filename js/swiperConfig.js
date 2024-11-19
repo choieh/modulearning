@@ -176,7 +176,7 @@ function customSwiper2() {
                     <div class="contents__info">
                         <strong class="contents__title">${item.title}</strong>
                         <p class="contents__desc">${item.desc}</p>
-                        <a href="javascript:void(0);" class="btn__more">더보기+</a>
+                        <a href="javascript:void(0);" class="btn-more">더보기+</a>
                         <ul class="lecture__list">
                             ${item.cource.map(course => `
                                 <li class="lecture__item">
