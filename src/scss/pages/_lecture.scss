@@ -1,17 +1,6 @@
 @use "../abstracts/index" as *;
 
-.container {
-    &-lecture {
-        margin-bottom: 141px;
-    }
-}
-
 .lecture {
-    &__depth {
-        max-width: 1246px;
-        margin: 0 auto;
-    }
-
     &__contents {
         display: flex;
         gap: 15px;
@@ -88,47 +77,6 @@
                 margin-top: 7px;
             }
         }
-    }
-}
-
-.depth {
-    &__list {
-        display: flex;
-        align-items: center;
-        gap: 36px;
-    }
-
-    &__item {
-        position: relative;
-
-        &.is-active {
-            .depth__link {
-                color: $color-black;
-            }
-        }
-
-        & + li {
-            &::before {
-                content: '';
-                position: absolute;
-                top: 50%;
-                left: -20px;
-                transform: translateY(-50%);
-                width: 6px;
-                height: 8px;
-                background-image: svgIcon(historyArrow, 999);
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: 100%;
-            }
-        }
-    }
-
-    &__link {
-        color: #555;
-        font-size: 30px;
-        font-weight: 700;
-        line-height: 36px;
     }
 }
 
@@ -312,6 +260,8 @@
             }
 
             &__list {
+                display: none;
+                list-style: none;
                 position: absolute;
                 width: 170px;
                 background-color: $color-white;
@@ -321,6 +271,10 @@
                 border-top: transparent;
                 z-index: 1;
 
+                &[aria-expanded="true"] {
+                    display: block;
+                }
+
                 li {
                     padding: 6px 22px 6px 16px;
                     text-align: right;
@@ -328,14 +282,18 @@
                     font-size: 14px;
                     font-weight: 400;
                     line-height: 19px;
+                    cursor: pointer;
 
+                    &:hover {
+                        background-color: $color-gray-light;
+                    }
                 }
             }
         }
 
         .btn {
             display: block;
-            padding: 8px 28px;
+            padding: 11px 34px;
             border-radius: 4px;
             font-size: 18px;
             color: $secondary-color;
@@ -352,14 +310,14 @@
             }
 
             &-cart {
-                padding-left: 14px;
-                padding-right: 38px;
+                padding-left: 17px;
+                padding-right: 51px;
                 color: $primary-color-light;
                 border: 1px solid $primary-color-light;
                 background-color: $color-white;
                 background-image: svgIcon('cart', $colorMain: 'fdb515');
                 background-repeat: no-repeat;
-                background-position: right 10px center;
+                background-position: right 17px center;
             }
         }
     }
@@ -367,19 +325,57 @@
     &__body {
         max-width: 1246px;
         margin: 71px auto 0;
-        outline: 1px solid coral;
+    }
+
+    &__thumbnail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
     }
 }
 
 .thumbnail {
+    &__lg {
+        aspect-ratio: 16 / 9; /* 부모의 비율 지정 */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        max-width: 606px;
+        height: 341px;
+        background-color: $color-gray-light; /* 이미지 없을 때 기본 배경 */
+        border-radius: 10px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* 이미지 비율 유지하며 부모 안에 맞춤 */
+            position: absolute;
+        }
+    }
+
     &__sm {
         display: flex;
+        justify-content: center;
         gap: 17px;
-        margin-top: 15px;
+        padding: 0;
+        list-style: none;
 
         li {
             overflow: hidden;
+            width: 191px;
+            height: 108px;
             border-radius: 10px;
+        }
+
+        img {
+            object-fit: cover;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: border-color 0.3s;
         }
     }
 }
@@ -468,6 +464,10 @@
                 font-weight: 700;
                 line-height: 36px;
                 border-bottom: 1px solid $color-gray;
+            }
+
+            &__contents {
+                padding: 21px 0 21px 17px;
             }
         }
     }

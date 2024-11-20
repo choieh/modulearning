@@ -1,3 +1,61 @@
+@use "../abstracts/index" as *;
+
 .container {
-    margin-top: 50px;
+    margin-top: 100px;
+
+    &-lecture {
+        max-width: 1246px;
+        margin: 45px auto 141px;
+    }
+
+    &-cart {
+        max-width: 1246px;
+        margin: 45px auto 0;
+    }
+
+    &-mypage {
+        max-width: 1246px;
+        margin: 45px auto 141px;
+    }
+}
+
+.depth {
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 36px;
+    }
+
+    &__item {
+        position: relative;
+
+        &.is-active {
+            .depth__link {
+                color: $color-black;
+            }
+        }
+
+        & + li {
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: -20px;
+                transform: translateY(-50%);
+                width: 6px;
+                height: 8px;
+                background-image: svgIcon(historyArrow, 999);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 100%;
+            }
+        }
+    }
+
+    &__link {
+        color: #555;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 36px;
+    }
 }

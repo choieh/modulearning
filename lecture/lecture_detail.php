@@ -9,17 +9,17 @@
         <div class="class__header">
             <div class="class__thumbnail">
                 <div class="thumbnail__lg">
-                    <img src="/images/lecture/img_edu01_1.png" alt="직장 내 성희롱 예방교육">
+                    <img src="/images/lecture/img_edu01_1.png" alt="직장 내 성희롱 예방교육" id="lgImg">
                 </div>
                 <ul class="thumbnail__sm">
-                    <li>
-                        <img src="/images/lecture/img_edu01_1.png" alt="직장 내 성희롱 예방교육">
+                    <li role="button">
+                        <img src="/images/common/thumnail_test.png" alt="1직장 내 성희롱 예방교육">
                     </li>
-                    <li>
-                        <img src="/images/lecture/img_edu01_1.png" alt="직장 내 성희롱 예방교육">
+                    <li role="button">
+                        <img src="/images/lecture/img_edu01_1.png" alt="2직장 내 성희롱 예방교육">
                     </li>
-                    <li>
-                        <img src="/images/lecture/img_edu01_1.png" alt="직장 내 성희롱 예방교육">
+                    <li role="button">
+                        <img src="/images/common/카드뉴스로 보는 개인정보보호 교육 이미지.png" alt="3직장 내 성희롱 예방교육">
                     </li>
                 </ul>
             </div>
@@ -75,21 +75,28 @@
             <div class="intro__body">
                 <div class="intro__item">
                     <h3 class="item__title">과정소개</h3>
-                    <p></p>
+                    <div class="item__contents">
+                        <pre></pre>
+                    </div>
                 </div>
                 <div class="intro__item">
                     <h3 class="item__title">교육목표</h3>
-                    <p></p>
+                    <div class="item__contents">
+                        <pre></pre>
+                    </div>
                 </div>
                 <div class="intro__item">
                     <h3 class="item__title">교육대상</h3>
-                    <p></p>
+                    <div class="item__contents">
+                        <pre></pre>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <? include '../include/footer.php' ?>
+
 </body>
 
 </html>

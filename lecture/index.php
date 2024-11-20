@@ -7,7 +7,7 @@
 
     <div class="container container-lecture">
         <div class="lecture__header">
-            <? include './include/lectureContainerHeader.php' ?>
+            <? include '../include/containerDepth.php' ?>
         </div>
         <div class="lecture__body">
             <div class="search__wrap">

@@ -1,0 +1,161 @@
+@use "../abstracts/index" as *;
+
+.mypage {
+    &__body {
+        display: grid;
+        grid-template-columns: 201px 895px;
+        gap: 150px;
+        position: relative;
+    }
+
+    &__lnb {
+        margin-top: 39px;
+    }
+    
+    &__contents {
+        margin-top: 64px;
+        outline: 1px solid green;
+    }
+}
+
+.lnb {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+
+    &__item {
+
+        &:hover,
+        &.is-active {
+            a {
+                color: $primary-color-light;
+                font-weight: 600;
+
+                &::before {
+                    background-image: svgIcon('arrow', 'FDB515');
+                }
+            }
+        }
+
+        a {
+            position: relative;
+            display: block;
+            padding-left: 24px;
+            color: $color-black;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 25px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                width: 24px;
+                height: 24px;
+                background-image: svgIcon('arrow');
+            }
+        }
+    }
+}
+
+.link {
+    &__wrap {
+        position: absolute;
+        top: 15px;
+        right: 0;
+    }
+
+    &__withdrawal {
+        display: block;
+        color: $color-gray-dark;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+}
+
+form h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+label {
+    flex: 0 0 120px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+    margin-right: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    flex: 1;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+input[readonly] {
+    background-color: #f0f0f0;
+    color: #888;
+}
+
+.phone-input {
+    display: flex;
+    align-items: center;
+}
+
+.phone-input input {
+    width: 80px;
+    text-align: center;
+}
+
+.phone-input span {
+    margin: 0 5px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* 체크박스 스타일 */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.form-actions {
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

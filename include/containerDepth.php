@@ -1,4 +1,4 @@
-<div class="lecture__depth">
+<div class="container__depth">
     <ul class="depth__list">
         <li class="depth__item"><a href="javascript:void(0)" class="depth__link">직급별교육</a></li>
         <li class="depth__item"><a href="javascript:void(0)" class="depth__link">경영리더쉽과정</a></li>

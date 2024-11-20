@@ -1,0 +1,224 @@
+@use "../abstracts/index" as *;
+
+.cart {
+    &__header {
+        margin-bottom: 19px;
+    }
+
+    &__title {
+        color: $color-black;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 36px;
+    }
+
+    &__body {
+        min-height: 1173px ;
+    }
+}
+
+.table {
+    border: 0;
+
+    &__th,
+    &__tr {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        color: $color-black-second;
+    }
+
+    &__tr {
+        display: flex;
+        align-items: center;
+        @include common-boxShadow-style($border-radius: 4px ,$box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.05) );
+    }
+
+    &__td {
+        flex-shrink: 0;
+
+        .img {
+            &__wrap {
+                overflow: hidden;
+                width: 115px;
+                height: 66px;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    &__header {
+        display: flex;
+        padding: 24px 22px 28px;
+        gap: 140px;
+        @include common-boxShadow-style($border-radius: 4px ,$box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.05));
+
+        li {
+
+            &:first-child {
+                width: 102px;
+            }
+        }
+
+        .table__checkbox {
+            input[type="checkbox"] {
+                margin-right: 8px;
+            }
+        }
+
+        .table {
+            &__th {
+                text-align: center;
+
+                &:nth-child(2) {
+                    width: 174px;
+                }
+
+                &:nth-child(3) {
+                    width: 172px;
+                }
+
+                &:nth-child(4) {
+                    width: 65px;
+                }
+            }
+
+        }
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 40px;
+
+        .table__checkbox {
+            input[type="checkbox"] {
+                margin-right: 6px;
+            }
+        }
+
+        .table {
+            &__tr {
+                width: 100%;
+                padding: 18px 25px;
+            }
+
+            &__td:nth-child(2) {
+                margin-right: 16px;
+            }
+
+            &__td:nth-child(3) {
+                max-width: 253px;
+                margin-right: 144px;
+                @include text-ellipsis();
+            }
+
+            &__td:nth-child(4) {
+                margin-right: 126px;
+                font-size: 16px;
+                line-height: 22px;
+                font-weight: 400;
+            }
+
+            &__td:nth-child(5) {
+                // margin-right: 233px;
+                margin-right: 248px;
+            }
+
+            &__td:nth-child(6) {
+                position: relative;
+                width: 24px;
+                height: 24px;
+                
+                button {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    font-size: 0;
+                    background-image: svgIcon('trash', '7a7a7a' );
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                }
+            }
+        }
+    }
+
+    &__checkbox {
+        display: flex;
+        align-items: center;
+
+        input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        label {
+            cursor: pointer;
+        }
+    }
+
+    &__payment {
+        width: 470px;
+        height: 324px;
+        margin-top: 37px;
+        margin-left: auto;
+        padding: 32px 26px 23px 25px;
+        border-radius: 4px;
+        border: 2px solid $secondary-color;
+
+        h3 {
+            color: $color-black;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 28px;
+        }
+
+        dl {
+            margin-top: 8px;
+        }
+
+        .payment {
+            &__item {
+                display: flex;
+                justify-content: space-between;
+                padding: 16px 0;
+
+                & + .payment__item {
+                    border-top: 1px solid $color-gray-dark;
+                }
+
+                dt {
+                    color: $color-black;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+
+                dd {
+                    color: $color-black;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 25px;
+                }
+            }
+        }
+
+        .btn {
+            &__payment {
+                display: block;
+                margin-top: 17px;
+                padding: 8px 28px;
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 24px;
+                text-align: center;
+                color: $secondary-color;
+                background-color: $primary-color-light;
+                border-radius: 4px;
+            }
+        }
+
+    }
+}

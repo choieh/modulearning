@@ -55,4 +55,4 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <script type="text/javascript" src="../js/userUI.js"></script>
 <script type="text/javascript" id="crossLogin"></script>
-<script src="../js/commonMain.js"></script>
+<script src="../js/commonCustom.js"></script>

@@ -1,7 +1,7 @@
 @use "../abstracts/index" as *;
 
 .footer {
-    width: 1240px;
+    width: 1246px;
     margin: 0 auto;
 
     &__wrap {
@@ -77,6 +77,6 @@
 
 @media (min-width:1440px) {
     // .footer {
-    //     max-width: 1240px;
+    //     max-width: 1246px;
     // }
 }
