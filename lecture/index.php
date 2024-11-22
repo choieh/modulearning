@@ -73,6 +73,7 @@
                     </div>
                 </div>
             </div>
+            <? include '../include/pagination.php' ?>
         </div>
     </div>
 

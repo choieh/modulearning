@@ -14,7 +14,6 @@
     
     &__contents {
         margin-top: 64px;
-        outline: 1px solid green;
     }
 }
 
@@ -76,86 +75,166 @@
     }
 }
 
-form h2 {
-    margin-bottom: 20px;
-    font-size: 20px;
-    text-align: center;
-    color: #333;
-}
+.recent-purchase-history {
+    margin-top: 23px;
 
-.form-group {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
+    &__filter {
+        .btn {
+            width: 102px;
+            height: 38px;
+            border-radius: 4px;
+            background-color: $primary-color-light;
+            padding: 8px 28px;
 
-label {
-    flex: 0 0 120px;
-    font-weight: bold;
-    font-size: 14px;
-    color: #333;
-    margin-right: 10px;
-}
+            &__wrap {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-shrink: 0;
+            }
 
-input[type="text"],
-input[type="email"],
-input[type="password"],
-select {
-    flex: 1;
-    padding: 8px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: #f9f9f9;
-}
+            &-reset {
+                color: $primary-color-light;
+                font-weight: 700;
+                background-color: $color-white;
+                border: 1px solid $primary-color-light;
+            }
 
-input[readonly] {
-    background-color: #f0f0f0;
-    color: #888;
-}
+        }
 
-.phone-input {
-    display: flex;
-    align-items: center;
-}
+        button + button {
+            margin-left: 8px;
+        }
+    }
 
-.phone-input input {
-    width: 80px;
-    text-align: center;
-}
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
 
-.phone-input span {
-    margin: 0 5px;
-    font-size: 16px;
-    color: #555;
-}
+    &__contents {
+        display: grid;
+        grid-template-columns: 1fr 102px;
+        min-height: 157px;
+        padding: 11px 23px;
+        @include common-boxShadow-style($border-radius: 4px, $box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.05));
+    }
 
-/* 체크박스 스타일 */
-.checkbox-group {
-    display: flex;
-    align-items: center;
-}
+    .order {
+        &-date {
+            margin-top: 6px;
 
-.checkbox-group input[type="checkbox"] {
-    margin-right: 5px;
-}
+            dl {
+                display: flex;
+                align-items: center;
+                gap: 26px;
+            }
 
-.form-actions {
-    text-align: center;
-}
+            &__item {
+                display: flex;
+                align-items: center;
+                gap: 9px;
 
-button {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    color: #fff;
-    background-color: #007bff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
+                dt {
+                    color: $color-black;
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 17px;
+                }
+                
+                dd {
+                    color: $color-black;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 19px;
+                }
+            }
+        }
 
-button:hover {
-    background-color: #0056b3;
+        &-detail {
+            display: grid;
+            grid-template-columns: 150px 253px 1fr;
+            align-items: center;
+            gap: 16px;
+            margin-top: 12px;
+
+            .thumbnail {
+                overflow: hidden;
+                border-radius: 10px;
+            }
+
+            .title {
+                color: $color-black;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 17px;
+            }
+        }
+
+        &-state {
+            text-align: center;
+            color: $color-black;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 17px;
+        }
+    }
+
+    .btn {
+        width: 102px;
+        height: 38px;
+        color: $secondary-color;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        border-radius: 4px;
+        background-color: $primary-color-light;
+
+        &__wrap {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        &:nth-child(2) {
+            color: $color-black;
+            background-color: #E4CF9C;
+        }
+
+        &:nth-child(3) {
+            color: $primary-color-light;
+            background-color: $color-white;
+            border: 1px solid $primary-color-light;
+        }
+    }
+
+    &.refund {
+        .recent-purchase-history__layout-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+
+            .link {
+                &-help {
+                    display: block;
+                    padding: 8px 18px;
+                    color: $color-gray-dark;
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 17px;
+                }
+            }
+
+            .refund {
+                &-state {
+                    color: $color-black;
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 17px;
+                }
+            }
+        }
+    }
 }
