@@ -31,10 +31,11 @@
 }
 
 .shortcut {
-    margin-top: 58px;
+    margin-top: 52px;
 
     &__list {
         display: flex;
+        justify-content: center;
         gap: 44px;
         max-width: 1246px;
         margin: 0 auto;
@@ -56,6 +57,10 @@
 
         &:hover {
             @include common-boxShadow-style($box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.10))
+        }
+
+        &.is-disabled {
+            display: none;
         }
     }
 
@@ -195,6 +200,8 @@
     }
 
     &-popular {
+        margin-top: 60px;
+
         .section {
             &__title {
                 &::before {
@@ -229,6 +236,8 @@
     }
 
     &-new {
+        margin-top: 115px;
+
         .section {
             &__title {
                 &::before {

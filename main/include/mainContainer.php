@@ -19,11 +19,16 @@
     </div>
 
     <div class="shortcut">
+        <!-- [D] 안쓰는 메뉴일 경우 li 에 is-disabled 클래스 추가 -->
         <ul class="shortcut__list">
             <li class="shortcut__item"><a href="javascript:void(0);" class="shortcut__link">교육과정<br>리스트</a></li>
             <li class="shortcut__item"><a href="javascript:void(0);" class="shortcut__link">법정필수교육<br>자료실</a></li>
-            <li class="shortcut__item"><a href="javascript:void(0);" class="shortcut__link">관리감독자교육<br>편성표</a></li>
-            <li class="shortcut__item"><a href="javascript:void(0);" class="shortcut__link">관리감독자교육<br>안내</a></li>
+            <li class="shortcut__item is-disabled"><a href="javascript:void(0);"
+                    class="shortcut__link">관리감독자교육<br>편성표</a>
+            </li>
+            <li class="shortcut__item is-disabled"><a href="javascript:void(0);"
+                    class="shortcut__link">관리감독자교육<br>안내</a>
+            </li>
             <li class="shortcut__item"><a href="javascript:void(0);" class="shortcut__link">오프라인<br>교육시설안내</a></li>
             <li class="shortcut__item"><a href="javascript:void(0);" class="shortcut__link">모두의러닝<br>유투브</a></li>
             <li class="shortcut__item"><a href="javascript:void(0);" class="shortcut__link">모두의러닝<br>블로그</a></li>

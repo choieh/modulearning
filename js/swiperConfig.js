@@ -144,8 +144,8 @@ function customSwiper1() {
         slide.classList.add("swiper-slide");
         
         slide.innerHTML = `
-            <a href="${item.url}" target="_blank">
-                <img src="${item.imgSrc}" alt="${item.name}" />
+            <a href="${item.url}" target="_blank" style="background: url(${item.imgSrc}) no-repeat center / cover;">
+                <img src="${item.imgSrc}" alt="${item.name}" style="visibility: hidden;" />
             </a>
         `;
         
