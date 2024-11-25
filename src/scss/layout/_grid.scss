@@ -1,21 +1,13 @@
 @use "../abstracts/index" as *;
 
 .container {
-    margin-top: 100px;
+    // margin-top: 100px;
+    width: 1246px;
+    max-width: 1920px;
+    margin: 45px auto 141px;
 
-    &-lecture {
-        max-width: 1246px;
-        margin: 45px auto 141px;
-    }
-
-    &-cart {
-        max-width: 1246px;
-        margin: 45px auto 0;
-    }
-
-    &-mypage {
-        max-width: 1246px;
-        margin: 45px auto 141px;
+    &-main {
+        width: 100%;
     }
 }
 

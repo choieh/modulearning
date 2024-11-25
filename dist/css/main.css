@@ -1765,6 +1765,34 @@ img, video {
   line-height: 17px;
 }
 
+.refund {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.refund__section {
+  padding: 24px 22px;
+  border-radius: 4px;
+  background-color: #fff;
+  -webkit-box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.05);
+}
+.refund__section:first-child {
+  grid-column: 1/-1;
+}
+.refund__title {
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+}
+.refund__description {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
 .cart__header {
   margin-bottom: 19px;
 }
@@ -2093,6 +2121,8 @@ img, video {
 }
 .main-menu__list li {
   position: relative;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 .main-menu__list li:hover .sub-menu__list {
   display: block;
@@ -2262,6 +2292,8 @@ img, video {
 .sitemap-edu__button {
   -ms-flex-item-align: start;
       align-self: flex-start;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   display: block;
   position: relative;
   padding-left: 40px;
@@ -2378,19 +2410,12 @@ img, video {
 }
 
 .container {
-  margin-top: 100px;
-}
-.container-lecture {
-  max-width: 1246px;
+  width: 1246px;
+  max-width: 1920px;
   margin: 45px auto 141px;
 }
-.container-cart {
-  max-width: 1246px;
-  margin: 45px auto 0;
-}
-.container-mypage {
-  max-width: 1246px;
-  margin: 45px auto 141px;
+.container-main {
+  width: 100%;
 }
 
 .depth__list {

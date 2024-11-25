@@ -11,10 +11,12 @@
         <a href="#container">본문으로 이동</a>
     </div>
 
-    <? include '../include/gnb_v2.php' ?>
-    <? include './include/mainContainer.php' ?>
-    <? include '../include/floatingMenu.php' ?>
-    <? include '../include/footer.php' ?>
+    <div id="__layout">
+        <? include '../include/gnb_v2.php' ?>
+        <? include './include/mainContainer.php' ?>
+        <? include '../include/floatingMenu.php' ?>
+        <? include '../include/footer.php' ?>
+    </div>
 </body>
 
 </html>

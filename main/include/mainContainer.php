@@ -1,4 +1,4 @@
-<div class="container-main">
+<div class="container container-main">
     <div class="top-banner">
         <div class="counsel">
             <a href="javascript:void(0);">
