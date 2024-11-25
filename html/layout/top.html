@@ -1,0 +1,225 @@
+<!--@include(layout/quickmenu.html)-->
+
+		<div id="header" class="custom_header">
+			<div class="global_tab">
+				<ul class="global_tab_ul">
+					<li class="active"><a href="/board/index.jsp?code=qna">1:1학습상담</a></li>
+					<li id="GNB_CS"><a href="/board/index.jsp?code=notice">고객만족센터</a></li>
+					<li><a href="/board/index.jsp?code=event">이벤트</a></li>
+					<li><a href="/mypage/modify.jsp">회원정보</a></li>
+				</ul>
+			</div>
+			<div class="util_wrap">
+				<h2 class="hide">유틸 메뉴</h2>
+				<h1 class="logo">
+					<a href="/main/index.jsp" title="메인페이지로 이동">
+						<img src="{{SITE_INFO.logo_url}}" alt="{{SITE_INFO.site_nm}}" onerror="" />&nbsp;
+					</a>
+				</h1>
+				<div class="h_search">
+					<form name="form_search" action="../main/search.jsp" method="get" onsubmit="return goSearch(this);">
+						<input type="text" name="s_keyword" class="search_txt" placeholder=""><button type="submit" class="search_btn"></button>
+					</form>
+				</div>
+				<!-- <div class="h_call"><img src="/html/images/common/h_call.png"></div> -->
+				<div class="util_menu">
+					<ul>
+						<!--@nif(login_block)--><li><a href="/member/login.jsp" title="로그인페이지로 이동"><img src="/html/images/common/header_icon1.png"> 로그인</a></li><!--/nif(login_block)-->
+						<!--@if(login_block)--><li class="logout_t"><a href="/member/logout.jsp" title="로그아웃하고 메인으로 이동"><img src="/html/images/common/header_icon1.png"> 로그아웃</a></li><!--/if(login_block)-->
+						<!--@if(login_block)--><li class="cart_t"><a href="/mypage/modify.jsp" title="회원정보 페이지로 이동"><img src="/html/images/common/header_icon2.png"> 회원정보</a></li><!--/if(login_block)-->
+						<!--@nif(login_block)--><li><a href="/member/agreement.jsp" title="회원가입 페이지로 이동"><img src="/html/images/common/header_icon2.png"> 회원가입</a></li><!--/nif(login_block)-->
+
+					</ul>
+					<!--@if(login_block)--><p class="af_log"><strong>{{SYS_USERNAME}}</strong><span style="font-size:12px;">님 환영합니다.</span></p><!--/if(login_block)-->
+				</div>
+			</div>
+			<div class="inner">
+
+				<div class="menu_wrap">
+					<h2 class="hide">메인 메뉴</h2>
+					<div class="hamburger">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
+					<ul id="gnb">
+						<li id="GNB_MY">
+							<a href="/mypage/index.jsp" title="고객센터 페이지로 이동">나의강의실</a>
+
+							<ul class="gnb_sub" style="display: none;">
+								<li><a href="/mypage/course_list.jsp">수강현황</a></li>
+								<li><a href="/mypage/certificate_list.jsp">증명서발급</a></li>
+								<li><a href="/mypage/order_list.jsp">결제내역조회</a></li>
+								<li><a href="/mypage/modify.jsp">회원정보수정</a></li>
+								<li><a href="/mypage/message_list.jsp">쪽지함</a></li>
+								<li><a href="/mypage/coupon_list.jsp">쿠폰목록</a></li>
+							</ul>
+							<!--@if(login_block)-->
+							<!--/if(login_block)-->
+						</li>
+						<li id="GNB_INTRO">
+							<a href="/main/page.jsp?pid=intro.intro01" title="고객센터 페이지로 이동">모두의러닝</a>
+							<ul class="gnb_sub" style="display: none;">
+								<li><a href="/main/page.jsp?pid=intro.intro01">모두의러닝</a></li>
+								<li><a href="/main/page.jsp?pid=intro.intro02">교육체계수립</a></li>
+								<li><a href="/main/page.jsp?pid=intro.intro03">교육운영서비스</a></li>
+								<li><a href="/main/page.jsp?pid=intro.intro04">교육시스템</a></li>
+								<li><a href="/main/page.jsp?pid=intro.intro05">찾아오시는길</a></li>
+							</ul>
+						</li>
+
+						<li id="GNB_COURSE1">
+							<a href="/course/course_list.jsp?cid=1&ch=course1" title="수강신청 페이지로 이동">온라인교육</a>
+							<ul class="gnb_sub" style="display: none;">
+								<!--@execute(../course/course_menu_list.jsp?sub=N&lnb=1&depth=2&ch=course1)-->
+							</ul>
+						</li>
+						<li id="GNB_COURSE2">
+							<a href="/course/course_list.jsp?cid=2&ch=course2" title="수강신청 페이지로 이동">마이크로러닝</a>
+							<ul class="gnb_sub" style="display: none;">
+								<!--@execute(../course/course_menu_list.jsp?sub=N&lnb=2&depth=2&ch=course2)-->
+							</ul>
+						</li>
+						<li id="GNB_COURSE3">
+							<a href="/course/course_list.jsp?cid=3&ch=course3" title="수강신청 페이지로 이동">오프라인교육</a>
+							<ul class="gnb_sub" style="display: none;">
+								<!--@execute(../course/course_menu_list.jsp?sub=N&lnb=3&depth=2&ch=course3)-->
+								<li><a href="/main/page.jsp?pid=course3.guide">이용안내</a></li>
+							</ul>
+						</li>
+						<li id="GNB_LAW">
+							<a href="/main/page.jsp?pid=law.law1" title="법정필수교육 페이지로 이동">법정필수교육</a>
+							<ul class="gnb_sub" style="display: none;">
+								<li><a href="/main/page.jsp?pid=law.law1">법정필수교육</a></li>
+								<li><a href="/main/page.jsp?pid=law.law2">산업안전보건교육</a></li>
+								<li><a href="/main/page.jsp?pid=law.manager">관리감독자교육</a></li>
+							</ul>
+						</li>
+						<li id="GNB_GOV">
+							<a href="/main/page.jsp?pid=gov.gov" title="정부지원사업 페이지로 이동">정부지원사업</a>
+							<ul class="gnb_sub" style="display: none;">
+								<li><a href="/main/page.jsp?pid=gov.gov">비대면 바우처</a></li>
+								<li id="GNB_WORKER"><a href="/main/page.jsp?pid=worker.worker01">국민내일배움카드</a></li>
+								<li id="GNB_OWNER"><a href="/main/page.jsp?pid=owner.greeting">사업주 환급</a></li>
+							</ul>
+						</li>
+						<!--
+						<li id="GNB_INTRO" class="first">
+							<a href="/main/page.jsp?pid=intro.greeting" title="소개 페이지로 이동">사업주지원</a>
+							<ul class="gnb_sub" style="display: none;">
+								<li><a href="/main/page.jsp?pid=intro.greeting">사업주훈련안내</a></li>
+								<li><a href="/main/page.jsp?pid=intro.greeting2">훈련절차</a></li>
+								<li><a href="/main/page.jsp?pid=intro.greeting3">환급절차 및 기간</a></li>
+								<li><a href="/main/page.jsp?pid=intro.greeting4">수강생 유의사항</a></li>
+								<li><a href="/main/page.jsp?pid=intro.greeting5">모사답안처리기준</a></li>
+								<li><a href="/main/page.jsp?pid=intro.greeting6">훈련과정개발절차</a></li>
+								<li><a href="/main/formmail.jsp?ch=board">사업주위탁 훈련문의</a></li>
+							</ul>
+						</li>
+						<li id="GNB_INFO">
+							<a href="/main/page.jsp?pid=intro.worker01" title="근로자카드">근로자카드</a>
+							<ul class="gnb_sub" style="display: none;">
+								<li><a href="/main/page.jsp?pid=intro.worker01">근로자훈련안내</a></li>
+                                <li><a href="/main/page.jsp?pid=intro.worker02">근로자카드 발급조건</a></li>
+                                <li><a href="/main/page.jsp?pid=intro.worker03">근로자카드 발급절차</a></li>
+                                <li><a href="/main/page.jsp?pid=intro.worker04">수강생 유의사항</a></li>
+                                <li><a href="/main/page.jsp?pid=intro.worker05">모사답안처리기준</a></li>
+							</ul>
+						</li>
+						<li id="GNB_CS">
+							<a href="/board/index.jsp?code=notice" title="고객센터 페이지로 이동">고객센터</a>
+							<ul class="gnb_sub" style="display: none;">
+								<li><a href="/board/index.jsp?">공지사항</a></li>
+								<li><a href="/board/index.jsp?code=faq">자주하는 질문</a></li>
+								<li><a href="/board/index.jsp?code=qna">Q&A</a></li>
+								<li><a href="/board/index.jsp?code=pds">자료실</a></li>
+								<li><a href="/main/page.jsp?pid=intro.worker06">다운로드</a></li>
+								<li><a href="/main/page.jsp?pid=intro.worker07">학습장애 해결방법</a></li>
+								<li><a href="/main/page.jsp?pid=intro.support5">원격지원요청</a></li>
+							</ul>
+						</li>
+						-->
+					</ul>
+					<div class="all_list">
+                        <ul class="a_inner clear">
+                            <li>
+                                <p>나의 강의실</p>
+                                <ul>
+								<li><a href="/mypage/course_list.jsp">수강현황</a></li>
+								<li><a href="/mypage/certificate_list.jsp">증명서발급</a></li>
+								<li><a href="/mypage/order_list.jsp">결제내역조회</a></li>
+								<li><a href="/mypage/modify.jsp">회원정보수정</a></li>
+								<li><a href="/mypage/message_list.jsp">쪽지함</a></li>
+								<li><a href="/mypage/coupon_list.jsp">쿠폰목록</a></li>
+                                </ul>
+                            </li>
+                            <li class="al_bg">
+                                <p>모두의러닝</p>
+                                <ul>
+								<li><a href="/main/page.jsp?pid=intro.intro01">모두의러닝</a></li>
+								<li><a href="/main/page.jsp?pid=intro.intro02">교육체계수립</a></li>
+								<li><a href="/main/page.jsp?pid=intro.intro03">교육운영서비스</a></li>
+								<li><a href="/main/page.jsp?pid=intro.intro04">교육시스템</a></li>
+								<li><a href="/main/page.jsp?pid=intro.intro05">찾아오시는길</a></li>
+                                </ul>
+                            </li>
+							<li>
+                                <p>온라인교육</p>
+                                <ul>
+									<!--@execute(../course/course_menu_list.jsp?sub=N&lnb=1&depth=2&ch=course1)-->
+                                </ul>
+                            </li>
+
+                            <li class="al_bg">
+                                <p>마이크로러닝</p>
+                                <ul>
+									<!--@execute(../course/course_menu_list.jsp?sub=N&lnb=2&depth=2&ch=course2)-->
+                                </ul>
+                            </li>
+							<li>
+                                <p>오프라인교육</p>
+                                <ul>
+									<!--@execute(../course/course_menu_list.jsp?sub=N&lnb=3&depth=2&ch=course3)-->
+									<li><a href="/main/page.jsp?pid=course3.guide">이용안내</a></li>
+                                </ul>
+                            </li>
+                            <li class="al_bg">
+								<p>법정필수교육</p>
+								<ul>
+									<li><a href="/main/page.jsp?pid=law.law1">법정필수교육</a></li>
+									<li><a href="/main/page.jsp?pid=law.law2">산업안전보건교육</a></li>
+									<li><a href="/main/page.jsp?pid=law.manager">관리감독자교육</a></li>
+								</ul>
+							</li>
+							<li>
+								<p>정부지원사업</p>
+								<ul>
+									<li><a href="/main/page.jsp?pid=gov.gov">비대면 바우처</a></li>
+									<li><a href="/main/page.jsp?pid=worker.worker01">국민내일배움카드</a></li>
+									<li><a href="/main/page.jsp?pid=owner.greeting">사업주 환급</a></li>
+								</ul>
+							</li>
+                        </ul>
+                    </div>
+				</div>
+			</div>
+		</div>
+
+		<script>
+
+			$(function() {
+			    $(".hamburger").click(function() {
+			        $('.all_list').finish().slideToggle();
+			        $(this).toggleClass("is-active");
+			    });
+			    $(".menu_wrap #gnb > li").mouseenter(function(){
+			    	$(this).contents('.gnb_sub').finish().finish().stop().slideDown(300);
+			    });
+			    $(".menu_wrap #gnb > li").mouseleave(function(){
+			    	$(this).contents('.gnb_sub').finish().finish().slideUp(300);
+			    });
+			    $(".gnb_sub").mouseenter(function(){
+			    	$(this).finish().stop().css("display","block");
+			    });
+			});
+		</script>

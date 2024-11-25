@@ -1,0 +1,37 @@
+<!--@include(layout/header.html)-->
+<body>
+	<div class="skip_nav">
+		<a href="#gnb">메인메뉴로 이동</a>
+		<a href="#container">본문으로 이동</a>
+	</div>
+	<div id="wrap">
+		<!--@execute(../inc/top.jsp)-->
+		<div id="container">
+			<div class="main_wrap">
+				<p class="sub_top" ><img src="/common/images_skin2/common/sub7.jpg" alt="" /></p>
+				<div class="left_area lnb03">
+					<h3 class="hide">lnb영역</h3>
+					<h3 class="lnb_title">온라인서점</h3>
+					<ul class="lnb_list">
+						<li id="LNB_BOOK"><a href="/book/book_list.jsp" title="전체도서 페이지로 이동">전체도서</a></li>
+					</ul>
+					<!--@include(layout/left_banner.html)-->
+				</div>
+				<div class="content_area">
+<!--@include(BODY)-->
+				</div>
+			</div>
+		</div>
+		<!--@include(layout/footer.html)-->
+	</div>
+<script>
+$(document).ready(function() {
+	if("{{cid}}") {
+		$("#LNB_COURSE").removeClass("on");
+		$("#LNB_COURSE_{{cid}}").addClass("on");
+	}
+	
+});
+</script>
+</body>
+</html>

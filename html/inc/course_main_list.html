@@ -1,0 +1,29 @@
+				<ul class="horizontal_list">
+					<!--@loop(list)-->
+					<li class="{{list.class}}">
+						<span class="img_box">
+							<a href="../course/course_view.jsp?id={{list.id}}" title="{{list.course_nm}}" >
+								<img src="{{list.course_file_url}}" alt="{{list.course_nm}} 이미지" onerror="ImageError(this, '/html/images/common/noimage_course.gif');"  class="course_image"/>
+							</a>
+						</span>
+						<a href="../course/course_view.jsp?id={{list.id}}" title="{{list.course_nm}}">
+						<div class="list_ccont">							
+							<span class="list_subject"><!--span class="label">{{list.return_type_conv}}</span-->{{list.course_nm}}</span>
+							<span class="list_subtitle">{{list.subtitle_conv}}</span>
+							<span class="list_blt">
+								<p><label>인정시간</label> {{list.lesson_cnt}}차시 / {{list.lesson_time_conv}}시간</p>
+								<p><label>학습기간</label> {{list.lesson_term}}{{list.lesson_unit_conv}}</p>
+								<p><label>교육비</label> {{list.price_conv}}</p>
+								<!-- {{list.lesson_term_conv}} -->
+							</span>
+							<span class="list_price">{{list.price_conv}}</span>
+						</div>
+						</a>
+					</li>
+					<!--/loop(list)-->
+					<!--@nif(list)-->
+					<li class="nodata">
+						<p class="">등록된 자료가 없습니다.</p>
+					</li>
+					<!--/nif(list)-->
+				</ul>

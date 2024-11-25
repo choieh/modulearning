@@ -1,0 +1,38 @@
+<!--@include(layout/header.html)-->
+<body>
+	<div class="skip_nav">
+		<a href="#gnb">메인메뉴로 이동</a>
+		<a href="#container">본문으로 이동</a>
+	</div>
+	<div id="wrap">
+		<!--@execute(../inc/top.jsp)-->
+		<div id="container">
+			<div class="main_wrap">
+				<p class="sub_top" ><img src="/common/images_skin2/common/sub8.jpg" alt="" /></p>
+				<div class="left_area lnb03">
+					<h3 class="hide">lnb영역</h3>
+					<h3 class="lnb_title">인터넷방송</h3>
+					<ul class="lnb_list">
+						<li id="webtvcal"><a href="/webtv/webtv_calendar.jsp" title="방송편성표" target="_self">방송편성표</a></li>
+						<li id="allwebtv"><a href="/webtv/webtv_list.jsp" title="전체방송" target="_self">전체방송</a></li>
+					</ul>
+					<!--@include(layout/left_banner.html)-->
+				</div>
+				<div class="content_area">
+				<!--@include(BODY)-->
+				</div>
+			</div>
+		</div>
+		<!--@include(layout/footer.html)-->
+	</div>
+<script>
+$(document).ready(function() {
+	if("{{cid}}") {
+		$("#LNB_COURSE").removeClass("on");
+		$("#LNB_COURSE_{{cid}}").addClass("on");
+	}
+	
+});
+</script>
+</body>
+</html>

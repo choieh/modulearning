@@ -207,6 +207,54 @@ img, video {
   display: none;
 }
 
+/* inter-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/inter-v18-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/inter-v18-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/inter-v18-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/inter-v18-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  src: url("/fonts/inter-v18-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("/fonts/inter-v18-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 .swiper-container .swiper {
   padding-bottom: 30px;
 }
@@ -688,6 +736,104 @@ img, video {
   border-right: 1px solid #c2c2c2;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
+}
+
+.certification__header {
+  margin-bottom: 26px;
+}
+.certification__header .header__subtitle {
+  color: #003362;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+}
+.certification__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 12px;
+}
+.certification__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 9px;
+  width: 302px;
+  height: 433px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background-color: #f7f6f6;
+  border-radius: 10px;
+}
+.certification__item .img__wrap {
+  width: 182px;
+  height: 275px;
+}
+.certification__item-title {
+  display: block;
+  margin-top: 6px;
+  color: #000;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+}
+.certification__item-src {
+  color: #7a7a7a;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.sitemap__body {
+  margin-top: 45px;
+}
+.sitemap__title {
+  color: #000;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+}
+.sitemap__list {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 37px;
+  margin-top: 42px;
+}
+.sitemap__link {
+  display: inline-block;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.owner1 {
+  padding-top: 13px;
+  border: 0;
+}
+.owner1_2 {
+  margin-bottom: 62px;
 }
 
 .lecture__contents {
@@ -1770,6 +1916,9 @@ img, video {
   grid-template-columns: 1fr 1fr;
   gap: 16px;
 }
+.refund__header {
+  margin-bottom: 16px;
+}
 .refund__section {
   padding: 24px 22px;
   border-radius: 4px;
@@ -1787,10 +1936,239 @@ img, video {
   line-height: 24px;
 }
 .refund__description {
+  margin-top: 18px;
   color: #000;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
+}
+.refund table, .refund th, .refund td {
+  border-collapse: collapse;
+}
+.refund__table {
+  width: 733px;
+  margin-top: 16px;
+  border: 1px solid #b9b9b9;
+  border-radius: 4px;
+}
+.refund__table-content {
+  width: 100%;
+  text-align: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.refund__table-header {
+  height: 32px;
+  padding: 10px 12px 6px;
+  color: #000;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  border-left: 1px solid #b9b9b9;
+  background-color: rgba(0, 0, 0, 0.06);
+}
+.refund__table-header:first-child {
+  border-left: 0;
+}
+.refund__table-data {
+  height: 31px;
+  padding: 10px 12px 6px;
+  color: #000;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  border-top: 1px solid #b9b9b9;
+  border-left: 1px solid #b9b9b9;
+}
+.refund__table-data:first-child {
+  border-left: 0;
+}
+.refund__notice-list {
+  margin-top: 29px;
+  margin-bottom: 26px;
+}
+.refund__notice-item-sub {
+  padding-left: 10px;
+}
+.refund__notice-item-sub li {
+  position: relative;
+  padding-left: 15px;
+}
+.refund__notice-item-sub li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #000;
+}
+.refund__product {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: 115px 1fr;
+  gap: 16px;
+}
+.refund__product-title {
+  color: #000;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.refund__product-title .front {
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.refund__product-price {
+  margin-top: 10px;
+  color: #000;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+}
+.refund__reason {
+  margin-top: 22px;
+}
+.refund__reason-button {
+  position: relative;
+  display: block;
+  width: 256px;
+  padding: 9px 32px 9px 12px;
+  color: #7a7a7a;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  border: 1px solid #c2c2c2;
+  border-radius: 4px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+}
+.refund__reason-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  -webkit-transform: translateY(-50%) rotate(90deg);
+          transform: translateY(-50%) rotate(90deg);
+  width: 16px;
+  height: 16px;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none'%3E%3Cpath fill='%237a7a7a' d='M8 7.06 9.061 6l5.779 5.777a.996.996 0 0 1 0 1.413l-5.779 5.78-1.06-1.06 5.424-5.425L8 7.06Z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.refund__reason-list {
+  display: none;
+  width: 256px;
+  border: 1px solid #c2c2c2;
+  border-radius: 4px;
+}
+.refund__reason-list.is-active {
+  display: block;
+}
+.refund__reason-item {
+  padding: 6px 12px;
+  color: #7a7a7a;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+}
+.refund__reason-item + li {
+  border-top: 1px solid #c2c2c2;
+}
+.refund__reason-textarea {
+  overflow: hidden;
+  width: 563px;
+  height: 118px;
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  border: 1px solid #c2c2c2;
+  border-radius: 4px;
+  background: #fff;
+}
+.refund__reason-textarea #refund-text {
+  width: 100%;
+  height: 100%;
+  padding: 4px 8px;
+  color: #c2c2c2;
+  resize: none;
+}
+.refund__summary {
+  margin-top: 25px;
+}
+.refund__summary-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 11px;
+}
+.refund__summary-item:last-child {
+  margin-top: 31px;
+}
+.refund__summary-item:last-child .refund__summary-label {
+  margin-top: 10px;
+  font-weight: 700;
+}
+.refund__summary-item:last-child .refund__summary-value {
+  font-size: 24px;
+  line-height: 29px;
+}
+.refund__summary-label {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+}
+.refund__summary-value {
+  color: #000;
+  text-align: right;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+}
+.refund__actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 75px;
+}
+.refund__actions .refund__action-button {
+  display: block;
+  width: 214px;
+  height: 48px;
+  padding: 8px 28px;
+  color: #003362;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  border-radius: 4px;
+  background-color: #fdb515;
 }
 
 .cart__header {

@@ -1,0 +1,65 @@
+<!--@include(layout/header.html)-->
+<body>
+	<div class="skip_nav">
+		<a href="#gnb">메인메뉴로 이동</a>
+		<a href="#container">본문으로 이동</a>
+	</div>
+	<div id="wrap_classroom">
+		<div id="container">
+			<div class="main_wrap_classroom">
+				<div class="sub_top_classroom" >
+					<div class="classroom_out">
+						<a href="/mypage/index.jsp">나가기</a>
+					</div>
+					<div class="top_title">
+						<em class="em2" title="{{cuinfo.course_nm}}">{{cuinfo.course_nm}}</em>
+					</div>
+					<ul class="top_state">
+						<li>학습기간</li>
+						<li class="li1">{{cuinfo.start_date_conv}} - {{cuinfo.end_date_conv}}</li>
+						<li class="li2">나의 진도율</li>	
+						<li class="li3"><b>{{cuinfo.progress_ratio}}</b>%</li>
+						<li class="li2">권장 진도율</li>	
+						<li class="li3"><b>{{cuinfo.avg_progress_ratio}}</b>%</li>
+					</ul>
+					
+				</div>
+				<div class="left_area_classroom">
+					<h3 class="hide">lnb영역</h3>
+					<h3 class="lnb_title">강의실</h3>
+					<ul class="lnb_list">
+						<li class="li1" id="LNB_MAIN"><a href="/classroom/index.jsp?cuid={{cuid}}" title="메인">메인</a></li>
+						<li class="li2" id="LNB_COURSE"><a href="/classroom/course_info.jsp?cuid={{cuid}}" title="과정정보">과정정보</a></li>
+						<li class="li3" id="LNB_NOTICE"><a href="/classroom/cpost_list.jsp?cuid={{cuid}}&code=notice" title="공지사항 페이지로 이동">공지사항</a></li>
+						<li class="li4" id="LNB_EXAM"><a href="/classroom/exam.jsp?cuid={{cuid}}" title="시험방 페이지로 이동">시험방</a></li>
+						<li class="li5" id="LNB_HOMEWORK"><a href="/classroom/homework.jsp?cuid={{cuid}}" title="과제방 페이지로 이동">과제방</a></li>
+						<li class="li6" id="LNB_FORUM"><a href="/classroom/forum.jsp?cuid={{cuid}}" title="토론방 페이지로 이동">토론방</a></li>
+						<li class="li7" id="LNB_SURVEY"><a href="/classroom/survey.jsp?cuid={{cuid}}" title="설문방 페이지로 이동">설문방</a></li>
+						<li class="li8" id="LNB_LIBRARY"><a href="/classroom/library.jsp?cuid={{cuid}}" title="강의자료 페이지로 이동">강의자료</a></li>
+						<li class="li9" id="LNB_QNA"><a href="/classroom/cpost_list.jsp?cuid={{cuid}}&code=qna" title="QNA 페이지로 이동">Q&A</a></li>
+						<li class="li10" id="LNB_REVIEW"><a href="/classroom/cpost_list.jsp?cuid={{cuid}}&code=review" title="수강후기 페이지로 이동">수강후기</a></li>
+					</ul>
+					<div class="sp_center">
+						<h3 class="top_title">학습지원센터</h3>
+						<div class="mcs_text">
+							<p class="mcs_tel">1544-9335</p>
+							<span>
+								평일 : 09:00~17:30<br>
+								토/일, 공휴일 휴무
+							</span>
+						</div>	
+					</div>
+
+				</div>
+				<div class="content_area">
+<!--@include(BODY)-->
+				</div>
+			</div>
+		</div>
+	</div>
+	<iframe src="" name="sysfrm" id="sysfrm" width="100%" height="0" scrolling="no" frameborder="0"></iframe>
+<script>
+var _SKIN_VERSION = "{{SITE_INFO.skin_cd}}";
+</script>
+</body>
+</html>

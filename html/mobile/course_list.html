@@ -1,0 +1,150 @@
+		<div id="container">
+			<div class="page_title">
+				<h3 class="course_title">{{p_title}}</h3>
+				<div class="path">
+					<ol class="path_list">
+						<li><a href="course_list.jsp">수강신청</a></li>
+						<!--@loop(navigations)-->
+						<li><a href="{{navigations.link}}">{{navigations.category_nm}}</a></li>
+						<!--/loop(navigations)-->
+					</ol>
+				</div>
+			</div>
+			<!--@if(webzine_type)-->
+			<div class="content">
+				<!--@if(scategories)-->
+				<div class="search_wrap_course">
+					<!--div class="list_btn_box">
+						<a href="javascript:goStyle('list')"><img src="/common/images/mobile/sub/btn_list_off.gif" alt="리스트형" style="margin-right:5px;" /></a>
+						<a href="javascript:goStyle('webzine')"><img src="/common/images/mobile/sub/btn_grally_on.gif" alt="웹진형" style="" /></a>
+						<script>
+						function goStyle(v) {
+							var f = document.forms['form1'];
+							f['s_style'].value = v;
+							f.submit();
+						}
+						</script>
+					</div-->
+					<div class="searchinner">
+						<form name="form1" method="get">
+						<input type="hidden" name="s_style">
+						<select name="cid" onchange="document.forms['form1'].submit();" class="search_select">
+							<option value="">- 카테고리 -</option>
+							<!--@loop(scategories)-->
+							<option value="{{scategories.id}}">{{scategories.category_nm}}</option>
+							<!--/loop(scategories)-->
+						</select>
+						</form>
+						{{form_script}}
+					</div>
+				</div>
+				<!--/if(scategories)-->
+
+				<div class="listwrap">
+					<table class="coursr_list_table">
+						<colgroup>
+							<col style="width:35%" />
+							<col style="width:*px" />
+						</colgroup>
+						<tbody>
+							<!--@loop(list)-->
+							<tr>
+								<td><a href="/mobile/course/course_view.jsp?id={{list.id}}"><img src="{{list.course_file_url}}" alt="{{list.course_nm}}" class="course_list_img" /></a></td>
+								<td class="con">
+									<a href="/mobile/course/course_view.jsp?id={{list.id}}">
+									<span class="contentinfo1">
+										<strong class="info_title">{{list.course_nm}}</strong>
+										<strong class="info_subtext">{{list.subtitle}}</strong>
+										<span class="info_date">
+											<!--@if(list.tutor_nm)-->강사명 : {{list.tutor_nm}}<br><!--/if(list.tutor_nm)--> 
+											교육기간 : {{list.lesson_term}}{{list.lesson_unit_conv}}
+
+											
+										</span>
+										<span class="ori_price">{{list.list_price_conv}}</span>
+										<!--@if(list.etc1)--><span class="ppercent">({{list.etc1}})</span><!--/if(list.etc1)--> 
+										<span class="price">{{list.price_conv}}</span><br>
+										<!--@if(list.etc2)--><span class="pment">{{list.etc2}}</span><!--/if(list.etc2)--> 
+									</span>
+									</a>
+								</td>
+							</tr>
+							<!--/loop(list)-->
+						</tbody>
+
+					</table>
+					
+					<!-- section class="lecture_list">
+						<a href="#">
+							<span class="thumnail_img1"><img src="{{list.course_file_url}}" alt="{{list.course_nm}}" /></span>
+							<span class="contentinfo1">
+								<strong class="info_title">{{list.course_nm_conv}}</strong>
+								<span class="info_date">{{list.study_date}}</span>
+							</span>
+						</a>
+					</section -->	
+				</div>
+				<div class="page_btn">
+					{{pagebar}}
+					<!-- a href="#self"><img src="/common/images/mobile/sub/btn_listprev.png" alt="이전"></a>
+					<a href="#self"><img src="/common/images/mobile/sub/btn_listnext.png" alt="다음"></a -->
+				</div>
+			</div>
+			<!--/if(webzine_type)-->
+			<!--@if(list_type)-->
+			<div class="content">
+				<!--@if(scategories)-->
+				<div class="search_wrap_course">
+					<!--div class="list_btn_box">
+						<a href="javascript:goStyle('list')"><img src="/common/images/mobile/sub/btn_list_off.gif" alt="리스트형" style="margin-right:5px;" /></a>
+						<a href="javascript:goStyle('webzine')"><img src="/common/images/mobile/sub/btn_grally_on.gif" alt="웹진형" style="" /></a>
+						<script>
+						function goStyle(v) {
+							var f = document.forms['form1'];
+							f['s_style'].value = v;
+							f.submit();
+						}
+						</script>
+					</div-->
+					<div class="searchinner">
+						<form name="form1" method="get">
+						<input type="hidden" name="s_style">
+						<select name="cid" onchange="document.forms['form1'].submit();" class="search_select">
+							<option value="">- 카테고리 -</option>
+							<!--@loop(scategories)-->
+							<option value="{{scategories.id}}">{{scategories.category_nm}}</option>
+							<!--/loop(scategories)-->
+						</select>
+						</form>
+						{{form_script}}
+					</div>
+				</div>
+				<!--/if(scategories)-->
+
+				<div class="listwrap">
+					<!--@loop(list)-->
+					<section class="lecture_list">
+						<div class="contentinfo1">
+							<a href="/mobile/course/course_view.jsp?id={{list.id}}">
+								<strong class="info_title">{{list.course_nm_conv}}</strong>
+								<ul>
+									<li class="info_date">
+										신청기간 : {{list.request_date}}
+										<!--@nif(list.is_package)-->
+										<!--@if(list.is_regular)--><br />교육기간 : {{list.study_date}}<!--/if(list.is_regular)-->
+										<!--@nif(list.is_regular)--><br />교육기간 : {{list.lesson_day}}일<!--/nif(list.is_regular)-->
+										<!--/nif(list.is_package)-->
+									</li>
+								</ul>
+							</a>
+						</div>
+					</section>
+					<!--/loop(list)-->
+				</div>
+				<div class="page_btn">
+					{{pagebar}}
+					<!-- a href="#self"><img src="/common/images/mobile/sub/btn_listprev.png" alt="이전"></a>
+					<a href="#self"><img src="/common/images/mobile/sub/btn_listnext.png" alt="다음"></a -->
+				</div>
+			<!--/if(list_type)-->
+		</div>

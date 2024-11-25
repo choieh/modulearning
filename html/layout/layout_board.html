@@ -1,0 +1,35 @@
+<!--@include(layout/header.html)-->
+<body>
+	<div class="skip_nav">
+		<a href="#gnb">메인메뉴로 이동</a>
+		<a href="#container">본문으로 이동</a>
+	</div>
+	<div id="wrap">
+		<!--@execute(../inc/top.jsp)-->
+		<div id="container">
+			<div class="main_wrap">
+				<p class="sub_top" ><img src="/common/images_skin2/common/sub4.jpg" class="sub_top_banner" alt="" /></p>
+				<div class="left_area lnb04">
+					<h3 class="hide">lnb영역</h3>
+					<h3 class="lnb_title">학습지원센터</h3>
+					<ul class="lnb_list">
+						<li id="notice"><a href="/board/index.jsp?code=notice" title="공지사항" target="_self">공지사항</a></li>
+						<li id="pds"><a href="/board/index.jsp?code=pds" title="자료실" target="_self">자료실</a></li>
+						<li id="faq"><a href="/board/index.jsp?code=faq" title="자주하는질문" target="_self">자주하는질문</a></li>
+						<li id="qna"><a href="/board/index.jsp?code=qna" title="1:1상담" target="_self">1:1학습상담</a></li>
+						<li id="event"><a href="/board/index.jsp?code=event" title="이벤트" target="_self">이벤트</a></li>
+						<!-- <li id="worker06"><a href="/main/page.jsp?pid=board.worker06">다운로드</a></li> -->
+						<li id="worker07"><a href="/main/page.jsp?pid=board.worker07">학습장애 해결방법</a></li>
+						<li id="support5"><a href="/main/page.jsp?pid=board.support5">원격지원요청</a></li>
+					</ul>
+					<!--@include(layout/left_banner.html)-->
+				</div>
+				<div class="content_area">
+<!--@include(BODY)-->
+				</div>
+			</div>
+		</div>
+		<!--@include(layout/footer.html)-->
+	</div>
+</body>
+</html>

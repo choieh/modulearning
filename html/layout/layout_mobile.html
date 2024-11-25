@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>{{SYS_TITLE}}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+<link rel="stylesheet" type="text/css" href="/common/css/mobile.css?t={{CURR_DATE}}" />
+<link rel="stylesheet" type="text/css" href="/html/css/mobile.css?t={{CURR_DATE}}" />
+<link href="/html/images/mobile/apple-icon.png" rel="apple-touch-icon" sizes="114x114" />
+<link href="/html/images/mobile/android-icon.png" rel="icon" sizes="72x72" />
+<script language="javascript" type="text/javascript" src="/common/js/jquery-1.9.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="/common/js/jquery.slides.min.js"></script>
+<script language="javascript" type="text/javascript" src="/common/js/mobile.js"></script>
+<script language="javascript" type="text/javascript" src="/common/cheditor/cheditor.js" charset="utf-8"></script>
+<script language="javascript" type="text/javascript" src="/common/js/common.js?t=20170323112100"></script>
+<script language="javascript" type="text/javascript" src="/common/js/validate.js"></script>
+<script type="text/javascript">
+
+</script>
+<script type="text/javascript" src="//wcs.naver.net/wcslog.js"> </script>
+<script type="text/javascript">
+if (!wcs_add) var wcs_add={};
+wcs_add["wa"] = "s_3059dfbe256e";
+if (!_nasa) var _nasa={};
+if(window.wcs){
+wcs.inflow("modulearning.kr");
+wcs_do(_nasa);
+}
+</script>
+</head>
+<body>
+<div id="wrap">
+	<header>
+		<h1 class="logo"><a href="/mobile/index.jsp" ><img src="{{SITE_INFO.logo_url}}" alt="{{SYS_TITLE}}"/></a></h1>
+
+		<span class="btn_menu"><a href="#self" class="bt-menu menu_off"><img src="/html/images/mobile/main/btn_menu.png" alt="메뉴"></a><a href="#self" class="bt-menu menu_on" style="display:none"><img src="/html/images/mobile/main/btn_menu_close.png" alt="메뉴"></a></span>
+		<!--@nif(main_block)-->
+		<span class="btn_prev"><a href="javascript:history.back(-1);" ><img src="/html/images/mobile/main/btn_prev.png" alt="뒤로가기"></a></span>
+		<!--/nif(main_block)-->
+		<div class="allWrap">
+			<div id="mask"></div>
+			<div class="all-menu"><!-- S : all menu -->
+			<div class="t_wrap">
+				<h2 class="tit"></h2>
+			</div>
+			<div class="sidebar">
+				<div id="leftside-navigation">
+					<ul>
+						<!--@nif(login_block)--><li><a href="/mobile/member/login.jsp" class="menu_btn">로그인</a></li><!--/nif(login_block)-->
+						<!--@if(login_block)--><li><a href="/mobile/member/logout.jsp" class="menu_btn">로그아웃</a></li><!--/if(login_block)-->
+						<li><a href="/mobile/mypage/course_list.jsp">나의 강의실</a></li>
+						<li class="sub-menu">
+							<a href="javascript:void(0);">모두의러닝</a>
+							<ul>
+								<li><a href="/mobile/main/page.jsp?pid=mobile.intro01">모두의러닝</a></li>
+								<li><a href="/mobile/main/page.jsp?pid=mobile.intro02">교육체계수립</a></li>
+								<li><a href="/mobile/main/page.jsp?pid=mobile.intro03">교육운영서비스</a></li>
+								<li><a href="/mobile/main/page.jsp?pid=mobile.intro04">교육시스템</a></li>
+								<li><a href="/mobile/main/page.jsp?pid=mobile.m_location">찾아오시는 길</a></li>
+							</ul>
+						</li>
+						<li><a href="/mobile/course/course_list.jsp?s_style=webzine&cid=1">온라인 교육</a></li>
+						<li><a href="/mobile/course/course_list.jsp?s_style=webzine&cid=2">마이크로 러닝</a></li>
+						<li><a href="/mobile/course/course_list.jsp?s_style=webzine&cid=3">오프라인 교육</a></li>
+						<li class="sub-menu">
+							<a href="javascript:void(0);">법정필수교육</a>
+							<ul>
+								<li><a href="/mobile/main/page.jsp?pid=mobile.m_law1">법정필수교육</a></li>
+								<li><a href="/mobile/main/page.jsp?pid=mobile.m_law2">산업안전보건교육</a></li>
+								<li><a href="/mobile/main/page.jsp?pid=mobile.manager">관리감독자교육</a></li>
+							</ul>
+						</li>
+						<li class="sub-menu">
+							<a href="javascript:void(0);">정부지원사업</a>
+							<ul>
+								<li><a href="/mobile/main/page.jsp?pid=mobile.m_gov">비대면 바우처</a></li>
+							</ul>
+						</li>
+						<li class="sub-menu">
+							<a href="javascript:void(0);">고객만족센터</a>
+							<ul>
+								<li><a href="/mobile/board/index.jsp?code=notice">공지사항</a></li>
+								<li><a href="/mobile/board/index.jsp?code=pds">자료실</a></li>
+								<li><a href="/mobile/board/index.jsp?code=faq">자주하는 질문</a></li>
+								<li><a href="/mobile/board/index.jsp?code=qna">1:1상담</a></li>
+								<li><a href="/mobile/board/index.jsp?code=event">이벤트</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<script>
+				$("#leftside-navigation .sub-menu > a").click(function(e) {
+				  $("#leftside-navigation ul ul").slideUp(), $(this).next().is(":visible") || $(this).next().slideDown(),
+				  e.stopPropagation()
+				})
+				$("#leftside-navigation .sub-menu2 > a").click(function(e) {
+				  $("#leftside-navigation ul ul ul").slideUp(), $(this).next().is(":visible") || $(this).next().slideDown(),
+				  e.stopPropagation()
+				})
+			</script>
+			<ul class="gnb" style="display:none;">
+				<li><a href="/mobile/main/page.jsp?pid=mobile.m_greeting" class="menu_btn">교육원소개</a></li>
+				<!-- <li><a href="/mobile/main/page.jsp?pid=mobile.m_curri" class="menu_btn">교육과정안내</a></li> -->
+				<li><a href="/mobile/course/course_list.jsp" class="menu_btn">수강신청</a></li>
+				<!-- <li><a href="/mobile/book/book_list.jsp" class="menu_btn">온라인서점</a></li> -->
+				<li><a href="/mobile/board/index.jsp?code=notice" class="menu_btn">공지사항</a></li>
+				<li><a href="/mobile/board/index.jsp?code=qna" class="menu_btn">Q&amp;A</a></li>
+				<li><a href="/mobile/mypage/course_list.jsp" class="menu_btn">나의 강의실</a></Li>
+				<!--@nif(login_block)--><li><a href="/mobile/member/login.jsp" class="menu_btn">로그인</a></li><!--/nif(login_block)-->
+				<!--@if(login_block)--><li><a href="/mobile/member/logout.jsp" class="menu_btn">로그아웃</a></li><!--/if(login_block)-->
+			</ul>
+		</div>
+	</header>
+	<div class="container">
+	<!--@include(BODY)-->
+	</div>
+	<footer>
+		<div class="btn_footer">
+			<!--@nif(login_block)--><button type="button" onclick="location.href='/mobile/member/login.jsp'">로그인</button><!--/nif(login_block)-->
+			<!--@if(login_block)--><button type="button" onclick="location.href='/mobile/member/logout.jsp'">로그아웃</button><!--/if(login_block)-->
+			<button type="button" onclick="goPC()">PC버전</button>
+			<button type="button" onclick="location.href='/mobile/index.jsp'">홈으로</button>
+			<p>COPYRIGHT 2021 주식회사 모두의러닝 ALLRIGHT & RESERVED. </p>
+		</div>
+
+		<iframe src="about:blank" name="sysfrm" id="sysfrm" width="100%" height="0" scrolling="no" frameborder="0" ></iframe>
+	</footer>
+</div>
+<!-- Enliple Tracker Start -->
+<script type="text/javascript">
+		(function(a,g,e,n,t){a.enp=a.enp||function(){(a.enp.q=a.enp.q||[]).push(arguments)};n=g.createElement(e);n.async=!0;n.defer=!0;n.src="https://cdn.megadata.co.kr/dist/prod/enp_tracker_self_hosted.min.js";t=g.getElementsByTagName(e)[0];t.parentNode.insertBefore(n,t)})(window,document,"script");
+    enp('create', 'common', 'KIRAHRD20', { device: 'M' });
+    enp('send', 'common', 'KIRAHRD20');
+</script>
+<!-- Enliple Tracker End -->
+<!-- AceCounter Mobile WebSite Gathering Script V.8.0.2019080601 -->
+<script language='javascript'>
+	var _AceGID=(function(){var Inf=['www.modulearning.kr','www.modulearning.kr','AX1A86975','AM','0','NaPm,Ncisy','ALL','0']; var _CI=(!_AceGID)?[]:_AceGID.val;var _N=0;if(_CI.join('.').indexOf(Inf[3])<0){ _CI.push(Inf);  _N=_CI.length; } return {o: _N,val:_CI}; })();
+	var _AceCounter=(function(){var G=_AceGID;var _sc=document.createElement('script');var _sm=document.getElementsByTagName('script')[0];if(G.o!=0){var _A=G.val[G.o-1];var _G=(_A[0]).substr(0,_A[0].indexOf('.'));var _C=(_A[7]!='0')?(_A[2]):_A[3];var _U=(_A[5]).replace(/\,/g,'_');_sc.src='https:'+'//cr.acecounter.com/Mobile/AceCounter_'+_C+'.js?gc='+_A[2]+'&py='+_A[1]+'&up='+_U+'&rd='+(new Date().getTime());_sm.parentNode.insertBefore(_sc,_sm);return _sc.src;}})();
+</script>
+<!-- AceCounter Mobile Gathering Script End -->
+
+</body>
+</html>
+
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>수강 확인증</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+body { font-family : 'Nanum Gothic', 바탕, serif; padding:0px;margin:0px; }
+.certificate1 { position:relative; padding:0px;width:794px;overflow:hidden;margin:0 auto;}
+.certificate1 div { position:absolute; }
+.cer_no { top:80px; left:90px; font-size:16px; font-weight:normal; width:300px;}
+.cer_user { top:350px; left:150px;text-align:left;width:540px; }
+.cer_date1 { top:800px; color:#333; font-size:20px;text-align:center; font-weight:bold;width:794px;margin:0 auto;}
+td { height:auto;min-height:40px;padding:5px 0px;line-height:30px;color:#333; font-weight:bold;font-size:20px; vertical-align:top; }
+</style>
+</head>
+<body marginheight="0" marginwidth="0">
+<div class="wrap">
+	<div class="certificate1">
+		<img src="{{course_file_url}}" width="794" height="1123">
+		<div class="cer_user">
+			<table cellpadding="0" cellspacing="0" border="0">
+			
+			<tr>
+				<td style="width:80px;">성&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;명</td>
+				<td style="width:15px;">:</td>
+				<td>{{user_nm}}</td>
+			</tr>
+			<tr>
+				<td>생년월일</td>
+				<td>:</td>
+				<td>{{birthday_conv}}</td>
+			</tr>
+			<tr>
+				<td>사업장명</td>
+				<td>:</td>
+				<td>{{company}}</td>
+			</tr>
+			<tr>
+				<td>교육과정</td>
+				<td>:</td>
+				<td>{{course_nm}}</td>
+			</tr>
+			</table>
+		</div>
+		<div class="cer_date1">{{today}}</div>
+	</div>
+</div>
+</body>
+</html>

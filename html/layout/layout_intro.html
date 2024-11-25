@@ -1,0 +1,38 @@
+<!--@include(layout/header.html)-->
+<style>
+.main_wrap{width:100%;}
+.main_wrap .left_area{float:none; width:1200px; margin:50px auto 40px auto;}
+.main_wrap .content_area { width:100%;}
+.main_wrap .content_body { width:100%;text-align:center;}
+.content_title {width:1200px;margin:0px auto 10px auto;}
+</style>
+<body>
+	<div class="skip_nav">
+		<a href="#gnb">메인메뉴로 이동</a>
+		<a href="#container">본문으로 이동</a>
+	</div>
+	<div id="wrap">
+		<!--@execute(../inc/top.jsp)-->
+		<div id="container">
+			<div class="main_wrap">
+				<div class="left_area lnb03">
+					<h3 class="hide">lnb영역</h3>
+					<h3 class="lnb_title">모두의러닝</h3>
+					<ul class="lnb_list">
+						<li id="intro01"><a href="/main/page.jsp?pid=intro.intro01">모두의러닝</a></li>
+						<li id="intro02"><a href="/main/page.jsp?pid=intro.intro02">교육체계수립</a></li>
+						<li id="intro03"><a href="/main/page.jsp?pid=intro.intro03">교육운영서비스</a></li>
+						<li id="intro04"><a href="/main/page.jsp?pid=intro.intro04">교육시스템</a></li>
+						<li id="intro05"><a href="/main/page.jsp?pid=intro.intro05">찾아오시는길</a></li>
+					</ul>
+					<!--@include(layout/left_banner.html)-->
+				</div>
+				<div class="content_area">
+				<!--@include(BODY)-->
+				</div>
+			</div>
+		</div>
+		<!--@include(layout/footer.html)-->
+	</div>
+</body>
+</html>

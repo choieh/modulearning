@@ -1,0 +1,96 @@
+
+@use "../abstracts/index" as *;
+
+.certification {
+    &__header {
+        margin-bottom: 26px;
+
+        .header__subtitle {
+            color: $secondary-color;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 24px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 9px;
+        width: 302px;
+        height: 433px;
+        flex-shrink: 0;
+        background-color: $color-gray-light;
+        border-radius: 10px;
+
+        .img__wrap {
+            width: 182px;
+            height: 275px;
+        }
+
+        &-title {
+            display: block;
+            margin-top: 6px;
+            color: $color-black;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 24px;
+        }
+
+        &-src {
+            color: $color-gray-dark;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 18px;
+        }
+    }
+}
+
+.sitemap {
+    &__body {
+        margin-top: 45px;
+    }
+
+    &__title {
+        color: $color-black;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 36px;
+    }
+
+    &__list {
+        display: inline-flex;
+        flex-direction: column;
+        gap: 37px;
+        margin-top: 42px;
+    }
+
+    &__link {
+        display: inline-block;
+        color: $color-black;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 24px;
+        text-decoration: underline;
+        text-underline-offset: 2px;
+    }
+}
+
+.owner1 {
+    padding-top: 13px;
+    border: 0;
+
+    &_2 {
+        margin-bottom: 62px;
+    }
+}

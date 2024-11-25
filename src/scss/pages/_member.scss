@@ -244,6 +244,10 @@
     grid-template-columns: 1fr 1fr;
     gap: 16px;
 
+    &__header {
+        margin-bottom: 16px;
+    }
+
     &__section {
         padding: 24px 22px;
         @include common-boxShadow-style($border-radius: 4px, $box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.05));
@@ -261,9 +265,254 @@
     }
 
     &__description {
+        margin-top: 18px;
         color: $color-black;
         font-size: 16px;
         font-weight: 400;
         line-height: 22px;
+    }
+
+    table, th, td {
+        border-collapse: collapse;
+    }
+
+    &__table {
+        width: 733px;
+        margin-top: 16px;
+        border: 1px solid #b9b9b9;
+        border-radius: 4px;
+
+        &-content {
+            width: 100%;
+            text-align: left;
+            box-sizing: border-box;
+        }
+
+        &-header {
+            height: 32px;
+            padding: 10px 12px 6px;
+            color: $color-black;
+            font-family: Inter;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 16px;
+            border-left: 1px solid #b9b9b9;
+            background-color: rgba(0, 0, 0, 0.06);
+
+            &:first-child {
+                border-left: 0;
+            }
+        }
+
+        &-data {
+            height: 31px;
+            padding: 10px 12px 6px;
+            color: $color-black;
+            font-family: Inter;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16px;
+            border-top: 1px solid #b9b9b9;
+            border-left: 1px solid #b9b9b9;
+
+            &:first-child {
+                border-left: 0;
+            }
+        }
+    }
+
+    &__notice {
+        &-list {
+            margin-top: 29px;
+            margin-bottom: 26px;
+        }
+
+        &-item {
+            &-sub {
+                padding-left: 10px;
+
+                li {
+                    position: relative;
+                    padding-left: 15px;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        transform: translateY(-50%);
+                        width: 4px;
+                        height: 4px;
+                        border-radius: 50%;
+                        background-color: $color-black;
+                    }
+                }
+            }
+
+        }
+    }
+
+    &__product {
+        margin-top: 15px;
+        display: grid;
+        grid-template-columns: 115px 1fr;
+        gap: 16px;
+
+        &-title {
+            color: $color-black;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 17px;
+            @include text-ellipsis(1);
+
+            .front {
+                display: block;
+                @include text-ellipsis(1);
+            }
+        }
+
+        &-price {
+            margin-top: 10px;
+            color: $color-black;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 17px;
+        }
+    }
+
+    &__reason {
+        margin-top: 22px;
+
+        &-button {
+            position: relative;
+            display: block;
+            width: 256px;
+            padding: 9px 32px 9px 12px;
+            color: $color-gray-dark;
+            text-align: left;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 19px;
+            border: 1px solid $color-gray;
+            @include common-boxShadow-style($border-radius: 4px, $box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12));
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: 12px;
+                transform: translateY(-50%) rotate(90deg);
+                width: 16px;
+                height: 16px;
+                background-image: svgIcon('arrow', '7a7a7a');
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+        }
+
+        &-list {
+            display: none;
+            width: 256px;
+            border: 1px solid $color-gray;
+            border-radius: 4px;
+
+            &.is-active {
+                display: block;
+            }
+        }
+
+        &-item {
+            padding: 6px 12px;
+            color: $color-gray-dark;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 19px;
+            
+            & + li {
+                border-top: 1px solid $color-gray;
+            }
+        }
+
+        &-textarea {
+            overflow: hidden;
+            width: 563px;
+            height: 118px;
+            margin-top: 12px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 19px;
+            border: 1px solid $color-gray;
+            border-radius: 4px;
+            background: $color-white;
+
+            #refund-text {
+                width: 100%;
+                height: 100%;
+                padding: 4px 8px;
+                color: $color-gray;
+                resize: none;
+            }
+        }
+    }
+
+    &__summary {
+        margin-top: 25px;
+
+        &-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 11px;
+
+            &:last-child {
+                margin-top: 31px;
+
+                .refund__summary {
+                    &-label {
+                        margin-top: 10px;
+                        font-weight: 700;
+                    }
+
+                    &-value {
+                        font-size: 24px;
+                        line-height: 29px;
+                    }
+                }
+            }
+        }
+
+        &-label {
+            color: $color-black;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 19px;
+        }
+
+        &-value {
+            color: $color-black;
+            text-align: right;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 19px;
+        }
+    }
+
+    &__actions {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 75px;
+
+        .refund__action-button {
+            display: block;
+            width: 214px;
+            height: 48px;
+            padding: 8px 28px;
+            color: $secondary-color;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 24px;
+            border-radius: 4px;
+            background-color: $primary-color-light;
+        }
     }
 }

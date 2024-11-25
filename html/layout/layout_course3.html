@@ -1,0 +1,49 @@
+<!--@include(layout/header.html)-->
+<body>
+	<div class="skip_nav">
+		<a href="#gnb">메인메뉴로 이동</a>
+		<a href="#container">본문으로 이동</a>
+	</div>
+	<div id="wrap">
+		<div id="container">
+			<div class="main_wrap">
+				<p class="sub_top" ><img src="/common/images_skin2/common/sub3.jpg" alt="" /></p>
+				<div class="left_area lnb03">
+					<h3 class="hide">lnb영역</h3>
+					<h3 class="lnb_title">오프라인 교육</h3>
+					<ul class="lnb_list">
+						<!-- <li id="allcourses"><a href="/course/course_list.jsp" title="전체과정" target="_self">전체과정</a></li> -->
+						<!--@execute(../course/course_menu_list.jsp?sub=N&lnb=3&depth=2&ch=course3)-->
+						<li id="guide"><a href="/main/page.jsp?pid=course3.guide" title="이용안내" target="_self">이용안내</a></li>
+					</ul>
+					<!--@include(layout/left_banner.html)-->
+				</div>
+				<div class="content_area">
+					<!--@include(BODY)-->
+				</div>
+			</div>
+		</div>
+		<!--@execute(../inc/top.jsp)-->
+		<!--@include(layout/footer.html)-->
+	</div>
+<script>
+$(document).ready(function() {
+	if("{{cid}}") {
+		$("#LNB_COURSE").removeClass("on");
+		$("#LNB_COURSE_{{cid}}").addClass("on");
+		$("#allcourses").removeClass("on");
+	} 
+	else if ("{{pid}}"){
+		$("#LNB_COURSE").removeClass("on");
+		$("#allcourses").removeClass("on");
+		$("#guide").addClass("on");
+	} 
+	else {
+		$("#LNB_COURSE").removeClass("on");
+		$("#allcourses").addClass("on");
+		$("#guide").removeClass("on");
+	}
+});
+</script>
+</body>
+</html>

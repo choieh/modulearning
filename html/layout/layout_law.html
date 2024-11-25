@@ -1,0 +1,36 @@
+<!--@include(layout/header.html)-->
+<body>
+<style>
+.main_wrap{width:100%;}
+.main_wrap .left_area{float:none; width:1200px; margin:50px auto 40px auto;}
+.main_wrap .content_area { width:100%;}
+.main_wrap .content_body { width:100%;}
+.content_title {width:1200px;margin:0px auto 10px auto;}
+</style>
+	<div class="skip_nav">
+		<a href="#gnb">메인메뉴로 이동</a>
+		<a href="#container">본문으로 이동</a>
+	</div>
+	<div id="wrap">
+		<!--@execute(../inc/top.jsp)-->
+		<div id="container">
+			<div class="main_wrap">
+				<div class="left_area lnb03">
+					<h3 class="hide">lnb영역</h3>
+					<h3 class="lnb_title">법정필수교육</h3>
+					<ul class="lnb_list">
+						<li id="law1"><a href="/main/page.jsp?pid=law.law1">법정필수교육</a></li>
+						<li id="law2"><a href="/main/page.jsp?pid=law.law2">산업안전보건교육</a></li>
+						<li id="law3"><a href="/main/page.jsp?pid=law.manager">관리감독자교육</a></li>
+					</ul>
+					<!--@include(layout/left_banner.html)-->
+				</div>
+				<div class="content_area" >
+				<!--@include(BODY)-->
+				</div>
+			</div>
+		</div>
+		<!--@include(layout/footer.html)-->
+	</div>
+</body>
+</html>

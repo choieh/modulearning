@@ -1,0 +1,232 @@
+<script>
+$(document).ready(function(){
+	if(0 < $('.horizontal_list li').length) {
+		var width = $('.horizontal_list li').eq(0).width();
+		$(".course_image").each(function() {
+			$(this).height(width / 3.0 * 1.85);
+			var ci_h = $(this).width() / 3.0 * 1.85;
+			if(ci_h > 0) $(this).height(ci_h);
+		});
+	}
+});
+
+function setTab(id) {
+	for(i=1; i<11; i++) {
+		if(i == id) {
+			$('#tab' + i).addClass('active');
+			$('#tab_area' + i).show();
+		} else {
+			$('#tab' + i).removeClass('active');
+			$('#tab_area' + i).hide();
+		}
+	}
+	$(".course_image").each(function() {
+	  $(this).height($(this).width() / 3.0 * 1.85);
+	  var ci_h = $(this).width() / 3.0 * 1.85;
+			if(ci_h > 0) $(this).height(ci_h);
+	});
+}
+function dpInfo(no) {
+	if(no == "1") {
+		mboard1.style.display=""
+		mboard2.style.display="none"
+		mboard3.style.display="none"
+	}else if(no == "2") {
+		mboard1.style.display="none"
+		mboard2.style.display=""
+		mboard3.style.display="none"
+	}else if(no == "3") {
+		mboard1.style.display="none"
+		mboard2.style.display="none"
+		mboard3.style.display=""
+	}
+} 
+</script>
+		<div id="container" class="main main_2020">
+			<div class="rollingbanner">
+				<div id="slides">
+					<!--@execute(/inc/banner_list.jsp?type=mobile&cnt=4)-->
+				</div>
+				<script type="text/javascript">
+					$(function() {
+						if($('#slides div').length > 1) {
+							$('#slides').slidesjs({
+								effect: {
+									fade: {
+										speed: 1000,
+										crossfade: false
+									}
+								},
+								Pagination: false,
+								play: {
+									active: true,
+									auto: true,
+									effect: "slide",
+									interval: 5000,
+									swap: true
+								}
+							});
+						}
+					});
+				</script>
+
+				<div id="slides">
+					<!--@loop(banners)-->
+					<div style=""><a href="{{banners.link}}"><img src="{{banners.banner_file_url}}" alt="{{banners.banner_nm}}" /></a></div>
+					<!--/loop(banners)-->
+				</div>
+				<script type="text/javascript">
+					$(function() {
+						if($('#slides div').length > 1) {
+							$('#slides').slidesjs({
+								effect: {
+									fade: {
+										speed: 2000,
+										crossfade: true
+									}
+								},
+								Pagination: false,
+								play: {
+									active: true,
+									auto: true,
+									effect: "fade",
+									interval: 4000,
+									swap: true
+								}
+							});
+						}
+					});
+				</script>
+			</div>
+
+			<div class="bgGray">
+				<ul class="main_banner">					
+					<li><a href="#"><span class="main_ban1"></span>HRD제안서</a></li>
+					<li><a href="#"><span class="main_ban2"></span>교육과정리스트</a></li>
+					<li><a href="https://blog.naver.com/modulearning" target="_blank"><span class="main_ban3"></span>블로그</a></li>	
+					<li><a href="#"><span class="main_ban4"></span>카카오톡</a></li>		
+					<li><a href="#"><span class="main_ban5"></span>매거진</a></li>		
+					<li><a href="/mobile/board/index.jsp?code=event"><span class="main_ban6"></span>이벤트</a></li>	
+				</ul>
+			</div>
+
+			<div class="bgWhite">
+				<div class="lecture">
+					<div class="main_title_c"><b>모두의러닝</b>이 <b>추천하는</b> 콘텐츠</div>
+					<div class="mcourse_recomm" id="mc_recomm" style="display:block;">
+						<div class="main_course_tabArea">
+							<ul class="main_course_tab">	
+								<li class="active" id="tab1"><a href="javascript:setTab(1);">온라인교육</a></li>
+								<li id="tab2"><a href="javascript:setTab(2);">마이크로러닝</a></li>
+								<li id="tab3"><a href="javascript:setTab(3);">오프라인교육</a></li>
+							</ul>
+						</div>
+						<div class="main_course_cont">
+							<div class="main_list" id="tab_area1">
+								<!--@execute(/inc/course_main_list.jsp?type=etc1&cnt=4&strlen=100)-->
+							</div>
+							<div class="main_list" id="tab_area2" style="display:none">
+								<!--@execute(/inc/course_main_list.jsp?type=etc2&cnt=4&strlen=100)-->
+							</div>
+							<div class="main_list" id="tab_area3" style="display:none">
+								<!--@execute(/inc/course_main_list.jsp?type=etc3&cnt=4&strlen=100)-->
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+
+			<div class="bgGray">
+				<div class="lecture">
+					<div class="main_title_c"><b>학습자</b>들에게 <b>인기있는</b> 콘텐츠</div>
+					<div class="mcourse_recomm" id="mc_new" style="display:block;">
+						<!--@execute(/inc/course_main_list.jsp?type=hot&cnt=4&strlen=100)-->
+					</div>
+				</div>
+			</div>
+			<div class="bgWhite">	
+				<div class="lecture">
+					<div class="main_title_c"><b>학습자</b>들이 추천하는<br><b>만족도 높은</b> 콘텐츠</span></div>
+					<div class="mcourse_recomm" id="mc_new" style="display:block;">
+						<!--@execute(/inc/course_main_list.jsp?type=best&cnt=4&strlen=100)-->
+					</div>
+				</div>
+			</div>
+
+			<div class="square_wrap">
+				<div class="main_board">
+					<div class="mboard"> 
+						<div class="mboard_title">		
+							<span>공지사항</span>
+							<div class="mboard_more"><a href="/mobile/board/index.jsp?code=notice">더보기</a></div>
+						</div>
+						<div class="mboard_cont"><!--@execute(/inc/post_list.jsp?code=notice&cnt=5&strlen=60)--></div>
+					</div>					
+				</div>
+
+				<div class="main_cs">
+					<h3 class="top_title">학습지원센터</h3>
+					<div class="mcs_text">
+						<p class="mcs_tel">1544-9335</p>
+						<span>
+							평일 09:00~18:00(점심시간 12:00~13:00)
+						</span>
+					</div>
+					<ul>
+						<li><a href="/mobile/board/index.jsp?code=faq">자주하는 질문</a></li>
+						<li><a href="/mobile/board/index.jsp?code=qna">1:1 묻고 답하기</a></li>
+						<!-- <li><a href="/mobile/board/index.jsp?code=faq">학습장애해결안내</a></li>
+						<li><a href="/mobile/board/index.jsp?code=event">이벤트</a></li> -->
+					</ul>
+				</div>
+
+				<div class="main_qr">
+					<h3 class="top_title">모바일 연수원</h3>
+					<div class="qr_img"><img src="/html/images/common/qr.png"></div>
+					<div class="mqr_cont">
+						<p><a href="www.abc.com" target="_blank">www.abc.com</a></p>
+						<p> 스캔하시면<br>앱설치 화면으로 이동합니다. </p>
+					</div>
+				</div>			
+			</div>
+
+			<div class="bgWhite">
+				<ul class="main_bottom_banner">
+					<li>
+					<a href="/mobile/main/page.jsp?pid=mobile.guide">
+						<span class="mainb_ban1"></span>
+						<h2>오프라인교육 시설 </h2>
+						<p>오프라인 교육시설 안내입니다.</p>
+						<p class="mainb_btn">바로가기</p>
+					</a>
+					</li>
+					<li>
+					<a href="/mobile/board/read.jsp?id=46&code=notice">
+						<span class="mainb_ban2"></span>
+						<h2>오프라인교육 편성표</h2>
+						<p>교육일정을 한 눈에 보기 쉽게 안내합니다. </p>
+						<p class="mainb_btn">바로가기</p>
+
+					</a>
+					</li>
+					<li>
+					<a href="/mobile/main/page.jsp?pid=mobile.m_location">
+						<span class="mainb_ban3"></span>
+						<h2>찾아오시는 길</h2>
+						<p>직접 찾아오시면 친절히 안내해드립니다.</p>
+						<p class="mainb_btn">바로가기</p>
+					</a>
+					</li>
+					<li>
+					<a href="/mobile/main/page.jsp?pid=mobile.manager">
+						<span class="mainb_ban4"></span>
+						<h2>관리감독자 교육</h2>
+						<p>관리감독자 교육과정 안내입니다.</p>
+						<p class="mainb_btn">바로가기</p>
+					</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		

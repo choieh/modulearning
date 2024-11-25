@@ -1,0 +1,33 @@
+<!--@include(layout/header.html)-->
+<body>
+	<div class="skip_nav">
+		<a href="#gnb">메인메뉴로 이동</a>
+		<a href="#container">본문으로 이동</a>
+	</div>
+	<div id="wrap">
+		<!--@execute(../inc/top.jsp)-->
+		<div id="container">
+			<div class="main_wrap">
+				<p class="sub_top" ><img src="/common/images_skin2/common/sub6.jpg" alt="" /></p>
+				<div class="left_area lnb01">
+					<h3 class="hide">lnb영역</h3>
+					<h3 class="lnb_title">회원서비스</h3>
+					<ul class="lnb_list">
+						<li id="login"><a href="/member/login.jsp" title="로그인" target="_self">로그인</a></li>
+						<li id="join"><a href="/member/agreement.jsp" title="회원가입" target="_self">회원가입</a></li>
+						<li id="findpw"><a href="/member/find.jsp" title="비밀번호찾기" target="_self">비밀번호찾기</a></li>
+						<li id="privacy"><a href="/member/privacy.jsp" title="개인정보취급방침" target="_self">개인정보취급방침</a></li>
+						<li id="terms"><a href="/member/terms.jsp" title="이용약관" target="_self">이용약관</a></li>
+						<li id="refund"><a href="/main/page.jsp?pid=member.refund" title="환불규정" target="_self">환불규정</a></li>
+					</ul>
+					<!--@include(layout/left_banner.html)-->
+				</div>
+				<div class="content_area">
+<!--@include(BODY)-->
+				</div>
+			</div>
+		</div>
+		<!--@include(layout/footer.html)-->
+	</div>
+</body>
+</html>

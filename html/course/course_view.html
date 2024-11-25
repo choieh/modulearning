@@ -1,0 +1,454 @@
+<div id="contet_area">
+	<h3 class="hide">컨텐츠 내용</h3>
+	<div class="path">
+		<ol class="path_list">
+			<li>수강신청</li>
+			<li>과정정보</li>
+		</ol>
+	</div>
+	
+	<div class="content_body">
+		<div class="course_info">
+			<div class="info_img">
+				<img src="{{course_file_url}}" alt="과정 이미지" />
+				<div class="sns_preview_wrap">
+						<!--@if(sl_start_url)--><a href="javascript:OpenWindow('sample_lesson.jsp?cid={{id}}', '_YU001', {{sl_content_width}}, {{sl_content_height}});" class="button long white">맛보기</a>
+						<!--/if(sl_start_url)-->									
+					<ul class="sns_btn">
+						<li><a href="#" onclick="shareLink('facebook', location.href, '{{course_nm}}');" class="btn_facebook">페이스북 공유</a></li>
+						<li><a href="#" onclick="shareLink('kakaostory', location.href, '{{course_nm}}');" class="btn_kakaostory">카카오스토리 공유</a></li>
+						<li><a href="#" onclick="shareLink('naver', location.href, '{{course_nm}}');" class="btn_naver">네이버 공유</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="info_text">
+				<form name="form1" method="post">
+				<input type="hidden" name="rprice4" value="{{return_price4}}">
+				<input type="hidden" name="rprice5" value="{{return_price5}}">
+				<div class="content_title_course">{{course_nm}}</div>
+				<div class="tb_box type_table type_inner">
+					<table summary="{{course_nm}}과정의 신청기간및 교육시간을 나타냅니다.">
+						<caption>{{course_nm}} 과정정보</caption>
+						<colgroup>
+							<col style="width:80px" />
+							<col style="width:*" />
+						</colgroup>
+						<tbody>
+							<!--@if(is_regular)-->
+							<tr>
+								<th>교육기간</th>
+								<td>
+									<ul class="lesson_period">
+										<!--@loop(classes)-->
+										<li>
+											<label>
+												<input type="radio" name="class_id" value="{{classes.id}}" onclick="setPrice(this)"
+													return_type="{{classes.return_type}}"
+													price="{{classes.price_conv}}" _price="{{classes.price}}" 
+													_request_sdate="{{classes.request_sdate_conv}}" _request_edate="{{classes.request_edate_conv}}" 
+												<!--@if(classes.__first)-->checked<!--/if(classes.__first)-->> 
+												{{classes.study_sdate_conv}} - {{classes.study_edate_conv}} [{{classes.return_type_conv}}]
+											</label>
+										</li>
+										<!--/loop(classes)-->
+										<!--@nif(classes)-->
+										<li>수강신청 가능한 차수가 없습니다.</li>
+										<!--/nif(classes)-->
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<th>신청기간</th>
+								<td><span id="request-date"></span></td>
+							</tr>
+							<!--@if(restudy_yn:Y)-->
+							<tr>
+								<th>복습기간</th>
+								<td>학습종료 후 {{restudy_day}}일 까지</td>
+							</tr>
+							<!--/if(restudy_yn:Y)-->
+							<tr>
+								<th>교육시간</th>
+								<td>{{lesson_time_conv}}시간</td>
+							</tr>
+							<!--@nif(limit_people:0)-->
+							<tr>
+								<th>학습정원</th>
+								<td>{{limit_people}}명</td>
+							</tr>
+							<!--/nif(limit_people:0)-->
+							<!--/if(is_regular)-->
+
+							<!--@nif(is_regular)-->
+							<tr>
+								<th>수강기간</th>
+								<td>{{lesson_term}}{{lesson_unit_conv}}</td>
+							</tr>
+							<!--@if(restudy_yn:Y)-->
+							<tr>
+								<th>복습기간</th>
+								<td>학습종료 후 {{restudy_day}}일 까지</td>
+							</tr>
+							<!--/if(restudy_yn:Y)-->
+							<tr>
+								<th>강의구성</th>
+								<td>{{lesson_cnt}}차시</td>
+							</tr>
+							<!--/nif(is_regular)-->
+							<!--@if(tutors)-->
+							<tr>
+								<th>강사</th>
+								<td>
+									<!--@loop(tutors)-->
+										<span>{{tutors.tutor_nm}}</span><!--@nif(tutors.__last)-->, <!--/nif(tutors.__last)-->
+									<!--/loop(tutors)-->
+								</td>
+							</tr>
+							<!--/if(tutors)--> 
+							
+							<tr>
+								<th>교육비</th>
+								<td>
+									<span class="price" id="price">{{price_conv}} </span>
+								</td>
+							</tr>
+							<tr id="return_pay_price" style="display:none">
+								<th>실결제액</th>
+								<td>
+									<span class="return_pay_price">
+										<span id="return-pay-price">0</span>원 
+										<small>[<span id="dc-percent">100</span>% 환급지원]</small>
+									</span>
+								</td>
+							</tr>
+							<!--@nif(return_type:0)-->
+							<tr id="return_price_list" style="display:none">
+								<th>환급액</th>
+								<td>
+									<ul class="return_list">
+										<li><label title="">대기업</label> : {{return_price1_conv}}원</li>
+										<li><label title="">중견기업</label> : {{return_price2_conv}}원</li>
+										<li><label title="">우선기업</label> : {{return_price3_conv}}원</li>
+									</ul>
+								</td>
+							</tr>
+							<tr id="return_price_list2" style="display:none">
+								<th>지원금</th>
+								<td>
+									<ul class="return_list">
+										<li><label title="">정부 지원금</label> : {{return_price4_conv}}원</li>
+										<li><label title="">교육원 지원금</label> : {{return_price5_conv}}원</li>
+									</ul>
+								</td>
+							</tr>
+							<!--/nif(return_type:0)-->
+							<!--@if(books)-->
+							<tr>
+								<th>교재명</th>
+								<td>
+									<table class="buy_book">
+										<caption>수강에 사용되는 교재를 추가로 구매 하실수 있습니다.</caption>
+										<colgroup>
+											<col style="width:*px" />
+											<col style="width:70px" />
+											<col style="width:60px" />
+										</colgroup>
+										<tbody>
+											<!--@loop(books)-->
+											<tr>
+												<td class="book_name">{{books.book_nm}}</td>
+												<td class="book_price">{{books.book_price_conv}}원</td>
+												<td class="book_buy"><label ><input type="checkbox" name="book_idx" value="{{books.id}}" /> 구매</label></td>
+											</tr>
+											<!--/loop(books)-->
+										</tbody>
+										
+									</table>
+								</td>
+							</tr>
+							<!--/if(books)-->
+							<!--@if(sample_lesson_block)-->
+							<tr>
+								<th>맛보기</th>
+								<td><a href="javascript:OpenWindow('sample_lesson.jsp?cid={{id}}', '_YU001', {{sl_content_width}}, {{sl_content_height}});" class="button small gray">맛보기</a></td>
+							</tr>
+							<!--/if(sample_lesson_block)-->
+						</tbody>
+					</table>
+				</div>
+				<!--@if(sale_yn:Y)-->
+				<ul class="info_btn">
+					<!--@if(apply_btn)-->
+					<li><a href="javascript:goCart('D');" class="button large black btn_buy">수강신청하기</a></li>
+					<!--/if(apply_btn)-->
+				</ul>
+				<!--/if(sale_yn:Y)-->
+				<!--@if(sale_yn:N)-->
+				<ul class="info_btn">
+					<li><a href="javascript:void(0);" class="button large black btn_buy">신청마감</a></li>
+				</ul>
+				<!--/if(sale_yn:N)-->
+				</form>
+			</div>
+		</div>
+
+		<div class="course_foot">
+
+			<ul id="cview1" class="tab_cview tab_tt2">								
+				<li class="tab_title on"><a href="#cview1">과정소개</a></li>
+				<li class="tab_title "><a href="#cview2">강의목차</a></li>
+				<li class="tab_title title03 "><a href="#cview3">수강후기</a></li>
+			</ul>
+			<div class="cv">
+				<!--@if(content1_title)-->
+				<!-- <h6 class="page_title">{{content1_title}}</h6> -->
+				<div class="cv_text">{{content1}}</div>
+				<!--/if(content1_title)-->
+				<!--@if(content2_title)-->
+				<h6 class="page_title">{{content2_title}}</h6>
+				<div class="cv_text">{{content2}}</div>
+				<!--/if(content2_title)-->
+				<!--@if(content3_title)-->
+				<h6 class="page_title">{{content3_title}}</h6>
+				<div class="cv_text">{{content3}}</div>
+				<!--/if(content3_title)-->
+
+				<!--@if(course_address)-->
+				<h6 class="page_title">교육장소 : {{course_address}}</h6>
+				<div class="cv_text" style="display:none;">
+				</div>
+				<!--/if(course_address)-->
+
+				<div style="display:none;">
+				<h6 class="page_title">수료기준</h6> 
+				<div class="cv_text tb_cv">
+					<table class="table bordered" summary="수료 배점표" >
+						<caption>수료기준</caption>
+						<colgroup>
+							<col width="200" />
+							<!--@loop(modules)-->
+							<col width="*" />
+							<!--/loop(modules)-->
+						</colgroup>
+						<thead>
+							<tr>
+								<th>평가기준</th>
+								<!--@loop(modules)-->
+								<th>{{modules.eval_title}}</th>
+								<!--/loop(modules)-->
+								<th>총점</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td align="center">반영비율</td>
+								<!--@loop(modules)-->
+								<td align="center">{{modules.assign_score_conv}}</td>
+								<!--/loop(modules)-->
+								<td align="center">100점</td>
+							</tr>
+							<tr>
+								<td align="center">이수(과락)기준</td>
+								<!--@loop(modules)-->
+								<td align="center">{{modules.limit_score_conv}}</td>
+								<!--/loop(modules)-->
+								<td align="center">{{limit_total_score}}점</td>
+							</tr>
+						</tbody>
+					</table>
+					<div style="margin:8px 0 5px 0;">※ 수료기준은 각 평가항목의 점수가 수료기준 점수 이상이고 총점이 <b style="color:blue;">{{limit_total_score}}점</b> 이상이어야 합니다.</div>
+				</div>
+				</div>
+
+				<!--@if(tutors)-->
+				<h6 class="page_title">강사소개</h6>
+				<div class="tutor_info cv_text">
+					<!--@loop(tutors)-->
+					<dl>
+						<dt>강사명</dt>
+						<dd>{{tutors.tutor_nm}}</dd>
+						<dt>강사약력</dt>
+						<dd>{{tutors.ability}}</dd>
+					</dl>
+					<!--/loop(tutors)-->
+				</div>
+				<!--/if(tutors)-->
+
+
+				<!--@if(books)-->
+				<h6 class="page_title">교재</h6>
+				<div class="tb_box tb_cv skin_show_1_b">
+					<table summary="교재정보" >
+						<caption>교재정보</caption>
+						<colgroup>
+							<col style="width:*%" />
+							<col style="width:100px" />
+							<col style="width:150px" />
+							<col style="width:80px" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th>교재명</th>
+								<th>저자</th>
+								<th>출판사</th>
+								<th>상세보기</th>
+							</tr>
+						</thead>
+						<tbody>
+							<!--@loop(books)-->
+							<tr>
+								<td class="tal"><strong>{{books.book_nm}}</strong></td>
+								<td>{{books.author}}</td>
+								<td>{{books.publisher}}</td>
+								<td><a href="javascript:void(0);" onclick="OpenLayer('../course/pop_book_info.jsp?id={{books.id}}', '_bifo_', 530, 300);" title="교재 상세보기 페이지로 이동" class="button small gray">상세보기</a></td>
+							</tr>
+							<!--/loop(books)-->
+						</tbody>
+					</table>
+				</div>
+				<!--/if(books)-->
+			</div>
+
+			<ul id="cview2" class="tab_cview tab_tt2 mt20">
+				<li class="tab_title"><a href="#cview1">과정소개</a></li>
+				<li class="tab_title on"><a href="#cview2">강의목차</a></li>
+				<li class="tab_title title03"><a href="#cview3">수강후기</a></li>
+			</ul>
+			<div class="cv">
+				<!-- <h6 class="page_title">강의목차</h6> -->
+				<div class="tb_box type_table">
+					<table summary="과목 목차별 강의명을 나타냅니다.">
+						<caption>강의목차</caption>
+						<colgroup>
+							<col style="width:100px;" />
+							<!--@nif(onoff_type:N)-->
+							<col style="width:200px;" />
+							<!--/nif(onoff_type:N)-->
+							<col style="width:*;" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">차시</th>
+								<!--@nif(onoff_type:N)-->
+								<th scope="col">일시</th>
+								<!--/nif(onoff_type:N)-->
+								<th scope="col">강의명</th>
+							</tr>
+						</thead>
+						<tbody>
+							<!--@loop(lessons)-->
+							<!--@if(lessons.section_block)-->
+							<tr>
+								<th align="left" colspan="{{section_colspan}}">{{lessons.section_nm}}</th>
+							</tr>
+							<!--/if(lessons.section_block)-->
+							<tr>
+								<th class="tac">{{lessons.chapter}}차시</th>
+								<!--@nif(onoff_type:N)-->
+								<td class="tac">
+									<!--@if(lessons.onoff_type:N)-->온라인 강의<!--/if(lessons.onoff_type:N)-->
+									<!--@nif(lessons.onoff_type:N)-->
+									{{lessons.start_date_conv}} {{lessons.start_time}}~{{lessons.end_time}}
+									<!--/nif(lessons.onoff_type:N)-->
+								</td>
+								<!--/nif(onoff_type:N)-->
+								<td align="left">{{lessons.lesson_nm}}</td>
+							</tr>
+							<!--/loop(lessons)-->
+							<!--@nif(lessons)-->
+							<tr>
+								<!--@if(onoff_type:N)-->
+								<td colspan="2" class="nodata">강의 목차가 없습니다.</td>
+								<!--/if(onoff_type:N)-->
+								<!--@nif(onoff_type:N)-->
+								<td colspan="3" class="nodata">강의 목차가 없습니다.</td>
+								<!--/nif(onoff_type:N)-->
+							</tr>
+							<!--/nif(lessons)-->
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<ul id="cview3" class="tab_cview tab_tt2 mt40">								
+				<li class="tab_title"><a href="#cview1">과정소개</a></li>
+				<li class="tab_title"><a href="#cview2">강의목차</a></li>
+				<li class="tab_title title03 on"><a href="#cview3">수강후기</a></li>
+			</ul>
+			<div class="cv">
+				<!-- <h6 class="page_title">수강후기</h6> -->
+				<iframe src="review.jsp?cid={{id}}" id="cpostifrm" name="cpostifrm" width="100%" height="0" scrolling="no" frameborder="0"></iframe>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<script language="JavaScript">
+var f = document.forms['form1'];
+function setPrice(el) {
+	if(el) {
+		$("#price").html(el.getAttribute("price"));
+		if(el.getAttribute("return_type") == '1') {
+			$("#return_price_list").show();
+			$("#return_price_list2").hide();
+			$("#return_pay_price").hide();
+		} else if(el.getAttribute("return_type") == '4') {
+			$("#return_price_list").hide();
+			$("#return_price_list2").show();
+			$("#return_pay_price").show();
+			var cp = parseInt(el.getAttribute("_price"));
+			var rp4 = parseInt(f['rprice4'].value);
+			var rp5 = parseInt(f['rprice5'].value);
+			var dc = cp < (rp4 + rp5) ? cp : (rp4 + rp5);
+			var dcp = cp > 0 ? parseInt(dc * 100 / cp) : 0;
+			var pp = cp - dc;
+			
+			$("#return-pay-price").html(number_format(pp));
+			$("#dc-percent").html(dcp);
+		} else {
+			$("#return_price_list").hide();
+			$("#return_price_list2").hide();
+			$("#return_pay_price").hide();
+		}
+		$("#request-date").text(el.getAttribute("_request_sdate") + " - " + el.getAttribute("_request_edate"));
+	}
+}
+
+function goCart(type) {
+	clearCart();
+	<!--@if(course_type:A)-->
+	addCommonCart("course", "{{id}}", "1");
+	<!--/if(course_type:A)-->
+	<!--@if(course_type:R)-->
+	addCommonCartInput("class", "form1", "class_id");
+	<!--/if(course_type:R)-->
+	addCommonCartInput("book", "form1", "book_idx");
+	goCommonCart(type);
+}
+function setLabel() {
+	var progresses = { "온라인" : "sky", "집합" : "red", "혼합" : "green", "패키지" : "brown" };
+	$(".label").each(function() {
+		var v = $(this).html();
+		$(this).addClass(progresses[v]);
+	});
+}
+$(document).ready(function(){
+	$('ul.tab_tt > li.title03 > a').click(function(){
+		$("#cpostifrm").attr("src", "cpost.jsp?cid={{id}}");
+	});
+	if(f['class_id']) {
+		var max = f.class_id.length;
+		if(max > 1) {
+			for(var i=0; i<max; i++) {
+				if(f.class_id[i].checked == true) {
+					setPrice(f.class_id[i]);
+				}
+			}
+		} else {
+			setPrice(f.class_id);
+		}
+	}
+	setLabel();
+});
+</script>

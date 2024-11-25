@@ -1,0 +1,653 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<title>키라에듀</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0; target-densitydpi=medium-dpi"/>
+<meta name="format-detection" content="telephone=no" />
+
+<link rel="stylesheet" type="text/css" href="/html/page/landing/css/jquery-ui.min.css" />
+<link rel="stylesheet" type="text/css" href="/html/page/landing/css/style.css" />
+<link rel="stylesheet" type="text/css" href="/html/page/landing/css/common_all.css" />
+<link rel="stylesheet" type="text/css" href="/html/page/landing/css/swiper.css" />
+<link rel="stylesheet" type="text/css" href="/html/page/landing/css/colorbox.css" />
+
+<script type="text/javascript" src="/html/page/landing/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="/html/page/landing/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/html/page/landing/js/swiper.js"></script>
+<script type="text/javascript" src="/html/page/landing/js/jquery.colorbox.js"></script>
+<script type="text/javascript" src="/html/page/landing/js/jquery.rwdImageMaps.js"></script>
+
+<script type="text/javascript" language="javascript">
+    window.addEventListener('load', function(){
+        document.body.style.height = (document.documentElement.clientHeight + 5) + 'px';
+        window.scrollTo(0, 1);
+    }, false);
+
+    $(document).ready(function(){
+        $('img[usemap]').rwdImageMaps();
+    });
+
+    // 화면 리사이징
+    $( window ).resize(function() {
+        if( $(window).width() <= 1023 ){
+            $(".info_popup").colorbox({iframe:true, width:"90%", height:"60%"});
+        }else{
+            $(".info_popup").colorbox({iframe:true, width:"700px", height:"500px"});
+        }
+    });
+
+    // TOP버튼 이동
+    function move_scroll(item_id){
+        var item = $("#"+item_id);
+        var offset_item = item.offset();
+        var position_top = offset_item.top;
+
+        $('html,body').animate({scrollTop:position_top}, 500);
+    }
+</script>
+
+</head>
+<body>
+
+<div id="wrap">
+
+<div id="header_tmp">
+    <div class="contents_con">
+        <div class="logo_con">
+            <a href="/main/page.jsp?pid=landing.landing">
+                <img src="/html/page/landing/img/top_logo.png" alt="키라에듀로고" class="fx w_img"/>
+                <img src="/html/page/landing/img/m_top_logo.png" alt="키라에듀로고" class="fx m_img"/>
+            </a>
+
+            <a href="tel:1544-9335" class="m_con">
+                <img src="/html/page/landing/img/m_top_call.png" alt="교육문의전화"/>
+            </a>
+        </div>
+
+        <div class="sub_logo_con">
+            <table cellpadding="0" cellspacing="0">
+                <tbody>
+                <tr>
+                    <td align="left">
+                        <img src="/html/page/landing/img/top_logo01.png" alt="고용노동부" class="fx"/>
+                    </td>
+                    <td align="right">
+                        <img src="/html/page/landing/img/top_logo02.png" alt="중소벤처기업부" class="fx"/>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div id="container">
+    <div id="landing_con">
+        <div class="visual_con">
+            <img src="/html/page/landing/img/visual_con_img.png" alt="메인배너" class="fx w_img" />
+            <img src="/html/page/landing/img/m_visual_con_img.png" alt="메인배너" class="fx m_img" />
+
+            <div class="nav_con">
+                <div class="contents_con">
+                    <ul>
+                        <li>
+                            <img src="/html/page/landing/img/visual_con_nav_icon01.png" alt="아이콘" />
+                            <div class="info_con">
+                                <span>고용노동부</span>
+                                <b>정식훈련기관</b>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="/html/page/landing/img/visual_con_nav_icon02.png" alt="아이콘" />
+                            <div class="info_con">
+                                <span>비대면서비스바우처</span>
+                                <b>공급기업</b>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="/html/page/landing/img/visual_con_nav_icon03.png" alt="아이콘" />
+                            <div class="info_con">
+                                <span>국가직무능력표준(NCS) 기반</span>
+                                <b>직무교육</b>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="/html/page/landing/img/visual_con_nav_icon04.png" alt="아이콘" />
+                            <div class="info_con">
+                                <span>PC와 스마트폰으로</span>
+                                <b>간편한 수강 가능</b>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="info01_con">
+            <div class="contents_con">
+                <div class="title_con">
+                    <img src="/html/page/landing/img/info01_con_title.png" alt="타이틀" class="fx w_img" />
+                    <img src="/html/page/landing/img/m_info01_con_title.png" alt="타이틀" class="fx m_img" />
+                </div>
+            </div>
+
+            <div class="slide_con">
+                <div class="swiper-container info01_slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" data-swiper-autoplay="3000">
+                            <img src="/html/page/landing/img/slide_con_img01.png" alt="" class="fx w_img"/>
+                            <img src="/html/page/landing/img/m_slide_con_img01.png" alt="" class="fx m_img"/>
+                        </div>
+                        <div class="swiper-slide" data-swiper-autoplay="3000">
+                            <img src="/html/page/landing/img/slide_con_img02.png" alt="" class="fx w_img" />
+                            <img src="/html/page/landing/img/m_slide_con_img02.png" alt="" class="fx m_img"/>
+                        </div>
+                        <div class="swiper-slide" data-swiper-autoplay="3000">
+                            <img src="/html/page/landing/img/slide_con_img03.png" alt="" class="fx w_img" />
+                            <img src="/html/page/landing/img/m_slide_con_img03.png" alt="" class="fx m_img"/>
+                        </div>
+                        <div class="swiper-slide" data-swiper-autoplay="3000">
+                            <img src="/html/page/landing/img/slide_con_img04.png" alt="" class="fx w_img" />
+                            <img src="/html/page/landing/img/m_slide_con_img04.png" alt="" class="fx m_img"/>
+                        </div>
+                        <div class="swiper-slide" data-swiper-autoplay="3000">
+                            <img src="/html/page/landing/img/slide_con_img05.png" alt="" class="fx w_img" />
+                            <img src="/html/page/landing/img/m_slide_con_img05.png" alt="" class="fx m_img"/>
+                        </div>
+                        <div class="swiper-slide" data-swiper-autoplay="3000">
+                            <img src="/html/page/landing/img/slide_con_img06.png" alt="" class="fx w_img" />
+                            <img src="/html/page/landing/img/m_slide_con_img06.png" alt="" class="fx m_img"/>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+
+        <div class="info02_con">
+            <div class="contents_con">
+                <div class="w_con">
+                    <div class="title_con">
+                        <img src="/html/page/landing/img/info02_con_title.png" alt="" class="fx" />
+                    </div>
+                    <div class="info_con">
+                        <div class="left_con">
+                            <img src="/html/page/landing/img/info02_con_left_img.png" alt="" class="fx" />
+                        </div>
+
+                        <div class="right_con">
+                            <ul>
+                                <li>
+                                    <img src="/html/page/landing/img/info02_con_right_img01.png" alt="5인이상" class="fx" />
+                                    <img src="/html/page/landing/img/info02_con_right_img01_on.png" alt="5인이상" class="fx on" />
+                                </li>
+                                <li>
+                                    <img src="/html/page/landing/img/info02_con_right_img02.png" alt="공공기관" class="fx" />
+                                    <img src="/html/page/landing/img/info02_con_right_img02_on.png" alt="공공기관" class="fx on" />
+                                </li>
+                                <li>
+                                    <img src="/html/page/landing/img/info02_con_right_img03.png" alt="의료기관" class="fx" />
+                                    <img src="/html/page/landing/img/info02_con_right_img03_on.png" alt="의료기관" class="fx on" />
+                                </li>
+                                <li>
+                                    <img src="/html/page/landing/img/info02_con_right_img04.png" alt="보육기관" class="fx" />
+                                    <img src="/html/page/landing/img/info02_con_right_img04_on.png" alt="보육기관" class="fx on" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="text_con">
+                        <img src="/html/page/landing/img/info02_con_text_img.png" alt="" class="fx" />
+                    </div>
+                </div>
+
+                <div class="m_con">
+                    <img src="/html/page/landing/img/m_info02_con_img.png" alt="" class="fx" />
+                </div>
+            </div>
+        </div>
+
+        <div class="info03_con">
+            <div class="contents_con">
+                <img src="/html/page/landing/img/info03_con_img.png" alt="" class="fx w_img" />
+                <img src="/html/page/landing/img/m_info03_con_img.png" alt="" class="fx m_img" />
+            </div>
+        </div>
+
+        <div class="info04_con">
+            <div class="contents_con">
+                <div class="title_con">
+                    <img src="/html/page/landing/img/info04_con_title.png" alt="" class="fx w_img" />
+                    <img src="/html/page/landing/img/m_info04_con_title.png" alt="" class="fx m_img" />
+                </div>
+
+                <div class="list_con">
+                    <ul>
+                        <li>
+                            <div class="info_con">
+                                <div class="img_con">
+                                    <img src="/html/page/landing/img/info04_con_list_img01.png" alt="법정의무교육" class="fx w_img" />
+                                    <img src="/html/page/landing/img/m_info04_con_list_img01.png" alt="법정의무교육" class="fx m_img" />
+                                </div>
+                                <div class="text_con">
+                                    <b>법정의무교육</b>
+                                    <span>국가에서 지정한 연 1회 필수 교육!<br>법정의무 전 분야 최신 과정 보유</span>
+                                </div>
+                            </div>
+
+                            <div class="btn_con">
+                                <a href="https://www.modulearning.kr/main/page.jsp?pid=law.law1" target="_blank">더보기 +</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="info_con">
+                                <div class="img_con">
+                                    <img src="/html/page/landing/img/info04_con_list_img02.png" alt="직무교육" class="fx w_img" />
+                                    <img src="/html/page/landing/img/m_info04_con_list_img02.png" alt="직무교육" class="fx m_img" />
+                                </div>
+                                <div class="text_con">
+                                    <b>직무교육</b>
+                                    <span>국가직무능력표준(NCS) 기반 교육<br>산업현장 직무 중심의 인적자원 개발</span>
+                                </div>
+                            </div>
+
+                            <div class="btn_con">
+                                <a href="https://www.modulearning.kr/main/page.jsp?pid=intro.intro02" target="_blank">더보기 +</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="info_con">
+                                <div class="img_con">
+                                    <img src="/html/page/landing/img/info04_con_list_img03.png" alt="산업안전보건교육" class="fx w_img" />
+                                    <img src="/html/page/landing/img/m_info04_con_list_img03.png" alt="산업안전보건교육" class="fx m_img" />
+                                </div>
+                                <div class="text_con">
+                                    <b>산업안전보건교육</b>
+                                    <span>국가에서 지정한 매 분기 필수 교육!<br>체계적인 프로그램으로 학습효과 UP</span>
+                                </div>
+                            </div>
+
+                            <div class="btn_con">
+                                <a href="https://www.modulearning.kr/main/page.jsp?pid=law.law2" target="_blank">더보기 +</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="info_con">
+                    <img src="/html/page/landing/img/info04_con_img.png" alt="" class="fx w_img" />
+                    <img src="/html/page/landing/img/m_info04_con_img.png" alt="" class="fx m_img" />
+                </div>
+
+                <div class="btn_con">
+                    <a href="https://www.modulearning.kr/main/page.jsp?pid=gov.gov" target="_blank">비대면 서비스 바우처 바로가기</a>
+                    <p>※ 미인증 업체에 의한 교육은 훈련시간이 인정되지 않으며<br class="m_con"> 과태료 부과대상이 될 수 있고 교육 이력이 무효처리 됩니다</p>
+                </div>
+            </div>
+        </div>
+
+        <form name="form1" method="POST" target="sysfrmblank" action="/main/formmail.jsp"  onsubmit="return goSubmit(this)" class="writeForm" >
+            <div class="info05_con" id="info05_con">
+                <div class="contents_con">
+                    <div class="title_con">
+                        <span>고용노동부 지정 원격 훈련기관 &amp; 안전보건교육 위탁기관<br>중소벤처기업부 비대면 서비스 바우처 공급기업</span>
+                        <b>기업교육의 중심, 모두의러닝(MODU LEARNING)</b>
+
+                        <img src="/html/page/landing/img/info05_con_title.png" alt="고객지원센터" class="w_con" />
+                    </div>
+
+                    <div class="info_con">
+                        <ul>
+                            <li>
+                                <table cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                    <tr>
+                                        <td align="left" class="title_td title_td01">
+                                            <span>기업명</span>
+                                        </td>
+                                        <td align="left" class="info_td">
+                                            <input type="text" name="category_nm" id="category_nm" class="input" />
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                            <li>
+                                <table cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                    <tr>
+                                        <td align="left" class="title_td title_td02">
+                                            <span>담당자명</span>
+                                        </td>
+                                        <td align="left" class="info_td">
+                                            <input type="text" name="user_nm" id="user_nm" class="input" />
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                            <li>
+                                <table cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                    <tr>
+                                        <td align="left" class="title_td title_td01">
+                                            <span>연락처</span>
+                                        </td>
+                                        <td align="left" class="info_td">
+                                            <select name="mobile1" class="select">
+                                                <option value="010" style="color:#222;">010</option>
+                                                <option value="011" style="color:#222;">011</option>
+                                                <option value="016" style="color:#222;">016</option>
+                                                <option value="017" style="color:#222;">017</option>
+                                                <option value="018" style="color:#222;">018</option>
+                                                <option value="019" style="color:#222;">019</option>
+                                            </select>
+                                            <input type="number" pattern="\d*" name="mobile2" id="mobile2" class="input tel_input" maxlength="4" onkeydown="onlyNumber(this)" oninput="maxLengthCheck(this)"/>
+                                            <input type="number" pattern="\d*" name="mobile3" id="mobile3" class="input tel_input" maxlength="4" onkeydown="onlyNumber(this)" oninput="maxLengthCheck(this)"/>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                            <li>
+                                <table cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                    <tr>
+                                        <td align="left" class="title_td title_td02">
+                                            <span>문의사항</span>
+                                        </td>
+                                        <td align="left" class="info_td">
+                                            <input type="text" name="content" id="content" placeholder="Ex) 10명 인원 법정의무교육 상담요청" class="input" />
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="agree_con">
+                        <label class="checkbox_label">
+                            <input type="checkbox" name="agree_yn" id="checkYN" value="Y" checked/>
+                            <div class="check_icon"></div>
+                            <span>개인정보 수집 이용에 동의합니다.</span>
+                            <a href="https://modulearning.kr/member/privacy.jsp" target="_blank">보기</a>
+                        </label>
+                    </div>
+
+                    <div class="btn_con">
+                        <!-- <a href="">상담신청하기</a> -->
+                        <button type="submit">상담신청하기</button>
+                    </div>
+
+                    <div class="img_con m_con">
+                        <img src="/html/page/landing/img/m_info05_con_title.png" alt="고객지원센터" class="fx" />
+                    </div>
+                </div>
+            </div>
+        </form>
+        <script type='text/javascript'>
+            //<![CDATA[
+            function __setElement(el, v, a) { if(v) v = v.replace(/__&LT__/g, '<').replace(/__&GT__/g, '>'); if(typeof(el) != 'object' && typeof(el) != 'function') return; if(v != null) switch(el.type) { case 'text': case 'hidden': case 'password': case 'file': case 'email': el.value = v; break; case 'textarea': el.value = v; break; case 'checkbox': case 'radio': if(el.value == v) el.checked = true; else el.checked = false; break; case 'select-one': for(var i=0; i<el.options.length; i++) if(el.options[i].value == v) el.options[i].selected = true; break; default: for(var i=0; i<el.length; i++) if(el[i].value == v) el[i].checked = true; el = el[0]; break; } if(typeof(a) == 'object') { if(el.type != 'select-one' && el.length > 1) el = el[0]; for(i in a) el.setAttribute(i, a[i]); } }
+            if(_f = document.forms['form1']) {
+                __setElement(_f['category_nm'], null, {HNAME:'기업명', required:'Y'});
+                __setElement(_f['user_nm'], null, {HNAME:'담당자', required:'Y'});
+                __setElement(_f['mobile1'], null, {HNAME:'연락처', required:'Y', option:'number', minbyte:'2', maxbyte:'3'});
+                __setElement(_f['mobile2'], null, {HNAME:'연락처', required:'Y', option:'number', minbyte:'3', maxbyte:'4'});
+                __setElement(_f['mobile3'], null, {HNAME:'연락처', required:'Y', option:'number', minbyte:'4', maxbyte:'4'});
+                __setElement(_f['email1'], null, {HNAME:'이메일', option:'email', glue:'email2', delim:'@'});
+                __setElement(_f['email2'], null, {HNAME:'이메일'});
+                __setElement(_f['content'], null, {HNAME:'문의내용'});
+                if(!_f.onsubmit) _f.onsubmit = function() { return validate(this); };
+            }
+            //]]>
+
+            function goSubmit(f) {
+                if(!validate(f)) return false;
+                if(!f['agree_yn'].checked) {
+                    alert('개인정보 수집 이용에 동의 해 주세요');
+                    return false;
+                }
+                return true;
+            }
+        </script>
+
+
+        <div class="info06_con">
+            <div class="contents_con">
+                <div class="banner_con">
+                    <div class="swiper-container info06_slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" data-swiper-autoplay="1500">
+                                <img src="/html/page/landing/img/foot_banner_img01.png" alt="중소벤처기업부" class="fx w_img" />
+                                <img src="/html/page/landing/img/m_foot_banner_img01.png" alt="중소벤처기업부" class="fx m_img" />
+                            </div>
+                            <div class="swiper-slide" data-swiper-autoplay="1500">
+                                <img src="/html/page/landing/img/foot_banner_img02.png" alt="비대면바우처플랫폼" class="fx w_img" />
+                                <img src="/html/page/landing/img/m_foot_banner_img02.png" alt="비대면바우처플랫폼" class="fx m_img" />
+                            </div>
+                            <div class="swiper-slide" data-swiper-autoplay="1500">
+                                <img src="/html/page/landing/img/foot_banner_img03.png" alt="고용노동부" class="fx w_img" />
+                                <img src="/html/page/landing/img/m_foot_banner_img03.png" alt="고용노동부" class="fx m_img" />
+                            </div>
+                            <div class="swiper-slide" data-swiper-autoplay="1500">
+                                <img src="/html/page/landing/img/foot_banner_img04.png" alt="한국산업인력공단" class="fx w_img" />
+                                <img src="/html/page/landing/img/m_foot_banner_img04.png" alt="한국산업인력공단" class="fx m_img" />
+                            </div>
+                            <div class="swiper-slide" data-swiper-autoplay="1500">
+                                <img src="/html/page/landing/img/foot_banner_img05.png" alt="근로복지공단" class="fx w_img" />
+                                <img src="/html/page/landing/img/m_foot_banner_img05.png" alt="근로복지공단" class="fx m_img" />
+                            </div>
+                            <div class="swiper-slide" data-swiper-autoplay="1500">
+                                <img src="/html/page/landing/img/foot_banner_img06.png" alt="hrd-net" class="fx w_img" />
+                                <img src="/html/page/landing/img/m_foot_banner_img06.png" alt="hrd-net" class="fx m_img" />
+                            </div>
+                            <div class="swiper-slide" data-swiper-autoplay="1500">
+                                <img src="/html/page/landing/img/foot_banner_img07.png" alt="개인정보보호 포털" class="fx w_img" />
+                                <img src="/html/page/landing/img/m_foot_banner_img07.png" alt="개인정보보호 포털" class="fx m_img" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="footer_tmp">
+<div class="contents_con">
+    <div class="logo_con">
+        <img src="/html/page/landing/img/foot_logo.png" alt="" class="fx w_img" />
+        <img src="/html/page/landing/img/m_foot_logo.png" alt="" class="fx m_img" />
+    </div>
+
+    <div class="info_con">
+        <span>주식회사 모두의러닝</span><font class="bar">|</font><span>대표자 : 이영신</span><font class="bar w_con">|</font><br class="m_con"><span>주소 : 서울특별시 금천구 가산디지털1로 75-15, 6층 621-625호(가산동, 하우스디 와이즈타워)</span> <br />
+        <span>TEL : 1544-9335</span><font class="bar">|</font><span>사업자등록번호 : 272-81-01049</span><font class="bar w_con">|</font><br class="m_con"><span>통신판매업번호 : 2020-서울금천-2107</span> <br />
+        <span>개인정보 관리책임자 : 이영신(ceo@modulearning.kr)</span><font class="bar w_con">|</font><br class="m_con"><span>개인정보 보유기간: : 회원탈퇴시까지</span>
+
+        <p>COPYRIGHT 2021 주식회사 모두의러닝 ALLRIGHT & RESERVED. </p>
+    </div>
+</div>
+</div>
+</div>
+
+<div id="right_quick_con" class="w_con">
+<div class="btn_con">
+    <a href="javascript:move_scroll('info05_con');">
+        <img src="/html/page/landing/img/quick_con_icon.gif" alt="상담신청" />
+        <!--<span>상담신청하기</span>-->
+    </a>
+</div>
+
+<div class="btn01_con">
+    <a href="https://www.modulearning.kr/main/index.jsp" target="_blank">
+        <!--<img src="/html/page/landing/img/quick_con_btn_img.gif" alt="키라에듀 홈페이지 바로가기" />-->
+        <span>모두의러닝 홈페이지 바로가기</span>
+    </a>
+</div>
+</div>
+
+<div id="top_btn">
+<a href="javascript:move_scroll('wrap');">
+    <img src="/html/page/landing/img/top_btn.png" alt="맨 위로" />
+</a>
+</div>
+
+<div id="bottom_quick_con" class="m_con">
+<table cellpadding="0" cellspacing="0">
+    <tbody>
+    <tr>
+        <td align="center">
+            <a href="javascript:move_scroll('info05_con');">
+                <img src="/html/page/landing/img/m_quick_con_btn_img01.gif" alt="상담신청하기" class="fx"/>
+            </a>
+        </td>
+        <td align="center">
+            <a href="https://www.modulearning.kr/main/index.jsp" target="_blank">
+                <img src="/html/page/landing/img/m_quick_con_btn_img.png" alt="키라에듀 홈페이지 바로가기" class="fx"/>
+            </a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<div class="m_con top_btn">
+    <a href="javascript:move_scroll('wrap');">
+        <img src="/html/page/landing/img/m_top_btn.png" alt="맨 위로" />
+    </a>
+</div>
+</div>
+
+<!-- Enliple Tracker Start -->
+<script type="text/javascript">
+(function(a,g,e,n,t){a.enp=a.enp||function(){(a.enp.q=a.enp.q||[]).push(arguments)};n=g.createElement(e);n.defer=!0;n.src="https://cdn.megadata.co.kr/dist/prod/enp_tracker_self_hosted.min.js";t=g.getElementsByTagName(e)[0];t.parentNode.insertBefore(n,t)})(window,document,"script");
+//enp('create', 'conversion', 'KIRAHRD20', { device: '디바이스 타입', convType: '전환유형', productName: '광고주에서 커스텀 할 상품명'}); // 디바이스 타입  W:웹, M: 모바일, B: 반응형
+//enp('send', 'conversion', 'KIRAHRD20', { device: '디바이스 타입', convType: '전환유형', productName: '광고주에서 커스텀 할 상품명'});
+</script>
+<!-- Enliple Tracker End -->
+
+<script type="text/javascript" language="javascript">
+// info01_con 슬라이드
+var info01_slide = new Swiper('.info01_slide', {
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    autoplay: {
+        delay: 3000,
+    },
+    speed: 2000,
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+
+$(".swiper-button-prev").click(function(){
+    info01_slide.autoplay.start();
+});
+
+$(".swiper-button-next").click(function(){
+    info01_slide.autoplay.start();
+});
+
+// info06_con 슬라이드
+var info06_slide = new Swiper('.info06_slide', {
+    slidesPerView: 'auto',
+    autoplay: {
+        delay: 1500,
+    },
+    speed: 1000,
+    loop: true,
+    touchRatio: 0,//드래그 금지
+});
+
+$(".info06_con").click(function(){
+    info06_slide.autoplay.start();
+});
+
+
+function checkData(writeclass){
+    var company = $('#company').val();
+    var userName = $('#userName').val();
+    var phone02 = $('#phone02').val();
+    var phone03 = $('#phone03').val();
+    var content = $('#content').val();
+    var checkYN = $('input:checkbox[id=checkYN]').is(':checked');
+
+    if (company == '') {
+        alert('기업명을 입력해 주세요');
+        return;
+    }
+    if (userName == '') {
+        alert('담당자명을 입력해 주세요');
+        return;
+    }
+    if (phone02 == '' || phone03 == '') {
+        alert('전화번호를 입력해 주세요');
+        return;
+    }
+    if (content == '') {
+        alert('문의내용을 입력해 주세요');
+        return;
+    }
+    if (checkYN == false) {
+        alert('개인정보 수집 이용에 동의 해 주세요');
+        return;
+    }
+
+    var sendSerial = $('form.'+writeclass).serialize();
+    if(confirm('등록하시겠습니까?')){
+        $.ajax({
+            url: '/api/apiConsultNew.php',
+            type:'POST',
+            data:sendSerial,
+            dataType:'text',
+            success:function(data){
+                if (data == 'success') {
+                    alert('상담 문의가 등록되었습니다. 담당자 확인 후 연락 드리겠습니다.');
+                    enp('create', 'conversion', 'KIRAHRD20', { device: 'W', convType: 'etc', productName: 'join'}); // 디바이스 타입  W:웹, M: 모바일, B: 반응형
+                    enp('send', 'conversion', 'KIRAHRD20', { device: 'W', convType: 'etc', productName: 'join'});
+                    top.location.reload();
+                } else {
+                    alert('등록에 실패하였습니다.')
+                }
+            },
+            fail:function(){
+                alert('등록에 실패하였습니다.')
+            }
+        })
+    }
+
+}
+</script>
+
+<!-- Enliple Tracker Start -->
+<script type="text/javascript">
+(function(a,g,e,n,t){a.enp=a.enp||function(){(a.enp.q=a.enp.q||[]).push(arguments)};n=g.createElement(e);n.async=!0;n.defer=!0;n.src="https://cdn.megadata.co.kr/dist/prod/enp_tracker_self_hosted.min.js";t=g.getElementsByTagName(e)[0];t.parentNode.insertBefore(n,t)})(window,document,"script");
+enp('create', 'common', 'KIRAHRD20', { device: 'W' }); // W:웹, M: 모바일, B: 반응형
+enp('send', 'common', 'KIRAHRD20');
+</script>
+<!-- Enliple Tracker End -->
+
+<!-- Enliple Tracker Start -->
+<script type="text/javascript">
+(function(a,g,e,n,t){a.enp=a.enp||function(){(a.enp.q=a.enp.q||[]).push(arguments)};n=g.createElement(e);n.defer=!0;n.src="https://cdn.megadata.co.kr/dist/prod/enp_tracker_self_hosted.min.js";t=g.getElementsByTagName(e)[0];t.parentNode.insertBefore(n,t)})(window,document,"script");
+//enp('create', 'conversion', 'KIRAHRD20', { device: '디바이스 타입', convType: '전환유형', productName: '광고주에서 커스텀 할 상품명'}); // 디바이스 타입  W:웹, M: 모바일, B: 반응형
+//enp('send', 'conversion', 'KIRAHRD20', { device: '디바이스 타입', convType: '전환유형', productName: '광고주에서 커스텀 할 상품명'});
+</script>
+<!-- Enliple Tracker End -->
+
+</body>
+</html>

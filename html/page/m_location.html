@@ -1,0 +1,36 @@
+	<div id="container">		
+		<h4 class="content_title">찾아오시는 길</h4>
+		<div class="content">
+			<div class="map_canvas">
+				<!-- * 카카오맵 - 지도퍼가기 -->
+				<!-- 1. 지도 노드 -->
+				<div id="daumRoughmapContainer1622542705611" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+				<!--
+					2. 설치 스크립트
+					* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+				-->
+				<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+				<!-- 3. 실행 스크립트 -->
+				<script charset="UTF-8">
+					new daum.roughmap.Lander({
+						"timestamp" : "1622542705611",
+						"key" : "2624u",
+						"mapWidth" : "640",
+						"mapHeight" : "400"
+					}).render();
+				</script>
+			</div>
+
+				  
+			<div class="sub_inner">
+			  <h5 class="loca_tit sub_tt"><span>모두의 러닝</span> 찾아오시는 길입니다.</h5>
+			  <ul class="loca">
+				<li><b>Address</b>서울특별시 금천구 가산디지털1로 75-15, 6층 621-625호(가산동, 가산 하우스디 와이즈타워)</li>
+				<li><b>Tel</b>02-6084-2014</li>
+			  </ul>
+			</div>
+		</div>
+	</div>
+			

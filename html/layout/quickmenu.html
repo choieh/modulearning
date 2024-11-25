@@ -1,0 +1,30 @@
+		<!-- 퀵메뉴 -->
+		<div class="quickmenu">
+			<script>
+			$(function(){
+				// 플로팅 가입배너
+				var $float_banner = $('#float_banner');
+				var float_banner_top = $float_banner.offset().top;
+				$(window).scroll(function() {
+					if (float_banner_top < $(document).scrollTop() + 50) {
+						$float_banner.addClass('fixed');
+					} else {
+						$float_banner.removeClass('fixed');
+					}
+				});
+			});
+			</script>
+
+			<div class="float-banner">
+				<div class="fb_inner">
+					<ul class="banner" id="float_banner">
+						<li class="qm_01"><a href="/mypage/course_list.jsp">수강현황</a></li>
+						<li class="qm_02"><a href="/main/page.jsp?pid=board.worker07">학습장애해결</a></li>
+						<li class="qm_03"><a href="/board/index.jsp?code=qna">1:1학습상담</a></li>
+						<li class="qm_04"><a href="/main/page.jsp?pid=board.support5">원격지원</a></li>
+						<li class="qm_05"><a href="/board/index.jsp?code=pds">자료실</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
