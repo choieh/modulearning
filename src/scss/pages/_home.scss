@@ -80,7 +80,7 @@
     margin-top: 120px;
 
     &__inner {
-        max-width: 1270px;
+        max-width: 1246px;
         margin: 0 auto;
     }
 
@@ -230,8 +230,10 @@
 
         .slide-content {
             display: grid;
-            grid-template-columns: 670px 448px;
-            gap: 134px;
+            // grid-template-columns: 647px 489px;
+            // gap: 110px;
+            grid-template-columns: 52% 39%;
+            gap: 9%;
         }
     }
 
@@ -280,6 +282,7 @@
 
         &__header {
             flex-shrink: 0;
+            padding: 0;
 
             .desc {
                 margin-top: 10px;
@@ -288,7 +291,6 @@
 
         &__body {
             margin: 0;
-            padding: 0 5px;
         }
     }
 
@@ -335,8 +337,10 @@
     .section {
         &__inner {
             display: grid;
-            grid-template-columns: 767px 402px;
-            gap: 114px;
+            // grid-template-columns: 767px 402px;
+            // gap: 77px;
+            grid-template-columns: 62% 32%;
+            gap: 6%;
         }
 
         &__header {

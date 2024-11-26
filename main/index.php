@@ -11,7 +11,7 @@
         <a href="#container">본문으로 이동</a>
     </div>
 
-    <div id="__layout">
+    <div id="layout">
         <? include '../include/gnb_v2.php' ?>
         <? include './include/mainContainer.php' ?>
         <? include '../include/floatingMenu.php' ?>

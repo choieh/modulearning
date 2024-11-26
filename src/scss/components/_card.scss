@@ -1,23 +1,25 @@
 @use "../abstracts/index" as *;
 
 .badge {
-    height: 38px;
-    padding: 7px 18px;
-    line-height: 27px;
-    font-size: 18px;
-    font-weight: 600;
-    color: $color-white;
-    background-color: $primary-color-light;
-    border-radius: 40px;
-    @include text-ellipsis(1);
-
-    &__wrap {
+    &__list {
         display: inline-flex;
         justify-content: flex-end;
         align-items: center;
         gap: 10px;
         flex-shrink: 0;
         flex-wrap: wrap;
+    }
+
+    &__item {
+        height: 38px;
+        padding: 7px 18px;
+        line-height: 27px;
+        font-size: 18px;
+        font-weight: 600;
+        color: $color-white;
+        background-color: $primary-color-light;
+        border-radius: 40px;
+        @include text-ellipsis(1);
     }
 }
 
@@ -28,13 +30,15 @@
     @include common-boxShadow-style();
 
     .badge {
-        &__wrap {
+        &__list {
             display: flex;
         }
     }
 
-    &__body {
-        padding: 14px 21px 44px;
+    .layout {
+        &__body {
+            padding: 14px 21px 44px;
+        }
     }
 
     &__title {
@@ -45,11 +49,11 @@
         line-height: 21px;
     }
 
-    &__detail {
+    &__contents {
         margin-top: 12px;
     }
 
-    &__item {
+    &__detail {
         display: flex;
         gap: 10px;
         color: $color-black;

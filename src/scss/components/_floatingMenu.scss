@@ -49,3 +49,11 @@
         }
     }
 }
+
+@media (max-width: 1680px) {
+    .floating {
+        &-menu {
+            right: 0;
+        }
+    }
+}

@@ -3,14 +3,14 @@
 </head>
 
 <body onselectstart="return false" ondragstart="return false">
-    <div id="__layout">
+    <div id="layout">
         <? include '../include/gnb_v2.php' ?>
-        <div class="container container-cart">
-            <div class="cart__header">
-                <h2 class="cart__title">장바구니</h2>
-            </div>
-            <div class="cart__body">
-                <div class="cart__contents">
+        <div class="layout__container layout__container--cart">
+            <div class="cart">
+                <div class="layout__header">
+                    <h2 class="cart__title">장바구니</h2>
+                </div>
+                <div class="layout__body">
                     <div class="table">
                         <ul class="table__header">
                             <li class="table__th table__checkbox">
@@ -40,7 +40,7 @@
                                     </div>
                                 </div>
                                 <div class="table__td">
-                                    <p>[모두의 TALK] 정성호의 리얼 법정교육토크쇼 직장내 성희롱 예방교육</p>
+                                    <p><span class="table__td--title">[모두의 TALK] 정성호의 리얼 법정교육토크쇼</span> 직장내 성희롱 예방교육</p>
                                 </div>
                                 <div class="table__td">
                                     <p>2024.10.15 ~ 2024.12.15</p>
@@ -54,7 +54,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="table__payment">
+                    <div class="payment">
                         <h3>총 결제금액</h3>
                         <dl>
                             <div class="payment__item">

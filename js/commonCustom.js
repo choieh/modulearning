@@ -68,7 +68,7 @@ function customSelectBox() {
 }
 
 function thumbnailView() {
-    const thumbnails = document.querySelectorAll('.thumbnail__sm img');
+    const thumbnails = document.querySelectorAll('.thumbnail--sm img');
     const largeImage = document.getElementById('lgImg');
 
     thumbnails.forEach(thumbnail => {

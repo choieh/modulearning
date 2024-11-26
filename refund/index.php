@@ -15,12 +15,12 @@ $pid = $_GET['pid'];
         <a href="#gnb">메인메뉴로 이동</a>
         <a href="#container">본문으로 이동</a>
     </div>
-    <div id="__layout">
+    <div id="layout">
         <!-- 퀵메뉴 -->
         <? include '../include/quick_menu.php' ?>
         <? include '../include/gnb_v2.php' ?>
 
-        <div class="container">
+        <div class="layout__container layout__container--refund">
             <div class="refund__header">
                 <? include '../include/containerDepth.php' ?>
             </div>

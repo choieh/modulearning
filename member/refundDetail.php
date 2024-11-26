@@ -3,9 +3,9 @@
 </head>
 
 <body onselectstart="return false" ondragstart="return false">
-    <div id="__layout">
+    <div id="layout">
         <? include '../include/gnb_v2.php' ?>
-        <div class="container container-refund">
+        <div class="layout__container layout__container--refund">
             <div class="refund__header">
                 <? include '../include/containerDepth.php' ?>
             </div>

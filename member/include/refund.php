@@ -1,23 +1,23 @@
-<div class="recent-purchase-history__filter">
+<div class="purchase-history__filter">
     <div class="filter">
         <h3 class="filter__title">기간</h3>
-        <div class="duration-calendar">
+        <div class="duration__calendar">
         </div>
-        <div class="duration-shortcut">
-            <ul class="duration-shortcut__list">
-                <li class="duration-shortcut__item">
+        <div class="duration__shortcut">
+            <ul class="duration__shortcut--list">
+                <li class="duration__shortcut--item">
                     <button type="button">오늘</button>
                 </li>
-                <li class="duration-shortcut__item">
+                <li class="duration__shortcut--item">
                     <button type="button">1주</button>
                 </li>
-                <li class="duration-shortcut__item">
+                <li class="duration__shortcut--item">
                     <button type="button">1개월</button>
                 </li>
-                <li class="duration-shortcut__item">
+                <li class="duration__shortcut--item">
                     <button type="button">3개월</button>
                 </li>
-                <li class="duration-shortcut__item">
+                <li class="duration__shortcut--item">
                     <button type="button">6개월</button>
                 </li>
             </ul>
@@ -28,11 +28,11 @@
         <button type="button" class="btn btn-reset">초기화</button>
     </div>
 </div>
-<div class="recent-purchase-history refund">
-    <ul class="recent-purchase-history__list">
-        <li class="recent-purchase-history__item">
-            <div class="recent-purchase-history__contents">
-                <div class="recent-purchase-history__layout-left">
+<div class="purchase-history">
+    <ul class="purchase-history__list">
+        <li class="purchase-history__item">
+            <div class="purchase-history__contents">
+                <div class="purchase-history__layout-left">
                     <div class="order-date">
                         <dl>
                             <div class="order-date__item">
@@ -54,7 +54,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="recent-purchase-history__layout-right">
+                <div class="purchase-history__layout-right">
                     <a href="javascript:void(0);" class="link-help">문의하기 ➔</a>
                     <div class="refund-state">
                         <p>환불진행중</p>
