@@ -1,0 +1,92 @@
+@use "../abstracts/index" as *;
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color-black, 0.5);
+    z-index: 99999;
+
+    &__inner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 600px;
+        height: 450px;
+        padding: 40px;
+        border-radius: 10px;
+        background-color: $color-white;
+    }
+
+    &__header {
+        position: relative;
+        padding-bottom: 23px;
+        border-bottom: 1px solid $color-black;
+    }
+
+    &__close {
+        position: absolute;
+        top: 4px;
+        right: 0;
+        width: 26px;
+        height: 26px;
+        background-image: svgIcon('close');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__title {
+        padding: 4px 0;
+        color: $color-black;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28px;
+    }
+
+    &__body {
+        padding: 40px 0 0;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 20px;
+
+        &--small {
+            color: $color-gray-dark;
+            font-size: 12px;
+            line-height: 20px;
+        }
+    }
+
+    &__btn--wrap {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10px;
+        margin-top: 38px;
+        padding-top: 38px;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 20px 40px;
+        font-weight: 600;
+        border-radius: 30px;
+
+        &--primary {
+            background-color: $secondary-color;
+            color: $color-white;
+        }
+
+        &--secondary {
+            background-color: $color-gray-light;
+            color: $color-black;
+        }
+    }
+}
+

@@ -85,7 +85,7 @@
                 }
             }
 
-            &__btn-select {
+            &__btn--select {
                 position: relative;
                 display: block;
                 width: 170px;
@@ -163,7 +163,7 @@
                 margin-top: 29px;
             }
 
-            &-cart {
+            &--cart {
                 padding-left: 17px;
                 padding-right: 51px;
                 color: $primary-color-light;
@@ -280,7 +280,7 @@
 }
 
 #search {
-    &-form {
+    &__form {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -308,7 +308,7 @@
         align-items: center;
         margin: 0 auto;
 
-        button {
+        .btn {
             display: block;
             margin: 0;
             padding: 0 16px;
@@ -318,7 +318,7 @@
             line-height: 24px;
             color: $color-gray-dark;
 
-            + button {
+            + .btn {
                 position: relative;
 
                 &::before {
@@ -389,6 +389,7 @@
 .intro {
     &__header {
         position: relative;
+        margin-top: 71px;
         margin-bottom: 30px;
 
         &::before {

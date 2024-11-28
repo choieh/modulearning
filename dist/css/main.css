@@ -280,7 +280,7 @@ img, video {
   background-color: #fdb515;
 }
 
-.btn__close {
+.btn--close {
   display: block;
   width: 24px;
   height: 24px;
@@ -382,7 +382,7 @@ img, video {
 }
 .badge__item {
   height: 38px;
-  padding: 7px 18px;
+  padding: 5px 18px 8px;
   line-height: 27px;
   font-size: 18px;
   font-weight: 600;
@@ -743,6 +743,92 @@ img, video {
   border-bottom-right-radius: 4px;
 }
 
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99999;
+}
+.popup__inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 600px;
+  height: 450px;
+  padding: 40px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.popup__header {
+  position: relative;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #000;
+}
+.popup__close {
+  position: absolute;
+  top: 4px;
+  right: 0;
+  width: 26px;
+  height: 26px;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none'%3E%3Cg stroke='%23000' stroke-width='2'%3E%3Cpath d='m3.707 4.348 16.07 16.069M4.156 20.07 20.226 4'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.popup__title {
+  padding: 4px 0;
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+.popup__body {
+  padding: 40px 0 0;
+}
+.popup__text {
+  font-size: 14px;
+  line-height: 20px;
+}
+.popup__text--small {
+  color: #7a7a7a;
+  font-size: 12px;
+  line-height: 20px;
+}
+.popup__btn--wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  margin-top: 38px;
+  padding-top: 38px;
+}
+.popup .btn {
+  display: inline-block;
+  padding: 20px 40px;
+  font-weight: 600;
+  border-radius: 30px;
+}
+.popup .btn--primary {
+  background-color: #003362;
+  color: #fff;
+}
+.popup .btn--secondary {
+  background-color: #f7f6f6;
+  color: #000;
+}
+
 .certification {
   padding: 0;
 }
@@ -921,7 +1007,7 @@ img, video {
   font-weight: 600;
   line-height: 29px;
 }
-.lecture__cost .cost__btn-select {
+.lecture__cost .cost__btn--select {
   position: relative;
   display: block;
   width: 170px;
@@ -935,7 +1021,7 @@ img, video {
   border: 1px solid #c2c2c2;
   background-color: #fff;
 }
-.lecture__cost .cost__btn-select::before {
+.lecture__cost .cost__btn--select::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -997,7 +1083,7 @@ img, video {
       flex-shrink: 0;
   margin-top: 29px;
 }
-.lecture__cost .btn-cart {
+.lecture__cost .btn--cart {
   padding-left: 17px;
   padding-right: 51px;
   color: #fdb515;
@@ -1092,7 +1178,7 @@ img, video {
   color: #7a7a7a;
 }
 
-#search-form {
+#search__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1128,7 +1214,7 @@ img, video {
           align-items: center;
   margin: 0 auto;
 }
-.sorting__menu button {
+.sorting__menu .btn {
   display: block;
   margin: 0;
   padding: 0 16px;
@@ -1139,10 +1225,10 @@ img, video {
   line-height: 24px;
   color: #7a7a7a;
 }
-.sorting__menu button + button {
+.sorting__menu .btn + .btn {
   position: relative;
 }
-.sorting__menu button + button::before {
+.sorting__menu .btn + .btn::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -1153,7 +1239,7 @@ img, video {
   height: 16px;
   background-color: #7a7a7a;
 }
-.sorting__menu button.is-active, .sorting__menu button:hover {
+.sorting__menu .btn.is-active, .sorting__menu .btn:hover {
   color: #fdb515;
 }
 
@@ -1211,6 +1297,7 @@ img, video {
 
 .intro__header {
   position: relative;
+  margin-top: 71px;
   margin-bottom: 30px;
 }
 .intro__header::before {
@@ -1519,10 +1606,10 @@ img, video {
   grid-template-columns: 52% 39%;
   gap: 9%;
 }
-.lecture-new {
+.lecture--new {
   margin-top: 115px;
 }
-.lecture-new .section__title::before {
+.lecture--new .section__title::before {
   width: 30px;
   height: 30px;
   background-image: url("/images/common/icon_star.png");
@@ -1530,10 +1617,10 @@ img, video {
   background-repeat: no-repeat;
   background-size: 100%;
 }
-.lecture-new .slide-content {
+.lecture--new .slide-content {
   padding: 0 10px 10px;
 }
-.lecture-new .badge {
+.lecture--new .badge__item {
   background-color: #003362;
 }
 
@@ -2184,6 +2271,23 @@ img, video {
   background-color: #fdb515;
 }
 
+.duration__calendar {
+  margin-bottom: 15px;
+}
+.duration__calendar .date-range-picker {
+  width: 256px;
+  padding: 9px 12px;
+  color: #7a7a7a;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  border: 1px solid #c2c2c2;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+
 .cart .layout__header {
   margin-bottom: 19px;
 }
@@ -2306,7 +2410,7 @@ img, video {
   height: 24px;
   margin-left: 107px;
 }
-.table__body .table__td:nth-child(6) button {
+.table__body .table__td:nth-child(6) .btn--delete {
   display: block;
   width: 100%;
   height: 100%;
@@ -2341,13 +2445,13 @@ img, video {
   border-radius: 4px;
   border: 2px solid #003362;
 }
-.payment h3 {
+.payment__title {
   color: #000;
   font-size: 20px;
   font-weight: 500;
   line-height: 28px;
 }
-.payment dl {
+.payment__contents {
   margin-top: 8px;
 }
 .payment__item {
@@ -2374,7 +2478,7 @@ img, video {
   font-weight: 400;
   line-height: 25px;
 }
-.payment .btn__payment {
+.payment .btn--payment {
   display: block;
   margin-top: 17px;
   padding: 8px 28px;
@@ -2805,10 +2909,6 @@ img, video {
   margin-top: 36px;
   padding-top: 36px;
   border-top: 1px solid #7a7a7a;
-}
-
-#layout {
-  outline: 1px solid green;
 }
 
 .layout__container {

@@ -3,14 +3,19 @@ window.onload = (event) => {
     displaySitemap();
     toggleSitemap();
     customSelectBox();
+    popup();
     thumbnailView();
     checkboxAll();
 };
 
 function toggleSitemap() {
     const sitemapBtn = document.querySelector('.sitemap-edu__button');
-    const btnClose = document.querySelector('.btn__close');
+    const btnClose = document.querySelector('.btn--close');
     const sitemapArea = document.querySelector('.sitemap-edu');
+
+    if (!sitemapBtn || !btnClose || !sitemapArea) {
+        return;
+    }
 
     sitemapBtn.addEventListener('click', (e) => {
         e.preventDefault();
@@ -28,37 +33,41 @@ function toggleSitemap() {
 }
 
 function customSelectBox() {
-    const selectButton = document.querySelector('.cost__btn-select');
+    const selectButton = document.querySelector('.cost__btn--select');
     const dropdown = document.querySelector('.cost__list');
-    const options = dropdown.querySelectorAll('li');
+    
+    if (!selectButton || !dropdown) {
+        return;
+    }
 
-    // 드롭다운 열기/닫기 토글
+    const options = document.querySelectorAll('.cost__list--item');
+    
+    if (!options.length) {
+        return;
+    }
+
     selectButton.addEventListener('click', () => {
         const isExpanded = selectButton.getAttribute('aria-expanded') === 'true';
         selectButton.setAttribute('aria-expanded', !isExpanded);
         dropdown.style.display = isExpanded ? 'none' : 'block';
     });
 
-    // 옵션 클릭 시 선택
     options.forEach(option => {
         option.addEventListener('click', (event) => {
-            // 모든 옵션의 aria-selected를 false로 초기화
             options.forEach(opt => opt.setAttribute('aria-selected', 'false'));
 
-            // 클릭한 옵션을 선택 상태로 설정
-            const selectedOption = event.target;
+            const selectedOption = event.target.closest('.cost__list--item');
+            if (!selectedOption) return;
+            
             selectedOption.setAttribute('aria-selected', 'true');
 
-            // 버튼 텍스트 업데이트
             selectButton.textContent = selectedOption.textContent;
 
-            // 드롭다운 닫기
             selectButton.setAttribute('aria-expanded', 'false');
             dropdown.style.display = 'none';
         });
     });
 
-    // 드롭다운 외부 클릭 시 닫기
     document.addEventListener('click', (event) => {
         if (!selectButton.contains(event.target) && !dropdown.contains(event.target)) {
             selectButton.setAttribute('aria-expanded', 'false');
@@ -67,9 +76,31 @@ function customSelectBox() {
     });
 }
 
+function popup() {
+    const popup = document.querySelector('.popup');
+    const popupClose = document.querySelector('.popup__close');
+    const btnSub = document.querySelector('.btn--sub');
+
+    if (!popup || !popupClose || !btnSub) {
+        return;
+    }
+
+    btnSub.addEventListener('click', () => {
+        popup.style.display = 'block';
+    });
+
+    popupClose.addEventListener('click', () => {
+        popup.style.display = 'none';
+    });
+}
+
 function thumbnailView() {
     const thumbnails = document.querySelectorAll('.thumbnail--sm img');
     const largeImage = document.getElementById('lgImg');
+
+    if (!thumbnails.length || !largeImage) {
+        return;
+    }
 
     thumbnails.forEach(thumbnail => {
         thumbnail.addEventListener('click', () => {
@@ -80,11 +111,39 @@ function thumbnailView() {
 }
 
 function checkboxAll() {
-    document.getElementById("check-all").addEventListener("change", function(event) {
+    const checkAllBox = document.getElementById("check-all");
+    
+    if (!checkAllBox) {
+        return;
+    }
+
+    checkAllBox.addEventListener("change", function(event) {
         const isChecked = event.target.checked;
         const checkboxes = document.querySelectorAll(".table__checkbox input[type='checkbox']");
-        checkboxes.forEach((checkbox) => {
-            checkbox.checked = isChecked;
+        
+        if (checkboxes.length > 0) {
+            checkboxes.forEach((checkbox) => {
+                checkbox.checked = isChecked;
+            });
+        }
+    });
+}
+
+function dateRangePicker() {
+    document.addEventListener('DOMContentLoaded', function() {
+        const dateRangePicker = document.querySelector('.date-range-picker');
+        
+        if (!dateRangePicker) {
+            return;
+        }
+
+        flatpickr('.date-range-picker', {
+            locale: 'ko',
+            mode: 'range',
+            dateFormat: 'Y-m-d',
+            defaultDate: [new Date(), new Date()],
+            disableMobile: true,
+            theme: 'material_orange'
         });
     });
 }

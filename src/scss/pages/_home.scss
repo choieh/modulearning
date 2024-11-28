@@ -237,7 +237,7 @@
         }
     }
 
-    &-new {
+    &--new {
         margin-top: 115px;
 
         .section {
@@ -255,7 +255,9 @@
         }
 
         .badge {
-            background-color: $secondary-color;
+            &__item {
+                background-color: $secondary-color;
+            }
         }
     }
 }

@@ -2,6 +2,7 @@
     <div class="filter">
         <h3 class="filter__title">기간</h3>
         <div class="duration__calendar">
+            <input type="text" class="date-range-picker" placeholder="기간 선택" onclick="dateRangePicker()">
         </div>
         <div class="duration__shortcut">
             <ul class="duration__shortcut--list">

@@ -517,3 +517,22 @@
         }
     }
 }
+
+.duration {
+    &__calendar {
+        margin-bottom: 15px;
+        
+        .date-range-picker {
+            width: 256px;
+            padding: 9px 12px;
+            color: $color-gray-dark;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 19px;
+            border: 1px solid $color-gray;
+            border-radius: 4px;
+            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+            cursor: pointer;
+        }
+    }
+}

@@ -204,21 +204,21 @@ function customSwiper3() {
                     <div class="card__thumbnail">
                         <img src="${item.imgSrc}" alt="${item.name}">
                     </div>
-                    <div class="card__body">
-                        <ul class="badge__wrap">
-                            <li><span class="badge">${item.type}</span></li>
+                    <div class="layout__body">
+                        <ul class="badge__list">
+                            <li class="badge__item">${item.type}</li>
                         </ul>
                         <p class="card__title">${item.name}</p>
-                        <dl class="card__detail">
-                            <div class="card__item total">
+                        <dl class="card__contents">
+                            <div class="card__detail card__detail--total">
                                 <dt>총차시</dt>
                                 <dd>${item.total}차시</dd>
                             </div>
-                            <div class="card__item time">
+                            <div class="card__detail card__detail--time">
                                 <dt>학습시간</dt>
                                 <dd>${item.time}시간</dd>
                             </div>
-                            <div class="card__item cost">
+                            <div class="card__detail card__detail--cost">
                                 <dt>교육비</dt>
                                 <dd>${item.cost}원</dd>
                             </div>
@@ -256,6 +256,17 @@ swiperClasses.forEach(swiperClass => {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
+            breakpoints: {
+                1680: {
+                    slidesPerView: 4,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+            }
         }
     } else {
         options = {

@@ -49,14 +49,14 @@
                                     <p>123,200원</p>
                                 </div>
                                 <div class="table__td">
-                                    <button type="button" title="삭제"></button>
+                                    <button type="button" class="btn btn--delete" title="삭제"></button>
                                 </div>
                             </li>
                         </ul>
                     </div>
                     <div class="payment">
-                        <h3>총 결제금액</h3>
-                        <dl>
+                        <h3 class="payment__title">총 결제금액</h3>
+                        <dl class="payment__contents">
                             <div class="payment__item">
                                 <dt>금액</dt>
                                 <dd>246,400원</dd>
@@ -70,7 +70,7 @@
                                 <dd>246,400원</dd>
                             </div>
                         </dl>
-                        <a href="javascript:void(0)" class="btn__payment">결제하기</a>
+                        <a href="javascript:void(0)" class="btn btn--payment">결제하기</a>
                     </div>
                 </div>
             </div>

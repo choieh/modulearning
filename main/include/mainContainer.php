@@ -53,7 +53,7 @@
         </div>
     </div>
 
-    <div class="section lecture-new">
+    <div class="section lecture--new">
         <div class="section__inner">
             <div class="section__header">
                 <h2 class="section__title">신규강의</h2>

@@ -1,9 +1,5 @@
 @use "../abstracts/index" as *;
 
-#layout {
-    outline: 1px solid green;
-}
-
 .layout {
     &__container {
         // margin-top: 100px;

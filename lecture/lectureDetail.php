@@ -38,13 +38,16 @@
                                     <dt>학습기간</dt>
                                     <dd>
                                         <button aria-haspopup="listbox" aria-controls="li_sort" aria-expanded="false"
-                                            class="cost__btn-select">선택</button>
+                                            class="cost__btn--select">선택</button>
                                         <ul class="cost__list" role="listbox" aria-labelledby="select_lb">
-                                            <li id="cost__sort01" role="option" aria-selected="true" tabindex="0">1개월
+                                            <li class="cost__list--item" id="cost__sort01" role="option"
+                                                aria-selected="true" tabindex="0">1개월
                                             </li>
-                                            <li id="cost__sort02" role="option" aria-selected="false" tabindex="0">2개월
+                                            <li class="cost__list--item" id="cost__sort02" role="option"
+                                                aria-selected="false" tabindex="0">2개월
                                             </li>
-                                            <li id="cost__sort03" role="option" aria-selected="false" tabindex="0">3개월
+                                            <li class="cost__list--item" id="cost__sort03" role="option"
+                                                aria-selected="false" tabindex="0">3개월
                                             </li>
                                         </ul>
                                     </dd>
@@ -55,8 +58,8 @@
                                 </div>
                             </dl>
                             <div class="btn__wrap">
-                                <button type="button" class="btn btn-cart">장바구니 담기</button>
-                                <button type="button" class="btn btn-sub">수강신청</button>
+                                <button type="button" class="btn btn--cart">장바구니 담기</button>
+                                <button type="button" class="btn btn--sub">수강신청</button>
                             </div>
                         </div>
                     </div>
@@ -103,6 +106,9 @@
         </div>
         <? include '../include/footer.php' ?>
     </div>
+
+    <!-- popup -->
+    <? include '../include/popup.php' ?>
 
 </body>
 
