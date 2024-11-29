@@ -1,27 +1,37 @@
 <div class="purchase-history__filter">
     <div class="filter">
         <h3 class="filter__title">기간</h3>
-        <div class="duration__calendar">
-            <input type="text" class="date-range-picker" placeholder="기간 선택" onclick="dateRangePicker()">
-        </div>
-        <div class="duration__shortcut">
-            <ul class="duration__shortcut--list">
-                <li class="duration__shortcut--item">
-                    <button type="button">오늘</button>
-                </li>
-                <li class="duration__shortcut--item">
-                    <button type="button">1주</button>
-                </li>
-                <li class="duration__shortcut--item">
-                    <button type="button">1개월</button>
-                </li>
-                <li class="duration__shortcut--item">
-                    <button type="button">3개월</button>
-                </li>
-                <li class="duration__shortcut--item">
-                    <button type="button">6개월</button>
-                </li>
-            </ul>
+        <div class="duration">
+            <div class="duration__calendar">
+                <div class="calendar-input">
+                    <input type="text" id="startDate" class="date-range-picker" placeholder="시작일">
+                    <i class="icon-calendar"></i>
+                </div>
+                <span class="duration-dash">~</span>
+                <div class="calendar-input">
+                    <input type="text" id="endDate" class="date-range-picker" placeholder="종료일">
+                    <i class="icon-calendar"></i>
+                </div>
+            </div>
+            <div class="duration__shortcut">
+                <ul class="duration__shortcut--list">
+                    <li class="duration__shortcut--item">
+                        <button type="button">오늘</button>
+                    </li>
+                    <li class="duration__shortcut--item">
+                        <button type="button">1주</button>
+                    </li>
+                    <li class="duration__shortcut--item">
+                        <button type="button">1개월</button>
+                    </li>
+                    <li class="duration__shortcut--item">
+                        <button type="button">3개월</button>
+                    </li>
+                    <li class="duration__shortcut--item">
+                        <button type="button">6개월</button>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="btn__wrap">

@@ -6,6 +6,7 @@ window.onload = (event) => {
     popup();
     thumbnailView();
     checkboxAll();
+    initDateRangePicker();
 };
 
 function toggleSitemap() {
@@ -129,21 +130,40 @@ function checkboxAll() {
     });
 }
 
-function dateRangePicker() {
-    document.addEventListener('DOMContentLoaded', function() {
-        const dateRangePicker = document.querySelector('.date-range-picker');
-        
-        if (!dateRangePicker) {
-            return;
-        }
+function initDateRangePicker() {
+    const dateInputs = document.querySelectorAll('.date-range-picker');
+    
+    if (!dateInputs.length) return;
 
-        flatpickr('.date-range-picker', {
-            locale: 'ko',
-            mode: 'range',
-            dateFormat: 'Y-m-d',
-            defaultDate: [new Date(), new Date()],
-            disableMobile: true,
-            theme: 'material_orange'
-        });
+    const today = new Date();
+    
+    flatpickr(dateInputs, {
+        locale: {
+            weekdays: {
+                shorthand: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
+                longhand: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+            }
+        },
+        dateFormat: 'Y-m-d',
+        defaultDate: today,
+        disableMobile: true,
+        prevArrow: `<svg xmlns="http://www.w3.org/2000/svg" width="9" height="13" viewBox="0 0 9 13" fill="none">
+            <path opacity="0.262481" fill-rule="evenodd" clip-rule="evenodd" d="M8.22638 2.18075L3.46864 6.61741L7.9053 11.3751L6.4573 12.7254L0.67035 6.51969L6.87609 0.732743L8.22638 2.18075Z" fill="#8C96AB"/>
+        </svg>`,
+        nextArrow: `<svg xmlns="http://www.w3.org/2000/svg" width="9" height="13" viewBox="0 0 9 13" fill="none">
+            <path opacity="0.262481" fill-rule="evenodd" clip-rule="evenodd" d="M0.773621 2.18075L5.53136 6.61741L1.0947 11.3751L2.5427 12.7254L8.32965 6.51969L2.12391 0.732743L0.773621 2.18075Z" fill="#8C96AB"/>
+        </svg>`,
+        onReady: function(selectedDates, dateStr, instance) {
+            instance.calendarContainer.classList.add('custom-calendar');
+        },
+        onChange: function(selectedDates, dateStr, instance) {
+            if (selectedDates.length === 1) {
+                if (instance.element.id === 'startDate') {
+                    document.getElementById('endDate')._flatpickr.set('minDate', dateStr);
+                } else {
+                    document.getElementById('startDate')._flatpickr.set('maxDate', dateStr);
+                }
+            }
+        }
     });
 }
