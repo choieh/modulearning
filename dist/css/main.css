@@ -977,6 +977,7 @@ img, video {
 }
 
 #chat-container {
+  overflow-y: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -985,13 +986,9 @@ img, video {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 23px;
-  overflow-y: auto;
-  height: calc(100vh - 95px);
-  max-height: calc(100vh - 95px);
-  padding: 106px 10px 10px;
-  background: #f7f6f2 url("/images/study/img_moduri.png") no-repeat center top/100%;
-  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  height: calc(100vh - 320px);
+  max-height: calc(100vh - 320px);
+  padding: 10px;
 }
 
 .chat-message {
@@ -1059,11 +1056,7 @@ img, video {
 }
 
 #chatForm {
-  position: sticky;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #f7f6f2;
+  background-color: transparent;
 }
 #chatForm--items {
   display: none;
@@ -1104,6 +1097,7 @@ img, video {
           align-items: center;
   gap: 9px;
   padding: 17px 18px 19px 21px;
+  background-color: #f7f6f2;
 }
 
 #chat-input {
@@ -1132,6 +1126,14 @@ img, video {
   cursor: pointer;
 }
 
+@media (max-width: 1300px) {
+  #chat-container {
+    padding-top: 20%;
+  }
+  .chat-message.bot .bot__profile {
+    width: 7%;
+  }
+}
 .certification {
   padding: 0;
 }

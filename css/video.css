@@ -207,6 +207,10 @@ video {
 .tab-wrap .active .video-tab-in {
     display: block;
 }
+.tab-wrap .chatbot.active .video-tab-in {
+    overflow: hidden;
+}
+
 .tab-wrap .btn {
     display: none;
 }
@@ -239,6 +243,7 @@ video {
     box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.1);
     border-bottom: 2px solid rgba(0, 0, 0, 0);
     background-color: #fff;
+    z-index: 9999;
 }
 .video-tab .tab02 > h3 {
     left: 25%;

@@ -135,9 +135,13 @@
                                 </form>
                             </div>
                         </li>
-                        <li class="tab05 active">
+                        <li class="tab05 chatbot active">
                             <h3 style="width:20%;left:80%">AI튜터</h3>
                             <div class="video-tab-in">
+                                <div class="chat__banner">
+                                    <img src="/images/study/img_moduri.png"
+                                        alt="모두의교육그룹 챗봇 모두리입니다. 무엇이든 물어보시면 친절하게 알려드릴께요!">
+                                </div>
                                 <!-- 채팅 내용 -->
                                 <div id="chat-container">
                                     <!-- 대화 내용이 여기에 표시됩니다 -->
