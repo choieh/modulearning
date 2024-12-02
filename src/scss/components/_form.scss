@@ -324,7 +324,7 @@
 
 .custom-calendar {
     &.flatpickr-calendar {
-        width: 387px;
+        width: auto;
         height: 323px;
         padding: 0 32px 49px;
         background: $color-white;
@@ -337,7 +337,6 @@
     
         .flatpickr-months {
             position: relative;
-            outline: 1px solid blue;
             
             .flatpickr-month {
                 height: 73px;
@@ -364,11 +363,11 @@
     
             .flatpickr-prev-month.flatpickr-prev-month {
                 left: auto;
-                right: 66px;
+                right: 34px;
             }
     
             .flatpickr-next-month.flatpickr-next-month {
-                right: 32px;
+                right: 0;
             }
         }
     
@@ -402,7 +401,6 @@
         .flatpickr-days {
             .dayContainer {
                 height: 200px;
-                border: 1px solid red;
             }
         }
     

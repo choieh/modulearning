@@ -796,7 +796,7 @@ img, video {
 }
 
 .custom-calendar.flatpickr-calendar {
-  width: 387px;
+  width: auto;
   height: 323px;
   padding: 0 32px 49px;
   background: #fff;
@@ -811,7 +811,6 @@ img, video {
 }
 .custom-calendar.flatpickr-calendar .flatpickr-months {
   position: relative;
-  outline: 1px solid blue;
 }
 .custom-calendar.flatpickr-calendar .flatpickr-months .flatpickr-month {
   height: 73px;
@@ -843,10 +842,10 @@ img, video {
 }
 .custom-calendar.flatpickr-calendar .flatpickr-months .flatpickr-prev-month.flatpickr-prev-month {
   left: auto;
-  right: 66px;
+  right: 34px;
 }
 .custom-calendar.flatpickr-calendar .flatpickr-months .flatpickr-next-month.flatpickr-next-month {
-  right: 32px;
+  right: 0;
 }
 .custom-calendar.flatpickr-calendar .flatpickr-current-month {
   top: 50%;
@@ -874,7 +873,6 @@ img, video {
 }
 .custom-calendar.flatpickr-calendar .flatpickr-days .dayContainer {
   height: 200px;
-  border: 1px solid red;
 }
 .custom-calendar.flatpickr-calendar .flatpickr-day.selected {
   background-color: #003362;
@@ -1999,6 +1997,8 @@ img, video {
   border-radius: 4px;
   background-color: #fdb515;
   padding: 8px 28px;
+  color: #003362;
+  font-weight: 700;
 }
 .purchase-history__filter .btn__wrap {
   display: -webkit-box;
@@ -2015,7 +2015,6 @@ img, video {
 }
 .purchase-history__filter .btn-reset {
   color: #fdb515;
-  font-weight: 700;
   background-color: #fff;
   border: 1px solid #fdb515;
 }
@@ -2036,7 +2035,7 @@ img, video {
   display: grid;
   grid-template-columns: 1fr 102px;
   min-height: 157px;
-  padding: 11px 0 11px 23px;
+  padding: 11px 23px;
   border-radius: 4px;
   background-color: #fff;
   -webkit-box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.05);
@@ -2095,8 +2094,8 @@ img, video {
   line-height: 17px;
 }
 .purchase-history .order-state {
+  padding: 12px 0;
   text-align: center;
-  color: #000;
   font-size: 14px;
   font-weight: 700;
   line-height: 17px;
@@ -2152,6 +2151,7 @@ img, video {
   line-height: 17px;
 }
 .purchase-history__layout-right .refund-state {
+  padding: 12px 0;
   color: #000;
   font-size: 14px;
   font-weight: 700;

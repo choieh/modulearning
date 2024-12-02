@@ -27,8 +27,8 @@
                     <div class="layout__contents">
                         <?php
                             // include './include/membership.php';
-                            // include './include/CourseDetails.php';
-                            include './include/refund.php';
+                            include './include/CourseDetails.php';
+                            // include './include/refund.php';
                         ?>
                     </div>
                 </div>
