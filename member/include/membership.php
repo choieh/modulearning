@@ -47,15 +47,17 @@
                 <div class="password__group">
                     <p class="password-input password-current">
                         <label for="current-password" class="label">비밀번호변경</label>
-                        <input type="password" id="current-password" name="current_password" />
+                        <input type="password" id="current-password" name="current_password"
+                            placeholder="현재 비밀번호를 입력하세요" />
                     </p>
                     <p class="password-input password-new">
                         <label for="new-password" class="label">새로운 비밀번호</label>
-                        <input type="password" id="new-password" name="new_password" />
+                        <input type="password" id="new-password" name="new_password" placeholder="새로운 비밀번호를 입력하세요" />
                     </p>
                     <p class="password-input password-confirm">
                         <label for="confirm-password" class="label">새로운 비밀번호 재확인</label>
-                        <input type="password" id="confirm-password" name="confirm_password" />
+                        <input type="password" id="confirm-password" name="confirm_password"
+                            placeholder="새로운 비밀번호를 다시 입력하세요" />
                     </p>
                 </div>
 

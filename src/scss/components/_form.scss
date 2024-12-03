@@ -15,6 +15,10 @@
 
         &.form__password {
             align-items: flex-start;
+
+            .label {
+                visibility: hidden;
+            }
         }
 
         .input {
@@ -165,6 +169,7 @@
             font-size: 14px;
             font-weight: 700;
             line-height: 20px;
+            cursor: pointer;
         }
     }
 

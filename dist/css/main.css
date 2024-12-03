@@ -505,6 +505,9 @@ img, video {
       -ms-flex-align: start;
           align-items: flex-start;
 }
+.form-group.form__password .label {
+  visibility: hidden;
+}
 .form-group .input__wrap {
   position: relative;
   display: block;
@@ -646,6 +649,7 @@ img, video {
   font-size: 14px;
   font-weight: 700;
   line-height: 20px;
+  cursor: pointer;
 }
 .checkbox__switch {
   -webkit-box-ordinal-group: 2;
