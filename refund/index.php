@@ -20,12 +20,14 @@ $pid = $_GET['pid'];
         <? include '../include/quick_menu.php' ?>
         <? include '../include/gnb_v2.php' ?>
 
-        <div class="layout__container layout__container--refund">
-            <div class="refund__header">
-                <? include '../include/containerDepth.php' ?>
-            </div>
-            <div class="content_area" style="width:1125px;">
-                <? include "refund0".$pid.".html"; ?>
+        <div class="layout__container layout__container--owner-refund">
+            <div class="owner-refund">
+                <div class="refund__header">
+                    <? include '../include/containerDepth.php' ?>
+                </div>
+                <div class="content_area">
+                    <? include "refund0".$pid.".html"; ?>
+                </div>
             </div>
         </div>
     </div>

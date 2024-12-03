@@ -398,6 +398,7 @@
             line-height: 19px;
             border: 1px solid $color-gray;
             @include common-boxShadow-style($border-radius: 4px, $box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12));
+            cursor: pointer;
 
             &::before {
                 content: '';
@@ -410,33 +411,50 @@
                 background-image: svgIcon('arrow', '7a7a7a');
                 background-repeat: no-repeat;
                 background-size: 100%;
+                transition: transform 0.2s ease;
+            }
+
+            &[aria-expanded="true"]::before {
+                transform: translateY(-50%) rotate(-90deg);
             }
         }
 
         &-list {
             display: none;
+            position: absolute;
             width: 256px;
             border: 1px solid $color-gray;
             border-radius: 4px;
+            background: $color-white;
+            z-index: 10;
 
             &.is-active {
                 display: block;
+            }
+
+            li {
+                font-size: 14px;
             }
         }
 
         &-item {
             padding: 6px 12px;
             color: $color-gray-dark;
-            font-size: 14px;
             font-weight: 400;
             line-height: 19px;
+            cursor: pointer;
             
-            & + li {
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.04);
+            }
+            
+            & + & {
                 border-top: 1px solid $color-gray;
             }
         }
 
         &-textarea {
+            display: none;
             overflow: hidden;
             width: 563px;
             height: 118px;
@@ -452,8 +470,12 @@
                 width: 100%;
                 height: 100%;
                 padding: 4px 8px;
-                color: $color-gray;
+                color: $color-black;
                 resize: none;
+            }
+
+            textarea::placeholder {
+                color: $color-gray;
             }
         }
     }

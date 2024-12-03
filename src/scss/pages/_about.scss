@@ -94,11 +94,25 @@
     }
 }
 
-.owner1 {
-    padding-top: 13px;
-    border: 0;
+.owner-refund {
+    text-align: center;
 
-    &_2 {
-        margin-bottom: 62px;
+    .owner1 {
+        padding-top: 13px;
+        border: 0;
+
+        .box2 {
+            width: 890px;
+        }
+
+        &_2 {
+            width: 1136px;
+            margin: 0 auto 62px;
+        }
+
+        &_3 {
+            width: 1136px;
+            margin: 0 auto;
+        }
     }
 }

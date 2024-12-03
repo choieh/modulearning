@@ -7,6 +7,7 @@ window.onload = (event) => {
     thumbnailView();
     checkboxAll();
     initDateRangePicker();
+    initRefundReason();
 };
 
 function toggleSitemap() {
@@ -164,6 +165,55 @@ function initDateRangePicker() {
                     document.getElementById('startDate')._flatpickr.set('maxDate', dateStr);
                 }
             }
+        }
+    });
+}
+
+function initRefundReason() {
+    const selectButton = document.querySelector('.refund__reason-button');
+    const dropdown = document.querySelector('.refund__reason-list');
+    const textarea = document.querySelector('.refund__reason-textarea');
+    
+    if (!selectButton || !dropdown) {
+        return;
+    }
+
+    const options = document.querySelectorAll('.refund__reason-item');
+    
+    if (!options.length) {
+        return;
+    }
+
+    selectButton.addEventListener('click', () => {
+        const isExpanded = selectButton.getAttribute('aria-expanded') === 'true';
+        selectButton.setAttribute('aria-expanded', !isExpanded);
+        dropdown.classList.toggle('is-active');
+    });
+
+    options.forEach(option => {
+        option.addEventListener('click', (event) => {
+            options.forEach(opt => opt.setAttribute('aria-selected', 'false'));
+
+            const selectedOption = event.target;
+            selectedOption.setAttribute('aria-selected', 'true');
+
+            selectButton.textContent = selectedOption.textContent;
+
+            selectButton.setAttribute('aria-expanded', 'false');
+            dropdown.classList.remove('is-active');
+
+            if (selectedOption.id === 'cost__sort04') {
+                textarea.style.display = 'block';
+            } else {
+                textarea.style.display = 'none';
+            }
+        });
+    });
+
+    document.addEventListener('click', (event) => {
+        if (!selectButton.contains(event.target) && !dropdown.contains(event.target)) {
+            selectButton.setAttribute('aria-expanded', 'false');
+            dropdown.classList.remove('is-active');
         }
     });
 }
