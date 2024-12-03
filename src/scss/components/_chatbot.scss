@@ -1,19 +1,49 @@
 @use "../abstracts" as *;
 
-#chat-container {
-    overflow-y: auto;
+.chatbot {
     display: flex;
     flex-direction: column;
-    gap: 23px;
-    height: calc(100vh - 320px);
-    max-height: calc(100vh - 320px);
-    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    
+    &__header {
+        width: 100%;
+    }
+
+    &__banner {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        height: 100%;
+        max-height: 106px;
+        padding: 0 28px;
+        background: linear-gradient(180deg, #FFE17D 0.24%, #FFC33D 99.76%);
+        border-radius: 0px 0px 30px 30px;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    &__container {
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+        width: 100%;
+        margin-bottom: auto;
+        padding: 23px 20px;
+    }
+
+    &__footer {
+        width: 100%;
+    }
 }
 
 .chat-message {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 10px;
 
     &.user {
         justify-content: flex-end;
@@ -41,6 +71,7 @@
 
         .bot__profile {
             width: 14%;
+            max-width: 68px;
         }
 
         .message {
@@ -142,15 +173,27 @@
 }
 
 @media (max-width: 1300px) {
-    #chat-container {
-        padding-top: 20%;
+    .chatbot {
+        &__banner {
+            height: 106px;
+        }
     }
 
     .chat-message {
         &.bot {
             .bot__profile {
                 width: 7%;
+                min-width: 68px;
             }
+        }
+    }
+}
+
+@media (max-width: 786px) {
+    .chatbot {
+        &__banner {
+            height: 50%;
+            min-height: 92px;
         }
     }
 }

@@ -135,36 +135,42 @@
                                 </form>
                             </div>
                         </li>
-                        <li class="tab05 chatbot active">
+                        <li class="tab05 active">
                             <h3 style="width:20%;left:80%">AI튜터</h3>
                             <div class="video-tab-in">
-                                <div class="chat__banner">
-                                    <img src="/images/study/img_moduri.png"
-                                        alt="모두의교육그룹 챗봇 모두리입니다. 무엇이든 물어보시면 친절하게 알려드릴께요!">
-                                </div>
-                                <!-- 채팅 내용 -->
-                                <div id="chat-container">
-                                    <!-- 대화 내용이 여기에 표시됩니다 -->
-                                </div>
-                                <!-- 메시지 입력란 -->
-                                <form id="chatForm">
-                                    <ul id="chatForm--items" class="is-active">
-                                        <li class="chatForm--item">
-                                            <button type="button"
-                                                class="chatForm--item-btn btn-primary">모두의러닝은?</button>
-                                        </li>
-                                        <li class="chatForm--item">
-                                            <button type="button" class="chatForm--item-btn btn-primary">개인정보처리는
-                                                어떻게하고있나요?</button>
-                                        </li>
-                                    </ul>
-                                    <div id="chatForm--input">
-                                        <input type="hidden" id="csrf_token"
-                                            value="<?= htmlspecialchars($csrfToken) ?>">
-                                        <textarea id="chat-input" placeholder="메시지를 입력하세요..."></textarea>
-                                        <button type="button" id="send-chat" onclick="sendChat()">전송</button>
+                                <div id="chatbot" class="chatbot">
+                                    <div class="chatbot__header">
+                                        <div class="chatbot__banner">
+                                            <img src="/images/study/img_moduri.png"
+                                                alt="모두의교육그룹 챗봇 모두리입니다. 무엇이든 물어보시면 친절하게 알려드릴께요!">
+                                        </div>
                                     </div>
-                                </form>
+                                    <!-- 채팅 내용 -->
+                                    <div id="chatbot-container" class="chatbot__container">
+                                        <!-- 대화 내용이 여기에 표시됩니다 -->
+                                    </div>
+                                    <!-- 메시지 입력란 -->
+                                    <div class="chatbot__footer">
+                                        <form id="chatForm">
+                                            <ul id="chatForm--items" class="is-active">
+                                                <li class="chatForm--item">
+                                                    <button type="button"
+                                                        class="chatForm--item-btn btn-primary">모두의러닝은?</button>
+                                                </li>
+                                                <li class="chatForm--item">
+                                                    <button type="button" class="chatForm--item-btn btn-primary">개인정보처리는
+                                                        어떻게하고있나요?</button>
+                                                </li>
+                                            </ul>
+                                            <div id="chatForm--input">
+                                                <input type="hidden" id="csrf_token"
+                                                    value="<?= htmlspecialchars($csrfToken) ?>">
+                                                <textarea id="chat-input" placeholder="메시지를 입력하세요..."></textarea>
+                                                <button type="button" id="send-chat" onclick="sendChat()">전송</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                         </li>
                     </ul>
@@ -546,7 +552,7 @@ function hrdCheckScore(types, flag) {
 
         if (['1', '2'].includes(String(param.serviceType))) {
             hrdApi = '/api/apiHrdScoreCheck.php' + `?userID=${param.userID}&contentsCode=${param
-          .contentsCode}&chapter=${progressData.progress.chapter}`;
+            .contentsCode}&chapter=${progressData.progress.chapter}`;
         }
 
         fetch(hrdApi, {
@@ -2301,7 +2307,7 @@ function loadChatHistory() {
 }
 
 function appendMessage(message, type) {
-    const chatContainer = document.getElementById('chat-container');
+    const chatContainer = document.getElementById('chatbot-container');
     const messageDiv = document.createElement('div');
     messageDiv.className = `chat-message ${type === 'user' ? 'user' : 'bot'}`;
 
@@ -2322,5 +2328,35 @@ function appendMessage(message, type) {
 
 
 // 페이지 로드 시 실행
-document.addEventListener('DOMContentLoaded', loadChatHistory);
+document.addEventListener('DOMContentLoaded', () => {
+    adjustChatContainerHeight();
+    loadChatHistory();
+});
+
+// 챗봇 컨테이너 높이 조정 함수
+function adjustChatContainerHeight() {
+    const chatbot = document.getElementById('chatbot');
+    let chatbotHeader = document.querySelector('.chatbot__header');
+    let chatbotContainer = document.querySelector('.chatbot__container');
+    let chatbotFooter = document.querySelector('.chatbot__footer');
+    const tabInHeight = 70;
+    if (chatbot) {
+        const windowHeight = window.innerHeight;
+        const chatbotHeaderHeight = chatbotHeader.offsetHeight;
+        const chatbotFooterHeight = chatbotFooter.offsetHeight;
+        const containerHeight = windowHeight - chatbotHeaderHeight - chatbotFooterHeight - tabInHeight;
+        const chatbotHeight = windowHeight - tabInHeight;
+
+        chatbot.style.height = `${chatbotHeight}px`;
+        chatbotContainer.style.height = `${containerHeight}px`;
+        chatbotContainer.style.maxHeight = `${containerHeight}px`;
+    }
+}
+
+// 창 크기 변경 이벤트에 대한 리스너 등록
+let resizeTimeout;
+window.addEventListener('resize', () => {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(adjustChatContainerHeight, 250);
+});
 </script>

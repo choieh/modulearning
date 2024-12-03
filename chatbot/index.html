@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>LMS Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        #chatbox {
+            width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #question {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        #sendButton {
+            padding: 10px 20px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        #answer {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            min-height: 50px;
+            background-color: #fafafa;
+            border-radius: 5px;
+        }
+    </style>
+    <script>
+        function sendQuestion() {
+            var question = document.getElementById('question').value.trim();
+            var answerDiv = document.getElementById('answer');
+
+            if (question === '') {
+                alert('질문을 입력해주세요.');
+                return;
+            }
+
+            // 로딩 상태 표시
+            answerDiv.innerHTML = "답변을 불러오는 중입니다...";
+
+            // AJAX 요청 생성
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', 'chatbot.php', true);
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+            // 응답 처리
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4) {
+                    if (xhr.status === 200) {
+                        answerDiv.innerHTML = xhr.responseText;
+                    } else {
+                        answerDiv.innerHTML = "오류가 발생했습니다. 나중에 다시 시도해주세요.";
+                    }
+                }
+            };
+
+            // 요청 전송
+            xhr.send('question=' + encodeURIComponent(question));
+        }
+
+        // Enter 키로 질문 전송
+        document.addEventListener('DOMContentLoaded', function() {
+            var questionInput = document.getElementById('question');
+            questionInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    e.preventDefault();
+                    sendQuestion();
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="chatbox">
+        <h2>LMS Chatbot</h2>
+        <input type="text" id="question" placeholder="질문을 입력하세요">
+        <button id="sendButton" onclick="sendQuestion()">전송</button>
+        <div id="answer"></div>
+    </div>
+</body>
+</html>

@@ -976,7 +976,44 @@ img, video {
   color: #000;
 }
 
-#chat-container {
+.chatbot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+.chatbot__header {
+  width: 100%;
+}
+.chatbot__banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  height: 100%;
+  max-height: 106px;
+  padding: 0 28px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.24%, #FFE17D), color-stop(99.76%, #FFC33D));
+  background: linear-gradient(180deg, #FFE17D 0.24%, #FFC33D 99.76%);
+  border-radius: 0px 0px 30px 30px;
+}
+.chatbot__banner img {
+  height: 100%;
+}
+.chatbot__container {
   overflow-y: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -986,9 +1023,12 @@ img, video {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 23px;
-  height: calc(100vh - 320px);
-  max-height: calc(100vh - 320px);
-  padding: 10px;
+  width: 100%;
+  margin-bottom: auto;
+  padding: 23px 20px;
+}
+.chatbot__footer {
+  width: 100%;
 }
 
 .chat-message {
@@ -998,7 +1038,6 @@ img, video {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-bottom: 10px;
 }
 .chat-message.user {
   -webkit-box-pack: end;
@@ -1029,6 +1068,7 @@ img, video {
 }
 .chat-message.bot .bot__profile {
   width: 14%;
+  max-width: 68px;
 }
 .chat-message.bot .message {
   position: relative;
@@ -1127,11 +1167,18 @@ img, video {
 }
 
 @media (max-width: 1300px) {
-  #chat-container {
-    padding-top: 20%;
+  .chatbot__banner {
+    height: 106px;
   }
   .chat-message.bot .bot__profile {
     width: 7%;
+    min-width: 68px;
+  }
+}
+@media (max-width: 786px) {
+  .chatbot__banner {
+    height: 50%;
+    min-height: 92px;
   }
 }
 .certification {
