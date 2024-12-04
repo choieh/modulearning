@@ -257,14 +257,19 @@
 
         &:first-child {
             grid-column: 1/-1;
+
+            .refund__title {
+                font-size: 18px;
+                line-height: 24px;
+            }
         }
     }
 
     &__title {
         color: $color-black;
-        font-size: 18px;
+        font-size: 24px;
         font-weight: 600;
-        line-height: 24px;
+        line-height: 29px;
     }
 
     &__description {
@@ -497,6 +502,7 @@
                     &-value {
                         font-size: 24px;
                         line-height: 29px;
+                        font-weight: 600;
                     }
                 }
             }

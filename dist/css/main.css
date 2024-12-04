@@ -2191,11 +2191,15 @@ img, video {
 .refund__section:first-child {
   grid-column: 1/-1;
 }
+.refund__section:first-child .refund__title {
+  font-size: 18px;
+  line-height: 24px;
+}
 .refund__title {
   color: #000;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 600;
-  line-height: 24px;
+  line-height: 29px;
 }
 .refund__description {
   margin-top: 18px;
@@ -2428,6 +2432,7 @@ img, video {
 .refund__summary-item:last-child .refund__summary-value {
   font-size: 24px;
   line-height: 29px;
+  font-weight: 600;
 }
 .refund__summary-label {
   color: #000;
