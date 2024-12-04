@@ -2368,9 +2368,6 @@ img, video {
 .refund__reason-item:hover {
   background-color: rgba(0, 0, 0, 0.04);
 }
-.refund__reason-item + .refund__reason-item {
-  border-top: 1px solid #c2c2c2;
-}
 .refund__reason-textarea {
   display: none;
   overflow: hidden;
