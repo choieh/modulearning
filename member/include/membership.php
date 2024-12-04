@@ -52,7 +52,8 @@
                     </p>
                     <p class="password-input password-new">
                         <label for="new-password" class="label">새로운 비밀번호</label>
-                        <input type="password" id="new-password" name="new_password" placeholder="새로운 비밀번호를 입력하세요" />
+                        <input type="password" id="new-password" name="new_password" placeholder="새로운 비밀번호를 입력하세요"
+                            required minlength="8" />
                     </p>
                     <p class="password-input password-confirm">
                         <label for="confirm-password" class="label">새로운 비밀번호 재확인</label>

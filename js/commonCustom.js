@@ -8,6 +8,7 @@ window.onload = (event) => {
     checkboxAll();
     initDateRangePicker();
     initRefundReason();
+    initMypageLnb();
 };
 
 function toggleSitemap() {
@@ -216,4 +217,94 @@ function initRefundReason() {
             dropdown.classList.remove('is-active');
         }
     });
+}
+
+function initMypageLnb() {
+    const lnbItems = document.querySelectorAll('.lnb__item');
+    const contentContainer = document.getElementById('mypageContent');
+    
+    if (!lnbItems.length || !contentContainer) {
+        return;
+    }
+
+    // URL에서 현재 페이지 파라미터 가져오기
+    const urlParams = new URLSearchParams(window.location.search);
+    const currentPage = urlParams.get('page') || 'profile';
+
+    // 페이지 컨텐츠 로드 함수
+    async function loadPageContent(page) {
+        try {
+            // 메인 컨텐츠 로드
+            const response = await fetch(`./include/${getPageFileName(page)}.php`);
+            if (!response.ok) throw new Error('페이지를 불러오는데 실패했습니다.');
+            
+            let content = await response.text();
+
+            // profile 페이지가 아닌 경우 페이지네이션 추가
+            if (page !== 'profile') {
+                const paginationResponse = await fetch('../include/pagination.php');
+                if (paginationResponse.ok) {
+                    const paginationContent = await paginationResponse.text();
+                    content += paginationContent;
+                }
+            }
+
+            contentContainer.innerHTML = content;
+
+            // 메뉴 활성화 상태 업데이트
+            lnbItems.forEach(item => {
+                if (item.dataset.page === page) {
+                    item.classList.add('is-active');
+                } else {
+                    item.classList.remove('is-active');
+                }
+            });
+
+            // 페이지 로드 후 필요한 초기화 함수들 실행
+            initDateRangePicker();
+            initRefundReason();
+            checkboxAll();
+            
+        } catch (error) {
+            console.error('페이지 로드 오류:', error);
+            alert('페이지를 불러오는데 실패했습니다.');
+        }
+    }
+
+    // 초기 페이지 활성화
+    loadPageContent(currentPage);
+
+    // 클릭 이벤트 처리
+    lnbItems.forEach(item => {
+        item.addEventListener('click', async () => {
+            const page = item.dataset.page;
+            
+            // URL 업데이트
+            const newUrl = `${window.location.pathname}?page=${page}`;
+            history.pushState({page}, '', newUrl);
+            
+            await loadPageContent(page);
+        });
+    });
+
+    // 브라우저 뒤로가기/앞으로가기 처리
+    window.addEventListener('popstate', async (event) => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const page = urlParams.get('page') || 'profile';
+        
+        await loadPageContent(page);
+    });
+}
+
+function getPageFileName(page) {
+    switch(page) {
+        case 'profile':
+            return 'membership';
+        case 'order':
+            return 'CourseDetails';
+        case 'refund':
+            return 'refund';
+        default:
+            return 'membership';
+    }
 }
