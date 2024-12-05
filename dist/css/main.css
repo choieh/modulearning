@@ -991,6 +991,7 @@ img, video {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
+  min-width: 540px;
 }
 .chatbot__header {
   width: 100%;
@@ -1123,20 +1124,18 @@ img, video {
   display: -ms-flexbox;
   display: flex;
 }
-#chatForm--items .chatForm--item {
-  padding: 11px 18px;
-  background-color: #fdb515;
-  border-radius: 50px;
-}
 #chatForm--items .chatForm--item-btn {
   display: block;
+  padding: 11px 18px;
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
   color: #000;
   font-family: "Noto Sans";
+  background-color: #fdb515;
+  border-radius: 50px;
 }
-#chatForm--items .chatForm--item .btn-primary {
+#chatForm--items .chatForm--item-btn.btn-primary {
   background-color: #fdb515;
 }
 #chatForm--input {

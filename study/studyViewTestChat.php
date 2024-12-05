@@ -154,11 +154,12 @@
                                         <form id="chatForm">
                                             <ul id="chatForm--items" class="is-active">
                                                 <li class="chatForm--item">
-                                                    <button type="button"
-                                                        class="chatForm--item-btn btn-primary">모두의러닝은?</button>
+                                                    <button type="button" class="chatForm--item-btn btn-primary"
+                                                        data-question="모두의러닝은?">모두의러닝은?</button>
                                                 </li>
                                                 <li class="chatForm--item">
-                                                    <button type="button" class="chatForm--item-btn btn-primary">개인정보처리는
+                                                    <button type="button" class="chatForm--item-btn btn-primary"
+                                                        data-question="개인정보처리는 어떻게하고있나요?">개인정보처리는
                                                         어떻게하고있나요?</button>
                                                 </li>
                                             </ul>
@@ -166,7 +167,7 @@
                                                 <input type="hidden" id="csrf_token"
                                                     value="<?= htmlspecialchars($csrfToken) ?>">
                                                 <textarea id="chat-input" placeholder="메시지를 입력하세요..."></textarea>
-                                                <button type="button" id="send-chat" onclick="sendChat()">전송</button>
+                                                <button type="button" id="send-chat">전송</button>
                                             </div>
                                         </form>
                                     </div>
@@ -2214,6 +2215,9 @@ function updateSurveyStatus(redirectLink) {
 
 }
 
+const sendBtn = document.getElementById('send-chat');
+const exampleQuestions = document.querySelectorAll('.chatForm--item-btn');
+
 function sendChat() {
     const chatInput = document.getElementById('chat-input').value.trim();
     const chatContainer = document.getElementById('chat-container');
@@ -2266,8 +2270,6 @@ function sendChat() {
     });
 }
 
-
-
 // 엔터 키 지원 추가
 document.getElementById('chat-input').addEventListener('keydown', function(event) {
     if (event.key === 'Enter' && !event.shiftKey) {
@@ -2276,6 +2278,17 @@ document.getElementById('chat-input').addEventListener('keydown', function(event
     }
 });
 
+// 버튼 클릭으로 질문 전송
+sendBtn.addEventListener('click', sendChat);
+
+// 예시 질문 클릭 이벤트
+exampleQuestions.forEach(example => {
+    example.addEventListener('click', function() {
+        const question = this.dataset.question;
+        document.getElementById('chat-input').value = question;
+        // sendChat();
+    });
+});
 
 function loadChatHistory() {
     const chatContainer = document.getElementById('chat-container');
@@ -2324,8 +2337,6 @@ function appendMessage(message, type) {
 
     return messageDiv;
 }
-
-
 
 // 페이지 로드 시 실행
 document.addEventListener('DOMContentLoaded', () => {

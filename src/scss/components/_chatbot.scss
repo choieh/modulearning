@@ -6,6 +6,7 @@
     justify-content: space-between;
     align-items: center;
     height: 100vh;
+    min-width: 540px;
     
     &__header {
         width: 100%;
@@ -133,21 +134,20 @@
         }
 
         .chatForm--item {
-            padding: 11px 18px;
-            background-color: $primary-color-light;
-            border-radius: 50px;
-
             &-btn {
                 display: block;
+                padding: 11px 18px;
                 font-size: 14px;
                 font-weight: 400;
                 line-height: 22px;
                 color: $color-black;
                 font-family: "Noto Sans";
-            }
-
-            .btn-primary {
                 background-color: $primary-color-light;
+                border-radius: 50px;
+
+                &.btn-primary {
+                    background-color: $primary-color-light;
+                }
             }
         }
     }
