@@ -102,14 +102,14 @@
             })
             .then(jsonResponse => {
                 if (jsonResponse.message) {
-                    botTyping.querySelector('.message').textContent = jsonResponse.message;
+                    botTyping.querySelector('.message--text').textContent = jsonResponse.message;
                 } else {
-                    botTyping.querySelector('.message').textContent = '답변을 찾을 수 없습니다.';
+                    botTyping.querySelector('.message--text').textContent = '답변을 찾을 수 없습니다.';
                 }
             })
             .catch(error => {
                 console.error('Error:', error);
-                botTyping.querySelector('.message').textContent = '오류가 발생했습니다. 나중에 다시 시도해주세요.';
+                botTyping.querySelector('.message--text').textContent = '오류가 발생했습니다. 나중에 다시 시도해주세요.';
             });
     }
 
@@ -172,8 +172,8 @@
         // bot 타입일 때만 프로필 이미지 추가
         messageDiv.innerHTML = type === 'bot' ?
             `<div class="bot__profile"><img src="/images/study/img_chatbot.png" alt="모두리 프로필"></div>
-                    <div class="message">${message}</div>` :
-            `<div class="message">${message}</div>`;
+                    <div class="message"><p class="message--text">${message}</p></div>` :
+            `<div class="message"><p class="message--text">${message}</p></div>`;
 
         chatContainer.appendChild(messageDiv);
 
