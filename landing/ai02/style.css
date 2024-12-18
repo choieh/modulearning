@@ -1,0 +1,383 @@
+/* reset */
+* {
+    margin: 0;
+    border: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Noto Sans Korean", "맑은 고딕", "AppleSDGothcNeo",
+        "AppleGothic", sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: #000000;
+    letter-spacing: -1px;
+}
+ul,
+ol,
+li {
+    list-style: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    border: 0;
+    outline: 0;
+    display: block;
+}
+img {
+    border: 0;
+    border-style: none;
+}
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+address,
+cite,
+dfn,
+em,
+var {
+    font-style: normal;
+}
+img {
+    width: 100%;
+}
+
+.cf::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+
+.hidden {
+    display: none;
+}
+.blind {
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    clip: rect(0, 0, 0, 0);
+}
+
+/*리셋 끝*/
+
+/* 하단바 */
+.fix-banner { position:fixed; z-index:99999; left:50%; transform: translateX(-50%); bottom:0px; width:70%;height:80px;padding:0px;text-align:center;border:none;  }
+.fix-banner .wrap {position:relative;width:100%;height:60px;padding:15px 75px 15px 15px; background:#fff;border:1px #c2c2c2 solid;border-radius:20px; box-sizing:border-box; line-height:30px;font-size:16px;font-weight:400;color:#000; display: flex;align-items: center;justify-content: center;}
+.fix-banner .wrap p {padding-right: 10px}
+.fix-banner .wrap p span { font-weight:700; }
+.fix-banner .btn_bform { display:inline-block; width:auto;line-height:27px;margin-left:10px;padding:5px 50px;border-radius:5px;background:#ffcb05;color:#000;font-size:15px;}
+.fix-banner .close-btn {position:absolute; right:15px; top:15px; width:30px; height:30px; background:url('/images/common/fix_ban_close.png') no-repeat; text-indent:-99999px; cursor:pointer;}
+.fix-banner.no-fix { position:relative;}
+
+#form {
+    padding: 105px 20px;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.title {
+    text-align: center;
+}
+
+#form .title > div > h2 {
+    color: #f5bc00;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+/*입력칸 크기*/
+.form-area {
+    display: flex;
+    width: 100%;
+    margin: 78px auto 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+.essential {
+    font-size: 12px; /* 별표(*)를 포함한 요소의 폰트 크기 설정 */
+    color: red;
+    position: relative;
+}
+.essential::before {
+    content: "*";
+    width: 2px;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 8px);
+}
+#form .db_list > li {
+    margin-bottom: 32px;
+}
+/*입력칸이름*/
+#form .db_list > li > div > span {
+    display: inline-block;
+    vertical-align: top;
+}
+/*입력칸 이름*/
+#form .db_list > li > div > span:first-child label {
+    width: 90px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #000;
+    text-align: right;
+    padding: 15px 15px 15px 0; /* 위, 오른쪽, 아래, 왼쪽 */
+    box-sizing: border-box;
+    display: inline-block;
+    height: 50px;
+}
+.selectbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*전체 박스*/
+#form .db_list > li > div > span:last-child {
+    /* width: calc(100% - 140px);  */
+    /*부모너비기준*/
+}
+.inner_wrap {
+    display: flex;
+    width: 100%;
+}
+.input_wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+.inner_wrap > span ~ span:not(.input_subtxt) {
+    width: 100%;
+}
+.inner_wrap > span:first-child {
+    flex: none;
+}
+/*입력 박스*/
+.input-control {
+    width: 670px;
+    height: 50px;
+    border: 2px solid #eee; /* 테두리 */
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+/*셀렉트박스*/
+.select-control {
+    width: 100%;
+    border: 2px solid #eee; /* 테두리 */
+    height: 50px;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+.email_con {
+    display: flex;
+    align-items: flex-start;
+}
+.email-control,
+.form-company,
+.form-email1 {
+    width: 180px;
+    border: 2px solid #eee; /* 테두리 */
+    height: 50px;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+.email-select-control {
+    width: 220px;
+    border: 2px solid #eee; /* 테두리 */
+    height: 50px;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+.checkbox_con {
+    font-size: 14px;
+    display: inline-block;
+}
+.chk-wrap {
+    white-space: nowrap;
+}
+
+/*문의내용*/
+.textarea-control {
+    height: 240px;
+    resize: none;
+    width: 670px;
+    border: 2px solid #eee; /* 테두리 */
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.agree_con .checkbox_label {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.checkbox_label > input {
+    background-color: #f5bc00;
+}
+
+.btn_con {
+    text-align: center;
+    margin-top: 20px;
+}
+.submit.button {
+    margin-bottom: 20px;
+    max-width: 100%;
+    width: 200px;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    background-color: #d9d9d9;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer; /* 커서를 포인터로 설정하여 클릭 가능한 상태를 나타냅니다. */
+    transition: background-color 0.3s; /* 배경색 변화에 대한 부드러운 전환 효과를 추가합니다. */
+}
+.submit.button:hover {
+    background-color: #f5bc00; /* 마우스를 올렸을 때의 배경색을 설정합니다. */
+}
+input[type=checkbox] {
+    display:none;
+}
+input[type=checkbox] + label { 
+    cursor: pointer; 
+    padding-left: 23px; 
+    background-repeat: no-repeat;
+    background-image: url('img/btn-checkbox-n.svg');
+}
+input[type=checkbox]:checked + label {
+    background-image: url('img/btn-checkbox-p.svg');
+}
+
+@media screen and (max-width: 767px) {
+    #form {
+        padding: 40px 20px;
+    }
+    .title {
+        /* width: 335px; */
+        width: auto;
+        font-size: 14px;
+    }
+    #form .title > div > h2 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    .form-area {
+        display: flex;
+        /* width: 335px; */
+        width: auto;
+        margin: 40px 0;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .db_list {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 8px;
+    }
+    #form .db_list > li {
+        margin-bottom: 8px;
+    }
+    .input-control {
+        width: 100%;
+        height: 37px;
+        border: 2px solid #eee; /* 테두리 */
+        padding: 4px;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+    .textarea-control {
+        height: 140px;
+        resize: none;
+        width: 100%;
+        border: 2px solid #eee; /* 테두리 */
+        padding: 10px;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+    #form .db_list > li > div > span:first-child label {
+        padding: 10px 10px 10px 0;
+        box-sizing: border-box;
+        display: inline-block;
+        height: 37px;
+    }
+    .selectbox {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .select-control {
+        /* width: 240px; */
+        width: 100%;
+        height: 37px;
+        font-size: 14px;
+        padding: 0px;
+    }
+    .email-select-wrap {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+    .email-control,
+    .form-company,
+    .form-email1 {
+        width: 120px;
+        height: 37px;
+        padding: 4px;
+    }
+    .email-select-control {
+        width: auto;
+        height: 37px;
+        padding: 0px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .fix-banner {
+        width:90%;
+    }
+	.fix-banner .wrap {
+		padding: 15px;
+        line-height: 1.2em;
+	}
+	.fix-banner .wrap p {
+		width: 50%;
+        font-size: 14px;
+	}
+	.fix-banner .btn_bform {
+		width: 20%;
+		padding: 5px 0;
+        font-size: 14px;
+	}
+}
