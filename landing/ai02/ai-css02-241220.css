@@ -19,6 +19,11 @@ body {
     margin: 0;
 }
 
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
 /*헤더*/
 #header {width:100%; margin:0 auto; border-bottom:1px solid #ddd; max-width: 1400px;}
 #header > .contents_con {
