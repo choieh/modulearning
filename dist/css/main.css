@@ -397,7 +397,7 @@ img, video {
 }
 
 .card {
-  width: 300px;
+  width: 298px;
   height: 367px;
   border-radius: 10px;
   background-color: #fff;
@@ -1100,6 +1100,9 @@ img, video {
   gap: 15px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 10px auto 0;
 }
 .lecture__detail .layout__header {
